@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     
     // Declare constants
-    [SerializeField] private int NUM_ROTATIONS = 8;
+    private const int NUM_ROTATIONS = 8;
 
-    // Declare components
+    // Declare components for caching
     [SerializeField] private CharacterMovementController _movementController = null;
     [SerializeField] private Camera _mainCamera = null;
 
@@ -28,9 +28,9 @@ public class PlayerController : MonoBehaviour {
         Vector2 inputAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         _movementController.Move(inputAxis.normalized * _movementSpeed);
 
-        // Update character rotation
+        // Update character rotation (angle of mouse relative to player)
         Vector2 rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        _spriteRotation = (NUM_ROTATIONS / 2 + (int) 
-                Mathf.Round(Mathf.Atan2(rotation.y, rotation.x) / (2*Mathf.PI) * NUM_ROTATIONS)) % NUM_ROTATIONS;
+        _spriteRotation = (NUM_ROTATIONS + (int) Mathf.Round(Mathf.Atan2(rotation.y, rotation.x) /
+                (2*Mathf.PI) * NUM_ROTATIONS)) % NUM_ROTATIONS;
     }
 }
