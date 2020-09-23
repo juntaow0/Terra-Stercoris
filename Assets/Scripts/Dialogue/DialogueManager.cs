@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     private DialogueUI dialogueUI;
     private Queue<Sentence> sentences;
     private Conversation currentConversation;
-    public static event Action<string> OnTrigger;
+    public static event Action<string,string> OnTrigger;
     public static event Action<Choice[]> OnChoice;
 
     private void Awake() {
@@ -62,7 +62,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         Sentence s = sentences.Dequeue();
-        StandingPicture sp = currentConversation.speakers[s.speakerIndex];
-        OnTrigger?.Invoke(s.sentence);
+        string name = currentConversation.speakers[s.speakerIndex];
+        OnTrigger?.Invoke(s.sentence,name);
     }
 }

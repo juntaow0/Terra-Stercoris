@@ -9,7 +9,7 @@ public struct Choice {
     public Conversation conversation;
 }
 
-[CreateAssetMenu(fileName = "New Choice", menuName = "ScriptableObjects/Dialogue/Choice")]
+[CreateAssetMenu(fileName = "New Choice", menuName = "Dialogue/Choice")]
 public class Choices : ScriptableObject {
     public int ChoiceID;
     public Choice[] choices;

@@ -20,12 +20,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   speakers:
-  - {fileID: 11400000, guid: 9864ed5bea3c83a4badc882fe5f7a980, type: 2}
-  - {fileID: 11400000, guid: 838272999b1107243bf44cbd4df80883, type: 2}
+  - Jeff
+  - Devan
   sentences:
   - speakerIndex: 0
-    speakerPos: 1
-    sentence: Yes.
+    sentence: Yes. Let me see your catgirl.
   - speakerIndex: 1
-    speakerPos: 0
     sentence: Ah, I see you are a man of culture as well.

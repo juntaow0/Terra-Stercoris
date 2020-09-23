@@ -20,15 +20,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   speakers:
-  - {fileID: 11400000, guid: 9864ed5bea3c83a4badc882fe5f7a980, type: 2}
-  - {fileID: 11400000, guid: 838272999b1107243bf44cbd4df80883, type: 2}
+  - Jeff
+  - Devan
   sentences:
   - speakerIndex: 1
-    speakerPos: 0
     sentence: What's up Jeff
   - speakerIndex: 0
-    speakerPos: 1
     sentence: What's up Devan
   - speakerIndex: 1
-    speakerPos: 0
     sentence: Do you wanna see my catgirl?

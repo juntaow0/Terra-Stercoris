@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: testcon3
   m_EditorClassIdentifier: 
-  conversationID: 1
+  conversationID: 2
   endAction: 0
   choices: {fileID: 0}
   nextConversation: {fileID: 0}
@@ -20,12 +20,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   speakers:
-  - {fileID: 11400000, guid: 9864ed5bea3c83a4badc882fe5f7a980, type: 2}
-  - {fileID: 11400000, guid: 838272999b1107243bf44cbd4df80883, type: 2}
+  - Jeff
+  - Devan
   sentences:
   - speakerIndex: 0
-    speakerPos: 1
-    sentence: No.
+    sentence: No. I'm not interested.
   - speakerIndex: 1
-    speakerPos: 0
     sentence: Sad.

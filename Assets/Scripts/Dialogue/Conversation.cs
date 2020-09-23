@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public enum SpeakerPos {
-    LEFT,
-    RIGHT
-}
-
 public enum EndAction {
     NONE,
     CHOICE,
@@ -18,12 +13,11 @@ public enum EndAction {
 [System.Serializable]
 public struct Sentence {
     public int speakerIndex;
-    public SpeakerPos speakerPos;
     [TextArea(2, 5)]
     public string sentence;
 }
 
-[CreateAssetMenu(fileName = "New Conversation", menuName = "ScriptableObjects/Dialogue/Conversation")]
+[CreateAssetMenu(fileName = "New Conversation", menuName = "Dialogue/Conversation")]
 public class Conversation : ScriptableObject
 {
     public int conversationID;
@@ -31,6 +25,6 @@ public class Conversation : ScriptableObject
     public Choices choices;
     public Conversation nextConversation;
     public UnityEvent endEvent;
-    public StandingPicture[] speakers;
+    public string[] speakers;
     public Sentence[] sentences;
 }

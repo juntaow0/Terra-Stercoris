@@ -10,6 +10,7 @@ public class DialogueUI: MonoBehaviour
     private Canvas DialogueBox;
     private Canvas ChoiceBox;
     private Text DialogueText;
+    private Text Speaker;
     private int existingButton;
     private List<Button> buttons;
     private List<RectTransform> buttonTransforms;
@@ -25,7 +26,8 @@ public class DialogueUI: MonoBehaviour
         ChoiceBox = ui.transform.GetChild(1).GetChild(0).GetComponent<Canvas>();
         DialogueBox.enabled = false;
         ChoiceBox.enabled = false;
-        DialogueText = DialogueBox.transform.GetChild(0).GetComponentInChildren<Text>();
+        DialogueText = DialogueBox.transform.GetChild(0).GetChild(0).GetComponent<Text>();
+        Speaker = DialogueBox.transform.GetChild(0).GetChild(1).GetComponent<Text>();
         existingButton = 0;
     }
     public void toggleDialogueBox(bool state) {
@@ -36,8 +38,9 @@ public class DialogueUI: MonoBehaviour
         ChoiceBox.enabled = state;
     }
 
-    private void ShowSentence(string sentence) {
+    private void ShowSentence(string sentence, string name) {
         DialogueText.text = sentence;
+        Speaker.text = name + ":";
     }
 
     private void BindChoices(Choice[] choices) {
@@ -58,7 +61,7 @@ public class DialogueUI: MonoBehaviour
 
     private void ArrangeButtons(int count) {
         float buttonHeight = buttons[0].GetComponent<RectTransform>().rect.height;
-        float startPos = -220 + ((buttonHeight * count + buttonSpacing * (count - 1))/2);
+        float startPos = -220 + ((buttonHeight * count + buttonSpacing * (count - 1))/2)- (buttonHeight/2);
         float offset = buttonSpacing + buttonHeight;
         for (int i = 0; i < count; i++) {
             buttonTransforms[i].anchoredPosition = new Vector2(0,startPos+i*offset*-1);
