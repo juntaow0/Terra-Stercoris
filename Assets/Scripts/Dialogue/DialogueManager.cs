@@ -1,13 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(DialogueUI))]
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
+    public GameObject UIPrefab;
+    public GameObject buttonPrefab;
+    private DialogueUI dialogueUI;
     private Queue<Sentence> sentences;
-    private List<StandingPicture> speakers;
-    private List<Choice> choices;
+    private Conversation currentConversation;
+    public static event Action<string> OnTrigger;
+    public static event Action<Choice[]> OnChoice;
 
     private void Awake() {
         if (instance!=null && instance != this) {
@@ -15,44 +21,48 @@ public class DialogueManager : MonoBehaviour
         } else {
             instance = this;
         }
+        dialogueUI = GetComponent<DialogueUI>();
         sentences = new Queue<Sentence>();
-        speakers = new List<StandingPicture>();
-        choices = new List<Choice>();
+        dialogueUI.InitializeUI(UIPrefab, buttonPrefab);
     }
 
     public void LoadConversation(Conversation conversation) {
         sentences.Clear();
-        speakers.Clear();
-        choices.Clear();
+        currentConversation = conversation;
         foreach (Sentence s in conversation.sentences) {
             sentences.Enqueue(s);
         }
-        foreach (StandingPicture sp in conversation.speakers) {
-            speakers.Add(sp);
+        if (conversation.endAction==EndAction.CHOICE) {
+            OnChoice?.Invoke(conversation.choices.choices);
         }
-        if (conversation.choices!=null) {
-            foreach (Choice c in conversation.choices.choices) {
-                choices.Add(c);
-            }
-        }
+        dialogueUI.toggleDialogueBox(true);
         DisplaySentence();
+    }
+
+    private void RunEndAction() {
+        switch (currentConversation.endAction) {
+            case EndAction.NONE:
+                dialogueUI.toggleDialogueBox(false);
+                break;
+            case EndAction.CHOICE:
+                dialogueUI.toggleChoices(true);
+                break;
+            case EndAction.CONVERSATION:
+                LoadConversation(currentConversation.nextConversation);
+                break;
+            case EndAction.EVENT:
+                currentConversation.endEvent?.Invoke();
+                break;
+        }
     }
 
     public void DisplaySentence() {
         if (sentences.Count < 1) {
-            if (choices.Count == 0) {
-                Debug.Log("end of conversation");
-                return;
-            }
-            int index = Random.Range(0, choices.Count);
-            LoadConversation(choices[index].conversation);
+            RunEndAction();
             return;
         }
         Sentence s = sentences.Dequeue();
-        StandingPicture sp = speakers[s.speakerIndex];
-        Debug.Log(sp.characterName + ": "+ s.sentence);
-        
+        StandingPicture sp = currentConversation.speakers[s.speakerIndex];
+        OnTrigger?.Invoke(s.sentence);
     }
-
-
 }
