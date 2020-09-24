@@ -1,1 +1,14 @@
-Font: https://www.1001fonts.com/joystix-font.html
+Programmers:
+Devan Plaga
+Jeff Stevens
+Juntao Wang
+Oscar Martinez
+
+Writer:
+Spencer Crawford
+
+Composer:
+Tamara Dzolic
+
+Assets:
+ - Font: https://www.1001fonts.com/joystix-font.html
