@@ -570,7 +570,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &8098621255700291833
 MonoBehaviour:
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219f35c96b24628468302737d5fd38f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START_SCENE: main
+  START_SCENE: MovementDemo
   menuScene: MainMenu
   canvas: {fileID: 8098621255700291832}
 --- !u!1 &8098621256066637410
