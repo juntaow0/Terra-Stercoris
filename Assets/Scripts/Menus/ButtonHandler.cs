@@ -47,10 +47,12 @@ public class ButtonHandler : MonoBehaviour {
         loadDropdown.AddOptions(optionDataList);
     }
 
-    void Update() {
-        if(currentScene != menuScene && Input.GetButtonDown("Fire2")) {
-            PauseGame();
-        }
+    void OnEnable() {
+        InputManager.OnPause += PauseGame;
+    }
+
+    void OnDisable() {
+        InputManager.OnPause -= PauseGame;
     }
 
     public void StartGame() {

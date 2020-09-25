@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public enum ResourceType {
     Health,
@@ -6,8 +7,7 @@ public enum ResourceType {
 }
 
 public class NumericalResource {
-    public delegate void OnResourceUpdatedHandler(int currentResource);
-    public event OnResourceUpdatedHandler OnResourceUpdated;
+    public event Action<int> OnResourceUpdated;
     public ResourceType resourcetype {get; private set;}
     public int min {get; set;} // Just in case we need to put constraints on this
     public int max {get; set;}
@@ -22,7 +22,7 @@ public class NumericalResource {
             } else {
                 quantity = value;
             }
-            OnResourceUpdated(quantity);
+            OnResourceUpdated?.Invoke(quantity);
         }
     }
 

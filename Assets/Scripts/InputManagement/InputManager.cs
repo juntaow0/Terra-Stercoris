@@ -23,6 +23,7 @@ public class InputManager : MonoBehaviour
     public KeyCode UP;
     public KeyCode DOWN;
     public KeyCode FIRE;
+    public KeyCode PAUSE;
 
     private void Awake() {
         if (instance!=null && instance != this) {
@@ -38,5 +39,8 @@ public class InputManager : MonoBehaviour
         Vertical = Input.GetAxisRaw("Vertical");
         // more to be added based on need
 
+        if(Input.GetKeyDown(PAUSE)) {
+            OnPause?.Invoke();
+        }
     }
 }

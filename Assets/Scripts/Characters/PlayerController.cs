@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private Camera _mainCamera = null;
     [SerializeField] private CharacterController _characterController = null;
 
-    void Start() {
+    void Awake() {
         // Override components if they haven't been set in the inspector
         if (_mainCamera == null) _mainCamera = Camera.main;
         if (_characterController == null) _characterController = GetComponent<CharacterController>();
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     void Update() {
         
         // Update character movement. I really don't like the non-raw input, it feels too sluggish
-        Vector2 inputAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 inputAxis = new Vector2(InputManager.Horizontal, InputManager.Vertical);
         _characterController.Move(inputAxis.normalized * _characterController.GetSpeed());
 
         // Update character rotation (angle of mouse relative to player)
