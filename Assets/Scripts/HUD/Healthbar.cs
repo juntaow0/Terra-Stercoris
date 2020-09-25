@@ -12,6 +12,7 @@ using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
+    public Slider slider; 
     public int currentHealth;
     public int maxHealth = 100;
 
@@ -19,11 +20,15 @@ public class Healthbar : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        slider.maxValue = maxHealth;
+        slider.value = currentHealth;
+        updateHealthBarUI();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void updateHealthBarUI()
+    //changes the graphical appearance of the healthbar
     {
+        slider.value = currentHealth;
     }
 
     public void gainHealth(int gain)
@@ -34,13 +39,15 @@ public class Healthbar : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+        updateHealthBarUI();
     }
 
     public void loseHealth(int loss)
     //Call to lose health
     {
         currentHealth -= loss;
-        //eventually, we should call a function here that triggers player death, or something similar 
+        //eventually, we should call a function here that triggers player death, or something similar
+        updateHealthBarUI();
     }
 
     public void setHealth(int setVal)
@@ -56,6 +63,7 @@ public class Healthbar : MonoBehaviour
             //eventually call a function to trigger death or something similar
             ;
         }
+        updateHealthBarUI();
     }
 
     public int getCurrentHealth()
