@@ -25,29 +25,23 @@ public class HUDFader : MonoBehaviour
         FadeIn = true;
     }
 
+    public void SwapSprite(int currentPower) {
+        if (currentPower < 20) {
+            hudImage.sprite = SpriteArray[0];
+        } else if (currentPower >= 20 && currentPower < 40) {
+            hudImage.sprite = SpriteArray[1];
+        } else if (currentPower >= 40 && currentPower < 60) {
+            hudImage.sprite = SpriteArray[2];
+        } else if (currentPower >= 60 && currentPower < 80) {
+            hudImage.sprite = SpriteArray[3];
+        } else if (currentPower >= 80) {
+            hudImage.sprite = SpriteArray[4];
+        }
+    }
+
     void Update()
     //Controls the imagealpha for the fading UI animation
     {
-        if (powerbar.currentPower < 20)
-        {
-            hudImage.sprite = SpriteArray[0];
-        }
-        else if (powerbar.currentPower >= 20 && powerbar.currentPower < 40)
-        {
-            hudImage.sprite = SpriteArray[1];
-        }
-        else if (powerbar.currentPower >= 40 && powerbar.currentPower < 60)
-        {
-            hudImage.sprite = SpriteArray[2];
-        }
-        else if (powerbar.currentPower >= 60 && powerbar.currentPower < 80)
-        {
-            hudImage.sprite = SpriteArray[3];
-        }
-        else if (powerbar.currentPower >= 80)
-        {
-            hudImage.sprite = SpriteArray[4];
-        }
         if (FadeIn == true)
         {
             if (currentFadeTime <= 0)

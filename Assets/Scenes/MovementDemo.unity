@@ -464,8 +464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabdbaad6e60dd84f84b9dea91be5ff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 260250338}
-  currentPower: 100
   maxPower: 100
 --- !u!114 &260250338
 MonoBehaviour:
@@ -2494,8 +2492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf4b9ceaa6ce744fa14c2c6c0e6d176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 2028588314}
-  currentHealth: 0
   maxHealth: 100
 --- !u!114 &2028588314
 MonoBehaviour:

@@ -25,6 +25,11 @@ public class PlayerController : MonoBehaviour {
         if (_collider == null) _collider = GetComponent<Collider2D>();
     }
 
+    private void Start() {
+        _healthBar.bindHealthBar(_characterController.health.max,_characterController.GetHealth());
+        _powerBar.bindPowerBar(_characterController.energy.max, _characterController.GetEnergy());
+    }
+
     void OnEnable() {
         InputManager.OnInteract += Interact;
         _characterController.health.OnResourceUpdated += UpdateHealth;
@@ -37,12 +42,18 @@ public class PlayerController : MonoBehaviour {
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
 
+    private void OnDestroy() {
+        InputManager.OnInteract -= Interact;
+        _characterController.health.OnResourceUpdated -= UpdateHealth;
+        _characterController.energy.OnResourceUpdated -= UpdateEnergy;
+    }
+
     void UpdateHealth(int newHealth) {
-        _healthBar?.setHealth(newHealth);
+        _healthBar?.updateHealthBarUI(newHealth);
     }
 
     void UpdateEnergy(int newPower) {
-        _powerBar?.setPower(newPower);
+        _powerBar?.updatePowerBarUI(newPower);
     }
 
     void Update() {
