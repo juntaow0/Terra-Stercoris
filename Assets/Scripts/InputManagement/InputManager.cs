@@ -16,6 +16,9 @@ public class InputManager : MonoBehaviour
     public static event Action OnMouseClickRight;
     public static event Action OnEscape;
     public static event Action OnEnter;
+    public static event Action OnInteract;
+
+    public Tooltip tooltip;
 
     // more to be added based on need
     public KeyCode LEFT;
@@ -24,6 +27,7 @@ public class InputManager : MonoBehaviour
     public KeyCode DOWN;
     public KeyCode FIRE;
     public KeyCode PAUSE;
+    public KeyCode INTERACT;
 
     private void Awake() {
         if (instance!=null && instance != this) {
@@ -41,6 +45,9 @@ public class InputManager : MonoBehaviour
 
         if(Input.GetKeyDown(PAUSE)) {
             OnPause?.Invoke();
+        }
+        if(Input.GetKeyDown(INTERACT)) {
+            OnInteract?.Invoke();
         }
     }
 }
