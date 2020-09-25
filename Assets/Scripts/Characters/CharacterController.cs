@@ -53,6 +53,10 @@ public class CharacterController : MonoBehaviour {
         health.quantity = newHealth;
     }
 
+    public int GetEnergy() {
+        return energy.quantity;
+    }
+
     public void AddEnergy(int amount) {
         energy.quantity += amount;
     }
