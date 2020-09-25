@@ -6,11 +6,8 @@ public enum ResourceType {
 }
 
 public class NumericalResource {
-
     public delegate void OnResourceUpdatedHandler(int currentResource);
-
     public event OnResourceUpdatedHandler OnResourceUpdated;
-
     public ResourceType resourcetype {get; private set;}
     public int min {get; set;} // Just in case we need to put constraints on this
     public int max {get; set;}
