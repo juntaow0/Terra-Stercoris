@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour {
     // Declare components for caching
     [SerializeField] private Camera _mainCamera = null;
     [SerializeField] private CharacterController _characterController = null;
+    [SerializeField] private Healthbar _healthBar = null;
+    [SerializeField] private Powerbar _powerBar = null;
     private Collider2D _collider = null;
 
     private InteractableObject closestObject = null;
@@ -25,10 +27,22 @@ public class PlayerController : MonoBehaviour {
 
     void OnEnable() {
         InputManager.OnInteract += Interact;
+        _characterController.health.OnResourceUpdated += UpdateHealth;
+        _characterController.energy.OnResourceUpdated += UpdateEnergy;
     }
 
     void OnDisable() {
         InputManager.OnInteract -= Interact;
+        _characterController.health.OnResourceUpdated -= UpdateHealth;
+        _characterController.energy.OnResourceUpdated -= UpdateEnergy;
+    }
+
+    void UpdateHealth(int newHealth) {
+        _healthBar?.setHealth(newHealth);
+    }
+
+    void UpdateEnergy(int newPower) {
+        _powerBar?.setPower(newPower);
     }
 
     void Update() {

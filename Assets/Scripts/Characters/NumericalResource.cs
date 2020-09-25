@@ -8,21 +8,23 @@ public enum ResourceType {
 
 public class NumericalResource {
     public event Action<int> OnResourceUpdated;
+
     public ResourceType resourcetype {get; private set;}
     public int min {get; set;} // Just in case we need to put constraints on this
     public int max {get; set;}
 
+    private int _quantity;
     public int quantity {
-        get {return quantity;}
+        get {return _quantity;}
         set {
             if(value > max) {
-                quantity = max;
+                _quantity = max;
             } else if(value < min) {
-                quantity = min;
+                _quantity = min;
             } else {
-                quantity = value;
+                _quantity = value;
             }
-            OnResourceUpdated?.Invoke(quantity);
+            OnResourceUpdated?.Invoke(_quantity);
         }
     }
 
@@ -30,5 +32,6 @@ public class NumericalResource {
         this.resourcetype = type;
         this.min = min;
         this.max = max;
+        this._quantity = max;
     }
 }
