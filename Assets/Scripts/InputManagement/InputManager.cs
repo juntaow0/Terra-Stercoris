@@ -7,8 +7,8 @@ using UnityEngine;
 // this class might not be necessary
 public class InputManager : MonoBehaviour
 {
-    public float Horizontal { get; private set; }
-    public float Vertical { get; private set; }
+    public static float Horizontal { get; private set; }
+    public static float Vertical { get; private set; }
 
     public static InputManager instance;
     public static event Action OnPause;
@@ -22,6 +22,7 @@ public class InputManager : MonoBehaviour
     public KeyCode UP;
     public KeyCode DOWN;
     public KeyCode FIRE;
+    public KeyCode PAUSE;
 
     private void Awake() {
         if (instance!=null && instance != this) {
@@ -36,5 +37,9 @@ public class InputManager : MonoBehaviour
         Horizontal = Input.GetAxisRaw("Horizontal");
         Vertical = Input.GetAxisRaw("Vertical");
         // more to be added based on need
+
+        if(Input.GetKeyDown(PAUSE)) {
+            OnPause?.Invoke();
+        }
     }
 }
