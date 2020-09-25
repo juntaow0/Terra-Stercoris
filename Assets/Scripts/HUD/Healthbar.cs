@@ -12,17 +12,19 @@ using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
-    public Slider slider; 
+    private Slider slider; 
     public int currentHealth;
     public int maxHealth = 100;
 
+    private void Awake() {
+        slider = GetComponent<Slider>();
+    }
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         slider.maxValue = maxHealth;
         slider.value = currentHealth;
-        updateHealthBarUI();
     }
 
     private void updateHealthBarUI()

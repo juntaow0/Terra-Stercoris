@@ -12,9 +12,13 @@ using UnityEngine.UI;
 
 public class Powerbar : MonoBehaviour
 {
-    public Slider slider;
+    private Slider slider;
     public int currentPower;
     public int maxPower;
+
+    private void Awake() {
+        slider = GetComponent<Slider>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +27,6 @@ public class Powerbar : MonoBehaviour
         currentPower = maxPower;
         slider.maxValue = maxPower;
         slider.value = currentPower;
-        updatePowerBarUI();
     }
 
     private void updatePowerBarUI()
