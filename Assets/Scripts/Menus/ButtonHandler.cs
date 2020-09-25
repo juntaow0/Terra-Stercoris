@@ -38,11 +38,20 @@ public class ButtonHandler : MonoBehaviour {
             canvas = GetComponent<Canvas>();
         }
 
-        // Get all scenes and add to dropdown. May get removed later.
         List<TMP_Dropdown.OptionData> optionDataList = new List<TMP_Dropdown.OptionData>();
+
+        #if UNITY_EDITOR
+        // Get all scenes and add to dropdown. May get removed later.
         foreach(EditorBuildSettingsScene scene in EditorBuildSettings.scenes) {
             if(scene.enabled) optionDataList.Add(new TMP_Dropdown.OptionData(scene.path));
         }
+        #else
+        string[] scenes = {"MainMenu", "MovementDemo", "DialogueDemo", "HUD"};
+        foreach(string scene in scenes) {
+            optionDataList.Add(new TMP_Dropdown.OptionData(scene));
+        }
+        #endif
+
         loadDropdown.ClearOptions();
         loadDropdown.AddOptions(optionDataList);
     }
