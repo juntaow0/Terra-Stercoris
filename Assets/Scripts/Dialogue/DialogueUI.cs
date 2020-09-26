@@ -28,6 +28,11 @@ public class DialogueUI: MonoBehaviour
         buttonText = new List<Text>();
         DialogueBox = ui.transform.GetChild(0).GetChild(0).GetComponent<Canvas>();
         ChoiceBox = ui.transform.GetChild(1).GetChild(0).GetComponent<Canvas>();
+        Camera cam = FindObjectOfType<Camera>();
+        DialogueBox.worldCamera = cam;
+        DialogueBox.planeDistance = 5;
+        ChoiceBox.worldCamera = cam;
+        ChoiceBox.planeDistance = 5;
         DialogueBox.enabled = false;
         ChoiceBox.enabled = false;
         DialogueText = DialogueBox.transform.GetChild(0).GetChild(0).GetComponent<Text>();
@@ -75,6 +80,7 @@ public class DialogueUI: MonoBehaviour
         for (int i = 0; i < buttonCount; i++) {
             Conversation c = choices[i].conversation;
             buttonText[i].text = choices[i].text;
+            buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(()=> {
                 DialogueManager.instance.LoadConversation(c);
                 ResetButtons(buttonCount);
