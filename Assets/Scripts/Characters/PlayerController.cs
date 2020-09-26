@@ -92,14 +92,10 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Interact() {
-        if(!DialogueManager.InConversation) {
-            closestObject?.Interact();
-        }
+        closestObject?.Interact();
     }
 
     void StopInteract() {
-        if(!DialogueManager.InConversation) {
-            closestObject?.StopInteract();
-        }
+        closestObject?.StopInteract();
     }
 }
