@@ -99,6 +99,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2162991124908426010, guid: a5ce3b333dc3dcb4f871f6f589559a91,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 640
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162991124908426010, guid: a5ce3b333dc3dcb4f871f6f589559a91,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162991124908426011, guid: a5ce3b333dc3dcb4f871f6f589559a91,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ce3b333dc3dcb4f871f6f589559a91, type: 3}
 --- !u!4 &4344439973077056219 stripped
@@ -173,6 +188,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687224362155237713, guid: b295a5456d171524f8efe677e78a0157,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687224362155237714, guid: b295a5456d171524f8efe677e78a0157,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 640
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687224362155237714, guid: b295a5456d171524f8efe677e78a0157,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 360
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b295a5456d171524f8efe677e78a0157, type: 3}

@@ -194,6 +194,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &22925321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -464,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabdbaad6e60dd84f84b9dea91be5ff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hudFader: {fileID: 1458534153}
   maxPower: 100
 --- !u!114 &260250338
 MonoBehaviour:
@@ -988,6 +992,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &794445728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1452,6 +1459,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &938246063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1851,6 +1861,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1247316955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2024,6 +2037,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1f2a112ce49395d4db383edf647e589b, type: 3}
   - {fileID: 21300000, guid: b355853f7b089594e804c6ec3e2523c7, type: 3}
   - {fileID: 21300000, guid: 7abfa506b017b234b97ae14e25b21944, type: 3}
+  currentSprite: {fileID: 0}
   FadeIn: 0
   powerbar: {fileID: 260250337}
 --- !u!114 &1458534154
@@ -2354,6 +2368,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1830304780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2966,6 +2983,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 868238782}
+    - target: {fileID: 8098621255700291832, guid: 5cc9cbf555827b84ca12629e4a27982d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8098621255700291835, guid: 5cc9cbf555827b84ca12629e4a27982d,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -12,13 +12,20 @@ public class DialogueController : MonoBehaviour
     }
 
     public void NextSentence() {
-        DialogueManager.instance.DisplaySentence();
+        if(DialogueManager.InConversation) {
+            DialogueManager.instance.DisplaySentence();
+        }
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            NextSentence();
-        }
+    void OnEnable() {
+        InputManager.OnNextDialogue += NextSentence;
+    }
+
+    void OnDisable() {
+        InputManager.OnNextDialogue -= NextSentence;
+    }
+
+    void OnDestroy() {
+        InputManager.OnNextDialogue -= NextSentence;
     }
 }

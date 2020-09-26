@@ -32,18 +32,21 @@ public class PlayerController : MonoBehaviour {
 
     void OnEnable() {
         InputManager.OnInteract += Interact;
+        InputManager.OnStopInteract += StopInteract;
         _characterController.health.OnResourceUpdated += UpdateHealth;
         _characterController.energy.OnResourceUpdated += UpdateEnergy;
     }
 
     void OnDisable() {
         InputManager.OnInteract -= Interact;
+        InputManager.OnStopInteract -= StopInteract;
         _characterController.health.OnResourceUpdated -= UpdateHealth;
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
 
     private void OnDestroy() {
         InputManager.OnInteract -= Interact;
+        InputManager.OnStopInteract -= StopInteract;
         _characterController.health.OnResourceUpdated -= UpdateHealth;
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
@@ -84,12 +87,19 @@ public class PlayerController : MonoBehaviour {
             closestObject?.DisplayTooltip();
         } else {
             InputManager.instance.tooltip.gameObject.SetActive(false);
+            closestObject = null;
         }
     }
 
     void Interact() {
-        if(closestObject != null) {
-            closestObject.Interact();
+        if(!DialogueManager.InConversation) {
+            closestObject?.Interact();
+        }
+    }
+
+    void StopInteract() {
+        if(!DialogueManager.InConversation) {
+            closestObject?.StopInteract();
         }
     }
 }
