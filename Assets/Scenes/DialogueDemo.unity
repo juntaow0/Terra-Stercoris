@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSpacing: 10
+  CharacterPerSecond: 100
 --- !u!114 &219556788
 MonoBehaviour:
   m_ObjectHideFlags: 0

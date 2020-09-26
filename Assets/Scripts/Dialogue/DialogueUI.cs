@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class DialogueUI: MonoBehaviour
 {
     public float buttonSpacing;
+    public float CharacterPerSecond;
     private GameObject buttonPrefab;
     private Canvas DialogueBox;
     private Canvas ChoiceBox;
@@ -15,6 +17,7 @@ public class DialogueUI: MonoBehaviour
     private List<Button> buttons;
     private List<RectTransform> buttonTransforms;
     private List<Text> buttonText;
+    private WaitForSecondsRealtime characterSpeed;
 
     public void InitializeUI(GameObject UIPrefab, GameObject UIButton) {
         GameObject ui = Instantiate(UIPrefab);
@@ -29,6 +32,7 @@ public class DialogueUI: MonoBehaviour
         DialogueText = DialogueBox.transform.GetChild(0).GetChild(0).GetComponent<Text>();
         Speaker = DialogueBox.transform.GetChild(0).GetChild(1).GetComponent<Text>();
         existingButton = 0;
+        characterSpeed = new WaitForSecondsRealtime(1/CharacterPerSecond);
     }
     public void toggleDialogueBox(bool state) {
         DialogueBox.enabled = state;
@@ -38,9 +42,18 @@ public class DialogueUI: MonoBehaviour
         ChoiceBox.enabled = state;
     }
 
-    private void ShowSentence(string sentence, string name) {
-        DialogueText.text = sentence;
+    IEnumerator TypeCharacters(string sentence, Action onComplete) {
+        DialogueText.text = "";
+        foreach (char c in sentence) {
+            DialogueText.text += c;
+            yield return characterSpeed;
+        }
+        onComplete?.Invoke();
+    }
+
+    private void ShowSentence(string sentence, string name, Action onComplete) {
         Speaker.text = name + ":";
+        StartCoroutine(TypeCharacters(sentence, onComplete));
     }
 
     private void BindChoices(Choice[] choices) {
