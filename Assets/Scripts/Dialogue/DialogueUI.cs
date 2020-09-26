@@ -18,6 +18,7 @@ public class DialogueUI: MonoBehaviour
     private List<RectTransform> buttonTransforms;
     private List<Text> buttonText;
     private WaitForSecondsRealtime characterSpeed;
+    private bool skip;
 
     public void InitializeUI(GameObject UIPrefab, GameObject UIButton) {
         GameObject ui = Instantiate(UIPrefab);
@@ -33,6 +34,7 @@ public class DialogueUI: MonoBehaviour
         Speaker = DialogueBox.transform.GetChild(0).GetChild(1).GetComponent<Text>();
         existingButton = 0;
         characterSpeed = new WaitForSecondsRealtime(1/CharacterPerSecond);
+        skip = false;
     }
     public void toggleDialogueBox(bool state) {
         DialogueBox.enabled = state;
@@ -45,6 +47,11 @@ public class DialogueUI: MonoBehaviour
     IEnumerator TypeCharacters(string sentence, Action onComplete) {
         DialogueText.text = "";
         foreach (char c in sentence) {
+            if (skip) {
+                DialogueText.text = sentence;
+                skip = false;
+                break;
+            }
             DialogueText.text += c;
             yield return characterSpeed;
         }
@@ -54,6 +61,10 @@ public class DialogueUI: MonoBehaviour
     private void ShowSentence(string sentence, string name, Action onComplete) {
         Speaker.text = name + ":";
         StartCoroutine(TypeCharacters(sentence, onComplete));
+    }
+
+    private void SkipAnimation() {
+        skip = true;
     }
 
     private void BindChoices(Choice[] choices) {
@@ -103,10 +114,12 @@ public class DialogueUI: MonoBehaviour
     private void OnDisable() {
         DialogueManager.OnTrigger -= ShowSentence;
         DialogueManager.OnChoice -= BindChoices;
+        DialogueManager.OnSkip -= SkipAnimation;
     }
 
     private void OnEnable() {
         DialogueManager.OnTrigger += ShowSentence;
         DialogueManager.OnChoice += BindChoices;
+        DialogueManager.OnSkip += SkipAnimation;
     }
 }

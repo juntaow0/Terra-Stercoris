@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
     public static event Action<string, string, Action> OnTrigger;
     public static event Action<Choice[]> OnChoice;
+    public static event Action OnSkip;
     public GameObject UIPrefab;
     public GameObject buttonPrefab;
     private DialogueUI dialogueUI;
@@ -80,6 +81,9 @@ public class DialogueManager : MonoBehaviour
                         state = DialogueState.Idle;
                     }
                 });
+                return;
+            case DialogueState.Busy:
+                OnSkip?.Invoke();
                 return;
             case DialogueState.EndReached:
                 RunEndAction();
