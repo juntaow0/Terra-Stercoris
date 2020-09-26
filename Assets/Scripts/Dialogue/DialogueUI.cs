@@ -91,7 +91,7 @@ public class DialogueUI: MonoBehaviour
 
     private void ArrangeButtons(int count) {
         float buttonHeight = buttons[0].GetComponent<RectTransform>().rect.height;
-        float startPos = -220 + ((buttonHeight * count + buttonSpacing * (count - 1))/2)- (buttonHeight/2);
+        float startPos = -80 + ((buttonHeight * count + buttonSpacing * (count - 1))/2)- (buttonHeight/2);
         float offset = buttonSpacing + buttonHeight;
         for (int i = 0; i < count; i++) {
             buttonTransforms[i].anchoredPosition = new Vector2(0,startPos+i*offset*-1);
