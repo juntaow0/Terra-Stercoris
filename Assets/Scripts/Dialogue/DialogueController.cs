@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
-    public Conversation initialConversation;
 
-    void Start(){
-        StartConversation(); // temp
-    }
+    public Conversation initialConversation;
 
     public void StartConversation() {
         DialogueManager.instance.LoadConversation(initialConversation);
@@ -20,7 +17,7 @@ public class DialogueController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0)) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             NextSentence();
         }
     }

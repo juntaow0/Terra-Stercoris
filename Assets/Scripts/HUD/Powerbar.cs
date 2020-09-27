@@ -12,26 +12,28 @@ using UnityEngine.UI;
 
 public class Powerbar : MonoBehaviour
 {
-    public Slider slider;
-    public int currentPower;
+    private Slider slider;
+    private HUDFader hudFader;
     public int maxPower;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        maxPower = 100;
-        currentPower = maxPower;
+    private void Awake() {
+        slider = GetComponent<Slider>();
+        hudFader = GetComponent<HUDFader>();
+    }
+
+    public void bindPowerBar(int maxPower, int currentPower) {
         slider.maxValue = maxPower;
         slider.value = currentPower;
-        updatePowerBarUI();
     }
 
-    private void updatePowerBarUI()
+    public void updatePowerBarUI(int amount)
     //changes the graphical appearance of the powerbar
     {
-        slider.value = currentPower;
+        slider.value = amount;
+        hudFader.SwapSprite(amount);
     }
 
+    /*
     public void gainPower(int gain)
     //Call to gain power
     {
@@ -74,4 +76,5 @@ public class Powerbar : MonoBehaviour
     {
         return currentPower;
     }
+    */
 }

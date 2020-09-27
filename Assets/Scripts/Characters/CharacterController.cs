@@ -45,8 +45,24 @@ public class CharacterController : MonoBehaviour {
         return health.quantity;
     }
 
-    public void Damage(int damage) {
-        health.quantity -= damage;
+    public void AddHealth(int amount) {
+        health.quantity += amount;
+    }
+
+    public void SetHealth(int newHealth) {
+        health.quantity = newHealth;
+    }
+
+    public int GetEnergy() {
+        return energy.quantity;
+    }
+
+    public void AddEnergy(int amount) {
+        energy.quantity += amount;
+    }
+
+    public void SetEnergy(int newEnergy) {
+        energy.quantity = newEnergy;
     }
 
     public void Kill() {
