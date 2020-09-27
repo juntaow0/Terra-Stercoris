@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//THE ONLY FUNCTION USED IS UPDATE GUI, EVERYTHING ELSE IS ALREADY ACCOUNTED FOR BY NUMERICALRESOURCE
+
 /* Useful functions:
  * gainHealth(int gain) - increases health by gain
  * loseHealth(int loss) - decreases health by loss
