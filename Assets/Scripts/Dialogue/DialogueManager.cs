@@ -3,13 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum DialogueState {
-    Idle,
-    Busy,
-    EndReached,
-    WaitforChoice
-}
-
 [RequireComponent(typeof(DialogueUI))]
 public class DialogueManager : MonoBehaviour
 {
