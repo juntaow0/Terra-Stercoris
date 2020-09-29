@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<Sentence> sentences;
     private Conversation currentConversation;
     private DialogueState state;
+    public static bool InConversation {get; private set;} = false;
 
     private void Awake() {
         if (instance!=null && instance != this) {
@@ -47,6 +48,7 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueUI.toggleDialogueBox(true);
         state = DialogueState.Idle;
+        InConversation = true;
         DisplaySentence();
     }
 
@@ -54,6 +56,7 @@ public class DialogueManager : MonoBehaviour
         switch (currentConversation.endAction) {
             case EndAction.NONE:
                 dialogueUI.toggleDialogueBox(false);
+                InConversation = false;
                 break;
             case EndAction.CHOICE:
                 dialogueUI.toggleChoices(true);

@@ -17,6 +17,8 @@ public class InputManager : MonoBehaviour
     public static event Action OnEscape;
     public static event Action OnEnter;
     public static event Action OnInteract;
+    public static event Action OnStopInteract; // Used for actions when holding down interact key
+    public static event Action OnNextDialogue;
 
     public Tooltip tooltip;
 
@@ -39,15 +41,28 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
-        Horizontal = Input.GetAxisRaw("Horizontal");
-        Vertical = Input.GetAxisRaw("Vertical");
         // more to be added based on need
 
         if(Input.GetKeyDown(PAUSE)) {
             OnPause?.Invoke();
         }
-        if(Input.GetKeyDown(INTERACT)) {
-            OnInteract?.Invoke();
+
+        if(!DialogueManager.InConversation) {
+            Horizontal = Input.GetAxisRaw("Horizontal");
+            Vertical = Input.GetAxisRaw("Vertical");
+            if(Input.GetKeyDown(INTERACT)) {
+                OnInteract?.Invoke();
+            }
+            if(Input.GetKeyUp(INTERACT)) {
+                OnStopInteract?.Invoke();
+            }
+        } else {
+            Horizontal = 0;
+            Vertical = 0;
+
+            if(Input.GetKeyDown(INTERACT) || Input.GetKeyDown(KeyCode.Space)) {
+                OnNextDialogue?.Invoke();
+            }
         }
     }
 }

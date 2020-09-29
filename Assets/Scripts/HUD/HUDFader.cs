@@ -13,9 +13,12 @@ public class HUDFader : MonoBehaviour
     private float currentFadeTime;
     public Image hudImage;
     public Sprite[] SpriteArray;
+    public Sprite currentSprite;
     private Color C;
     public bool FadeIn;
     public Powerbar powerbar;
+
+    private const int MAX_POWER = 100; // Link this to max power
 
     void Start()
     {
@@ -23,20 +26,11 @@ public class HUDFader : MonoBehaviour
         currentFadeTime = fadeTime;
         C = hudImage.color;
         FadeIn = true;
+        SwapSprite(100); // Link this instead to the starting power
     }
 
     public void SwapSprite(int currentPower) {
-        if (currentPower < 20) {
-            hudImage.sprite = SpriteArray[0];
-        } else if (currentPower >= 20 && currentPower < 40) {
-            hudImage.sprite = SpriteArray[1];
-        } else if (currentPower >= 40 && currentPower < 60) {
-            hudImage.sprite = SpriteArray[2];
-        } else if (currentPower >= 60 && currentPower < 80) {
-            hudImage.sprite = SpriteArray[3];
-        } else if (currentPower >= 80) {
-            hudImage.sprite = SpriteArray[4];
-        }
+        currentSprite = SpriteArray[(currentPower-1) / (MAX_POWER / SpriteArray.Length)];
     }
 
     void Update()
@@ -48,6 +42,8 @@ public class HUDFader : MonoBehaviour
             {
                 FadeIn = false;
                 currentFadeTime = 0;
+                // Only update sprite on begin of fade in
+                hudImage.sprite = currentSprite;
             }
             else
             {

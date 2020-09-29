@@ -13,12 +13,11 @@ using UnityEngine.UI;
 public class Powerbar : MonoBehaviour
 {
     private Slider slider;
-    private HUDFader hudFader;
+    [SerializeField] private HUDFader hudFader = null;
     public int maxPower;
 
     private void Awake() {
         slider = GetComponent<Slider>();
-        hudFader = GetComponent<HUDFader>();
     }
 
     public void bindPowerBar(int maxPower, int currentPower) {
@@ -30,7 +29,7 @@ public class Powerbar : MonoBehaviour
     //changes the graphical appearance of the powerbar
     {
         slider.value = amount;
-        hudFader.SwapSprite(amount);
+        hudFader?.SwapSprite(amount);
     }
 
     /*
