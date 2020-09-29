@@ -60,7 +60,7 @@ public class InputManager : MonoBehaviour
             Horizontal = 0;
             Vertical = 0;
 
-            if(Input.GetKeyDown(INTERACT) || Input.GetKeyDown(KeyCode.Space)) {
+            if(Input.GetKeyDown(INTERACT) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
                 OnNextDialogue?.Invoke();
             }
         }
