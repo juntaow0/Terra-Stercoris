@@ -11,18 +11,22 @@ public class NPCController : MonoBehaviour {
     }
 
     void OnEnable() {
-        _characterController.health.OnResourceUpdated += DisplayHealth;
+        _characterController.health.OnResourceUpdated += HealthUpdate;
     }
 
     void OnDisable() {
-        _characterController.health.OnResourceUpdated -= DisplayHealth;
+        _characterController.health.OnResourceUpdated -= HealthUpdate;
     }
 
     void OnDestroy() {
-        _characterController.health.OnResourceUpdated -= DisplayHealth;
+        _characterController.health.OnResourceUpdated -= HealthUpdate;
     }
 
-    void DisplayHealth(int amount) {
-        Debug.Log("Health: " + amount);
+    void HealthUpdate(int health) {
+        Debug.Log("Health: " + health);
+        if(health <= 0) {
+            // Placeholder
+            Destroy(gameObject);
+        }
     }
 }

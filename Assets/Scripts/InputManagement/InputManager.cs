@@ -14,6 +14,8 @@ public class InputManager : MonoBehaviour
     public static event Action OnPause;
     public static event Action OnMouseClickLeft;
     public static event Action OnMouseClickRight;
+    public static event Action OnMouseDownLeft;
+    public static event Action OnMouseDownRight;
     public static event Action OnEscape;
     public static event Action OnEnter;
     public static event Action OnInteract;
@@ -58,6 +60,9 @@ public class InputManager : MonoBehaviour
             }
             if(Input.GetMouseButtonDown(0)) {
                 OnMouseClickLeft?.Invoke();
+            }
+            if(Input.GetMouseButton(0)) {
+                OnMouseDownLeft?.Invoke();
             }
         } else {
             Horizontal = 0;

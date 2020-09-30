@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item {
+[CreateAssetMenu(fileName = "New Item", menuName = "Items/Generic Item")]
+public class Item : ScriptableObject {
 
-    public string name {get; protected set;}
-
-    public Item(string name) {
-        this.name = name;
-    }
+    public string name;
 }

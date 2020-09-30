@@ -16,6 +16,12 @@ public struct Choice {
     public Conversation conversation;
 }
 
+// Weapon
+public enum WeaponType {
+        MELEE,
+        RANGED
+}
+
 // Conversation
 public enum EndAction {
     NONE,

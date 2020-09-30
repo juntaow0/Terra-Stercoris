@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
     void OnEnable() {
         InputManager.OnInteract += Interact;
         InputManager.OnStopInteract += StopInteract;
-        InputManager.OnMouseClickLeft += Attack;
+        InputManager.OnMouseDownLeft += Attack;
         _characterController.health.OnResourceUpdated += UpdateHealth;
         _characterController.energy.OnResourceUpdated += UpdateEnergy;
     }
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour {
     void OnDisable() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseClickLeft -= Attack;
+        InputManager.OnMouseDownLeft -= Attack;
         _characterController.health.OnResourceUpdated -= UpdateHealth;
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour {
     private void OnDestroy() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseClickLeft -= Attack;
+        InputManager.OnMouseDownLeft -= Attack;
         _characterController.health.OnResourceUpdated -= UpdateHealth;
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour {
             foreach (Collider2D collider in colliders) {
                 if (collider != _collider) {
                     float distance = collider.Distance(_collider).distance;
-                    if (distance < lastDistance) {
+                    if (distance < lastDistance && collider.GetComponent<InteractableObject>() != null) {
                         lastDistance = distance;
                         closest = collider;
                     }

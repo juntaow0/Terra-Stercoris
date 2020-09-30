@@ -49,6 +49,11 @@ public class CharacterController : MonoBehaviour {
         health.quantity += amount;
     }
 
+    public void Damage(int amount) {
+        health.quantity -= amount;
+        // Potentially add damage animation or event.
+    }
+
     public void SetHealth(int newHealth) {
         health.quantity = newHealth;
     }
