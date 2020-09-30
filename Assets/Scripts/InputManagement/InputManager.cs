@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 // this class might not be necessary
@@ -58,10 +59,10 @@ public class InputManager : MonoBehaviour
             if(Input.GetKeyUp(INTERACT)) {
                 OnStopInteract?.Invoke();
             }
-            if(Input.GetMouseButtonDown(0)) {
+            if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject()) {
                 OnMouseClickLeft?.Invoke();
             }
-            if(Input.GetMouseButton(0)) {
+            if(Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject()) {
                 OnMouseDownLeft?.Invoke();
             }
         } else {

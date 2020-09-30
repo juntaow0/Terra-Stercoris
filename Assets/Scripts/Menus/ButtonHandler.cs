@@ -71,6 +71,8 @@ public class ButtonHandler : MonoBehaviour {
         } else { // Resume game otherwise
             canvas.enabled = false;
             Time.timeScale = lastTimeScale;
+            InputManager.OnPause -= StartGame;
+            InputManager.OnPause += PauseGame;
         }
     }
 
@@ -78,6 +80,8 @@ public class ButtonHandler : MonoBehaviour {
         lastTimeScale = Time.timeScale;
         Time.timeScale = 0f;
         canvas.enabled = true;
+        InputManager.OnPause -= PauseGame;
+        InputManager.OnPause += StartGame;
     }
 
     public void GoBack() {
