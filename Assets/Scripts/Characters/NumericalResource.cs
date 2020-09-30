@@ -1,11 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-public enum ResourceType {
-    Health,
-    Energy
-}
-
 public class NumericalResource {
     public event Action<int> OnResourceUpdated;
 
