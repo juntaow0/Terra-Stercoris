@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour {
     private void Start() {
         _healthBar.bindHealthBar(_characterController.health.max,_characterController.GetHealth());
         _powerBar.bindPowerBar(_characterController.energy.max, _characterController.GetEnergy());
+
+        StartCoroutine(checkInteractable());
     }
 
     void OnEnable() {
@@ -69,25 +71,36 @@ public class PlayerController : MonoBehaviour {
         Vector2 rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         _characterController.SetSpriteRotation((NUM_ROTATIONS + (int) Mathf.Round(Mathf.Atan2(rotation.y, rotation.x) /
                 (2*Mathf.PI) * NUM_ROTATIONS)) % NUM_ROTATIONS);
+    }
 
-        Collider2D closest = null;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
-        float lastDistance = float.MaxValue;
-        foreach (Collider2D collider in colliders) {
-            if (collider != _collider) {
-                float distance = collider.Distance(_collider).distance;
-                if (distance < lastDistance) {
-                    lastDistance = distance;
-                    closest = collider;
+    IEnumerator checkInteractable() {
+
+        while(true) {
+            Collider2D closest = null;
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactRadius);
+            float lastDistance = float.MaxValue;
+            foreach (Collider2D collider in colliders) {
+                if (collider != _collider) {
+                    float distance = collider.Distance(_collider).distance;
+                    if (distance < lastDistance) {
+                        lastDistance = distance;
+                        closest = collider;
+                    }
                 }
             }
-        }
-        if(closest != null) {
-            closestObject = closest.gameObject.GetComponent<InteractableObject>();
-            closestObject?.DisplayTooltip();
-        } else {
-            InputManager.instance.tooltip.gameObject.SetActive(false);
-            closestObject = null;
+            if(closest == null) {
+                if(closestObject != null) {
+                    closestObject = null;
+                    InputManager.instance.tooltip.Hide();
+                }
+            } else {
+                if(closest.gameObject != closestObject?.gameObject) {
+                    closestObject = closest.gameObject.GetComponent<InteractableObject>();
+                    InputManager.instance.tooltip.Show(closestObject);
+                }
+            }
+
+            yield return new WaitForSeconds(0.05f);
         }
     }
 

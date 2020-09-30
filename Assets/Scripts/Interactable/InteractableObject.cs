@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour {
 
-    [SerializeField] private string message;
+    [SerializeField] public string message;
     [SerializeField] private UnityEvent interactAction;
     [SerializeField] private UnityEvent stopInteractAction;
 
@@ -15,11 +15,5 @@ public class InteractableObject : MonoBehaviour {
 
     public void StopInteract() {
         stopInteractAction?.Invoke();
-    }
-
-    public void DisplayTooltip() {
-        InputManager.instance.tooltip.gameObject.SetActive(true);
-        InputManager.instance.tooltip.SetText(message);
-        InputManager.instance.tooltip.transform.position = transform.position;
     }
 }
