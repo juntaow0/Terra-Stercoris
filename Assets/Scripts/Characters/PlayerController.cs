@@ -12,9 +12,12 @@ public class PlayerController : MonoBehaviour {
     // Declare components for caching
     [SerializeField] private Camera _mainCamera = null;
     [SerializeField] private CharacterController _characterController = null;
+    [SerializeField] private CombatController _combatController = null;
     [SerializeField] private Healthbar _healthBar = null;
     [SerializeField] private Powerbar _powerBar = null;
     private Collider2D _collider = null;
+
+    private Vector2 _characterRotation;
 
     private InteractableObject closestObject = null;
 
@@ -22,6 +25,7 @@ public class PlayerController : MonoBehaviour {
         // Override components if they haven't been set in the inspector
         if (_mainCamera == null) _mainCamera = Camera.main;
         if (_characterController == null) _characterController = GetComponent<CharacterController>();
+        if (_combatController == null) _combatController = GetComponent<CombatController>();
         if (_collider == null) _collider = GetComponent<Collider2D>();
     }
 
@@ -35,6 +39,7 @@ public class PlayerController : MonoBehaviour {
     void OnEnable() {
         InputManager.OnInteract += Interact;
         InputManager.OnStopInteract += StopInteract;
+        InputManager.OnMouseClickLeft += Attack;
         _characterController.health.OnResourceUpdated += UpdateHealth;
         _characterController.energy.OnResourceUpdated += UpdateEnergy;
     }
@@ -42,6 +47,7 @@ public class PlayerController : MonoBehaviour {
     void OnDisable() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
+        InputManager.OnMouseClickLeft -= Attack;
         _characterController.health.OnResourceUpdated -= UpdateHealth;
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
@@ -49,8 +55,13 @@ public class PlayerController : MonoBehaviour {
     private void OnDestroy() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
+        InputManager.OnMouseClickLeft -= Attack;
         _characterController.health.OnResourceUpdated -= UpdateHealth;
         _characterController.energy.OnResourceUpdated -= UpdateEnergy;
+    }
+
+    void Attack() {
+        _combatController.Attack(_characterRotation);
     }
 
     void UpdateHealth(int newHealth) {
@@ -68,9 +79,9 @@ public class PlayerController : MonoBehaviour {
         _characterController.Move(inputAxis.normalized * _characterController.GetSpeed());
 
         // Update character rotation (angle of mouse relative to player)
-        Vector2 rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        _characterController.SetSpriteRotation((NUM_ROTATIONS + (int) Mathf.Round(Mathf.Atan2(rotation.y, rotation.x) /
-                (2*Mathf.PI) * NUM_ROTATIONS)) % NUM_ROTATIONS);
+        _characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        _characterController.SetSpriteRotation((NUM_ROTATIONS + (int) Mathf.Round(Mathf.Atan2(_characterRotation.y, _characterRotation.x) /
+                (2*Mathf.PI) * NUM_ROTATIONS)) % NUM_ROTATIONS);        
     }
 
     IEnumerator checkInteractable() {

@@ -56,6 +56,9 @@ public class InputManager : MonoBehaviour
             if(Input.GetKeyUp(INTERACT)) {
                 OnStopInteract?.Invoke();
             }
+            if(Input.GetMouseButtonDown(0)) {
+                OnMouseClickLeft?.Invoke();
+            }
         } else {
             Horizontal = 0;
             Vertical = 0;
