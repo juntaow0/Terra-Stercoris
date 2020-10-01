@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
-
     public Conversation initialConversation;
 
     public void StartConversation() {
