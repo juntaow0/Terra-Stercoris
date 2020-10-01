@@ -4,25 +4,36 @@ using UnityEngine;
 
 public class CombatController : MonoBehaviour {
 
-    [SerializeField] private WeaponBase baseWeapon;
     private Rigidbody2D _body;
-    private Weapon currentWeapon = null;
+    [SerializeField] private Weapon currentWeapon = null;
+    [SerializeField] private float spawnDistance = 0.085f;
     private bool onCooldown = false;
 
     void Start() {
-        currentWeapon = new Weapon(baseWeapon);
         _body = GetComponent<Rigidbody2D>();
     }
 
+    public void SetWeapon(WeaponBase baseWeapon) {
+        SetWeapon(new Weapon(baseWeapon));
+    }
+
+    public void SetWeapon(Weapon weapon) {
+        currentWeapon = weapon;
+    }
+
+    public Weapon GetWeapon() {
+        return currentWeapon;
+    }
+
     public void Attack(Vector2 direction) {
-        if(onCooldown) return;
+        if(currentWeapon == null || onCooldown) return;
 
         StartCoroutine(WaitForCooldown());
         switch(currentWeapon.type) {
             case WeaponType.RANGED:
                 Projectile proj = currentWeapon.GetProjectile();
                 proj.gameObject.SetActive(true);
-                proj.Fire(transform.position, direction, _body.velocity, gameObject);
+                proj.Fire((Vector2) transform.position + direction.normalized * spawnDistance, direction, _body.velocity, gameObject);
                 break;
             case WeaponType.MELEE:
                 RaycastHit2D hit = Physics2D.Linecast(transform.position, ((Vector2) transform.position) + direction.normalized * currentWeapon.range);

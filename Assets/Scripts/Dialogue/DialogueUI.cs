@@ -40,6 +40,7 @@ public class DialogueUI: MonoBehaviour
         existingButton = 0;
         characterSpeed = new WaitForSecondsRealtime(1/CharacterPerSecond);
         skip = false;
+        DontDestroyOnLoad(ui);
     }
     public void toggleDialogueBox(bool state) {
         DialogueBox.enabled = state;

@@ -20,13 +20,12 @@ public class Tooltip : MonoBehaviour {
         if(textObject == null) textObject = GetComponent<TMPro.TextMeshProUGUI>();
         backgroundPanel.color = Color.clear;
         textObject.color = Color.clear;
+
+        StartCoroutine(fade());
     }
 
     public void Show(InteractableObject newObject) {
         targetObject = newObject;
-        if(currentObject == null || fadeProgress >= fadeTime) {
-            StartCoroutine(fade());
-        }
     }
 
     public void Hide() {
@@ -35,7 +34,7 @@ public class Tooltip : MonoBehaviour {
 
     private IEnumerator fade() {
 
-        while(currentObject != null || targetObject != null) {
+        while(true) {
             if(fadeProgress <= 0) {
                 currentObject = targetObject;
                 if(targetObject != null) {
@@ -56,11 +55,6 @@ public class Tooltip : MonoBehaviour {
 
             backgroundPanel.color = Color.Lerp(Color.clear, backgroundColor, fadeProgress / fadeTime);
             textObject.color = Color.Lerp(Color.clear, textColor, fadeProgress / fadeTime);
-
-            if(fadeProgress >= fadeTime) {
-                fadeProgress = fadeTime;
-                break;
-            }
 
             yield return null;
         }

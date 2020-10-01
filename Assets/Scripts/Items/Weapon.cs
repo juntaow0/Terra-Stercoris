@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Weapon {
 
     public string name;
@@ -24,13 +25,17 @@ public class Weapon {
         speed = weapon.speed;
         projectileSprite = weapon.projectileSprite;
 
-        projectiles = new List<Projectile>();
-        projectiles.Add(CreateProjectile());
+        if(type == WeaponType.RANGED) {
+            projectiles = new List<Projectile>();
+        }
     }
 
     public Projectile GetProjectile() {
 
-        if(projectiles[_nextShot].gameObject.activeSelf) {
+        if(projectiles.Count == 0) {
+            projectiles.Add(CreateProjectile());
+            _nextShot = 0;
+        } else if(projectiles[_nextShot].gameObject.activeSelf) {
             _nextShot = (_nextShot + 1) % projectiles.Count;
             if(projectiles[_nextShot].gameObject.activeSelf) {
                 _nextShot = projectiles.Count;
@@ -59,5 +64,11 @@ public class Weapon {
         projectileComponent.Setup(speed, range, damage, rigidbody);
 
         return projectileComponent;
+    }
+
+    public void ClearProjectiles() {
+        foreach(Projectile proj in projectiles) {
+            Object.Destroy(proj.gameObject);
+        }
     }
 }

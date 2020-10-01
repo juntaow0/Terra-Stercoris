@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 // TODO: Potentially split all of these into their own scripts for each menu
 
-public class ButtonHandler : MonoBehaviour {
+public class MainMenuController : MonoBehaviour {
 
     [SerializeField] private string START_SCENE = "main";
     [SerializeField] private string menuScene = "MainMenu";
@@ -64,16 +64,11 @@ public class ButtonHandler : MonoBehaviour {
         InputManager.OnPause -= PauseGame;
     }
 
-    public void StartGame() {
-        // Start game if main menu
-        if(currentScene == menuScene) {
-            SceneManager.LoadScene(START_SCENE);
-        } else { // Resume game otherwise
-            canvas.enabled = false;
-            Time.timeScale = lastTimeScale;
-            InputManager.OnPause -= StartGame;
-            InputManager.OnPause += PauseGame;
-        }
+    public void ResumeGame() {
+        canvas.enabled = false;
+        Time.timeScale = lastTimeScale;
+        InputManager.OnPause -= ResumeGame;
+        InputManager.OnPause += PauseGame;
     }
 
     public void PauseGame() {
@@ -81,7 +76,7 @@ public class ButtonHandler : MonoBehaviour {
         Time.timeScale = 0f;
         canvas.enabled = true;
         InputManager.OnPause -= PauseGame;
-        InputManager.OnPause += StartGame;
+        InputManager.OnPause += ResumeGame;
     }
 
     public void GoBack() {
@@ -100,7 +95,9 @@ public class ButtonHandler : MonoBehaviour {
         } else {
             // Reset timescale
             Time.timeScale = lastTimeScale;
-            SceneManager.LoadScene(menuScene);
+            TransitionManager.instance.LoadScene(menuScene);
+            ResetMenu();
+            ResumeGame();
         }
     }
 
@@ -112,6 +109,17 @@ public class ButtonHandler : MonoBehaviour {
     }
 
     public void Load() {
-        SceneManager.LoadScene(loadDropdown.captionText.text);
+        TransitionManager.instance.LoadScene(loadDropdown.captionText.text);
+        ResetMenu();
+        ResumeGame();
+    }
+
+    public void ResetMenu() {
+        if(currentMenu != mainMenu) {
+            currentMenu.SetActive(false);
+            previousMenus.Clear();
+            currentMenu = mainMenu;
+            mainMenu.SetActive(true);
+        }
     }
 }
