@@ -59,17 +59,20 @@ public class DialogueManager : MonoBehaviour
                 LoadConversation(currentConversation.nextConversation);
                 break;
             case EndAction.EVENT:
-                currentConversation.endEvent?.Invoke();
+                string message = currentConversation.sendMessage.message;
+                gameObject.SendMessage(message);
+                dialogueUI.toggleDialogueBox(false);
+                InConversation = false;
                 break;
         }
     }
 
     public void DisplaySentence() {
-        switch (state) {
+        switch (state) {        
             case DialogueState.Idle:
-                state = DialogueState.Busy;
                 Sentence s = sentences.Dequeue();
                 string name = currentConversation.speakers[s.speakerIndex];
+                state = DialogueState.Busy;
                 OnTrigger?.Invoke(s.sentence, name, () => {
                     if (sentences.Count < 1) {
                         state = DialogueState.EndReached;
