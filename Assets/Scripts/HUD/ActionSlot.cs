@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 public class ActionSlot : MonoBehaviour
@@ -11,7 +9,7 @@ public class ActionSlot : MonoBehaviour
  */ 
 {
     //make the action array a scriptable object
-    public Action wrench;
+    public ActionTemplate wrench;
     public string currentAction;
     float cooldown;
 
@@ -35,7 +33,7 @@ public class ActionSlot : MonoBehaviour
             cooldown -= Time.deltaTime;
             if (cooldown < 0.0)
             {
-                cooldown = 0.0;
+                cooldown = 0.0f;
             }
         }
     }
@@ -65,7 +63,7 @@ public class ActionSlot : MonoBehaviour
         }
         else //When we try to use an ability that is on cooldown, we trigger a sound and a visual effect
         {
-            Debug.Log("That ability is on cooldown! You need to wait a little longer.")
+            Debug.Log("That ability is on cooldown! You need to wait a little longer.");
             //Note: Eventually add sound and a visual effect here
         }
     }

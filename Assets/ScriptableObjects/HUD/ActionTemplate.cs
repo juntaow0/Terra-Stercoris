@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "newAction", menuName = "Action"]
-public class Action : ScriptableObject
+[CreateAssetMenu(fileName = "newAction", menuName = "ActionTemplate")]
+public class ActionTemplate : ScriptableObject
 {
     public new string name; //The the name of the action
     public Sprite icon; //The icon that represents the action in the menu

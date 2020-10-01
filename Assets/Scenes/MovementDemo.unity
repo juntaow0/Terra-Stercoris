@@ -1754,7 +1754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRadius: 2.5
   _mainCamera: {fileID: 868238782}
-  _characterController: {fileID: 1124937186}
+  _characterController: {fileID: 0}
   _healthBar: {fileID: 2028588313}
   _powerBar: {fileID: 260250337}
 --- !u!50 &1124937188
