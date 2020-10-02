@@ -12,7 +12,7 @@ public class ActionSlot : MonoBehaviour
 {
     //make the action array a scriptable object
     public Action wrench;
-    public String currentAction;
+    public string currentAction;
     float cooldown;
 
     //1. Have a container full of possible items or abilities
@@ -33,23 +33,23 @@ public class ActionSlot : MonoBehaviour
         if (cooldown > 0) //Cool down a use of an action
         {
             cooldown -= Time.deltaTime;
-            if (cooldown < 0)
+            if (cooldown < 0.0)
             {
-                cooldown = 0;
+                cooldown = 0.0;
             }
         }
     }
 
-    void changeAction(String newAction)
+    void changeAction(string newAction)
     //Changes the current action available to use on the action slot
     {
-    
+        currentAction = newAction;
     }
 
     public void useAction()
     //Called by Input Manager to use the current slotted ability
     {
-        if (cooldown == 0) //We can only use an action if it is not on cooldown
+        if (cooldown == 0.0) //We can only use an action if it is not on cooldown
         {
             if (currentAction == wrench.name)
             {
