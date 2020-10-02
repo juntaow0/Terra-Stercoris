@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour {
         characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
 
-    void Attack() {
+    public void Attack() {
         combatController.Attack(_characterRotation);
     }
 

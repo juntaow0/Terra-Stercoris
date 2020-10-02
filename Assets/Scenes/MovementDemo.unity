@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -158,7 +158,7 @@ MonoBehaviour:
   _movementSpeed: 10
   _spriteRotation: 0
   _body: {fileID: 18382601}
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 18382602}
 --- !u!58 &18382600
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -290,9 +290,9 @@ MonoBehaviour:
   _currentWeapon:
     name: Teeth
     type: 0
-    damage: 0
-    range: 0
-    cooldown: 0
+    damage: 10
+    range: 3.5
+    cooldown: 0.5
     speed: 0
     projectileSprite: {fileID: 0}
     weaponSprite: {fileID: 0}

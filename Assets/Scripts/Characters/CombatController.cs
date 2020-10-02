@@ -59,7 +59,7 @@ public class CombatController : MonoBehaviour {
                 proj.Fire((Vector2) transform.position + direction.normalized * spawnDistance, direction, _body.velocity, gameObject);
                 break;
             case WeaponType.MELEE:
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized * _currentWeapon.range);
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, _currentWeapon.range);
                 if(hit.transform != null) {
                     hit.transform.gameObject.GetComponent<CharacterController>()?.Damage(_currentWeapon.damage);
                 }
