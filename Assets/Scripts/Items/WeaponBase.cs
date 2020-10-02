@@ -9,6 +9,7 @@ public class WeaponBase : Item {
     public int damage;
     public float range;
     public float cooldown;
+    public Sprite weaponSprite;
 
     [Space(20)]
 

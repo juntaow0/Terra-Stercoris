@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class NumericalResource {
     public event Action<int> OnResourceUpdated;
+    public event Action OnResourceDepleted;
+    public event Action OnResourceFilled;
 
     public ResourceType resourcetype {get; private set;}
     public int min {get; set;} // Just in case we need to put constraints on this
@@ -12,10 +14,12 @@ public class NumericalResource {
     public int quantity {
         get {return _quantity;}
         set {
-            if(value > max) {
+            if(value >= max) {
                 _quantity = max;
-            } else if(value < min) {
+                OnResourceFilled?.Invoke();
+            } else if(value <= min) {
                 _quantity = min;
+                OnResourceDepleted?.Invoke();
             } else {
                 _quantity = value;
             }

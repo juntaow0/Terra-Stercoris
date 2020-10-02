@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-    
-    // Declare constants
-    private const int NUM_ROTATIONS = 8;
 
     [SerializeField] private float interactRadius = 0.2f;
 
@@ -21,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     private InteractableObject closestObject = null;
 
-    public static PlayerController instance {get; private set;}
+    public static PlayerController instance {get; private set;} = null;
 
     void Awake() {
         instance = this;
@@ -80,12 +77,11 @@ public class PlayerController : MonoBehaviour {
         
         // Update character movement. I really don't like the non-raw input, it feels too sluggish
         Vector2 inputAxis = new Vector2(InputManager.Horizontal, InputManager.Vertical);
-        characterController.Move(inputAxis.normalized * characterController.GetSpeed());
+        characterController.Move(inputAxis);
 
         // Update character rotation (angle of mouse relative to player)
         _characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        characterController.SetSpriteRotation((NUM_ROTATIONS + (int) Mathf.Round(Mathf.Atan2(_characterRotation.y, _characterRotation.x) /
-                (2*Mathf.PI) * NUM_ROTATIONS)) % NUM_ROTATIONS);        
+        characterController.SetSpriteRotation(_characterRotation);        
     }
 
     IEnumerator checkInteractable() {

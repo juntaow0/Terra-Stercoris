@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Weapon {
 
+    public WeaponBase weaponBase {get; private set;}
+
     public string name;
     public WeaponType type;
     public int damage;
@@ -12,11 +14,14 @@ public class Weapon {
     public float cooldown;
     public float speed;
     public Sprite projectileSprite;
+    public Sprite weaponSprite;
 
     private int _nextShot = 0;
     private List<Projectile> projectiles;
 
     public Weapon(WeaponBase weapon) {
+        weaponBase = weapon;
+
         name = weapon.name;
         type = weapon.type;
         damage = weapon.damage;
@@ -24,6 +29,7 @@ public class Weapon {
         cooldown = weapon.cooldown;
         speed = weapon.speed;
         projectileSprite = weapon.projectileSprite;
+        weaponSprite = weapon.weaponSprite;
 
         if(type == WeaponType.RANGED) {
             projectiles = new List<Projectile>();

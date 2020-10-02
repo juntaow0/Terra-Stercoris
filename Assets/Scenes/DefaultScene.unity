@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -348,6 +348,7 @@ MonoBehaviour:
   _movementSpeed: 10
   _spriteRotation: 0
   _body: {fileID: 246578181}
+  _spriteRenderer: {fileID: 0}
 --- !u!114 &246578178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275e856a2efde64418b8834dfe243d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeapon:
+  _currentWeapon:
     name: 
     type: 0
     damage: 0
@@ -386,7 +387,7 @@ MonoBehaviour:
     cooldown: 0
     speed: 0
     projectileSprite: {fileID: 0}
-  spawnDistance: 1.02
+    weaponSprite: {fileID: 0}
 --- !u!58 &246578180
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -402,7 +403,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.085
+  m_Radius: 0.09
 --- !u!50 &246578181
 Rigidbody2D:
   serializedVersion: 4
@@ -1061,7 +1062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.7529412}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1929,7 +1930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
