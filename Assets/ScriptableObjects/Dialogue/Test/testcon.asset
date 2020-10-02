@@ -19,9 +19,7 @@ MonoBehaviour:
   endEvent:
     m_PersistentCalls:
       m_Calls: []
-  speakers:
-  - Jeff
-  - Devan
+  speakers: []
   sentences:
   - speakerIndex: 1
     sentence: What's up Jeff

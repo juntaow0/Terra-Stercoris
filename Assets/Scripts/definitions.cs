@@ -37,6 +37,12 @@ public struct Sentence {
     public string sentence;
 }
 
+[System.Serializable]
+public struct MessagePack {
+    public string message;
+    //public object value;
+}
+
 // DialogueManager
 public enum DialogueState {
     Idle,

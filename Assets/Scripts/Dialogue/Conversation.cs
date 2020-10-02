@@ -10,7 +10,7 @@ public class Conversation : ScriptableObject
     public EndAction endAction;
     public Choices choices;
     public Conversation nextConversation;
-    public UnityEvent endEvent;
+    public MessagePack sendMessage;
     public string[] speakers;
     public Sentence[] sentences;
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -39,6 +38,7 @@ public class ActionSlot : MonoBehaviour
     {
         if (!_onCooldown) //We can only use an action if it is not on cooldown
         {
+            StartCoroutine(HandleCooldown());
             actions[selectedSlot].action?.Invoke();
         }
         else //When we try to use an ability that is on cooldown, we trigger a sound and a visual effect
