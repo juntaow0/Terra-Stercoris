@@ -67,7 +67,7 @@ public class ButtonHandler : MonoBehaviour {
     public void StartGame() {
         // Start game if main menu
         if(currentScene == menuScene) {
-            SceneManager.LoadScene(START_SCENE);
+            SceneManager.LoadScene(1);
         } else { // Resume game otherwise
             canvas.enabled = false;
             Time.timeScale = lastTimeScale;
