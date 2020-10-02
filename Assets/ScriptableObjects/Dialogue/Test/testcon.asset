@@ -16,10 +16,11 @@ MonoBehaviour:
   endAction: 1
   choices: {fileID: 11400000, guid: 8743afc24b3af3e48aa9652b017c9b5e, type: 2}
   nextConversation: {fileID: 0}
-  endEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  speakers: []
+  sendMessage:
+    message: 
+  speakers:
+  - Jeff
+  - Devan
   sentences:
   - speakerIndex: 1
     sentence: What's up Jeff
