@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 [System.Serializable]
 struct ActionBundle {
-    public SlotAction slot;
+    public ActionTemplate slot;
     public UnityEvent action;
 }
 
