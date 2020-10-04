@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 94.8, y: 23.699997}
+  m_AnchoredPosition: {x: 94.79999, y: 23.699997}
   m_SizeDelta: {x: 94.76575, y: 17.768578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247386134
@@ -2967,7 +2967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342120269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 30.1, y: 87.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3128,7 +3128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 94.8, y: 41.5}
+  m_AnchoredPosition: {x: 94.79999, y: 41.5}
   m_SizeDelta: {x: 94.76575, y: 17.768578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &613064803
@@ -3686,8 +3686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df37e7568c9ff4747b50a2e31a09d82d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerID: 123
   initialConversation: {fileID: 11400000, guid: ad01df5cd69cef04e9d11efcb2b14935,
     type: 2}
+  OnDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &1217811045
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3975,7 +3979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363002873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 30.1, y: 87.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1554129730}
@@ -4597,7 +4601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677209576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 30.1, y: 87.9, z: 0}
   m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8443,6 +8447,7 @@ GameObject:
   - component: {fileID: 1963233415}
   - component: {fileID: 1963233414}
   - component: {fileID: 1963233413}
+  - component: {fileID: 1963233416}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -8462,8 +8467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad43a9930ea9014da79f8cb7d8e88d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSpacing: 10
-  CharacterPerSecond: 30
 --- !u!114 &1963233414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8476,6 +8479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2132c9bce183b42a9238cba2304d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterPerSecond: 40
+  buttonSpacing: 15
   UIPrefab: {fileID: 4344439973638558043, guid: 1d2d83aedece8924cac43ca45b5fad50,
     type: 3}
   buttonPrefab: {fileID: 8286455462358090267, guid: e957b0cd7126ac942be8b84506bcc7fc,
@@ -8494,6 +8499,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963233416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963233412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e728f139697e51347a2d98ba3ee05170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1997031247
 GameObject:
   m_ObjectHideFlags: 0

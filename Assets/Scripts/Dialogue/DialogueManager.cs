@@ -7,11 +7,17 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
-    public static event Action<string, string, Action> OnTrigger;
-    public static event Action<Choice[]> OnChoice;
+    public static event Action<string, string, Action> OnTrigger; // UI binding trigger
+    public static event Action<Choice[], int> OnChoice; // Choice binding trigger
+    public static event Action<int> OnEndEvent; // Event Trigger
     public static event Action OnSkip;
+
+    public float characterPerSecond;
+    public float buttonSpacing;
     public GameObject UIPrefab;
     public GameObject buttonPrefab;
+
+    private int currentTrigger;
     private DialogueUI dialogueUI;
     private Queue<Sentence> sentences;
     private Conversation currentConversation;
@@ -26,19 +32,20 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueUI = GetComponent<DialogueUI>();
         sentences = new Queue<Sentence>();
-        dialogueUI.InitializeUI(UIPrefab, buttonPrefab);
+        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, characterPerSecond,buttonSpacing);
         InConversation = false;
         state = DialogueState.Idle;
     }
 
-    public void LoadConversation(Conversation conversation) {
+    public void LoadConversation(Conversation conversation, int triggerID) {
         sentences.Clear();
         currentConversation = conversation;
+        currentTrigger = triggerID;
         foreach (Sentence s in conversation.sentences) {
             sentences.Enqueue(s);
         }
         if (conversation.endAction==EndAction.CHOICE) {
-            OnChoice?.Invoke(conversation.choices);
+            OnChoice?.Invoke(conversation.choices, triggerID);
         }
         dialogueUI.toggleDialogueBox(true);
         state = DialogueState.Idle;
@@ -48,19 +55,14 @@ public class DialogueManager : MonoBehaviour
 
     private void RunEndAction() {
         switch (currentConversation.endAction) {
-            case EndAction.NONE:
-                dialogueUI.toggleDialogueBox(false);
-                InConversation = false;
-                break;
             case EndAction.CHOICE:
                 dialogueUI.toggleChoices(true);
                 state = DialogueState.WaitforChoice;
                 break;
-            case EndAction.EVENT:
-                string message = currentConversation.message;
-                gameObject.SendMessage(message);
+            default:
                 dialogueUI.toggleDialogueBox(false);
                 InConversation = false;
+                OnEndEvent?.Invoke(currentTrigger);
                 break;
         }
     }
@@ -69,7 +71,10 @@ public class DialogueManager : MonoBehaviour
         switch (state) {        
             case DialogueState.Idle:
                 Sentence s = sentences.Dequeue();
-                string name = currentConversation.speakers[s.speakerIndex];
+                string name = null;
+                if (currentConversation.speakers.Length !=0) {
+                    name = currentConversation.speakers[s.speakerIndex];
+                }
                 state = DialogueState.Busy;
                 OnTrigger?.Invoke(s.sentence, name, () => {
                     if (sentences.Count < 1) {

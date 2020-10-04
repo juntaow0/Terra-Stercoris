@@ -10,9 +10,8 @@ public enum ResourceType {
 
 // Conversation
 public enum EndAction {
-    NONE,
+    NORMAL,
     CHOICE,
-    EVENT
 }
 
 // DialogueManager

@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class DialogueController : MonoBehaviour
+public class DialogueTrigger : MonoBehaviour
 {
+    public int triggerID;
     public Conversation initialConversation;
-
+    public UnityEvent OnDialogueEnd;
+  
     public void StartConversation() {
-        DialogueManager.instance.LoadConversation(initialConversation);
+        DialogueManager.instance.LoadConversation(initialConversation, triggerID);
     }
 
     public void NextSentence() {
@@ -16,15 +19,26 @@ public class DialogueController : MonoBehaviour
         }
     }
 
+    // always run after each conversation
+    void OnEventTrigger(int id) {
+        if (id != triggerID) {
+            return;
+        }
+        OnDialogueEnd?.Invoke();
+    }
+
     void OnEnable() {
         InputManager.OnNextDialogue += NextSentence;
+        DialogueManager.OnEndEvent += OnEventTrigger;
     }
 
     void OnDisable() {
         InputManager.OnNextDialogue -= NextSentence;
+        DialogueManager.OnEndEvent -= OnEventTrigger;
     }
 
     void OnDestroy() {
         InputManager.OnNextDialogue -= NextSentence;
+        DialogueManager.OnEndEvent -= OnEventTrigger;
     }
 }

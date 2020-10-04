@@ -12,15 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: testcon
   m_EditorClassIdentifier: 
-  conversationID: 0
-  endAction: 1
-  choices: {fileID: 11400000, guid: 8743afc24b3af3e48aa9652b017c9b5e, type: 2}
-  nextConversation: {fileID: 0}
-  sendMessage:
-    message: 
-  speakers:
-  - Jeff
-  - Devan
+  id: 114514
+  speakers: []
   sentences:
   - speakerIndex: 1
     sentence: What's up Jeff
@@ -28,3 +21,9 @@ MonoBehaviour:
     sentence: What's up Devan
   - speakerIndex: 1
     sentence: Do you wanna see my catgirl?
+  endAction: 1
+  choices:
+  - text: Yes
+    nextConversation: {fileID: 11400000, guid: 6bcc9ca0c9157174885f76ebe709da61, type: 2}
+  - text: No
+    nextConversation: {fileID: 11400000, guid: c33b01cd797226847bee122f378b72b8, type: 2}

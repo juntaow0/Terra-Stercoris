@@ -13,5 +13,4 @@ public class Conversation : ScriptableObject
     [Header("Settings")]
     public EndAction endAction;
     public Choice[] choices;
-    public string message;
 }
