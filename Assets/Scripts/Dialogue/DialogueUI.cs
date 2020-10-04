@@ -78,7 +78,7 @@ public class DialogueUI: MonoBehaviour
             GenerateButtons(buttonCount- existingButton);
         }
         for (int i = 0; i < buttonCount; i++) {
-            Conversation c = choices[i].conversation;
+            Conversation c = choices[i].nextConversation;
             buttonText[i].text = choices[i].text;
             buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(()=> {

@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<Sentence> sentences;
     private Conversation currentConversation;
     private DialogueState state;
-    public static bool InConversation {get; private set;} = false;
+    public static bool InConversation {get; private set;}
 
     private void Awake() {
         if (instance!=null && instance != this) {
@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI = GetComponent<DialogueUI>();
         sentences = new Queue<Sentence>();
         dialogueUI.InitializeUI(UIPrefab, buttonPrefab);
+        InConversation = false;
         state = DialogueState.Idle;
     }
 
@@ -37,7 +38,7 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(s);
         }
         if (conversation.endAction==EndAction.CHOICE) {
-            OnChoice?.Invoke(conversation.choices.choices);
+            OnChoice?.Invoke(conversation.choices);
         }
         dialogueUI.toggleDialogueBox(true);
         state = DialogueState.Idle;
@@ -55,11 +56,8 @@ public class DialogueManager : MonoBehaviour
                 dialogueUI.toggleChoices(true);
                 state = DialogueState.WaitforChoice;
                 break;
-            case EndAction.CONVERSATION:
-                LoadConversation(currentConversation.nextConversation);
-                break;
             case EndAction.EVENT:
-                string message = currentConversation.sendMessage.message;
+                string message = currentConversation.message;
                 gameObject.SendMessage(message);
                 dialogueUI.toggleDialogueBox(false);
                 InConversation = false;
