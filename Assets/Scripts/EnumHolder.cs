@@ -21,3 +21,9 @@ public enum DialogueState {
     EndReached,
     WaitforChoice
 }
+
+// Weapon
+public enum WeaponType {
+        MELEE,
+        RANGED
+}
