@@ -1867,7 +1867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598726201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.364631, y: 3.736287, z: -6.6479735}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1720301664}
@@ -2142,6 +2142,7 @@ GameObject:
   - component: {fileID: 1720301664}
   - component: {fileID: 1720301666}
   - component: {fileID: 1720301665}
+  - component: {fileID: 1720301667}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -2175,8 +2176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad43a9930ea9014da79f8cb7d8e88d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSpacing: 10
-  CharacterPerSecond: 30
 --- !u!114 &1720301666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2189,10 +2188,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2132c9bce183b42a9238cba2304d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterPerSecond: 0
+  buttonSpacing: 0
   UIPrefab: {fileID: 4344439973638558043, guid: 1d2d83aedece8924cac43ca45b5fad50,
     type: 3}
   buttonPrefab: {fileID: 8286455462358090267, guid: e957b0cd7126ac942be8b84506bcc7fc,
     type: 3}
+--- !u!114 &1720301667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720301663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e728f139697e51347a2d98ba3ee05170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1771545263
 GameObject:
   m_ObjectHideFlags: 3
