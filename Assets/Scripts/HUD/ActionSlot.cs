@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[System.Serializable]
-struct ActionBundle {
-    public ActionTemplate slot;
-    public UnityEvent action;
-}
-
 public class ActionSlot : MonoBehaviour
 /* Manages the player interaction with the item or ability selected in the action slot
  * 

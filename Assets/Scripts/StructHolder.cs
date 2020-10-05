@@ -16,3 +16,10 @@ public struct Sentence {
     [TextArea(2, 5)]
     public string sentence;
 }
+
+// For HUD Action Selector
+[System.Serializable]
+struct ActionBundle {
+    public ActionTemplate slot;
+    public UnityEvent action;
+}
