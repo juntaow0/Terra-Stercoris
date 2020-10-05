@@ -70,7 +70,7 @@ public class TransitionManager : MonoBehaviour {
 
         yield return FadeToBlack();
 
-        if(PlayerManager.player != null) PlayerManager.player.transform.position = Vector2.zero;
+        if(PlayerController.instance != null) PlayerController.instance.transform.position = Vector2.zero;
 
         asyncLoad.allowSceneActivation = true;
 
