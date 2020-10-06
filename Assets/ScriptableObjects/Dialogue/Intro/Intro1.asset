@@ -12,14 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: Intro1
   m_EditorClassIdentifier: 
-  conversationID: 1
-  endAction: 3
-  choices: {fileID: 0}
-  nextConversation: {fileID: 0}
-  sendMessage:
-    message: ChangeImage
-  speakers:
-  - Narrator
+  speakers: []
   sentences:
   - speakerIndex: 0
     sentence: Earth was doomed more than 2000 years ago. 99% of the population was
@@ -29,3 +22,7 @@ MonoBehaviour:
       mother Earth.
   - speakerIndex: 0
     sentence: And you are about to land on Earth with your shuttle alone.
+  endAction: 3
+  choices:
+  - text: 
+    nextConversation: {fileID: 0}

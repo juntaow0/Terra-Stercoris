@@ -8,7 +8,14 @@ public class DialogueTrigger : MonoBehaviour
     public int triggerID;
     public Conversation initialConversation;
     public UnityEvent OnDialogueEnd;
-  
+    public bool playOnAwake;
+
+    private void Start() {
+        if (playOnAwake) {
+            Invoke("StartConversation", 0.5f);
+        }
+    }
+
     public void StartConversation() {
         DialogueManager.instance.LoadConversation(initialConversation, triggerID);
     }
