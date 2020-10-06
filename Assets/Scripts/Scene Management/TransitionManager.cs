@@ -11,12 +11,23 @@ public class TransitionManager : MonoBehaviour {
     public static TransitionManager instance {get; private set;}
     public float FadeTime = 0.5f;
     [SerializeField] private string startScene;
-    [SerializeField] private GameObject[] persistentObjects = null;
+
+    [SerializeField] public GameObject hud;
+    [SerializeField] public GameObject cameraController;
+    [SerializeField] public GameObject menu;
+    [SerializeField] public GameObject managers;
+
+    [SerializeField] private List<GameObject> persistentObjects = new List<GameObject>();
 
     public static event Action OnSceneLoad;
 
     void Awake() {
         instance = this;
+
+        persistentObjects.Add(hud);
+        persistentObjects.Add(cameraController);
+        persistentObjects.Add(menu);
+        persistentObjects.Add(managers);
 
         if(persistentObjects != null) {
             foreach(GameObject obj in persistentObjects) {

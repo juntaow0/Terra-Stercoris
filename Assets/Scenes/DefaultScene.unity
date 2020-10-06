@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41e4a2345b80a499542ce246ea2fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 10
+  _movementSpeed: 5
   _spriteRotation: 0
   _body: {fileID: 246578181}
   _spriteRenderer: {fileID: 0}
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactRadius: 2.5
-  _mainCamera: {fileID: 2059659963}
+  _mainCamera: {fileID: 0}
   characterController: {fileID: 0}
   combatController: {fileID: 0}
   _healthBar: {fileID: 691755467}
@@ -463,7 +463,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -484,7 +484,7 @@ Transform:
   m_GameObject: {fileID: 246578176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 12, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -928,7 +928,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 2059659963}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -952,7 +952,7 @@ RectTransform:
   m_Children:
   - {fileID: 1106985356}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1696,7 +1696,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 2059659963}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 1
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -1721,7 +1721,7 @@ RectTransform:
   - {fileID: 123668927}
   - {fileID: 79121206}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2055,15 +2055,15 @@ MonoBehaviour:
   fadeImage: {fileID: 79121207}
   FadeTime: 0.5
   startScene: MainMenu
+  hud: {fileID: 1193372608}
+  cameraController: {fileID: 1699085458}
+  menu: {fileID: 365836975}
+  managers: {fileID: 1598726201}
   persistentObjects:
-  - {fileID: 365836975}
-  - {fileID: 1017484559}
-  - {fileID: 2059659962}
-  - {fileID: 1699085458}
-  - {fileID: 1193372608}
   - {fileID: 504553355}
-  - {fileID: 1598726201}
+  - {fileID: 2059659962}
   - {fileID: 246578176}
+  - {fileID: 1017484559}
 --- !u!1 &1699085458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,6 +2074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699085460}
   - component: {fileID: 1699085459}
+  - component: {fileID: 1699085461}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: Untagged
@@ -2103,7 +2104,7 @@ MonoBehaviour:
   m_Follow: {fileID: 246578183}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 10
+    OrthographicSize: 5
     NearClipPlane: 0.1
     FarClipPlane: 100
     Dutch: 0
@@ -2129,8 +2130,25 @@ Transform:
   m_Children:
   - {fileID: 1771545264}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699085461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699085458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 0}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &1720301663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2358,7 @@ Camera:
   far clip plane: 100
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2441,7 +2459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2124223202
 GameObject:
