@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Dungeon_Tileset_167
+  m_Name: walls_38
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 2488227301153626278, guid: b7e26ba7dc08f164c86a70896869e181,
+  m_Sprite: {fileID: -167388734037847649, guid: e2e4040dcdf1c2e46b43e3e7c203fc77,
     type: 3}
-  m_Color: {r: 0.60898006, g: 0.7105099, b: 0.8018868, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -34,4 +34,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 0
+  m_ColliderType: 1
