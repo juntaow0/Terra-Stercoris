@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneStartup : MonoBehaviour {
 
+    [SerializeField] private bool LoadHUD = true;
+
     void Start() {
         if (InputManager.instance == null) {
             AsyncOperation scene = SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive);
@@ -16,7 +18,7 @@ public class SceneStartup : MonoBehaviour {
     }
 
     void LateStart(AsyncOperation temp = null) {
-
+        TransitionManager.instance.SetHUDVisibility(LoadHUD);
     }
 
     void FadeIn(AsyncOperation temp) {
