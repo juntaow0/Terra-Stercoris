@@ -17,6 +17,7 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     public void StartConversation() {
+        InputManager.OnNextDialogue += NextSentence;
         DialogueManager.instance.LoadConversation(initialConversation, triggerID);
     }
 
@@ -28,6 +29,7 @@ public class DialogueTrigger : MonoBehaviour
 
     // always run after each conversation
     void OnEventTrigger(int id) {
+        InputManager.OnNextDialogue -= NextSentence;
         if (id != triggerID) {
             return;
         }
@@ -35,7 +37,6 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     void OnEnable() {
-        InputManager.OnNextDialogue += NextSentence;
         DialogueManager.OnEndEvent += OnEventTrigger;
     }
 
@@ -45,7 +46,6 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     void OnDestroy() {
-        InputManager.OnNextDialogue -= NextSentence;
-        DialogueManager.OnEndEvent -= OnEventTrigger;
+        OnDisable();
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(BoxCollider2D))]
 public class AreaEventTrigger : MonoBehaviour
 {
+    public bool selfDestruct;
     public UnityEvent Events;
     private BoxCollider2D boxCollider;
     private void Awake() {
@@ -15,5 +16,8 @@ public class AreaEventTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         Events?.Invoke();
+        if (selfDestruct) {
+            gameObject.SetActive(false);
+        }
     }
 }
