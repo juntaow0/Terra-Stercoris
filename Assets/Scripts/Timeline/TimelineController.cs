@@ -8,10 +8,26 @@ public class TimelineController : MonoBehaviour {
 
     public List<PlayableDirector> playableDirectors;
     public List<TimelineAsset> timelines;
+    public static bool InCutscene { get; private set; } = false;
 
     public void Play() {
+        InCutscene = true;
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Play();
+        }
+    }
+
+    public void Pause() {
+        InCutscene = false;
+        foreach (PlayableDirector playableDirector in playableDirectors) {
+            playableDirector.Pause();
+        }
+    }
+
+    public void Resume() {
+        InCutscene = true;
+        foreach (PlayableDirector playableDirector in playableDirectors) {
+            playableDirector.Resume();
         }
     }
 

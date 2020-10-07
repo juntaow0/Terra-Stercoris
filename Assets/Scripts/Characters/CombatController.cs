@@ -60,8 +60,8 @@ public class CombatController : MonoBehaviour {
                 break;
             case WeaponType.MELEE:
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, _currentWeapon.range);
-                if(hit.transform != null) {
-                    hit.transform.gameObject.GetComponent<CharacterController>()?.Damage(_currentWeapon.damage);
+                if(hit.collider != null) {
+                    hit.transform.GetComponent<IDamagable>()?.Damage(_currentWeapon.damage);
                 }
                 _weaponSprite.transform.position = (Vector2) transform.position + direction.normalized * spawnDistance;
                 StartCoroutine(SwingMelee());

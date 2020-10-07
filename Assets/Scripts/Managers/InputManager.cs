@@ -51,7 +51,7 @@ public class InputManager : MonoBehaviour
             OnPause?.Invoke();
         }
 
-        if(!DialogueManager.InConversation) {
+        if(!DialogueManager.InConversation && !TimelineController.InCutscene) {
             Horizontal = Input.GetAxisRaw("Horizontal");
             Vertical = Input.GetAxisRaw("Vertical");
             if(Input.GetKeyDown(INTERACT)) {

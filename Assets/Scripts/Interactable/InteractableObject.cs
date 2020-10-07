@@ -13,7 +13,7 @@ public class InteractableObject : MonoBehaviour {
     public void Interact() {
         interactAction?.Invoke();
         if(SelfDestruct) {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
