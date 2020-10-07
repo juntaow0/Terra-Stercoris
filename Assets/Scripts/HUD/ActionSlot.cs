@@ -9,11 +9,10 @@ public class ActionSlot : MonoBehaviour
  * 
  */ 
 {
-    [SerializeField] private ActionBundle[] actions;
+    [SerializeField] private List<Ability> abilities;
 
     //make the action array a scriptable object
-    private int selectedSlot = 0;
-    bool _onCooldown = false;
+    [SerializeField] private int selectedSlot = 0;
 
     //1. Have a container full of possible items or abilities
     //2. Allow the assigning of one such item or ability to this action slot
@@ -21,19 +20,35 @@ public class ActionSlot : MonoBehaviour
     //4. Once an action is used, initiate a cooldown or expenditure of resources as a consequence of using said action
     //This will be used for all action slots
 
-    /*void changeAction(SlotAction newAction)
-    //Changes the current action available to use on the action slot
-    {
-        selectedSlot = actions.Find(newAction);
-    }*/
+    void OnEnable() {
+        InputManager.OnMouseClickLeft += UseAction;
+        InputManager.OnMouseUpLeft += StopAction;
+        InputManager.OnScroll += ChangeAbility;
+    }
 
-    public void useAction()
+    void OnDisable() {
+        InputManager.OnMouseClickLeft -= UseAction;
+        InputManager.OnMouseUpLeft -= StopAction;
+        InputManager.OnScroll -= ChangeAbility;
+    }
+
+    void OnDestroy() {
+        OnDisable();
+    }
+
+    void ChangeAbility(int direction) {
+        abilities[selectedSlot].stopAction?.Invoke();
+        selectedSlot += direction;
+        if(selectedSlot >= abilities.Count) selectedSlot = 0;
+        else if(selectedSlot < 0) selectedSlot = abilities.Count - 1;
+    }
+
+    void UseAction()
     //Called by Input Manager to use the current slotted ability
     {
-        if (!_onCooldown) //We can only use an action if it is not on cooldown
+        if (!abilities[selectedSlot].OnCooldown) //We can only use an action if it is not on cooldown
         {
-            StartCoroutine(HandleCooldown());
-            actions[selectedSlot].action?.Invoke();
+            abilities[selectedSlot].startAction?.Invoke();
         }
         else //When we try to use an ability that is on cooldown, we trigger a sound and a visual effect
         {
@@ -42,10 +57,7 @@ public class ActionSlot : MonoBehaviour
         }
     }
 
-    IEnumerator HandleCooldown() {
-        
-        _onCooldown = true;
-        yield return new WaitForSeconds(actions[selectedSlot].slot.cooldown);
-        _onCooldown = false;
+    void StopAction() {
+        abilities[selectedSlot].stopAction?.Invoke();
     }
 }
