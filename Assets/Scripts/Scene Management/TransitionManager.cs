@@ -13,7 +13,6 @@ public class TransitionManager : MonoBehaviour {
     [SerializeField] private string startScene;
 
     [SerializeField] public GameObject hud;
-    [SerializeField] public GameObject cameraController;
     [SerializeField] public GameObject menu;
     [SerializeField] public GameObject managers;
 
@@ -25,7 +24,6 @@ public class TransitionManager : MonoBehaviour {
         instance = this;
 
         persistentObjects.Add(hud);
-        persistentObjects.Add(cameraController);
         persistentObjects.Add(menu);
         persistentObjects.Add(managers);
 
@@ -38,16 +36,18 @@ public class TransitionManager : MonoBehaviour {
 
     void Start() {
         if(SceneManager.GetActiveScene().name == "DefaultScene")
-            SceneManager.LoadScene(startScene);
-
-        StartCoroutine(FadeFromBlack());
+            LoadScene(startScene);
     }
 
-    public void LoadScene(string scene) {
-        StartCoroutine(WaitForSceneLoad(scene));
+    public void LoadScene(string scene, bool elementsActive = true) {
+        StartCoroutine(WaitForSceneLoad(scene, elementsActive));
     }
 
-    IEnumerator FadeToBlack() {
+    public void SetHUDVisibility(bool visible) {
+        hud.SetActive(visible);
+    }
+
+    public IEnumerator FadeToBlack() {
         float fadeAmount = 0f;
 
         fadeImage.gameObject.SetActive(true);
@@ -61,7 +61,7 @@ public class TransitionManager : MonoBehaviour {
         }
     }
 
-    IEnumerator FadeFromBlack() {
+    public IEnumerator FadeFromBlack() {
         float fadeAmount = 0f;
 
         float startTime = Time.realtimeSinceStartup;
@@ -75,7 +75,7 @@ public class TransitionManager : MonoBehaviour {
         fadeImage.gameObject.SetActive(false);
     }
 
-    IEnumerator WaitForSceneLoad(string scene) {
+    IEnumerator WaitForSceneLoad(string scene, bool elementsActive) {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
         asyncLoad.allowSceneActivation = false;
 
@@ -89,8 +89,26 @@ public class TransitionManager : MonoBehaviour {
             yield return null;
         }
 
+        if(!elementsActive) {
+            hud.SetActive(false);
+            PlayerController.instance.gameObject.SetActive(false);
+        } else {
+            hud.SetActive(true);
+            PlayerController.instance.gameObject.SetActive(true);
+            Bind();
+        }
+
         OnSceneLoad?.Invoke();
 
         yield return FadeFromBlack();
+    }
+
+    public void Bind() {
+        PlayerController.instance.SetCamera(Camera.main);
+        GameObject followCamera = GameObject.FindWithTag("FollowCamera");
+        if(followCamera != null) {
+            Cinemachine.CinemachineVirtualCamera virtualCamera = followCamera.GetComponent<Cinemachine.CinemachineVirtualCamera>();
+            if(virtualCamera != null) virtualCamera.m_Follow = PlayerController.instance.transform;
+        }
     }
 }

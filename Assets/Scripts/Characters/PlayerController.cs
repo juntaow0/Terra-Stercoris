@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour {
 
     public static PlayerController instance {get; private set;} = null;
 
+    public void SetCamera(Camera newCamera) {
+        _mainCamera = newCamera;
+    }
+
     void Awake() {
         instance = this;
 
@@ -80,8 +84,10 @@ public class PlayerController : MonoBehaviour {
         characterController.Move(inputAxis);
 
         // Update character rotation (angle of mouse relative to player)
-        _characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        characterController.SetSpriteRotation(_characterRotation);        
+        if(_mainCamera != null) {
+            _characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            characterController.SetSpriteRotation(_characterRotation);
+        }
     }
 
     IEnumerator checkInteractable() {

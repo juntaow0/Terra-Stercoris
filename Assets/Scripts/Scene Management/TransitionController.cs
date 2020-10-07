@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransitionInterface : MonoBehaviour {
-    public void LoadScene(string scene) {
-        TransitionManager.instance.LoadScene(scene);
+public class TransitionController : MonoBehaviour {
+
+    public void LoadPlayerScene(string scene) {
+        TransitionManager.instance.LoadScene(scene, true);
+    }
+
+    public void LoadCutsceneScene(string scene) {
+        TransitionManager.instance.LoadScene(scene, false);
     }
 }
