@@ -1,10 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 public class TimelineController : MonoBehaviour {
+
+    public static event Action<bool> OnTimelineStatus;
 
     public List<PlayableDirector> playableDirectors;
     public List<TimelineAsset> timelines;
@@ -15,6 +18,7 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Play();
         }
+        OnTimelineStatus?.Invoke(true);
     }
 
     public void Pause() {
@@ -22,6 +26,7 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Pause();
         }
+        OnTimelineStatus?.Invoke(false);
     }
 
     public void Resume() {
@@ -29,6 +34,7 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Resume();
         }
+        OnTimelineStatus?.Invoke(true);
     }
 
     public void PlayFromTimelines(int index) {
@@ -39,7 +45,8 @@ public class TimelineController : MonoBehaviour {
         } else {
             selectedAsset = timelines[index];
         }
-
         playableDirectors[0].Play(selectedAsset);
+        InCutscene = true;
+        OnTimelineStatus?.Invoke(true);
     }
 }
