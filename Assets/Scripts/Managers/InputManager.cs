@@ -15,13 +15,14 @@ public class InputManager : MonoBehaviour
     public static event Action OnPause;
     public static event Action OnMouseClickLeft;
     public static event Action OnMouseClickRight;
-    public static event Action OnMouseDownLeft;
-    public static event Action OnMouseDownRight;
+    public static event Action OnMouseUpLeft;
+    public static event Action OnMouseUpRight;
     public static event Action OnEscape;
     public static event Action OnEnter;
     public static event Action OnInteract;
     public static event Action OnStopInteract; // Used for actions when holding down interact key
     public static event Action OnNextDialogue;
+    public static event Action<int> OnScroll;
 
     public Tooltip tooltip;
 
@@ -62,8 +63,8 @@ public class InputManager : MonoBehaviour
             if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject()) {
                 OnMouseClickLeft?.Invoke();
             }
-            if(Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject()) {
-                OnMouseDownLeft?.Invoke();
+            if(Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject()) {
+                OnMouseUpLeft?.Invoke();
             }
         } else {
             Horizontal = 0;
@@ -72,6 +73,12 @@ public class InputManager : MonoBehaviour
             if(Input.GetKeyDown(INTERACT) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
                 OnNextDialogue?.Invoke();
             }
+        }
+
+        int scrollDirection = (int) Input.mouseScrollDelta.y;
+
+        if(scrollDirection != 0) {
+            OnScroll?.Invoke(scrollDirection);
         }
     }
 }

@@ -14,11 +14,13 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private Powerbar _powerBar = null;
     private Collider2D _collider = null;
 
-    private Vector2 _characterRotation;
+    public Vector2 characterRotation {get; private set;}
 
     private InteractableObject closestObject = null;
 
     public static PlayerController instance {get; private set;} = null;
+
+    private bool _attacking = false;
 
     public void SetCamera(Camera newCamera) {
         _mainCamera = newCamera;
@@ -44,7 +46,8 @@ public class PlayerController : MonoBehaviour {
     void OnEnable() {
         InputManager.OnInteract += Interact;
         InputManager.OnStopInteract += StopInteract;
-        InputManager.OnMouseDownLeft += Attack;
+        InputManager.OnMouseClickLeft += Attack;
+        InputManager.OnMouseUpLeft += StopAttack;
         characterController.health.OnResourceUpdated += UpdateHealth;
         characterController.energy.OnResourceUpdated += UpdateEnergy;
     }
@@ -52,7 +55,8 @@ public class PlayerController : MonoBehaviour {
     void OnDisable() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseDownLeft -= Attack;
+        InputManager.OnMouseClickLeft -= Attack;
+        InputManager.OnMouseUpLeft -= StopAttack;
         characterController.health.OnResourceUpdated -= UpdateHealth;
         characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
@@ -60,13 +64,26 @@ public class PlayerController : MonoBehaviour {
     private void OnDestroy() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseDownLeft -= Attack;
+        InputManager.OnMouseClickLeft -= Attack;
+        InputManager.OnMouseUpLeft -= StopAttack;
         characterController.health.OnResourceUpdated -= UpdateHealth;
         characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
 
     public void Attack() {
-        combatController.Attack(_characterRotation);
+        _attacking = true;
+        StartCoroutine(attacking());
+    }
+
+    public void StopAttack() {
+        _attacking = false;
+    }
+
+    IEnumerator attacking() {
+        while(_attacking) {
+            combatController.Attack(characterRotation);
+            yield return null; // TODO: Apply correct delay
+        }
     }
 
     void UpdateHealth(int newHealth) {
@@ -85,8 +102,8 @@ public class PlayerController : MonoBehaviour {
 
         // Update character rotation (angle of mouse relative to player)
         if(_mainCamera != null) {
-            _characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            characterController.SetSpriteRotation(_characterRotation);
+            characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            characterController.SetSpriteRotation(characterRotation);
         }
     }
 
