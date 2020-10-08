@@ -22,7 +22,7 @@ public class ParticleTrack : MonoBehaviour {
 
     void Update() {
         if(particleSource != null) {
-            transform.position = particleSource.transform.position;
+            transform.position = particleSource.transform.position + new Vector3(0,0,-1);
             //transform.rotation = Quaternion.AngleAxis(
             //        Vector2.SignedAngle(Vector2.right, transform.position - transform.parent.position), Vector3.forward) * Quaternion.Euler(0, 90, 0);
 
