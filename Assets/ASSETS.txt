@@ -1,8 +1,8 @@
-Programmers:
-Devan Plaga
-Jeff Stevens
-Juntao Wang
-Oscar Martinez
+Developers:
+ - Devan Plaga
+ - Jeff Stevens
+ - Juntao Wang
+ - Oscar Martinez
 
 Writer:
 Spencer Crawford
@@ -12,5 +12,12 @@ Tamara Dzolic
 
 Assets:
  - Font: https://www.1001fonts.com/joystix-font.html
- - Tilesets: Gentle Forest by Seliel the Shaper, 2D Pixel Art Dungeon by Elthen, Cave by nurdi21
- - Sound Effects: Eerie Cave Ambience by Sound Effects Factory
+ - Tilesets: 
+	- Gentle Forest by Seliel the Shaper
+	- 2D Pixel Art Dungeon by Elthen
+	- Cave by nurdi21
+ - Sound Effects:
+	- Metal Impact Sound Effects by Bluezone Corporation
+	- Eerie Cave Ambience by Sound Effects Factory
+	
+ 
