@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class AreaEventTrigger : MonoBehaviour
 {
     public bool selfDestruct;
+    public bool requirePlayer;
     public UnityEvent Events;
     private BoxCollider2D boxCollider;
     private void Awake() {
@@ -15,9 +16,11 @@ public class AreaEventTrigger : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        Events?.Invoke();
-        if (selfDestruct) {
-            gameObject.SetActive(false);
+        if(!requirePlayer || (PlayerController.instance != null && collision.gameObject == PlayerController.instance.gameObject)) {
+            Events?.Invoke();
+            if (selfDestruct) {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

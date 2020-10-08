@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -364,8 +364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRadius: 1.5
   _mainCamera: {fileID: 0}
-  characterController: {fileID: 0}
-  combatController: {fileID: 0}
+  characterController: {fileID: 246578177}
+  combatController: {fileID: 246578179}
   _healthBar: {fileID: 691755467}
   _powerBar: {fileID: 1008822364}
 --- !u!114 &246578179
@@ -464,7 +464,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 2
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -665,6 +665,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7248809605766593779, guid: 9a099ff0dc5ce6b428e3daa6ecc212de,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7248809606513417444, guid: 9a099ff0dc5ce6b428e3daa6ecc212de,
         type: 3}
       propertyPath: looping
@@ -683,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 7248809606513417444, guid: 9a099ff0dc5ce6b428e3daa6ecc212de,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: -5
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 7248809606790610268, guid: 9a099ff0dc5ce6b428e3daa6ecc212de,
         type: 3}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneStartup : MonoBehaviour {
 
     [SerializeField] private bool LoadHUD = true;
+    public event Action OnSceneLoad;
 
     void Start() {
         if (InputManager.instance == null) {
@@ -19,6 +21,7 @@ public class SceneStartup : MonoBehaviour {
 
     void LateStart(AsyncOperation temp = null) {
         TransitionManager.instance.SetHUDVisibility(LoadHUD);
+        OnSceneLoad?.Invoke();
     }
 
     void FadeIn(AsyncOperation temp) {
