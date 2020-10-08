@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: AG01_ED1
+  m_EditorClassIdentifier: 
+  speakers:
+  - You
+  - Mutant's name
+  - ???
+  sentences:
+  - speakerIndex: 2
+    sentence: Hello there, stranger.
+  - speakerIndex: 0
+    sentence: Ah, you are finally awake.
+  - speakerIndex: 2
+    sentence: 'Thanks for saving my life. I was hunting that beast, but somehow got
+      you involved. '
+  - speakerIndex: 1
+    sentence: By the way, I'm [???]. You are not from here right? What's your name?
+      Where are you from?
+  - speakerIndex: 0
+    sentence: (How should I answer)
+  - speakerIndex: 0
+    sentence: '[???], call me [???]. I come from the other side of the ocean.'
+  - speakerIndex: 1
+    sentence: 'Oh really? That''s why you look different. '
+  - speakerIndex: 1
+    sentence: Why don't you come with me to my village. Let's have a drink and talk
+      about your journey, and the magic you just used.
+  - speakerIndex: 0
+    sentence: (Well, this is unexpected, but I might find useful information there)
+  - speakerIndex: 0
+    sentence: Sure, [???]. Lead the way
+  endAction: 0
+  choices: []
