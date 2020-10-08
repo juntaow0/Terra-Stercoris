@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakers:
   - You
-  - Mutant's name
+  - '[???]'
   - ???
   sentences:
   - speakerIndex: 2

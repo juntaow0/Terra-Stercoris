@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakers:
   - You
-  - Mutant's name
+  - '[???]'
   - ???
   sentences:
   - speakerIndex: 2
@@ -35,18 +35,18 @@ MonoBehaviour:
   - speakerIndex: 0
     sentence: I come from the other side of the ocean.
   - speakerIndex: 1
-    sentence: Oh really? I have never people from that side of the world before. 
+    sentence: Oh really? I have never seen people from that side of the world before. 
       Tell me more about that.
-  - speakerIndex: 1
-    sentence: (Well, seems like I can't get away very soon)
+  - speakerIndex: 0
+    sentence: (Well, I can't get away with this very soon)
   - speakerIndex: 0
     sentence: Sure, but we need a better place for that. I don't feel safe here.
-  - speakerIndex: 0
+  - speakerIndex: 1
     sentence: Of course. Come to my village. Let's have a drink there and talk about
       your journey, your homeland, and perhaps the magic power you used.
-  - speakerIndex: 1
+  - speakerIndex: 0
     sentence: (Oh no)
-  - speakerIndex: 1
+  - speakerIndex: 0
     sentence: I guess I don't get a choice. Lead the way [???].
   endAction: 0
   choices: []

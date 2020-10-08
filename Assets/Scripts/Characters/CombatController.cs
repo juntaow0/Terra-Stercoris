@@ -37,7 +37,7 @@ public class CombatController : MonoBehaviour {
         weaponObject.transform.SetParent(transform);
         _weaponSprite = weaponObject.AddComponent<SpriteRenderer>();
         _weaponSprite.sortingOrder = 10;
-        _weaponSprite.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
+        _weaponSprite.transform.localScale = new Vector3(2.5f,2.5f,2.5f);
         _weaponSprite.enabled = false;
         if(_currentWeapon.weaponSprite != null) {
             _weaponSprite.sprite = _currentWeapon.weaponSprite;

@@ -24,13 +24,13 @@ public class ActionSlot : MonoBehaviour
     void OnEnable() {
         InputManager.OnMouseClickRight += UseAction;
         InputManager.OnMouseUpRight += StopAction;
-        InputManager.OnScroll += ChangeAbility;
+        //InputManager.OnScroll += ChangeAbility;
     }
 
     void OnDisable() {
         InputManager.OnMouseClickRight -= UseAction;
         InputManager.OnMouseUpRight -= StopAction;
-        InputManager.OnScroll -= ChangeAbility;
+        //InputManager.OnScroll -= ChangeAbility;
     }
 
     void OnDestroy() {
