@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0733f528d87dd104f99d20e563d2fdc5, type: 3}
-  m_Name: Test Weapon
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: AG01_AfterSiphon
   m_EditorClassIdentifier: 
-  name: Wrench
-  type: 0
-  damage: 5
-  range: 1
-  cooldown: 0.5
-  weaponSprite: {fileID: 21300000, guid: 30ac7b6d8138b784db782528c8d0ad98, type: 3}
-  speed: 0
-  projectileSprite: {fileID: 0}
+  speakers:
+  - You
+  sentences:
+  - speakerIndex: 0
+    sentence: Wait... What just happened? What was that?
+  endAction: 0
+  choices: []

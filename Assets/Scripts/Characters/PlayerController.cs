@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] public CombatController combatController = null;
     [SerializeField] private Healthbar _healthBar = null;
     [SerializeField] private Powerbar _powerBar = null;
+
+    [SerializeField] private ActionSlot _actionSlot;
+
     private Collider2D _collider = null;
 
     public Vector2 characterRotation {get; private set;}
@@ -21,6 +24,14 @@ public class PlayerController : MonoBehaviour {
     public static PlayerController instance {get; private set;} = null;
 
     private bool _attacking = false;
+
+    public void GiveSiphon() {
+        _actionSlot.AddAbilityByIndex(0);
+    }
+
+    public void TakeSiphon() {
+        _actionSlot.RemoveAbilityByIndex(0);
+    }
 
     public void SetCamera(Camera newCamera) {
         _mainCamera = newCamera;
@@ -80,7 +91,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     IEnumerator attacking() {
-        while(_attacking) {
+        while(_attacking && (!DialogueManager.InConversation && !TimelineController.InCutscene)) {
             combatController.Attack(characterRotation);
             yield return null; // TODO: Apply correct delay
         }

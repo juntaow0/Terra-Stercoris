@@ -350,7 +350,7 @@ MonoBehaviour:
   _movementSpeed: 5
   _spriteRotation: 0
   _body: {fileID: 246578181}
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 246578182}
 --- !u!114 &246578178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +369,7 @@ MonoBehaviour:
   combatController: {fileID: 246578179}
   _healthBar: {fileID: 691755467}
   _powerBar: {fileID: 1008822364}
+  _actionSlot: {fileID: 1590043677}
 --- !u!114 &246578179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2315,7 +2316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778ff15721a3d79449fe7d4a8f0f501d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilities:
+  abilities: []
+  disabledAbilities:
   - _template: {fileID: 11400000, guid: c354d6c8b40ff2845a202be3137f2267, type: 2}
     startAction:
       m_PersistentCalls:

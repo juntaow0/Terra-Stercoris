@@ -10,6 +10,7 @@ public class ActionSlot : MonoBehaviour
  */ 
 {
     [SerializeField] private List<Ability> abilities;
+    [SerializeField] private List<Ability> disabledAbilities;
 
     //make the action array a scriptable object
     [SerializeField] private int selectedSlot = 0;
@@ -21,19 +22,27 @@ public class ActionSlot : MonoBehaviour
     //This will be used for all action slots
 
     void OnEnable() {
-        InputManager.OnMouseClickLeft += UseAction;
-        InputManager.OnMouseUpLeft += StopAction;
+        InputManager.OnMouseClickRight += UseAction;
+        InputManager.OnMouseUpRight += StopAction;
         InputManager.OnScroll += ChangeAbility;
     }
 
     void OnDisable() {
-        InputManager.OnMouseClickLeft -= UseAction;
-        InputManager.OnMouseUpLeft -= StopAction;
+        InputManager.OnMouseClickRight -= UseAction;
+        InputManager.OnMouseUpRight -= StopAction;
         InputManager.OnScroll -= ChangeAbility;
     }
 
     void OnDestroy() {
         OnDisable();
+    }
+
+    public void AddAbilityByIndex(int index) {
+        abilities.Add(disabledAbilities[index]);
+    }
+
+    public void RemoveAbilityByIndex(int index) {
+        abilities.RemoveAt(index);
     }
 
     void ChangeAbility(int direction) {
@@ -46,7 +55,7 @@ public class ActionSlot : MonoBehaviour
     void UseAction()
     //Called by Input Manager to use the current slotted ability
     {
-        if (!abilities[selectedSlot].OnCooldown) //We can only use an action if it is not on cooldown
+        if (abilities.Count > 0 && !abilities[selectedSlot].OnCooldown) //We can only use an action if it is not on cooldown
         {
             abilities[selectedSlot].startAction?.Invoke();
         }
@@ -58,6 +67,8 @@ public class ActionSlot : MonoBehaviour
     }
 
     void StopAction() {
-        abilities[selectedSlot].stopAction?.Invoke();
+        if (abilities.Count > 0) {
+            abilities[selectedSlot].stopAction?.Invoke();
+        }
     }
 }

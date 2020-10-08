@@ -60,11 +60,19 @@ public class InputManager : MonoBehaviour
             if(Input.GetKeyUp(INTERACT)) {
                 OnStopInteract?.Invoke();
             }
-            if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject()) {
-                OnMouseClickLeft?.Invoke();
-            }
-            if(Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject()) {
-                OnMouseUpLeft?.Invoke();
+            if(!EventSystem.current.IsPointerOverGameObject()) {
+                if(Input.GetMouseButtonDown(0)) {
+                    OnMouseClickLeft?.Invoke();
+                }
+                if(Input.GetMouseButtonDown(1)) {
+                    OnMouseClickRight?.Invoke();
+                }
+                if(Input.GetMouseButtonUp(0)) {
+                    OnMouseUpLeft?.Invoke();
+                }
+                if(Input.GetMouseButtonUp(1)) {
+                    OnMouseUpRight?.Invoke();
+                }
             }
         } else {
             Horizontal = 0;

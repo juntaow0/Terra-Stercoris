@@ -25,7 +25,7 @@ public class Siphon : MonoBehaviour {
 
     IEnumerator siphon() {
         
-        while(Active) {
+        while(Active && (!DialogueManager.InConversation && !TimelineController.InCutscene)) {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, PlayerController.instance.characterRotation, _range);
             if(hit.transform != null) {
                 CharacterController target = hit.transform.gameObject.GetComponent<CharacterController>();
