@@ -15,6 +15,15 @@ public class CombatController : MonoBehaviour {
 
     private SpriteRenderer _weaponSprite;
 
+    //Sound effects
+    /*
+    public AudioSource audioPlayer;
+    public AudioClip swing1;
+    public AudioClip swing2;
+    public AudioClip swing3;
+    public AudioClip swing4;
+    */
+
     void Start() {
         _body = GetComponent<Rigidbody2D>();
         CircleCollider2D collider = GetComponent<CircleCollider2D>();
