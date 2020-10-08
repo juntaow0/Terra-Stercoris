@@ -18,7 +18,7 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Play();
         }
-        OnTimelineStatus?.Invoke(true);
+        OnTimelineStatus?.Invoke(false);
     }
 
     public void Pause() {
@@ -26,7 +26,7 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Pause();
         }
-        OnTimelineStatus?.Invoke(false);
+        OnTimelineStatus?.Invoke(true);
     }
 
     public void Resume() {
@@ -34,7 +34,7 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Resume();
         }
-        OnTimelineStatus?.Invoke(true);
+        OnTimelineStatus?.Invoke(false);
     }
 
     public void PlayFromTimelines(int index) {
@@ -47,6 +47,6 @@ public class TimelineController : MonoBehaviour {
         }
         playableDirectors[0].Play(selectedAsset);
         InCutscene = true;
-        OnTimelineStatus?.Invoke(true);
+        OnTimelineStatus?.Invoke(false);
     }
 }

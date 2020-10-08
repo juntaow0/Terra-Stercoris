@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &47389170
 BoxCollider2D:
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.9764706, b: 0.57254905, a: 1}
 --- !u!61 &107104371
 BoxCollider2D:
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &156350522
 BoxCollider2D:
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.9764706, b: 0.57254905, a: 1}
 --- !u!61 &369654781
 BoxCollider2D:
@@ -961,7 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &564622606
 BoxCollider2D:
@@ -2230,7 +2230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!1 &1000827981
 GameObject:
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &1006270326
 BoxCollider2D:
@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &1144237320
 BoxCollider2D:
@@ -2636,7 +2636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &1176076840
 BoxCollider2D:
@@ -6081,7 +6081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.9764706, b: 0.57254905, a: 1}
 --- !u!61 &1396463705
 BoxCollider2D:
@@ -6337,7 +6337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.9764706, b: 0.57254905, a: 1}
 --- !u!61 &1543875568
 BoxCollider2D:
@@ -6554,6 +6554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d842cd116dcb108449829b839b3d00fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadHUD: 0
 --- !u!4 &1728168579
 Transform:
   m_ObjectHideFlags: 0
@@ -6599,7 +6600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.97752064, b: 0.5707547, a: 1}
 --- !u!61 &1747056854
 BoxCollider2D:
@@ -6722,7 +6723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f637bc59560008468b2c5d7b5a527d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 60
   hitTint: {r: 1, g: 0.9764706, b: 0.57254905, a: 1}
 --- !u!61 &1926576447
 BoxCollider2D:

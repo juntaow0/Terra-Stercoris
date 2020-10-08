@@ -13,6 +13,7 @@ public class TransitionManager : MonoBehaviour {
     [SerializeField] private string startScene;
 
     [SerializeField] public GameObject hud;
+    private Canvas hudCanvas;
     [SerializeField] public GameObject menu;
     [SerializeField] public GameObject managers;
 
@@ -22,11 +23,10 @@ public class TransitionManager : MonoBehaviour {
 
     void Awake() {
         instance = this;
-
         persistentObjects.Add(hud);
         persistentObjects.Add(menu);
         persistentObjects.Add(managers);
-
+        hudCanvas = hud.GetComponent<Canvas>();
         if(persistentObjects != null) {
             foreach(GameObject obj in persistentObjects) {
                 DontDestroyOnLoad(obj);
@@ -44,7 +44,7 @@ public class TransitionManager : MonoBehaviour {
     }
 
     public void SetHUDVisibility(bool visible) {
-        hud.SetActive(visible);
+        hudCanvas.enabled = visible;
     }
 
     public IEnumerator FadeToBlack() {
