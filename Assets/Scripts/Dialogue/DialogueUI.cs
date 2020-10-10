@@ -54,7 +54,7 @@ public class DialogueUI: MonoBehaviour
 
     private void ShowSentence(string sentence, string name, Action onComplete) {
         Speaker.text = "";
-        if (name != null) {
+        if (name != "") {
             Speaker.text = name + ":";
         }
         StartCoroutine(TypeCharacters(sentence, onComplete));

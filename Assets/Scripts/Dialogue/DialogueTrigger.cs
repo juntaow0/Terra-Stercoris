@@ -6,43 +6,74 @@ using UnityEngine.Events;
 public class DialogueTrigger : MonoBehaviour
 {
     public int triggerID;
-    public Conversation initialConversation;
-    public UnityEvent OnDialogueEnd;
-    public bool playOnAwake;
+    
+    public Conversation[] Conversations;
+    public DialogueEndEvent[] EndEvents;
+    private int defaultIndex = 0;
+    private UnityEvent[] currentEvents;
+    private UnityEvent currentEvent;
 
-    private void Start() {
-        if (playOnAwake) {
-            Invoke("StartConversation", 0.5f);
-        }
+    public void StartConversation(int index) {
+        LoadConversation(index);
     }
 
-    public void StartConversation() {
-        InputManager.OnNextDialogue += NextSentence;
-        DialogueManager.instance.LoadConversation(initialConversation, triggerID);
+    public void StartRandomConversation() {
+        int index = Random.Range(0, Conversations.Length);
+        LoadConversation(index);
+    }
+
+    public void StartDefaultConversation() {
+        LoadConversation(defaultIndex);
+    }
+
+    public void StartConversationByChoice(string key) {
+        int choiceNumber = ChoiceTracker.GetChoiceNumber(key);
+        LoadConversation(choiceNumber);
+    }
+
+    public void SetDefaultIndex(int index) {
+        defaultIndex = index;
     }
 
     public void NextSentence() {
-        if(DialogueManager.InConversation) {
-            DialogueManager.instance.DisplaySentence();
-        }
+        DialogueManager.instance.DisplaySentence();
     }
 
     // always run after each conversation
     void OnEventTrigger(int id) {
-        InputManager.OnNextDialogue -= NextSentence;
         if (id != triggerID) {
             return;
         }
-        OnDialogueEnd?.Invoke();
+        InputManager.OnNextDialogue -= NextSentence;
+        currentEvent?.Invoke();
+    }
+
+    void SwapEndEvent(int index) {
+        if (currentEvents.Length > 0) {
+            currentEvent = currentEvents[index];
+        }
+    }
+
+    private void LoadConversation(int index) {
+        if (EndEvents.Length > 0) {
+            currentEvents = EndEvents[index].events;
+            if (currentEvents.Length > 0) {
+                currentEvent = currentEvents[0];
+            }
+        }
+        InputManager.OnNextDialogue += NextSentence;
+        DialogueManager.instance.LoadConversation(Conversations[index], triggerID);
     }
 
     void OnEnable() {
         DialogueManager.OnEndEvent += OnEventTrigger;
+        DialogueManager.OnChoice += SwapEndEvent;
     }
 
     void OnDisable() {
         InputManager.OnNextDialogue -= NextSentence;
         DialogueManager.OnEndEvent -= OnEventTrigger;
+        DialogueManager.OnChoice -= SwapEndEvent;
     }
 
     void OnDestroy() {

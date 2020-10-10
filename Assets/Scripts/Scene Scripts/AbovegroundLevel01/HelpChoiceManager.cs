@@ -9,6 +9,7 @@ public class HelpChoiceManager : MonoBehaviour {
 
     [SerializeField] private DialogueTrigger mutantDialogue;
 
+    /*
     public void SetDialogue(bool isRunning) {
         if(isRunning) {
             mutantDialogue.initialConversation = runConversation;
@@ -16,4 +17,5 @@ public class HelpChoiceManager : MonoBehaviour {
             mutantDialogue.initialConversation = helpConversation;
         }
     }
+    */
 }

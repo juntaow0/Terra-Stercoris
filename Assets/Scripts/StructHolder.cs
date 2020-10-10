@@ -20,7 +20,13 @@ public struct Sentence {
 
 // For HUD Action Selector
 [System.Serializable]
-struct ActionBundle {
+public struct ActionBundle {
     public ActionTemplate slot;
     public UnityEvent action;
+}
+
+// For Dialogue Trigger
+[System.Serializable]
+public struct DialogueEndEvent {
+    public UnityEvent[] events;
 }
