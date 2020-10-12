@@ -10,7 +10,8 @@ public class SceneStartup : MonoBehaviour {
     public event Action OnSceneLoad;
 
     private void Awake() {
-        SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive).completed+=OnSceneLoadCompleted;
+        if (!SceneManager.GetSceneByName("DefaultScene").isLoaded)
+            SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive).completed+=OnSceneLoadCompleted;
         /*
         if (InputManager.instance == null) {
             AsyncOperation scene = SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive);
@@ -22,7 +23,7 @@ public class SceneStartup : MonoBehaviour {
         */
     }
     void OnSceneLoadCompleted(AsyncOperation op) {
-        TransitionManager.instance.SetHUDVisibility(LoadHUD);
+        UIManager.instance.toggleHUD(LoadHUD);
         OnSceneLoad?.Invoke();
     }
 

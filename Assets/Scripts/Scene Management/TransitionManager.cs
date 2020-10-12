@@ -8,10 +8,9 @@ using UnityEngine.SceneManagement;
 public class TransitionManager : MonoBehaviour {
 
     public float FadeTime = 0.5f;
-    [SerializeField] private Image fadeImage;
-    [SerializeField] private GameObject hud;
 
     public static TransitionManager instance { get; private set; }
+    private string ActiveSceneName = null;
 
     void Awake() {
         instance = this;
@@ -19,55 +18,41 @@ public class TransitionManager : MonoBehaviour {
     }
 
     public void LoadScene(string scene, bool elementsActive = true) {
-        StartCoroutine(WaitForSceneLoad(scene, elementsActive));
+        UIManager.instance.FadeIn(FadeTime, ()=> {
+            if (ActiveSceneName == null) {
+                ActiveSceneName = SceneManager.GetActiveScene().name;
+            }
+            SceneManager.UnloadSceneAsync(ActiveSceneName);
+            ActiveSceneName = scene;
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive).completed += operation =>
+                    SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene));
+        });
     }
 
-    public void SetHUDVisibility(bool visible) {
-        hud.SetActive(visible);
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        UIManager.instance.Bind();
+        UIManager.instance.FadeOut(FadeTime, null);
+
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-
-    public IEnumerator FadeToBlack() {
-        float fadeAmount = 0f;
-
-        fadeImage.gameObject.SetActive(true);
-
-        float startTime = Time.realtimeSinceStartup;
-
-        while(fadeAmount < FadeTime) {
-            fadeAmount = Time.realtimeSinceStartup - startTime;
-            fadeImage.color = Color.Lerp(Color.clear, Color.black, fadeAmount / FadeTime);
-            yield return null;
-        }
-    }
-
-    public IEnumerator FadeFromBlack() {
-        float fadeAmount = 0f;
-
-        float startTime = Time.realtimeSinceStartup;
-
-        while(fadeAmount < FadeTime) {
-            fadeAmount = Time.realtimeSinceStartup - startTime;
-            fadeImage.color = Color.Lerp(Color.black, Color.clear, fadeAmount / FadeTime);
-            yield return null;
-        }
-
-        fadeImage.gameObject.SetActive(false);
-    }
-
     IEnumerator WaitForSceneLoad(string scene, bool elementsActive) {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
-        asyncLoad.allowSceneActivation = false;
+        yield return null;
+
+        //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+        //asyncLoad.allowSceneActivation = false;
 
         //if(PlayerController.instance != null) PlayerController.instance.transform.position = Vector2.zero;
 
-        yield return FadeToBlack();
+        
 
-        asyncLoad.allowSceneActivation = true;
+        //asyncLoad.allowSceneActivation = true;
 
-        while(!asyncLoad.isDone) {
-            yield return null;
-        }
+        //while(!asyncLoad.isDone) {
+        //    yield return null;
+        //}
 
+        /*
         if (!elementsActive) {
             hud.SetActive(false);
             PlayerController.instance.gameObject.SetActive(false);
@@ -75,11 +60,9 @@ public class TransitionManager : MonoBehaviour {
             hud.SetActive(true);
             PlayerController.instance.gameObject.SetActive(true);
         }
+        */
 
         //yield return FadeFromBlack();
     }
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-        StartCoroutine(FadeFromBlack());
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    
 }

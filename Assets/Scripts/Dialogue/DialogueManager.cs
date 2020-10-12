@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public static event Action<int> OnChoice;
     public static event Action<int> OnEndEvent; // Event Trigger
     public static event Action OnSkip;
+    public static event Action<bool> OnDialogueStatus;
 
     public float characterPerSecond;
     public float buttonSpacing;
@@ -49,6 +50,7 @@ public class DialogueManager : MonoBehaviour
             OnBindChoice?.Invoke(conversation.choices, conversation.choiceKey, triggerID);
         }
         dialogueUI.toggleDialogueBox(true);
+        OnDialogueStatus?.Invoke(false);
         state = DialogueState.Idle;
         InConversation = true;
         DisplaySentence();
@@ -68,6 +70,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueUI.toggleDialogueBox(false);
                 InConversation = false;
                 OnEndEvent?.Invoke(currentTrigger);
+                OnDialogueStatus?.Invoke(true);
                 break;
         }
     }

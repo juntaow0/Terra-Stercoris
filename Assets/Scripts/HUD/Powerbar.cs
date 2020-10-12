@@ -21,10 +21,17 @@ public class Powerbar : MonoBehaviour
     }
 
     public void bindPowerBar(NumericalResource power) {
+        if (this.power != null) {
+            this.power.OnResourceUpdated -= updatePowerBarUI;
+        }
         this.power = power;
-        slider.maxValue = power.max;
-        slider.value = power.quantity;
-        power.OnResourceUpdated += updatePowerBarUI;
+        if (this.power != null) {
+            this.power.OnResourceUpdated += updatePowerBarUI;
+            slider.maxValue = power.max;
+            slider.value = power.quantity;
+        } else {
+            slider.value = 0;
+        }
     }
 
     void updatePowerBarUI(int amount)
@@ -34,7 +41,7 @@ public class Powerbar : MonoBehaviour
     }
 
     private void OnDisable() {
-        power.OnResourceUpdated -= updatePowerBarUI;
+        PlayerController.instance.characterController.energy.OnResourceUpdated -= updatePowerBarUI;
     }
 
     private void OnDestroy() {

@@ -22,10 +22,17 @@ public class Healthbar : MonoBehaviour
     }
 
     public void bindHealthBar(NumericalResource health) {
+        if (this.health != null) {
+            this.health.OnResourceUpdated -= updateHealthBarUI;
+        }
         this.health = health;
-        slider.maxValue = health.max;
-        slider.value = health.quantity;
-        health.OnResourceUpdated += updateHealthBarUI;
+        if (this.health != null) {
+            this.health.OnResourceUpdated += updateHealthBarUI;
+            slider.maxValue = health.max;
+            slider.value = health.quantity;
+        } else {
+            slider.value = 0;
+        }
     }
 
     void updateHealthBarUI(int amount)
@@ -34,7 +41,7 @@ public class Healthbar : MonoBehaviour
     }
 
     private void OnDisable() {
-        health.OnResourceUpdated -= updateHealthBarUI;
+        PlayerController.instance.characterController.health.OnResourceUpdated -= updateHealthBarUI;
     }
 
     private void OnDestroy() {
