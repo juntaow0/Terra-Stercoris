@@ -24,8 +24,6 @@ public class InputManager : MonoBehaviour
     public static event Action OnNextDialogue;
     public static event Action<int> OnScroll;
 
-    public Tooltip tooltip;
-
     // more to be added based on need
     public KeyCode LEFT;
     public KeyCode RIGHT;

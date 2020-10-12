@@ -118,12 +118,12 @@ public class PlayerController : MonoBehaviour {
             if(closest == null) {
                 if(closestObject != null) {
                     closestObject = null;
-                    InputManager.instance.tooltip.Hide();
+                    UIManager.instance.hdieTooltip();
                 }
             } else {
                 if(closest != closestObject) {
                     closestObject = closest.gameObject.GetComponent<InteractableObject>();
-                    InputManager.instance.tooltip.Show(closestObject);
+                    UIManager.instance.showTooltip(closestObject);
                 }
             }
 

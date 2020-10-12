@@ -7,37 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class TransitionManager : MonoBehaviour {
 
-    [SerializeField] private Image fadeImage;
-    public static TransitionManager instance {get; private set;}
     public float FadeTime = 0.5f;
-    [SerializeField] private string startScene;
+    [SerializeField] private Image fadeImage;
+    [SerializeField] private GameObject hud;
 
-    [SerializeField] public GameObject hud;
-    private Canvas hudCanvas;
-    [SerializeField] public GameObject menu;
-    [SerializeField] public GameObject managers;
-
-    [SerializeField] private List<GameObject> persistentObjects = new List<GameObject>();
-
-    public static event Action OnSceneLoad;
+    public static TransitionManager instance { get; private set; }
 
     void Awake() {
         instance = this;
-        persistentObjects.Add(hud);
-        persistentObjects.Add(menu);
-        persistentObjects.Add(managers);
-        hudCanvas = hud.GetComponent<Canvas>();
-        if(persistentObjects != null) {
-            foreach(GameObject obj in persistentObjects) {
-                DontDestroyOnLoad(obj);
-            }
-        }
         SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void Start() {
-        if(SceneManager.GetActiveScene().name == "DefaultScene")
-            LoadScene(startScene);
     }
 
     public void LoadScene(string scene, bool elementsActive = true) {
@@ -45,7 +23,7 @@ public class TransitionManager : MonoBehaviour {
     }
 
     public void SetHUDVisibility(bool visible) {
-        hudCanvas.enabled = visible;
+        hud.SetActive(visible);
     }
 
     public IEnumerator FadeToBlack() {
@@ -80,9 +58,9 @@ public class TransitionManager : MonoBehaviour {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
         asyncLoad.allowSceneActivation = false;
 
-        yield return FadeToBlack();
+        //if(PlayerController.instance != null) PlayerController.instance.transform.position = Vector2.zero;
 
-        if(PlayerController.instance != null) PlayerController.instance.transform.position = Vector2.zero;
+        yield return FadeToBlack();
 
         asyncLoad.allowSceneActivation = true;
 
@@ -90,32 +68,18 @@ public class TransitionManager : MonoBehaviour {
             yield return null;
         }
 
-        if(!elementsActive) {
+        if (!elementsActive) {
             hud.SetActive(false);
             PlayerController.instance.gameObject.SetActive(false);
         } else {
             hud.SetActive(true);
             PlayerController.instance.gameObject.SetActive(true);
-            Bind();
         }
 
-        OnSceneLoad?.Invoke();
-
-        yield return FadeFromBlack();
+        //yield return FadeFromBlack();
     }
-
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-        Bind();
         StartCoroutine(FadeFromBlack());
         SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    public void Bind() {
-        PlayerController.instance.SetCamera(Camera.main);
-        GameObject followCamera = GameObject.FindWithTag("FollowCamera");
-        if(followCamera != null) {
-            Cinemachine.CinemachineVirtualCamera virtualCamera = followCamera.GetComponent<Cinemachine.CinemachineVirtualCamera>();
-            if(virtualCamera != null) virtualCamera.m_Follow = PlayerController.instance.transform;
-        }
     }
 }
