@@ -13,67 +13,31 @@ using UnityEngine.UI;
 public class Powerbar : MonoBehaviour
 {
     private Slider slider;
-    [SerializeField] private HUDFader hudFader = null;
-    public int maxPower;
+    [SerializeField] private HUDFader hudFader;
+    private NumericalResource power;
 
     private void Awake() {
         slider = GetComponent<Slider>();
     }
 
-    public void bindPowerBar(int maxPower, int currentPower) {
-        slider.maxValue = maxPower;
-        slider.value = currentPower;
+    public void bindPowerBar(NumericalResource power) {
+        this.power = power;
+        slider.maxValue = power.max;
+        slider.value = power.quantity;
+        power.OnResourceUpdated += updatePowerBarUI;
     }
 
-    public void updatePowerBarUI(int amount)
-    //changes the graphical appearance of the powerbar
+    void updatePowerBarUI(int amount)
     {
         slider.value = amount;
         hudFader?.SwapSprite(amount);
     }
 
-    /*
-    public void gainPower(int gain)
-    //Call to gain power
-    {
-        currentPower += gain;
-        if (currentPower > maxPower)
-        {
-            currentPower = maxPower;
-        }
-        updatePowerBarUI();
+    private void OnDisable() {
+        power.OnResourceUpdated -= updatePowerBarUI;
     }
 
-    public void losePower(int loss)
-    //Call to lose power
-    {
-        currentPower -= loss;
-        if (currentPower < 0)
-        {
-            currentPower = 0;
-        }
-        updatePowerBarUI();
+    private void OnDestroy() {
+        OnDisable();
     }
-
-    public void setPower(int setVal)
-    //set power to a specific value
-    {
-        currentPower = setVal;
-        if (currentPower > maxPower)
-        {
-            currentPower = maxPower;
-        }
-        else if (currentPower < 0)
-        {
-            currentPower = 0;
-        }
-        updatePowerBarUI();
-    }
-
-    public int getCurrentPower()
-    //return the player's current power as an integer
-    {
-        return currentPower;
-    }
-    */
 }

@@ -32,6 +32,7 @@ public class TransitionManager : MonoBehaviour {
                 DontDestroyOnLoad(obj);
             }
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Start() {
@@ -101,6 +102,12 @@ public class TransitionManager : MonoBehaviour {
         OnSceneLoad?.Invoke();
 
         yield return FadeFromBlack();
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        Bind();
+        StartCoroutine(FadeFromBlack());
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void Bind() {

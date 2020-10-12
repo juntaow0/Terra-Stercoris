@@ -9,7 +9,9 @@ public class SceneStartup : MonoBehaviour {
     [SerializeField] private bool LoadHUD = true;
     public event Action OnSceneLoad;
 
-    void Start() {
+    private void Awake() {
+        SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive).completed+=OnSceneLoadCompleted;
+        /*
         if (InputManager.instance == null) {
             AsyncOperation scene = SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive);
             scene.completed += LateStart;
@@ -17,15 +19,17 @@ public class SceneStartup : MonoBehaviour {
         } else {
             LateStart();
         }
+        */
     }
-
-    void LateStart(AsyncOperation temp = null) {
+    void OnSceneLoadCompleted(AsyncOperation op) {
         TransitionManager.instance.SetHUDVisibility(LoadHUD);
         OnSceneLoad?.Invoke();
     }
 
+    /*
     void FadeIn(AsyncOperation temp) {
         StartCoroutine(TransitionManager.instance.FadeFromBlack());
         TransitionManager.instance.Bind();
     }
+    */
 }

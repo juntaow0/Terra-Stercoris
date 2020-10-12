@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +11,6 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private Camera _mainCamera = null;
     [SerializeField] public CharacterController characterController = null;
     [SerializeField] public CombatController combatController = null;
-    [SerializeField] private Healthbar _healthBar = null;
-    [SerializeField] private Powerbar _powerBar = null;
 
     [SerializeField] private ActionSlot _actionSlot;
 
@@ -48,9 +47,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Start() {
-        _healthBar.bindHealthBar(characterController.health.max,characterController.GetHealth());
-        _powerBar.bindPowerBar(characterController.energy.max, characterController.GetEnergy());
-
         StartCoroutine(checkInteractable());
     }
 
@@ -59,8 +55,6 @@ public class PlayerController : MonoBehaviour {
         InputManager.OnStopInteract += StopInteract;
         InputManager.OnMouseClickLeft += Attack;
         InputManager.OnMouseUpLeft += StopAttack;
-        characterController.health.OnResourceUpdated += UpdateHealth;
-        characterController.energy.OnResourceUpdated += UpdateEnergy;
     }
 
     void OnDisable() {
@@ -68,8 +62,6 @@ public class PlayerController : MonoBehaviour {
         InputManager.OnStopInteract -= StopInteract;
         InputManager.OnMouseClickLeft -= Attack;
         InputManager.OnMouseUpLeft -= StopAttack;
-        characterController.health.OnResourceUpdated -= UpdateHealth;
-        characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
 
     private void OnDestroy() {
@@ -77,8 +69,6 @@ public class PlayerController : MonoBehaviour {
         InputManager.OnStopInteract -= StopInteract;
         InputManager.OnMouseClickLeft -= Attack;
         InputManager.OnMouseUpLeft -= StopAttack;
-        characterController.health.OnResourceUpdated -= UpdateHealth;
-        characterController.energy.OnResourceUpdated -= UpdateEnergy;
     }
 
     public void Attack() {
@@ -95,14 +85,6 @@ public class PlayerController : MonoBehaviour {
             combatController.Attack(characterRotation);
             yield return null; // TODO: Apply correct delay
         }
-    }
-
-    void UpdateHealth(int newHealth) {
-        _healthBar?.updateHealthBarUI(newHealth);
-    }
-
-    void UpdateEnergy(int newPower) {
-        _powerBar?.updatePowerBarUI(newPower);
     }
 
     void Update() {

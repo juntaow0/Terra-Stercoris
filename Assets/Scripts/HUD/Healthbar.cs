@@ -14,68 +14,30 @@ using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
-    private Slider slider; 
-    public int maxHealth;
+    private Slider slider;
+    private NumericalResource health;
 
     private void Awake() {
         slider = GetComponent<Slider>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    public void bindHealthBar(int maxHealth, int currentHealth) {
-        slider.maxValue = maxHealth;
-        slider.value = currentHealth;
+
+    public void bindHealthBar(NumericalResource health) {
+        this.health = health;
+        slider.maxValue = health.max;
+        slider.value = health.quantity;
+        health.OnResourceUpdated += updateHealthBarUI;
     }
 
-    public void updateHealthBarUI(int amount)
-    //changes the graphical appearance of the healthbar
+    void updateHealthBarUI(int amount)
     {
         slider.value = amount;
     }
 
-    /*
-    public void gainHealth(int gain)
-    //Call to gain health
-    {
-        currentHealth += gain;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        updateHealthBarUI();
+    private void OnDisable() {
+        health.OnResourceUpdated -= updateHealthBarUI;
     }
 
-    public void loseHealth(int loss)
-    //Call to lose health
-    {
-        currentHealth -= loss;
-        //eventually, we should call a function here that triggers player death, or something similar
-        updateHealthBarUI();
+    private void OnDestroy() {
+        OnDisable();
     }
-
-    public void setHealth(int setVal)
-    //set health to a specific value (does not allow going over max and can trigger death)
-    {
-        currentHealth = setVal;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        else if (currentHealth <= 0)
-        {
-            //eventually call a function to trigger death or something similar
-            ;
-        }
-        updateHealthBarUI();
-    }
-
-    public int getCurrentHealth()
-    //return the player's current health as an integer
-    {
-        return currentHealth;
-    }
-    */
 }
