@@ -40,11 +40,7 @@ public class Powerbar : MonoBehaviour
         hudFader?.SwapSprite(amount);
     }
 
-    private void OnDisable() {
-        PlayerController.instance.characterController.energy.OnResourceUpdated -= updatePowerBarUI;
-    }
-
     private void OnDestroy() {
-        OnDisable();
+        PlayerController.instance.characterController.energy.OnResourceUpdated -= updatePowerBarUI;
     }
 }

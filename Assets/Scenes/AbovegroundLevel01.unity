@@ -35243,9 +35243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf60c1ab618edd748965b8d7855fcff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpConversation: {fileID: 11400000, guid: 93d05abb205bdde439714d3016b6c428, type: 2}
-  runConversation: {fileID: 11400000, guid: 767892a77ddda4842b73b39938b1a3bf, type: 2}
-  mutantDialogue: {fileID: 696550641}
 --- !u!114 &696550640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35406,7 +35403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899693538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78189,7 +78186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092757315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1012487535}

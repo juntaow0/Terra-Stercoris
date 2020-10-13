@@ -19,10 +19,6 @@ public class UIManager : MonoBehaviour
         instance = this;
     }
 
-    private void Start() {
-
-    }
-
     private void OnEnable() {
         TimelineController.OnTimelineStatus += toggleUI;
         DialogueManager.OnDialogueStatus += toggleUI;

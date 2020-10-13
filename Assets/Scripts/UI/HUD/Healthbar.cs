@@ -39,12 +39,7 @@ public class Healthbar : MonoBehaviour
     {
         slider.value = amount;
     }
-
-    private void OnDisable() {
-        PlayerController.instance.characterController.health.OnResourceUpdated -= updateHealthBarUI;
-    }
-
     private void OnDestroy() {
-        OnDisable();
+        PlayerController.instance.characterController.health.OnResourceUpdated -= updateHealthBarUI;
     }
 }

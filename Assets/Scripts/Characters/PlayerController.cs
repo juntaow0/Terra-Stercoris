@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] public CombatController combatController = null;
 
     [SerializeField] private ActionSlot _actionSlot;
+    private Animator animator;
 
     private Collider2D _collider = null;
 
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour {
         if (characterController == null) characterController = GetComponent<CharacterController>();
         if (combatController == null) combatController = GetComponent<CombatController>();
         if (_collider == null) _collider = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start() {
@@ -91,10 +93,15 @@ public class PlayerController : MonoBehaviour {
         
         // Update character movement. I really don't like the non-raw input, it feels too sluggish
         Vector2 inputAxis = new Vector2(InputManager.Horizontal, InputManager.Vertical);
+        animator.SetFloat("Horizontal", inputAxis.x);
+        animator.SetFloat("Vertical", inputAxis.y);
+        animator.SetFloat("Speed", inputAxis.magnitude);
         characterController.Move(inputAxis);
+        
+
 
         // Update character rotation (angle of mouse relative to player)
-        if(_mainCamera != null) {
+        if (_mainCamera != null) {
             characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             characterController.SetSpriteRotation(characterRotation);
         }
