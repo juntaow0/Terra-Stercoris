@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class CombatController : MonoBehaviour {
@@ -7,6 +8,10 @@ public class CombatController : MonoBehaviour {
     private Rigidbody2D _body;
 
     [SerializeField] private Weapon _currentWeapon = null;
+
+    [SerializeField] private GameObject tempWeapon;
+    private Animator tempWeaponAnimator;
+
 
     private float spawnDistance;
     private bool onCooldown = false;
@@ -42,6 +47,9 @@ public class CombatController : MonoBehaviour {
         if(_currentWeapon.weaponSprite != null) {
             _weaponSprite.sprite = _currentWeapon.weaponSprite;
         }
+
+        tempWeapon.SetActive(false);
+        tempWeaponAnimator = tempWeapon.GetComponent<Animator>();
     }
 
     public void SetWeapon(WeaponBase baseWeapon) {
@@ -58,8 +66,9 @@ public class CombatController : MonoBehaviour {
     }
 
     public void Attack(Vector2 direction) {
-        if(_currentWeapon == null || onCooldown) return;
+        if (_currentWeapon == null || onCooldown) return;
 
+        
         StartCoroutine(WaitForCooldown());
         switch(_currentWeapon.type) {
             case WeaponType.RANGED:
@@ -73,15 +82,28 @@ public class CombatController : MonoBehaviour {
                     hit.transform.GetComponent<IDamagable>()?.Damage(_currentWeapon.damage);
                 }
                 _weaponSprite.transform.position = (Vector2) transform.position + direction.normalized * spawnDistance;
+
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+                tempWeapon.transform.eulerAngles = new Vector3(0,0,angle);
+                
                 StartCoroutine(SwingMelee());
                 break;
         }
     }
 
     private IEnumerator SwingMelee() {
-        _weaponSprite.enabled = true;
-        yield return new WaitForSeconds(_currentWeapon.cooldown);
-        _weaponSprite.enabled = false;
+        tempWeapon.SetActive(true);
+        if (tempWeaponAnimator == null) {
+        }
+        tempWeaponAnimator.SetTrigger("attack");
+        yield return new WaitForSeconds(0.5f);
+        tempWeapon.SetActive(false);
+
+        
+        //_weaponSprite.enabled = true;
+       // yield return new WaitForSeconds(_currentWeapon.cooldown);
+       // _weaponSprite.enabled = false;
     }
 
     private IEnumerator WaitForCooldown() {
