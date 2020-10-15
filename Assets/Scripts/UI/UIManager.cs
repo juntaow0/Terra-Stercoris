@@ -13,20 +13,23 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Healthbar healthBar;
     [SerializeField] private Notification notification;
     [SerializeField] private Image fadeImage;
+    private Canvas[] UICanvases;
+
     public static UIManager instance { get; private set; }
 
     private void Awake() {
         instance = this;
+        UICanvases = UIRoot.GetComponentsInChildren<Canvas>();
     }
 
     private void OnEnable() {
-        //TimelineController.OnTimelineStatus += toggleUI;
-        //DialogueManager.OnDialogueStatus += toggleUI;
+        TimelineController.OnTimelineStatus += toggleUI;
+        DialogueManager.OnDialogueStatus += toggleUI;
     }
 
     private void OnDisable() {
-        //TimelineController.OnTimelineStatus -= toggleUI;
-        //DialogueManager.OnDialogueStatus -= toggleUI;
+        TimelineController.OnTimelineStatus -= toggleUI;
+        DialogueManager.OnDialogueStatus -= toggleUI;
     }
 
     private void OnDestroy() {
@@ -34,18 +37,19 @@ public class UIManager : MonoBehaviour
     }
 
     public void Bind() {
-        CharacterController playerInfo = PlayerController.instance.characterController;
+        CharacterController playerInfo = PlayerController.instance?.characterController;
         if (powerBar != null) {
-            powerBar.bindPowerBar(playerInfo.energy);
+            powerBar.bindPowerBar(playerInfo?.energy);
         }
-            
         if (healthBar != null) {
-            healthBar.bindHealthBar(playerInfo.health);
+            healthBar.bindHealthBar(playerInfo?.health);
         }
     }
 
     void toggleUI(bool state) {
-        UIRoot.SetActive(state);
+        foreach (Canvas c in UICanvases) {
+            c.enabled = state;
+        }
     }
 
     public void toggleHUD(bool visible) {

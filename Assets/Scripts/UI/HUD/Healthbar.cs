@@ -40,6 +40,8 @@ public class Healthbar : MonoBehaviour
         slider.value = amount;
     }
     private void OnDestroy() {
-        PlayerController.instance.characterController.health.OnResourceUpdated -= updateHealthBarUI;
+        if (PlayerController.instance != null) {
+            PlayerController.instance.characterController.health.OnResourceUpdated -= updateHealthBarUI;
+        }
     }
 }

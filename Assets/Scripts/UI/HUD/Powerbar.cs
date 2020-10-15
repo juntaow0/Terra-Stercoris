@@ -41,6 +41,8 @@ public class Powerbar : MonoBehaviour
     }
 
     private void OnDestroy() {
-        PlayerController.instance.characterController.energy.OnResourceUpdated -= updatePowerBarUI;
+        if (PlayerController.instance != null) {
+            PlayerController.instance.characterController.energy.OnResourceUpdated -= updatePowerBarUI;
+        }
     }
 }

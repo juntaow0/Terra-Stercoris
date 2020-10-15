@@ -34,7 +34,9 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Pause();
         }
-        OnTimelineStatus?.Invoke(true);
+        if (!DialogueManager.InConversation) {
+            OnTimelineStatus?.Invoke(true);
+        }
     }
 
     public void Resume() {

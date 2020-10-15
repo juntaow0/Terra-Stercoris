@@ -159,7 +159,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Interact() {
-        closestObject?.Interact();
+        if (closestObject != null) {
+            closestObject?.Interact();
+        }
     }
 
     void StopInteract() {
