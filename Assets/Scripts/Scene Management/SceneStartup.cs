@@ -12,10 +12,10 @@ public class SceneStartup : MonoBehaviour {
     private void Awake() {
         if (!SceneManager.GetSceneByName("DefaultScene").isLoaded) {
             SceneManager.LoadSceneAsync("DefaultScene", LoadSceneMode.Additive).completed += OnSceneLoadCompleted;
+            SceneDataLoader.Initialize();
         } else {
             UIManager.instance.toggleHUD(LoadHUD);
         }
-            
 
         /*
         if (InputManager.instance == null) {

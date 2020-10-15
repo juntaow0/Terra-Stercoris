@@ -15,7 +15,7 @@ public class CombatController : MonoBehaviour {
 
     public Weapon currentWeapon {get {return _currentWeapon;}}
 
-    private SpriteRenderer _weaponSprite;
+    [SerializeField] private SpriteRenderer _weaponSprite;
     private GameObject _weaponObject;
 
     //Sound effects
@@ -38,9 +38,6 @@ public class CombatController : MonoBehaviour {
 
         _weaponObject = new GameObject("Weapon");
         _weaponObject.transform.SetParent(transform);
-        _weaponSprite = _weaponObject.AddComponent<SpriteRenderer>();
-        _weaponSprite.sortingOrder = 10;
-        _weaponSprite.enabled = false;
 
         if(startingWeapon != null) {
             SetWeapon(startingWeapon);
@@ -54,7 +51,7 @@ public class CombatController : MonoBehaviour {
     public void SetWeapon(Weapon weapon) {
         _currentWeapon = weapon;
         if(_currentWeapon.weaponSprite != null) {
-            _weaponSprite.sprite = _currentWeapon.weaponSprite;
+            _weaponSprite.sprite = weapon.weaponBase.weaponSprite;
         }
     }
 
@@ -64,8 +61,6 @@ public class CombatController : MonoBehaviour {
 
     public void Attack(Vector2 direction) {
         if (_currentWeapon == null || onCooldown) return;
-
-        
         StartCoroutine(WaitForCooldown());
         switch(_currentWeapon.type) {
             case WeaponType.RANGED:

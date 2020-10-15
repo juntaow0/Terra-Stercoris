@@ -31,6 +31,7 @@ public class TransitionManager : MonoBehaviour {
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        SceneDataLoader.LoadStates();
         UIManager.instance.Bind();
         UIManager.instance.FadeOut(FadeTime, null);
 
