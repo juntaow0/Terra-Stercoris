@@ -20,7 +20,9 @@ public class Tooltip : MonoBehaviour {
         if(textObject == null) textObject = GetComponent<TMPro.TextMeshProUGUI>();
         backgroundPanel.color = Color.clear;
         textObject.color = Color.clear;
+    }
 
+    void OnEnable() {
         StartCoroutine(fade());
     }
 

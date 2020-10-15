@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 public class Weapon {
 
     public WeaponBase weaponBase {get; private set;}

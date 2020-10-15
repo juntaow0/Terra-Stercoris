@@ -25,12 +25,14 @@ public class PlayerController : MonoBehaviour {
 
     private bool _attacking = false;
 
+    private Siphon _siphon;
+
     public void GiveSiphon() {
-        _actionSlot.AddAbilityByIndex(0);
+        _siphon.available = true;
     }
 
     public void TakeSiphon() {
-        _actionSlot.RemoveAbilityByIndex(0);
+        _siphon.available = false;
     }
 
     public void SetCamera(Camera newCamera) {
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour {
         if (characterController == null) characterController = GetComponent<CharacterController>();
         if (combatController == null) combatController = GetComponent<CombatController>();
         if (_collider == null) _collider = GetComponent<Collider2D>();
+        _siphon = GetComponent<Siphon>();
         animator = GetComponent<Animator>();
     }
 
@@ -52,11 +55,21 @@ public class PlayerController : MonoBehaviour {
         StartCoroutine(checkInteractable());
     }
 
+    void StartSiphon() {
+        _siphon.SetActive(true);
+    }
+
+    void StopSiphon() {
+        _siphon.SetActive(false);
+    }
+
     void OnEnable() {
         InputManager.OnInteract += Interact;
         InputManager.OnStopInteract += StopInteract;
         InputManager.OnMouseClickLeft += Attack;
         InputManager.OnMouseUpLeft += StopAttack;
+        InputManager.OnMouseClickRight += StartSiphon;
+        InputManager.OnMouseUpRight += StopSiphon;
     }
 
     void OnDisable() {
@@ -64,6 +77,8 @@ public class PlayerController : MonoBehaviour {
         InputManager.OnStopInteract -= StopInteract;
         InputManager.OnMouseClickLeft -= Attack;
         InputManager.OnMouseUpLeft -= StopAttack;
+        InputManager.OnMouseClickRight -= StartSiphon;
+        InputManager.OnMouseUpRight -= StopSiphon;
     }
 
     private void OnDestroy() {
@@ -71,6 +86,8 @@ public class PlayerController : MonoBehaviour {
         InputManager.OnStopInteract -= StopInteract;
         InputManager.OnMouseClickLeft -= Attack;
         InputManager.OnMouseUpLeft -= StopAttack;
+        InputManager.OnMouseClickRight -= StartSiphon;
+        InputManager.OnMouseUpRight -= StopSiphon;
     }
 
     public void Attack() {
@@ -116,9 +133,12 @@ public class PlayerController : MonoBehaviour {
             foreach (Collider2D collider in colliders) {
                 if (collider != _collider) {
                     float distance = collider.Distance(_collider).distance;
-                    if (distance < lastDistance && collider.GetComponent<InteractableObject>() != null) {
-                        lastDistance = distance;
-                        closest = collider;
+                    if (distance < lastDistance) {
+                        InteractableObject interactable = collider.GetComponent<InteractableObject>();
+                        if(interactable != null && interactable.IsEnabled) {
+                            lastDistance = distance;
+                            closest = collider;
+                        }
                     }
                 }
             }

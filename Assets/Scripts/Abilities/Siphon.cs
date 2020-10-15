@@ -14,10 +14,14 @@ public class Siphon : MonoBehaviour {
 
     [SerializeField] private SpriteRenderer _originSprite;
 
+    public bool available = false;
+
     public void SetActive(bool value) {
-        Active = value;
-        if(Active) {
-            StartCoroutine(siphon());
+        if(available) {
+            Active = value;
+            if(Active) {
+                StartCoroutine(siphon());
+            }
         }
     }
     

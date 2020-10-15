@@ -7,6 +7,7 @@ public class EnemyAIController : MonoBehaviour {
     [SerializeField] private CharacterController _characterController = null;
     [SerializeField] private CombatController _combatController = null;
     [SerializeField] private SpriteRenderer _spriteRenderer = null;
+    [SerializeField] private GameObject _target = null;
 
     private Vector2 _targetPosition;
     private bool _seesTarget = false;
@@ -19,7 +20,7 @@ public class EnemyAIController : MonoBehaviour {
 
     void Start() {
         _targetPosition = transform.position;
-        StartCoroutine(FindPlayer());
+        StartCoroutine(FindTarget());
     }
 
     void OnEnable() {
@@ -36,7 +37,17 @@ public class EnemyAIController : MonoBehaviour {
 
     void Die() {
         _characterController.Move(Vector2.zero);
-        StopCoroutine(FindPlayer());
+        StopCoroutine(FindTarget());
+    }
+
+    public void SetTarget(GameObject target) {
+        _target = target;
+        _seesTarget = false;
+        _targetPosition = transform.position;
+    }
+
+    public void UnsetTarget() {
+        SetTarget(null);
     }
 
     void Update() {
@@ -44,7 +55,7 @@ public class EnemyAIController : MonoBehaviour {
         if(_characterController.IsAlive && _combatController.currentWeapon != null) {
 
             if(_seesTarget) {
-                _targetPosition = PlayerController.instance.transform.position;
+                _targetPosition = _target.transform.position;
             }
 
             Vector2 enemyDir = _targetPosition - (Vector2) transform.position;
@@ -62,14 +73,14 @@ public class EnemyAIController : MonoBehaviour {
         }
     }
 
-    IEnumerator FindPlayer() {
+    IEnumerator FindTarget() {
 
         while(true) {
-            if(PlayerController.instance == null) {
+            if(_target == null) {
                 yield return null;
             } else {
-                RaycastHit2D hit = Physics2D.Linecast(transform.position, PlayerController.instance.transform.position);
-                _seesTarget = hit.collider != null && hit.collider.gameObject == PlayerController.instance.gameObject;
+                RaycastHit2D hit = Physics2D.Linecast(transform.position, _target.transform.position);
+                _seesTarget = hit.collider != null && hit.collider.gameObject == _target;
                 yield return new WaitForSeconds(1.0f);
             }
         }

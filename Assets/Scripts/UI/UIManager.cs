@@ -20,13 +20,13 @@ public class UIManager : MonoBehaviour
     }
 
     private void OnEnable() {
-        TimelineController.OnTimelineStatus += toggleUI;
-        DialogueManager.OnDialogueStatus += toggleUI;
+        //TimelineController.OnTimelineStatus += toggleUI;
+        //DialogueManager.OnDialogueStatus += toggleUI;
     }
 
     private void OnDisable() {
-        TimelineController.OnTimelineStatus -= toggleUI;
-        DialogueManager.OnDialogueStatus -= toggleUI;
+        //TimelineController.OnTimelineStatus -= toggleUI;
+        //DialogueManager.OnDialogueStatus -= toggleUI;
     }
 
     private void OnDestroy() {

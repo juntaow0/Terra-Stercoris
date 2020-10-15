@@ -131,6 +131,7 @@ MonoBehaviour:
     speed: 0
     projectileSprite: {fileID: 0}
     weaponSprite: {fileID: 0}
+  tempWeapon: {fileID: 0}
 --- !u!114 &1658308746293421171
 MonoBehaviour:
   m_ObjectHideFlags: 0

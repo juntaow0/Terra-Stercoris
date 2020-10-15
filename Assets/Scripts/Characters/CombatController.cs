@@ -7,11 +7,8 @@ public class CombatController : MonoBehaviour {
 
     private Rigidbody2D _body;
 
-    [SerializeField] private Weapon _currentWeapon = null;
-
-    [SerializeField] private GameObject tempWeapon;
-    private Animator tempWeaponAnimator;
-
+    private Weapon _currentWeapon = null;
+    public WeaponBase startingWeapon;
 
     private float spawnDistance;
     private bool onCooldown = false;
@@ -19,6 +16,7 @@ public class CombatController : MonoBehaviour {
     public Weapon currentWeapon {get {return _currentWeapon;}}
 
     private SpriteRenderer _weaponSprite;
+    private GameObject _weaponObject;
 
     //Sound effects
     /*
@@ -38,18 +36,15 @@ public class CombatController : MonoBehaviour {
             spawnDistance = 0.0f;
         }
 
-        GameObject weaponObject = new GameObject("Weapon");
-        weaponObject.transform.SetParent(transform);
-        _weaponSprite = weaponObject.AddComponent<SpriteRenderer>();
+        _weaponObject = new GameObject("Weapon");
+        _weaponObject.transform.SetParent(transform);
+        _weaponSprite = _weaponObject.AddComponent<SpriteRenderer>();
         _weaponSprite.sortingOrder = 10;
-        _weaponSprite.transform.localScale = new Vector3(2.5f,2.5f,2.5f);
         _weaponSprite.enabled = false;
-        if(_currentWeapon.weaponSprite != null) {
-            _weaponSprite.sprite = _currentWeapon.weaponSprite;
-        }
 
-        tempWeapon.SetActive(false);
-        tempWeaponAnimator = tempWeapon.GetComponent<Animator>();
+        if(startingWeapon != null) {
+            SetWeapon(startingWeapon);
+        }
     }
 
     public void SetWeapon(WeaponBase baseWeapon) {
@@ -58,7 +53,9 @@ public class CombatController : MonoBehaviour {
 
     public void SetWeapon(Weapon weapon) {
         _currentWeapon = weapon;
-        _weaponSprite.sprite = weapon.weaponSprite;
+        if(_currentWeapon.weaponSprite != null) {
+            _weaponSprite.sprite = _currentWeapon.weaponSprite;
+        }
     }
 
     public Weapon GetWeapon() {
@@ -85,25 +82,19 @@ public class CombatController : MonoBehaviour {
 
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-                tempWeapon.transform.eulerAngles = new Vector3(0,0,angle);
-                
+                _weaponObject.transform.eulerAngles = new Vector3(0,0,angle);
+
                 StartCoroutine(SwingMelee());
+                
                 break;
         }
     }
 
     private IEnumerator SwingMelee() {
-        tempWeapon.SetActive(true);
-        if (tempWeaponAnimator == null) {
-        }
-        tempWeaponAnimator.SetTrigger("attack");
-        yield return new WaitForSeconds(0.5f);
-        tempWeapon.SetActive(false);
-
         
-        //_weaponSprite.enabled = true;
-       // yield return new WaitForSeconds(_currentWeapon.cooldown);
-       // _weaponSprite.enabled = false;
+        _weaponSprite.enabled = true;
+        yield return new WaitForSeconds(_currentWeapon.cooldown);
+        _weaponSprite.enabled = false;
     }
 
     private IEnumerator WaitForCooldown() {

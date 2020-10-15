@@ -9,6 +9,9 @@ public class InteractableObject : MonoBehaviour {
     [SerializeField] private UnityEvent interactAction;
     [SerializeField] private UnityEvent stopInteractAction;
     [SerializeField] private bool SelfDestruct = false;
+    [SerializeField] private bool _isEnabled = true;
+
+    public bool IsEnabled {get {return _isEnabled;} set {_isEnabled = value;}}
 
     public void Interact() {
         interactAction?.Invoke();
