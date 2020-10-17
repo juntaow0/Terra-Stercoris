@@ -97,8 +97,10 @@ public class SpellController : MonoBehaviour
     }
 
     public void SelectSpell(int index) {
-        int realIndex = index % spellRack.Count;
-        selected = spellRack[realIndex];
+        if (spellRack.Count > 0) {
+            int realIndex = index % spellRack.Count;
+            selected = spellRack[realIndex];
+        }
     }
 
     private void OnEnable() {

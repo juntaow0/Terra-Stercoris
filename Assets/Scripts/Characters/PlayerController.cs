@@ -119,8 +119,10 @@ public class PlayerController : MonoBehaviour {
 
         // Update character rotation (angle of mouse relative to player)
         if (_mainCamera != null) {
-            characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            characterController.SetSpriteRotation(characterRotation);
+            characterRotation = Vector3.Normalize(_mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+            animator.SetFloat("MouseX",characterRotation.x);
+            animator.SetFloat("MouseY",characterRotation.y);
+            //characterController.SetSpriteRotation(characterRotation);
         }
     }
 
