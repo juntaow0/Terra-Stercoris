@@ -37,20 +37,20 @@ public class Siphon : MonoBehaviour {
                     target.Damage(_healthPerTick);
                     PlayerController.instance.characterController.AddHealth((int) (_healthPerTick * _stealPercentage));
                     PlayerController.instance.characterController.AddEnergy(-_energyCostPerTick);
-                    particles.particleSource = hit.transform.gameObject;
-                    particles.particleSystem.Play();
+                    particles.particleSource = hit.transform;
+                    particles.GetComponent<ParticleSystem>().Play();
                     _originSprite.enabled = true;
                 } else {
                     _originSprite.enabled = false;
-                    particles.particleSystem.Stop();
+                    particles.GetComponent<ParticleSystem>().Stop();
                 }
             } else {
                 _originSprite.enabled = false;
-                particles.particleSystem.Stop();
+                particles.GetComponent<ParticleSystem>().Stop();
             }
             yield return new WaitForSeconds(_tickRate);
         }
         _originSprite.enabled = false;
-        particles.particleSystem.Stop();
+        particles.GetComponent<ParticleSystem>().Stop();
     }
 }

@@ -61,7 +61,7 @@ public class ActionSlot : MonoBehaviour
         }
         else //When we try to use an ability that is on cooldown, we trigger a sound and a visual effect
         {
-            Debug.Log("That ability is on cooldown! You need to wait a little longer.");
+            //Debug.Log("That ability is on cooldown! You need to wait a little longer.");
             //Note: Eventually add sound and a visual effect here
         }
     }

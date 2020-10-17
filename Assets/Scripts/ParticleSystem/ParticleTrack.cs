@@ -4,34 +4,39 @@ using UnityEngine;
 
 public class ParticleTrack : MonoBehaviour {
 
-    public GameObject particleSource = null;
-    public ParticleSystem particleSystem;
-    private ParticleSystem.MainModule _mainModule;
-    private ParticleSystem.EmissionModule _emissionModule;
-
+    public Transform particleSource = null;
+    private ParticleSystem particleSystem;
+    private ParticleSystem.MainModule mainModule;
     private ParticleSystem.Particle[] particles;
 
-    void Start() {
+    private void Awake() {
         particleSystem = GetComponent<ParticleSystem>();
+        if (particleSystem != null) {
+            mainModule = particleSystem.main;
+            particles = new ParticleSystem.Particle[mainModule.maxParticles];
+        } else {
+            enabled = false;
+        }
+    }
 
-        _emissionModule = particleSystem.emission;
-        _mainModule = particleSystem.main;
+    public void Play() {
+        particleSystem.Play();
+    }
 
-        particles = new ParticleSystem.Particle[_mainModule.maxParticles];
+    public void Stop() {
+        particleSystem.Stop();
     }
 
     void Update() {
         if(particleSource != null) {
-            transform.position = particleSource.transform.position + new Vector3(0,0,-1);
-            //transform.rotation = Quaternion.AngleAxis(
-            //        Vector2.SignedAngle(Vector2.right, transform.position - transform.parent.position), Vector3.forward) * Quaternion.Euler(0, 90, 0);
+            transform.position = particleSource.position + new Vector3(0,0,-1);
 
-            particleSystem.startLifetime = Vector2.Distance(transform.position, transform.parent.position) / Mathf.Abs(_mainModule.startSpeed.constant);
+            particleSystem.startLifetime = Vector2.Distance(transform.position, transform.parent.position) / Mathf.Abs(mainModule.startSpeed.constant);
 
             int numParticlesAlive = particleSystem.GetParticles(particles);
 
             float velocity;
-            float distance = 0;
+            float distance;
 
             // Change only the particles that are alive
             for (int i = 0; i < numParticlesAlive; ++i) {
@@ -44,7 +49,6 @@ public class ParticleTrack : MonoBehaviour {
                     particles[i].remainingLifetime = -1;
                 }
             }
-
             particleSystem.SetParticles(particles, numParticlesAlive);
         }
     }

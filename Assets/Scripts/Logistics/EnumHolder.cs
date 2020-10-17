@@ -27,3 +27,12 @@ public enum WeaponType {
         MELEE,
         RANGED
 }
+
+// Spell
+public enum SpellStates {
+    Ready,
+    Chanting,
+    Casting,
+    Finished,
+    Cooldown
+}
