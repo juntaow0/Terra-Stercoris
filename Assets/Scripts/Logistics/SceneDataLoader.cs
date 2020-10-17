@@ -7,6 +7,7 @@ public static class SceneDataLoader
     // save player data, but we only have wrench for now
     // maybe save some other states
     static private WeaponBase playerWeapon = null;
+    static private List<int> playerSpells = null;
     static private int playerHealth;
     static private int playerEnergy;
 
@@ -31,6 +32,7 @@ public static class SceneDataLoader
             }
             playerHealth = PlayerController.instance.characterController.GetHealth();
             playerEnergy = PlayerController.instance.characterController.GetEnergy();
+            playerSpells = PlayerController.instance.transform.GetComponent<SpellController>().GetSpellID();
         }
         
     }
@@ -42,6 +44,9 @@ public static class SceneDataLoader
             }
             PlayerController.instance.characterController.SetHealth(playerHealth);
             PlayerController.instance.characterController.SetEnergy(playerEnergy);
+            if (playerSpells != null) {
+                PlayerController.instance.gameObject.GetComponent<SpellController>().SetSpells(playerSpells.ToArray());
+            } 
         }
     }
 }

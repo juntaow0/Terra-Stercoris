@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SiphonOne : SpellBehavior {
     [SerializeField] private GameObject particlesPrefab;
+    [SerializeField] private GameObject userEffectPrefab;
     private ParticleTrack particles;
+    private SpriteRenderer originSprite;
     private Camera mainCamera;
     private int healthPerTick = 1;
     private float stealPercentage = 1.0f;
@@ -16,6 +18,8 @@ public class SiphonOne : SpellBehavior {
         active = false;
         mainCamera = Camera.main;
         particles = Instantiate(particlesPrefab, transform.parent).GetComponent<ParticleTrack>();
+        originSprite = Instantiate(userEffectPrefab, transform.parent).GetComponentInChildren<SpriteRenderer>();
+        originSprite.enabled = false;
     }
 
     protected override void CoreBehavior(CharacterController user) {
@@ -35,15 +39,17 @@ public class SiphonOne : SpellBehavior {
                 if (target != null && target.health.quantity > 0) {
                     particles.particleSource = hit.transform;
                     active = true;
+                    originSprite.enabled = true;
+                    particles.Play();
                     while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.health.quantity>0) {
                         target.Damage(healthPerTick);
                         user.AddHealth((int)(healthPerTick * stealPercentage));
                         user.AddEnergy(-energyCostPerTick);
-                        particles.Play();
                         yield return new WaitForSeconds(tickRate);
                     }
-                    particles.Stop();
                     active = false;
+                    originSprite.enabled = false;
+                    particles.Stop();
                 }
             }
         }

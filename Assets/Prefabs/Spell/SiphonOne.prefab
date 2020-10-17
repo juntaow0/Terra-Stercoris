@@ -46,3 +46,5 @@ MonoBehaviour:
   spellStats: {fileID: 11400000, guid: e9c0b805b39a3f24895b3832a4d8ba92, type: 2}
   particlesPrefab: {fileID: 1678701693330500688, guid: f20d680575d74804a9e049d2f56efe07,
     type: 3}
+  userEffectPrefab: {fileID: 3586971662793299298, guid: 72875e8b09843dd4c92acc660e732fb1,
+    type: 3}
