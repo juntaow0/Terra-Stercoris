@@ -16,7 +16,7 @@ public class CharacterController : MonoBehaviour, IDamagable {
     [SerializeField] private int _spriteRotation = 0;
     public bool IsAlive {get; private set;} = true;
 
-    [SerializeField] private Rigidbody2D _body = null;
+    private Rigidbody2D _body = null;
     [SerializeField] private SpriteRenderer _spriteRenderer = null;
     private Animator animator;
 
