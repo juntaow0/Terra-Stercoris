@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1782155325}
-  - component: {fileID: 756041582}
+  - component: {fileID: 3464594395691759046}
   m_Layer: 0
   m_Name: WeaponHolder
   m_TagString: Untagged
@@ -28,11 +28,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4004248051843968178}
+  - {fileID: 4967076157468676393}
   m_Father: {fileID: 1658308746293421174}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &756041582
+--- !u!95 &3464594395691759046
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -51,36 +51,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &804590882016192111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4004248051843968178}
-  m_Layer: 0
-  m_Name: pivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4004248051843968178
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804590882016192111}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1782155325}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658308746293421169
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +67,7 @@ GameObject:
   - component: {fileID: 1658308746293421168}
   - component: {fileID: 1658308746293421176}
   - component: {fileID: 1658308746293421173}
-  - component: {fileID: 667962222}
+  - component: {fileID: 17138102}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -204,9 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weaponHolder: {fileID: 1782155324}
-  weaponPrefabs:
-  - {fileID: 2988660761826633253, guid: dba5466972693e449bf1517b06144d78, type: 3}
-  weaponHolderAnimator: {fileID: 756041582}
+  weaponPrefabs: []
+  weaponHolderAnimator: {fileID: 3464594395691759046}
 --- !u!114 &1658308746293421171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,17 +265,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellPrefabs: []
   isPlayer: 1
---- !u!1001 &1658308746609337275
-PrefabInstance:
+--- !u!1 &8616333820478279256
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658308746293421169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b91463412aa6bd43b6a5113efa0b571, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spellPrefabs: []
-  isPlayer: 1
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4967076157468676393}
+  m_Layer: 0
+  m_Name: pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4967076157468676393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616333820478279256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782155325}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
