@@ -121,6 +121,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &90213897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2988660761826633253, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_Name
+      value: Wrench
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dba5466972693e449bf1517b06144d78, type: 3}
 --- !u!1 &224954319
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Remove siphon
+  _message: 
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -459,7 +528,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &395099882
 PrefabInstance:
@@ -567,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: ReloadLevel
+  _message: 
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -665,28 +734,20 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &667962213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1658308746293421169, guid: 4816099c67334534c99f08dd45498ce4,
+--- !u!114 &667962222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 667962222, guid: 4816099c67334534c99f08dd45498ce4,
     type: 3}
   m_PrefabInstance: {fileID: 395099882}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &667962222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667962213}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b91463412aa6bd43b6a5113efa0b571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellPrefabs: []
-  isPlayer: 1
 --- !u!1 &1017774262
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterController: {fileID: 1017774267}
-  _combatController: {fileID: 1017774266}
+  _weaponController: {fileID: 0}
   _spriteRenderer: {fileID: 1017774269}
   _target: {fileID: 0}
 --- !u!114 &1017774266
@@ -788,8 +849,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275e856a2efde64418b8834dfe243d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 11400000, guid: 972191b769b08bd4bb21ed4fac9a5039, type: 2}
-  _weaponSprite: {fileID: 1613445772}
+  _weaponHolder: {fileID: 0}
+  weaponPrefabs: []
+  weaponHolderAnimator: {fileID: 0}
 --- !u!114 &1017774267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +952,7 @@ Transform:
   m_Children:
   - {fileID: 1613445773}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078286532
 GameObject:
@@ -1026,7 +1088,7 @@ Transform:
   - {fileID: 1235418516}
   - {fileID: 1734311619}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167577959
 GameObject:
@@ -31690,7 +31752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1235418515
 GameObject:
@@ -69950,7 +70012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Get siphon
+  _message: 
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -70048,7 +70110,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380337831
 GameObject:
@@ -70777,7 +70839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1472454404
 GameObject:
@@ -73309,5 +73371,5 @@ Transform:
   m_Children:
   - {fileID: 2014087918}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

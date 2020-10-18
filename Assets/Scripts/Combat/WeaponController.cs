@@ -12,6 +12,7 @@ public class WeaponController : MonoBehaviour {
     private CharacterController _characterController;
     [SerializeField] private GameObject _weaponHolder = null;
     [SerializeField] private GameObject[] weaponPrefabs;
+    [SerializeField] private Animator weaponHolderAnimator;
 
     public GameObject weaponHolder {get {return _weaponHolder;}}
 
@@ -84,7 +85,11 @@ public class WeaponController : MonoBehaviour {
 
     public void Attack() {
         if (selected != null) {
+            Quaternion newRot = Quaternion.Euler(0,0, Mathf.Atan2(_characterController.rotation.y, _characterController.rotation.x) * Mathf.Rad2Deg);
+            weaponHolder.transform.rotation = newRot;
+            weaponHolderAnimator.SetTrigger("attack");
             selected.Attack(_characterController);
+            
         }
     }
 

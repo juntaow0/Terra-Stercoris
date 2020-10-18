@@ -7,6 +7,7 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
     [SerializeField] private Weapon _weaponStats;
     private Collider2D _collider;
     private SpriteRenderer _renderer;
+    private SpriteRenderer _realRenderer;
     public Weapon weaponStats {get {return _weaponStats;} private set {_weaponStats = value;}}
     public bool inCooldown {get; private set;} = false;
 
@@ -15,6 +16,7 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
     void Awake() {
         _collider = GetComponent<Collider2D>();
         _renderer = GetComponent<SpriteRenderer>();
+        _realRenderer = transform.GetChild(0).GetComponentInChildren<SpriteRenderer>();
     }
 
     public void SetHolder(GameObject holder) {
@@ -23,8 +25,9 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
             transform.SetParent(null);
             _collider.enabled = _renderer.enabled = true;
         } else {
-            transform.position = holder.transform.position;
-            transform.SetParent(holder.transform);
+            Transform holderPivot = holder.transform.GetChild(0);
+            transform.SetParent(holderPivot);
+            transform.localPosition = Vector3.zero;
             _collider.enabled = _renderer.enabled = false;
         }
     }
@@ -42,10 +45,12 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
 
     IEnumerator Cooldown() {
         inCooldown = true;
-        _renderer.enabled = true;
-        yield return new WaitForSeconds(weaponStats.cooldownTime);
+        _realRenderer.enabled = true;
+        yield return new WaitForSeconds(0.166f);
+        _realRenderer.enabled = false;
+        yield return new WaitForSeconds(weaponStats.cooldownTime- 0.166f);
         inCooldown = false;
-        _renderer.enabled = false;
+        
     }
 
     public string message {get {return "Pick Up";} set {}}
