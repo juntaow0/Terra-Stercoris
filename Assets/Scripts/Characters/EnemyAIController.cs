@@ -5,21 +5,22 @@ using UnityEngine;
 public class EnemyAIController : MonoBehaviour {
 
     [SerializeField] private CharacterController _characterController = null;
-    [SerializeField] private CombatController _combatController = null;
+    [SerializeField] private WeaponController _weaponController = null;
     [SerializeField] private SpriteRenderer _spriteRenderer = null;
+    [SerializeField] private GameObject _target = null;
 
     private Vector2 _targetPosition;
     private bool _seesTarget = false;
 
     void Awake() {
         if (_characterController == null) _characterController = GetComponent<CharacterController>();
-        if (_combatController == null) _combatController = GetComponent<CombatController>();
+        if (_weaponController == null) _weaponController = GetComponent<WeaponController>();
         if (_spriteRenderer == null) _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Start() {
         _targetPosition = transform.position;
-        StartCoroutine(FindPlayer());
+        StartCoroutine(FindTarget());
     }
 
     void OnEnable() {
@@ -36,40 +37,52 @@ public class EnemyAIController : MonoBehaviour {
 
     void Die() {
         _characterController.Move(Vector2.zero);
-        StopCoroutine(FindPlayer());
+        StopCoroutine(FindTarget());
+    }
+
+    public void SetTarget(GameObject target) {
+        _target = target;
+        _seesTarget = false;
+        _targetPosition = transform.position;
+    }
+
+    public void UnsetTarget() {
+        SetTarget(null);
     }
 
     void Update() {
 
-        if(_characterController.IsAlive && _combatController.currentWeapon != null) {
+        if(_characterController.IsAlive && _weaponController.selected != null) {
 
             if(_seesTarget) {
-                _targetPosition = PlayerController.instance.transform.position;
+                _targetPosition = _target.transform.position;
             }
 
             Vector2 enemyDir = _targetPosition - (Vector2) transform.position;
 
-            if(Vector2.Distance(transform.position, _targetPosition) >= _combatController.currentWeapon.range) {
+            if(Vector2.Distance(transform.position, _targetPosition) >= _weaponController.selected.weaponStats.range) {
+                _characterController.rotation = enemyDir;
                 _characterController.Move(enemyDir);
-                _characterController.SetSpriteRotation(enemyDir);
             } else {
                 _characterController.Move(Vector2.zero);
                 if(_seesTarget) {
-                    _characterController.SetSpriteRotation(enemyDir);
-                    _combatController.Attack(enemyDir);
+                    _characterController.rotation = enemyDir;
+                    _weaponController.Attack();
                 }
             }
+        } else {
+            _characterController.Move(Vector2.zero);
         }
     }
 
-    IEnumerator FindPlayer() {
+    IEnumerator FindTarget() {
 
         while(true) {
-            if(PlayerController.instance == null) {
+            if(_target == null) {
                 yield return null;
             } else {
-                RaycastHit2D hit = Physics2D.Linecast(transform.position, PlayerController.instance.transform.position);
-                _seesTarget = hit.collider != null && hit.collider.gameObject == PlayerController.instance.gameObject;
+                RaycastHit2D hit = Physics2D.Linecast(transform.position, _target.transform.position);
+                _seesTarget = hit.collider != null && hit.collider.gameObject == _target;
                 yield return new WaitForSeconds(1.0f);
             }
         }
