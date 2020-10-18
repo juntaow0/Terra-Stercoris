@@ -19,21 +19,22 @@ public class TransitionManager : MonoBehaviour {
 
     public void LoadScene(string scene, bool elementsActive = true) {
         UIManager.instance.FadeIn(FadeTime, ()=> {
-            if (ActiveSceneName == null) {
-                ActiveSceneName = SceneManager.GetActiveScene().name;
-            }
             SceneManager.UnloadSceneAsync(ActiveSceneName);
             ActiveSceneName = scene;
             SceneManager.sceneLoaded += OnSceneLoaded;
-            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive).completed += operation =>
-                    SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene));
+            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         });
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        if (ActiveSceneName == null) {
+                ActiveSceneName = SceneManager.GetActiveScene().name;
+        }
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(ActiveSceneName));
         SceneDataLoader.LoadStates();
         UIManager.instance.Bind();
         UIManager.instance.FadeOut(FadeTime, null);
+        DialogueManager.instance.InitializeUI();
 
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }

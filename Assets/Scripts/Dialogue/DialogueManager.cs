@@ -34,9 +34,12 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueUI = GetComponent<DialogueUI>();
         sentences = new Queue<Sentence>();
-        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, characterPerSecond,buttonSpacing);
         InConversation = false;
         state = DialogueState.Idle;
+    }
+
+    public void InitializeUI() {
+        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, characterPerSecond,buttonSpacing);
     }
 
     public void LoadConversation(Conversation conversation, int triggerID) {
