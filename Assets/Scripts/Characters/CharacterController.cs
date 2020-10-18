@@ -18,6 +18,7 @@ public class CharacterController : MonoBehaviour, IDamagable {
 
     [SerializeField] private Rigidbody2D _body = null;
     [SerializeField] private SpriteRenderer _spriteRenderer = null;
+    private Animator animator;
 
     private Color deathTint = Color.red;
     private Color hitTint = Color.red;
@@ -27,9 +28,22 @@ public class CharacterController : MonoBehaviour, IDamagable {
     // Add property for velocity
     public Vector2 velocity {get {return _body.velocity;} private set {_body.velocity = value;}}
 
-    void Start() {
+    // Have updates for characterRotation update the animator
+    private Vector2 _rotation;
+    public Vector2 rotation {
+        get {return _rotation;}
+        set {
+            _rotation = value.normalized;
+            animator?.SetFloat("MouseX",_rotation.x);
+            animator?.SetFloat("MouseY",_rotation.y);
+            // SetSpriteRotation(_rotation);
+        }
+    }
+
+    void Awake() {
         if(_body == null) _body = GetComponent<Rigidbody2D>();
         if(_spriteRenderer == null) _spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void OnEnable() {
@@ -46,6 +60,9 @@ public class CharacterController : MonoBehaviour, IDamagable {
 
     public void Move(Vector2 newVelocity) {
         velocity = newVelocity.normalized * _movementSpeed;
+        animator.SetFloat("Horizontal", velocity.x);
+        animator.SetFloat("Vertical", velocity.y);
+        animator.SetFloat("Speed", velocity.magnitude);
     }
 
     public float GetSpeed() {

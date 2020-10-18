@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0733f528d87dd104f99d20e563d2fdc5, type: 3}
   m_Name: Test Ranged Weapon
   m_EditorClassIdentifier: 
-  name: Test Ranged Weapon
-  type: 1
+  weaponName: 
+  weaponID: 2
+  icon: {fileID: 0}
   damage: 5
+  energyCost: 0
   range: 10
-  cooldown: 0.1
-  speed: 25
-  projectileSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  cooldownTime: 0

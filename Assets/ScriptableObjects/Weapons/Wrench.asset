@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0733f528d87dd104f99d20e563d2fdc5, type: 3}
-  m_Name: Monster Attack
+  m_Name: Wrench
   m_EditorClassIdentifier: 
-  name: Monster Teeth
-  type: 0
-  damage: 10
-  range: 3
-  cooldown: 0.5
-  weaponSprite: {fileID: 0}
-  speed: 0
-  projectileSprite: {fileID: 0}
+  weaponName: Wrench
+  weaponID: 0
+  icon: {fileID: 21300000, guid: 30ac7b6d8138b784db782528c8d0ad98, type: 3}
+  damage: 5
+  energyCost: 0
+  range: 1
+  cooldownTime: 0.5

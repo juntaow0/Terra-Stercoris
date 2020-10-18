@@ -12,8 +12,8 @@ public class Tooltip : MonoBehaviour {
     [SerializeField] private Color backgroundColor;
     [SerializeField] private float fadeTime = 0.2f;
 
-    private InteractableObject targetObject = null;
-    private InteractableObject currentObject = null;
+    private IInteractable targetObject = null;
+    private IInteractable currentObject = null;
     private float fadeProgress = 0f;
 
     void Start() {
@@ -26,7 +26,7 @@ public class Tooltip : MonoBehaviour {
         StartCoroutine(fade());
     }
 
-    public void Show(InteractableObject newObject) {
+    public void Show(IInteractable newObject) {
         targetObject = newObject;
     }
 

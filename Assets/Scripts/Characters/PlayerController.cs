@@ -8,32 +8,18 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float interactRadius = 0.2f;
 
     // Declare components for caching
-    [SerializeField] private Camera _mainCamera = null;
-    [SerializeField] public CharacterController characterController = null;
-    [SerializeField] public CombatController combatController = null;
+    private Camera _mainCamera = null;
+    public CharacterController characterController {get; private set;}
+    public WeaponController weaponController {get; private set;}
 
     [SerializeField] private ActionSlot _actionSlot;
     private Animator animator;
 
     private Collider2D _collider = null;
 
-    public Vector2 characterRotation {get; private set;}
-
-    private InteractableObject closestObject = null;
+    private IInteractable closestObject = null;
 
     public static PlayerController instance {get; private set;} = null;
-
-    private bool _attacking = false;
-
-    private Siphon _siphon;
-
-    public void GiveSiphon() {
-        _siphon.available = true;
-    }
-
-    public void TakeSiphon() {
-        _siphon.available = false;
-    }
 
     public void SetCamera(Camera newCamera) {
         _mainCamera = newCamera;
@@ -43,11 +29,10 @@ public class PlayerController : MonoBehaviour {
         instance = this;
 
         // Override components if they haven't been set in the inspector
-        if (_mainCamera == null) _mainCamera = Camera.main;
-        if (characterController == null) characterController = GetComponent<CharacterController>();
-        if (combatController == null) combatController = GetComponent<CombatController>();
-        if (_collider == null) _collider = GetComponent<Collider2D>();
-        _siphon = GetComponent<Siphon>();
+        _mainCamera = Camera.main;
+        characterController = GetComponent<CharacterController>();
+        _collider = GetComponent<Collider2D>();
+        weaponController = GetComponent<WeaponController>();
         animator = GetComponent<Animator>();
     }
 
@@ -55,74 +40,33 @@ public class PlayerController : MonoBehaviour {
         StartCoroutine(checkInteractable());
     }
 
-    void StartSiphon() {
-        _siphon.SetActive(true);
-    }
-
-    void StopSiphon() {
-        _siphon.SetActive(false);
-    }
-
     void OnEnable() {
         InputManager.OnInteract += Interact;
         InputManager.OnStopInteract += StopInteract;
-        InputManager.OnMouseClickLeft += Attack;
-        InputManager.OnMouseUpLeft += StopAttack;
-        InputManager.OnMouseClickRight += StartSiphon;
-        InputManager.OnMouseUpRight += StopSiphon;
+        InputManager.OnMouseClickLeft += weaponController.Attack;
     }
 
     void OnDisable() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseClickLeft -= Attack;
-        InputManager.OnMouseUpLeft -= StopAttack;
-        InputManager.OnMouseClickRight -= StartSiphon;
-        InputManager.OnMouseUpRight -= StopSiphon;
+        InputManager.OnMouseClickLeft -= weaponController.Attack;
     }
 
-    private void OnDestroy() {
+    void OnDestroy() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseClickLeft -= Attack;
-        InputManager.OnMouseUpLeft -= StopAttack;
-        InputManager.OnMouseClickRight -= StartSiphon;
-        InputManager.OnMouseUpRight -= StopSiphon;
-    }
-
-    public void Attack() {
-        _attacking = true;
-        StartCoroutine(attacking());
-    }
-
-    public void StopAttack() {
-        _attacking = false;
-    }
-
-    IEnumerator attacking() {
-        while(_attacking && (!DialogueManager.InConversation && !TimelineController.InCutscene)) {
-            combatController.Attack(characterRotation);
-            yield return null; // TODO: Apply correct delay
-        }
+        InputManager.OnMouseClickLeft -= weaponController.Attack;
     }
 
     void Update() {
         
         // Update character movement. I really don't like the non-raw input, it feels too sluggish
         Vector2 inputAxis = new Vector2(InputManager.Horizontal, InputManager.Vertical);
-        animator.SetFloat("Horizontal", inputAxis.x);
-        animator.SetFloat("Vertical", inputAxis.y);
-        animator.SetFloat("Speed", inputAxis.magnitude);
         characterController.Move(inputAxis);
-        
-
 
         // Update character rotation (angle of mouse relative to player)
         if (_mainCamera != null) {
-            characterRotation = Vector3.Normalize(_mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position);
-            animator.SetFloat("MouseX",characterRotation.x);
-            animator.SetFloat("MouseY",characterRotation.y);
-            //characterController.SetSpriteRotation(characterRotation);
+            characterController.rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         }
     }
 
@@ -136,8 +80,8 @@ public class PlayerController : MonoBehaviour {
                 if (collider != _collider) {
                     float distance = collider.Distance(_collider).distance;
                     if (distance < lastDistance) {
-                        InteractableObject interactable = collider.GetComponent<InteractableObject>();
-                        if(interactable != null && interactable.IsEnabled) {
+                        IInteractable interactable = collider.GetComponent<IInteractable>();
+                        if(interactable != null && interactable.InteractEnabled) {
                             lastDistance = distance;
                             closest = collider;
                         }
@@ -151,7 +95,7 @@ public class PlayerController : MonoBehaviour {
                 }
             } else {
                 if(closest != closestObject) {
-                    closestObject = closest.gameObject.GetComponent<InteractableObject>();
+                    closestObject = closest.gameObject.GetComponent<IInteractable>();
                     UIManager.instance.showTooltip(closestObject);
                 }
             }

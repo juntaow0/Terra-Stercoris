@@ -6,7 +6,7 @@ public static class SceneDataLoader
 {
     // save player data, but we only have wrench for now
     // maybe save some other states
-    static private WeaponBase playerWeapon = null;
+    static private int[] playerWeapons = null;
     static private List<int> playerSpells = null;
     static private int playerHealth;
     static private int playerEnergy;
@@ -20,16 +20,13 @@ public static class SceneDataLoader
     }
 
     public static void Initialize() {
-        playerWeapon = null;
         playerHealth = 100;
         playerEnergy = 100;
     }
 
     private static void SavePlayerStates() {
         if (PlayerController.instance != null) {
-            if (PlayerController.instance.combatController.currentWeapon != null) {
-                playerWeapon = PlayerController.instance.combatController.currentWeapon.weaponBase;
-            }
+            playerWeapons = PlayerController.instance.weaponController.GetWeapons();
             playerHealth = PlayerController.instance.characterController.GetHealth();
             playerEnergy = PlayerController.instance.characterController.GetEnergy();
             playerSpells = PlayerController.instance.transform.GetComponent<SpellController>().GetSpellID();
@@ -39,8 +36,8 @@ public static class SceneDataLoader
 
     private static void LoadPlayerStates() {
         if (PlayerController.instance != null) {
-            if (playerWeapon != null) {
-                PlayerController.instance.combatController.SetWeapon(playerWeapon);
+            if (playerWeapons != null) {
+                PlayerController.instance.weaponController.SetWeapons(playerWeapons);
             }
             PlayerController.instance.characterController.SetHealth(playerHealth);
             PlayerController.instance.characterController.SetEnergy(playerEnergy);

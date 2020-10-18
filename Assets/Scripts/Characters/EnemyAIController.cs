@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAIController : MonoBehaviour {
 
     [SerializeField] private CharacterController _characterController = null;
-    [SerializeField] private CombatController _combatController = null;
+    [SerializeField] private WeaponController _weaponController = null;
     [SerializeField] private SpriteRenderer _spriteRenderer = null;
     [SerializeField] private GameObject _target = null;
 
@@ -14,7 +14,7 @@ public class EnemyAIController : MonoBehaviour {
 
     void Awake() {
         if (_characterController == null) _characterController = GetComponent<CharacterController>();
-        if (_combatController == null) _combatController = GetComponent<CombatController>();
+        if (_weaponController == null) _weaponController = GetComponent<WeaponController>();
         if (_spriteRenderer == null) _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -52,7 +52,7 @@ public class EnemyAIController : MonoBehaviour {
 
     void Update() {
 
-        if(_characterController.IsAlive && _combatController.currentWeapon != null) {
+        if(_characterController.IsAlive && _weaponController.selected != null) {
 
             if(_seesTarget) {
                 _targetPosition = _target.transform.position;
@@ -60,16 +60,18 @@ public class EnemyAIController : MonoBehaviour {
 
             Vector2 enemyDir = _targetPosition - (Vector2) transform.position;
 
-            if(Vector2.Distance(transform.position, _targetPosition) >= _combatController.currentWeapon.range) {
+            if(Vector2.Distance(transform.position, _targetPosition) >= _weaponController.selected.weaponStats.range) {
+                _characterController.rotation = enemyDir;
                 _characterController.Move(enemyDir);
-                _characterController.SetSpriteRotation(enemyDir);
             } else {
                 _characterController.Move(Vector2.zero);
                 if(_seesTarget) {
-                    _characterController.SetSpriteRotation(enemyDir);
-                    _combatController.Attack(enemyDir);
+                    _characterController.rotation = enemyDir;
+                    _weaponController.Attack();
                 }
             }
+        } else {
+            _characterController.Move(Vector2.zero);
         }
     }
 

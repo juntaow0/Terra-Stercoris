@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour
         hud.SetActive(visible);
     }
 
-    public void showTooltip(InteractableObject obj) {
+    public void showTooltip(IInteractable obj) {
         toolTip.Show(obj);
     }
 

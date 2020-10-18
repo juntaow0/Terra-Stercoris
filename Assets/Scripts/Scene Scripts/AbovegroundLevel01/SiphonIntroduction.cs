@@ -22,13 +22,12 @@ public class SiphonIntroduction : MonoBehaviour {
     void CheckForLowHealth(int health) {
         if(health <= healthThreshold) {
             startSiphonCutscene?.Invoke();
-            PlayerController.instance.GiveSiphon();
             PlayerController.instance.characterController.health.OnResourceUpdated -= CheckForLowHealth;
             this.enabled = false;
         }
     }
 
     public void RemoveSiphon() {
-        PlayerController.instance.TakeSiphon();
+        // Placeholder (This will be removed anyway)
     }
 }
