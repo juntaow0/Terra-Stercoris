@@ -59,7 +59,10 @@ public class WeaponController : MonoBehaviour {
         if(_availableWeapons.ContainsKey(weaponID)) {
             selected = _availableWeapons[weaponID];
         } else {
-            // Add weapon from WeaponManager once WeaponManager actually exists
+            GameObject weapon = WeaponManager.instance?.CreateWeapon(transform, weaponID);
+            if(weapon != null) {
+                SetWeapon(weapon.GetComponent<WeaponBehavior>());
+            }
         }
     }
 
