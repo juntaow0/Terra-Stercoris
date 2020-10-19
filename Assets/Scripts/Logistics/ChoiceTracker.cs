@@ -5,7 +5,7 @@ using UnityEngine;
 // only works within a game session
 public static class ChoiceTracker
 {
-    private static Dictionary<string,int> choices;
+    private static Dictionary<string,int> choices = new Dictionary<string, int>();
 
     public static void Track(string key, int choice) {
         choices.Add(key,choice);

@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 2311107
+    totalSpriteSurfaceArea: 2315259
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -248,6 +248,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: dba1d2dcacb76ed42834e6e6ec10ef07, type: 3}
   - {fileID: 21300000, guid: 4f0b1adce24a3624a8c1922b98ff0d41, type: 3}
   - {fileID: 21300000, guid: 202fd2eca3a50754589a67551da1d199, type: 3}
+  - {fileID: 7502804072987224792, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: -1983143626788092638, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: -5785998759737728710, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: 3622788523802975509, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: -6601705190156754321, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: 7315654259435207253, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: 2722699084956966413, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: 5399788621876003597, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: -5010326513235638187, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: -7473283915554391882, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: 2179513065543173373, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
+  - {fileID: 6437439540225767405, guid: 079754ec244c3bc43b546e9d4c1640b9, type: 3}
   - {fileID: 21300000, guid: 4d0e1afc60408c645b0806372dacb81a, type: 3}
   - {fileID: 21300000, guid: 8ee3e80da58f4cf42a77d6753fd58fed, type: 3}
   - {fileID: 21300000, guid: 3bd6fd2ddfcfa6249b554136b2b3bf2b, type: 3}
@@ -483,6 +495,18 @@ SpriteAtlas:
   - run06
   - 3
   - jump_mid02
+  - Player-v2_11
+  - Player-v2_10
+  - Player-v2_4
+  - Player-v2_5
+  - Player-v2_6
+  - Player-v2_7
+  - Player-v2_0
+  - Player-v2_1
+  - Player-v2_2
+  - Player-v2_3
+  - Player-v2_8
+  - Player-v2_9
   - enemy04_sheet
   - death01
   - attack_in_jump02
