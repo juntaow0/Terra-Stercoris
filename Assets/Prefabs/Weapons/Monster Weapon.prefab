@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weaponStats: {fileID: 11400000, guid: 972191b769b08bd4bb21ed4fac9a5039, type: 2}
+  equippedLayer: 4
+  groundLayer: 0
 --- !u!212 &6526531009863631473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106,7 +108,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

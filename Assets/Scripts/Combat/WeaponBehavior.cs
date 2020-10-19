@@ -2,21 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CircleCollider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
+[ExecuteAlways]
 public class WeaponBehavior : MonoBehaviour, IInteractable {
 
     [SerializeField] private Weapon _weaponStats;
+    public int equippedLayer = 4;
+    public int groundLayer = 2;
     private Collider2D _collider;
     private SpriteRenderer _renderer;
-    private SpriteRenderer _realRenderer;
+    private SpriteRenderer _realRenderer = null;
     public Weapon weaponStats {get {return _weaponStats;} private set {_weaponStats = value;}}
     public bool inCooldown {get; private set;} = false;
 
     private GameObject _weaponHolder = null;
 
     void Awake() {
-        _collider = GetComponent<Collider2D>();
-        _renderer = GetComponent<SpriteRenderer>();
-        _realRenderer = transform.GetChild(0).GetComponentInChildren<SpriteRenderer>();
+        Initialize();
+        if(_realRenderer != null) {
+            _realRenderer.enabled = false;
+        }
+    }
+
+    void OnValidate() {
+        Initialize();
+    }
+
+    void Initialize() {
+        if(_collider == null) _collider = GetComponent<Collider2D>();
+        if(_renderer == null) _renderer = GetComponent<SpriteRenderer>();
+        if(transform.childCount > 0) _realRenderer = transform.GetChild(0).GetComponentInChildren<SpriteRenderer>();
+        _collider.isTrigger = true;
+        if(weaponStats != null) {
+            _renderer.sprite = weaponStats.icon;
+            _renderer.sortingOrder = groundLayer;
+            if(_realRenderer != null) {
+                _realRenderer.sprite = weaponStats.icon;
+                _realRenderer.sortingOrder = equippedLayer;
+            }
+        }
     }
 
     public void SetHolder(GameObject holder) {
