@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 2315259
+    totalSpriteSurfaceArea: 2327547
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -228,6 +228,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 92e3255b294a5e04083821b7b548f6d6, type: 3}
   - {fileID: 21300000, guid: fbeb9f6be7c799445b4a1c6616f1064e, type: 3}
   - {fileID: 21300000, guid: afca279b55bdc1741a9b4af1662355e5, type: 3}
+  - {fileID: 21300000, guid: 2749a1abbda37114bb75c7f33ae948c3, type: 3}
   - {fileID: 21300000, guid: e8a3a0cb5035ef14d9ac4a5da5fce5b3, type: 3}
   - {fileID: 21300000, guid: 79b1dacb348447149a1ba72608a351ef, type: 3}
   - {fileID: 21300000, guid: ce3320dbc1a94d842ad18632e0f12c95, type: 3}
@@ -475,6 +476,7 @@ SpriteAtlas:
   - walk04
   - fly02
   - attack06
+  - magicdot
   - attack01
   - hit02
   - slide
