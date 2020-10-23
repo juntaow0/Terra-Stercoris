@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -21725,7 +21725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198244531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3300004, y: 0.00000011920929, z: -10}
+  m_LocalPosition: {x: -1.3300008, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1186946455}
@@ -94791,7 +94791,7 @@ GameObject:
   - component: {fileID: 642529433}
   - component: {fileID: 642529435}
   m_Layer: 0
-  m_Name: Sargeant_0
+  m_Name: Sergeant_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94890,7 +94890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Talk to the Sargeant
+  _message: Talk to the Sergeant
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -95200,12 +95200,12 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.2
-  m_DeadZoneHeight: 0.2
+  m_DeadZoneWidth: 0.15
+  m_DeadZoneHeight: 0.15
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.15
+  m_SoftZoneHeight: 0.15
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -95472,7 +95472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497795253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3300004, y: 0.00000011920929, z: -10}
+  m_LocalPosition: {x: -1.3300008, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

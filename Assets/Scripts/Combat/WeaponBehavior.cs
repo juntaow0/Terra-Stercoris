@@ -49,7 +49,7 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
         if(holder == null) {
             transform.SetParent(null);
             _collider.enabled = _renderer.enabled = true;
-        } else {
+        } else if(transform.childCount > 0) {
             Transform holderPivot = holder.transform.GetChild(0);
             transform.SetParent(holderPivot);
             transform.localPosition = Vector3.zero;
@@ -73,12 +73,11 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
 
     IEnumerator Cooldown() {
         inCooldown = true;
-        _realRenderer.enabled = true;
+        if(_realRenderer) _realRenderer.enabled = true;
         yield return new WaitForSeconds(0.166f);
-        _realRenderer.enabled = false;
+        if(_realRenderer) _realRenderer.enabled = false;
         yield return new WaitForSeconds(weaponStats.cooldownTime- 0.166f);
         inCooldown = false;
-        
     }
 
     public string message {get {return "Pick Up";} set {}}
