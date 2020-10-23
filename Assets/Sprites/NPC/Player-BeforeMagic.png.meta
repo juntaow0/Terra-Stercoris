@@ -29,6 +29,42 @@ TextureImporter:
   - first:
       213: 635345391972641386
     second: Player-BeforeMagic_8
+  - first:
+      213: 1556853313202260518
+    second: Player-BeforeMagic_0
+  - first:
+      213: 1895370455932400229
+    second: Player-BeforeMagic_1
+  - first:
+      213: 8027669269818576315
+    second: Player-BeforeMagic_2
+  - first:
+      213: -6042219149538924699
+    second: Player-BeforeMagic_3
+  - first:
+      213: -4383887318321522908
+    second: Player-BeforeMagic_4
+  - first:
+      213: -3600047905395072683
+    second: Player-BeforeMagic_5
+  - first:
+      213: -5605495711072150081
+    second: Player-BeforeMagic_6
+  - first:
+      213: 4670509959094660819
+    second: Player-BeforeMagic_7
+  - first:
+      213: -2903748130976910554
+    second: Player-BeforeMagic_8
+  - first:
+      213: 5000888628580073845
+    second: Player-BeforeMagic_9
+  - first:
+      213: 3141136841240743537
+    second: Player-BeforeMagic_10
+  - first:
+      213: -1401938565104748654
+    second: Player-BeforeMagic_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -176,8 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cf70f7bf122dacc0800000000000000
-      internalID: -3698262199375986744
+      spriteID: 62a8fccf6dd0b9510800000000000000
+      internalID: 1556853313202260518
       vertices: []
       indices: 
       edges: []
@@ -197,8 +233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f7e2dfe1052bc340800000000000000
-      internalID: 4885038911062206455
+      spriteID: 562fe973365bd4a10800000000000000
+      internalID: 1895370455932400229
       vertices: []
       indices: 
       edges: []
@@ -218,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 790fb5b7b3ecd8310800000000000000
-      internalID: 1409009013304848535
+      spriteID: bbd0bd12ba2086f60800000000000000
+      internalID: 8027669269818576315
       vertices: []
       indices: 
       edges: []
@@ -229,7 +265,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 56
+        y: 70
         width: 12
         height: 25
       alignment: 0
@@ -239,8 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f496e1053e0fe6480800000000000000
-      internalID: -8903914554172479153
+      spriteID: 5676ba052b9b52ca0800000000000000
+      internalID: -6042219149538924699
       vertices: []
       indices: 
       edges: []
@@ -250,7 +286,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 56
+        y: 70
         width: 12
         height: 25
       alignment: 0
@@ -260,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14762774e010d0810800000000000000
-      internalID: 1733042592447358785
+      spriteID: 4271b18f5bd4923c0800000000000000
+      internalID: -4383887318321522908
       vertices: []
       indices: 
       edges: []
@@ -271,7 +307,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 56
+        y: 70
         width: 12
         height: 25
       alignment: 0
@@ -281,14 +317,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6520743c66097f260800000000000000
-      internalID: 7131327306001744470
+      spriteID: 551a980018f0a0ec0800000000000000
+      internalID: -3600047905395072683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Player-BeforeMagic_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 39
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd919799574532b0800000000000000
+      internalID: -5605495711072150081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-BeforeMagic_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 39
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dee2c7ff0cf0d040800000000000000
+      internalID: 4670509959094660819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-BeforeMagic_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 39
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623bae7a570d3b7d0800000000000000
+      internalID: -2903748130976910554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-BeforeMagic_9
       rect:
         serializedVersion: 2
         x: 8
@@ -302,14 +401,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e92c3edbc049a520800000000000000
-      internalID: 2713771494818458080
+      spriteID: 5714ecb36b9b66540800000000000000
+      internalID: 5000888628580073845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-BeforeMagic_7
+      name: Player-BeforeMagic_10
       rect:
         serializedVersion: 2
         x: 40
@@ -323,14 +422,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7693bf59d0b607560800000000000000
-      internalID: 7309459901317331303
+      spriteID: 17e0c0d805f879b20800000000000000
+      internalID: 3141136841240743537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player-BeforeMagic_8
+      name: Player-BeforeMagic_11
       rect:
         serializedVersion: 2
         x: 72
@@ -344,8 +443,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ae53e844331d800800000000000000
-      internalID: 635345391972641386
+      spriteID: 297b2068d405b8ce0800000000000000
+      internalID: -1401938565104748654
       vertices: []
       indices: 
       edges: []

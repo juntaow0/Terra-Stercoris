@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 2348097
+    totalSpriteSurfaceArea: 2352297
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -209,6 +209,9 @@ SpriteAtlas:
   - {fileID: 1409009013304848535, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: -8903914554172479153, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: 635345391972641386, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
+  - {fileID: 5000888628580073845, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
+  - {fileID: -1401938565104748654, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
+  - {fileID: 3141136841240743537, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: 1733042592447358785, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: 7131327306001744470, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: 2713771494818458080, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
@@ -349,6 +352,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 79cc50afc4389cc43848eb5836cbfd4f, type: 3}
   - {fileID: 21300000, guid: 8ee4d5bf4f881e2478bb8d381e34f622, type: 3}
   - {fileID: 21300000, guid: cd063abfa1db76241843119bab2f65c5, type: 3}
+  - {fileID: 5358411643526529963, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: 3156864525926257388, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: -5474514372253443550, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: 775959264254310738, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: 1919795066234709707, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: -3222861290967463445, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: -5227553573472371831, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: -5201407342918040164, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
+  - {fileID: -3134241301687043793, guid: 43e9debf7b4914c42b642e4e32962ae8, type: 3}
   - {fileID: 21300000, guid: e28d3bcfd1285754790ff0074c0f3a4d, type: 3}
   - {fileID: 21300000, guid: 524d19ef88d3bc04a9dc169aee72db2b, type: 3}
   - {fileID: 21300000, guid: 9f46bbef0b568fc419619a5a91bb71c5, type: 3}
@@ -512,6 +524,9 @@ SpriteAtlas:
   - Player-BeforeMagic_2
   - Player-BeforeMagic_3
   - Player-BeforeMagic_8
+  - Player-BeforeMagic_9
+  - Player-BeforeMagic_11
+  - Player-BeforeMagic_10
   - Player-BeforeMagic_4
   - Player-BeforeMagic_5
   - Player-BeforeMagic_6
@@ -652,6 +667,15 @@ SpriteAtlas:
   - AttackC03
   - hit02
   - attack04
+  - John_8
+  - John_1
+  - John_0
+  - John_3
+  - John_2
+  - John_5
+  - John_4
+  - John_7
+  - John_6
   - fly06
   - idle06
   - AttackB01
