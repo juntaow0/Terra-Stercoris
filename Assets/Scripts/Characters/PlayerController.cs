@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,31 +8,18 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float interactRadius = 0.2f;
 
     // Declare components for caching
-    [SerializeField] private Camera _mainCamera = null;
-    [SerializeField] public CharacterController characterController = null;
-    [SerializeField] public CombatController combatController = null;
-    [SerializeField] private Healthbar _healthBar = null;
-    [SerializeField] private Powerbar _powerBar = null;
+    private Camera _mainCamera = null;
+    public CharacterController characterController {get; private set;}
+    public WeaponController weaponController {get; private set;}
 
     [SerializeField] private ActionSlot _actionSlot;
+    private Animator animator;
 
     private Collider2D _collider = null;
 
-    public Vector2 characterRotation {get; private set;}
-
-    private InteractableObject closestObject = null;
+    private IInteractable closestObject = null;
 
     public static PlayerController instance {get; private set;} = null;
-
-    private bool _attacking = false;
-
-    public void GiveSiphon() {
-        _actionSlot.AddAbilityByIndex(0);
-    }
-
-    public void TakeSiphon() {
-        _actionSlot.RemoveAbilityByIndex(0);
-    }
 
     public void SetCamera(Camera newCamera) {
         _mainCamera = newCamera;
@@ -41,68 +29,33 @@ public class PlayerController : MonoBehaviour {
         instance = this;
 
         // Override components if they haven't been set in the inspector
-        if (_mainCamera == null) _mainCamera = Camera.main;
-        if (characterController == null) characterController = GetComponent<CharacterController>();
-        if (combatController == null) combatController = GetComponent<CombatController>();
-        if (_collider == null) _collider = GetComponent<Collider2D>();
+        _mainCamera = Camera.main;
+        characterController = GetComponent<CharacterController>();
+        _collider = GetComponent<Collider2D>();
+        weaponController = GetComponent<WeaponController>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start() {
-        _healthBar.bindHealthBar(characterController.health.max,characterController.GetHealth());
-        _powerBar.bindPowerBar(characterController.energy.max, characterController.GetEnergy());
-
         StartCoroutine(checkInteractable());
     }
 
     void OnEnable() {
         InputManager.OnInteract += Interact;
         InputManager.OnStopInteract += StopInteract;
-        InputManager.OnMouseClickLeft += Attack;
-        InputManager.OnMouseUpLeft += StopAttack;
-        characterController.health.OnResourceUpdated += UpdateHealth;
-        characterController.energy.OnResourceUpdated += UpdateEnergy;
+        InputManager.OnMouseClickLeft += weaponController.Attack;
     }
 
     void OnDisable() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseClickLeft -= Attack;
-        InputManager.OnMouseUpLeft -= StopAttack;
-        characterController.health.OnResourceUpdated -= UpdateHealth;
-        characterController.energy.OnResourceUpdated -= UpdateEnergy;
+        InputManager.OnMouseClickLeft -= weaponController.Attack;
     }
 
-    private void OnDestroy() {
+    void OnDestroy() {
         InputManager.OnInteract -= Interact;
         InputManager.OnStopInteract -= StopInteract;
-        InputManager.OnMouseClickLeft -= Attack;
-        InputManager.OnMouseUpLeft -= StopAttack;
-        characterController.health.OnResourceUpdated -= UpdateHealth;
-        characterController.energy.OnResourceUpdated -= UpdateEnergy;
-    }
-
-    public void Attack() {
-        _attacking = true;
-        StartCoroutine(attacking());
-    }
-
-    public void StopAttack() {
-        _attacking = false;
-    }
-
-    IEnumerator attacking() {
-        while(_attacking && (!DialogueManager.InConversation && !TimelineController.InCutscene)) {
-            combatController.Attack(characterRotation);
-            yield return null; // TODO: Apply correct delay
-        }
-    }
-
-    void UpdateHealth(int newHealth) {
-        _healthBar?.updateHealthBarUI(newHealth);
-    }
-
-    void UpdateEnergy(int newPower) {
-        _powerBar?.updatePowerBarUI(newPower);
+        InputManager.OnMouseClickLeft -= weaponController.Attack;
     }
 
     void Update() {
@@ -112,9 +65,8 @@ public class PlayerController : MonoBehaviour {
         characterController.Move(inputAxis);
 
         // Update character rotation (angle of mouse relative to player)
-        if(_mainCamera != null) {
-            characterRotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            characterController.SetSpriteRotation(characterRotation);
+        if (_mainCamera != null) {
+            characterController.rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         }
     }
 
@@ -127,21 +79,24 @@ public class PlayerController : MonoBehaviour {
             foreach (Collider2D collider in colliders) {
                 if (collider != _collider) {
                     float distance = collider.Distance(_collider).distance;
-                    if (distance < lastDistance && collider.GetComponent<InteractableObject>() != null) {
-                        lastDistance = distance;
-                        closest = collider;
+                    if (distance < lastDistance) {
+                        IInteractable interactable = collider.GetComponent<IInteractable>();
+                        if(interactable != null && interactable.InteractEnabled) {
+                            lastDistance = distance;
+                            closest = collider;
+                        }
                     }
                 }
             }
             if(closest == null) {
                 if(closestObject != null) {
                     closestObject = null;
-                    InputManager.instance.tooltip.Hide();
+                    UIManager.instance.hdieTooltip();
                 }
             } else {
                 if(closest != closestObject) {
-                    closestObject = closest.gameObject.GetComponent<InteractableObject>();
-                    InputManager.instance.tooltip.Show(closestObject);
+                    closestObject = closest.gameObject.GetComponent<IInteractable>();
+                    UIManager.instance.showTooltip(closestObject);
                 }
             }
 
@@ -150,7 +105,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Interact() {
-        closestObject?.Interact();
+        if (closestObject != null) {
+            closestObject?.Interact();
+        }
     }
 
     void StopInteract() {

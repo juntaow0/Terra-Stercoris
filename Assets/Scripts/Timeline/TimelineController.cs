@@ -11,7 +11,15 @@ public class TimelineController : MonoBehaviour {
 
     public List<PlayableDirector> playableDirectors;
     public List<TimelineAsset> timelines;
+    public bool PlayOnAwake;
+
     public static bool InCutscene { get; private set; } = false;
+
+    private void Start() {
+        if (PlayOnAwake) {
+            Play();
+        }
+    }
 
     public void Play() {
         InCutscene = true;
@@ -26,7 +34,9 @@ public class TimelineController : MonoBehaviour {
         foreach (PlayableDirector playableDirector in playableDirectors) {
             playableDirector.Pause();
         }
-        OnTimelineStatus?.Invoke(true);
+        if (!DialogueManager.InConversation) {
+            OnTimelineStatus?.Invoke(true);
+        }
     }
 
     public void Resume() {

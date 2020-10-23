@@ -23,16 +23,19 @@ public class ChoiceController : MonoBehaviour
         existingButton = 0;
     }
 
-    private void BindChoices(Choice[] choices, int triggerID) {
+    private void BindChoices(Choice[] choices, string key, int triggerID) {
         int buttonCount = choices.Length;
         if (buttonCount > existingButton) {
             GenerateButtons(buttonCount - existingButton);
         }
         for (int i = 0; i < buttonCount; i++) {
+            int choiceNumber = i;
             Conversation c = choices[i].nextConversation;
             buttonText[i].text = choices[i].text;
             buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(() => {
+                ChoiceTracker.Track(key,choiceNumber);
+                DialogueManager.instance.SetupChoiceEvent(choiceNumber);
                 DialogueManager.instance.LoadConversation(c, triggerID);
                 ResetButtons(buttonCount);
             });
@@ -69,10 +72,10 @@ public class ChoiceController : MonoBehaviour
     }
 
     private void OnDisable() {
-        DialogueManager.OnChoice -= BindChoices;
+        DialogueManager.OnBindChoice -= BindChoices;
     }
 
     private void OnEnable() {
-        DialogueManager.OnChoice += BindChoices;
+        DialogueManager.OnBindChoice += BindChoices;
     }
 }

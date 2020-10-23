@@ -8,9 +8,11 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
     public static event Action<string, string, Action> OnTrigger; // UI binding trigger
-    public static event Action<Choice[], int> OnChoice; // Choice binding trigger
+    public static event Action<Choice[], string, int> OnBindChoice; // Choice binding trigger
+    public static event Action<int> OnChoice;
     public static event Action<int> OnEndEvent; // Event Trigger
     public static event Action OnSkip;
+    public static event Action<bool> OnDialogueStatus;
 
     public float characterPerSecond;
     public float buttonSpacing;
@@ -32,9 +34,12 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueUI = GetComponent<DialogueUI>();
         sentences = new Queue<Sentence>();
-        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, characterPerSecond,buttonSpacing);
         InConversation = false;
         state = DialogueState.Idle;
+    }
+
+    public void InitializeUI() {
+        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, characterPerSecond,buttonSpacing);
     }
 
     public void LoadConversation(Conversation conversation, int triggerID) {
@@ -45,12 +50,17 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(s);
         }
         if (conversation.endAction==EndAction.CHOICE) {
-            OnChoice?.Invoke(conversation.choices, triggerID);
+            OnBindChoice?.Invoke(conversation.choices, conversation.choiceKey, triggerID);
         }
         dialogueUI.toggleDialogueBox(true);
+        OnDialogueStatus?.Invoke(false);
         state = DialogueState.Idle;
         InConversation = true;
         DisplaySentence();
+    }
+
+    public void SetupChoiceEvent(int choiceNumber){
+        OnChoice?.Invoke(choiceNumber);
     }
 
     private void RunEndAction() {
@@ -63,35 +73,38 @@ public class DialogueManager : MonoBehaviour
                 dialogueUI.toggleDialogueBox(false);
                 InConversation = false;
                 OnEndEvent?.Invoke(currentTrigger);
+                OnDialogueStatus?.Invoke(true);
                 break;
         }
     }
 
     public void DisplaySentence() {
-        switch (state) {        
-            case DialogueState.Idle:
-                Sentence s = sentences.Dequeue();
-                string name = null;
-                if (currentConversation.speakers.Length !=0) {
-                    name = currentConversation.speakers[s.speakerIndex];
-                }
-                state = DialogueState.Busy;
-                OnTrigger?.Invoke(s.sentence, name, () => {
-                    if (sentences.Count < 1) {
-                        state = DialogueState.EndReached;
-                    } else {
-                        state = DialogueState.Idle;
+        if (InConversation) {
+            switch (state) {
+                case DialogueState.Idle:
+                    Sentence s = sentences.Dequeue();
+                    string name = "";
+                    if (currentConversation.speakers.Length != 0) {
+                        name = currentConversation.speakers[s.speakerIndex];
                     }
-                });
-                return;
-            case DialogueState.Busy:
-                OnSkip?.Invoke();
-                return;
-            case DialogueState.EndReached:
-                RunEndAction();
-                return;
-            default:
-                return;
+                    state = DialogueState.Busy;
+                    OnTrigger?.Invoke(s.sentence, name, () => {
+                        if (sentences.Count < 1) {
+                            state = DialogueState.EndReached;
+                        } else {
+                            state = DialogueState.Idle;
+                        }
+                    });
+                    return;
+                case DialogueState.Busy:
+                    OnSkip?.Invoke();
+                    return;
+                case DialogueState.EndReached:
+                    RunEndAction();
+                    return;
+                default:
+                    return;
+            }
         }
     }
 }

@@ -28,7 +28,6 @@ public class DialogueUI: MonoBehaviour
         Speaker = DialogueBox.transform.GetChild(0).GetChild(1).GetComponent<Text>();
         characterSpeed = new WaitForSecondsRealtime(1/characterPerSecond);
         skip = false;
-        DontDestroyOnLoad(ui);
     }
     public void toggleDialogueBox(bool state) {
         DialogueBox.enabled = state;
@@ -54,7 +53,7 @@ public class DialogueUI: MonoBehaviour
 
     private void ShowSentence(string sentence, string name, Action onComplete) {
         Speaker.text = "";
-        if (name != null) {
+        if (name != "") {
             Speaker.text = name + ":";
         }
         StartCoroutine(TypeCharacters(sentence, onComplete));
