@@ -12,4 +12,5 @@ public class Weapon : ScriptableObject {
     public int energyCost;
     public float range;
     public float cooldownTime;
+    public AudioCue attackSound;
 }
