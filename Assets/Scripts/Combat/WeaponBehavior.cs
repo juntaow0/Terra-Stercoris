@@ -65,6 +65,9 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
                 hit.transform.GetComponent<IDamagable>()?.Damage(weaponStats.damage);
             }
             Debug.Log(user.name + " attacked using " + weaponStats.name);
+            if(weaponStats.attackSound != null) {
+                AudioManager.instance.PlayCue(weaponStats.attackSound);
+            }
         }
     }
 
