@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -35058,7 +35058,7 @@ GameObject:
   - component: {fileID: 696550642}
   - component: {fileID: 696550643}
   m_Layer: 0
-  m_Name: Mutant
+  m_Name: Terran/Kindled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35097,6 +35097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weaponHolder: {fileID: 0}
   weaponPrefabs: []
+  weaponHolderAnimator: {fileID: 0}
 --- !u!114 &696550634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35111,7 +35112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 15
   _spriteRotation: 0
-  _body: {fileID: 0}
   _spriteRenderer: {fileID: 0}
 --- !u!50 &696550635
 Rigidbody2D:
@@ -35173,7 +35173,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: afe84675c9feda24f9b84c2adbab3963, type: 3}
+  m_Sprite: {fileID: 7684383551132795082, guid: 72faa27aaf177f345873aabfd7cce2a5,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -35193,7 +35194,7 @@ Transform:
   m_GameObject: {fileID: 696550631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.72, y: -8.34, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children: []
   m_Father: {fileID: 1401812299}
   m_RootOrder: 1
@@ -35215,7 +35216,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.16, y: 0.31}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -35423,7 +35424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899693538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35943,6 +35944,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421175, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2792318509021241205, guid: 17f1f5164b73a42409261c49a44965df,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
 --- !u!1 &1296037470
@@ -76420,7 +76442,7 @@ GameObject:
   - component: {fileID: 1948794066}
   - component: {fileID: 1948794072}
   m_Layer: 0
-  m_Name: Monster
+  m_Name: Goblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76460,6 +76482,7 @@ MonoBehaviour:
   _weaponHolder: {fileID: 1534086036}
   weaponPrefabs:
   - {fileID: 8031377277161434690, guid: 043dcbcdac587b74283d54e50d9d58ae, type: 3}
+  weaponHolderAnimator: {fileID: 0}
 --- !u!114 &1948794068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76474,7 +76497,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 6
   _spriteRotation: 0
-  _body: {fileID: 0}
   _spriteRenderer: {fileID: 0}
 --- !u!50 &1948794069
 Rigidbody2D:
@@ -76536,7 +76558,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 98c71890acd5f3143aa0c5264d8507a9, type: 3}
+  m_Sprite: {fileID: 6385895308153636895, guid: 1105dfd350e485a47922d7f44a96d56a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -76580,7 +76603,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.17, y: 0.26}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -77980,7 +78003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092757315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1012487535}
