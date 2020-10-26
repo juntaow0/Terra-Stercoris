@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private SpellUI spellUI;
     [SerializeField] private Notification notification;
     [SerializeField] private Image fadeImage;
+    private bool HUDLock = false;
     private Canvas[] UICanvases;
 
     public static UIManager instance { get; private set; }
@@ -38,6 +39,9 @@ public class UIManager : MonoBehaviour
     }
 
     public void Bind() {
+        if (PlayerController.instance == null) {
+            return;
+        }
         CharacterController playerInfo = PlayerController.instance?.characterController;
         SpellController playerSpell = PlayerController.instance?.GetComponent<SpellController>();
         if (powerBar != null) {
@@ -56,10 +60,22 @@ public class UIManager : MonoBehaviour
         foreach (Canvas c in UICanvases) {
             c.enabled = state;
         }
+        if (!hud.activeInHierarchy) {
+            toggleHUD(state);
+        }
+        Debug.Log("UI State: "+state+ " Lock State: "+HUDLock);
+        if (HUDLock) {
+            Debug.Log("wtf");
+            toggleHUD(!state);
+        }
     }
 
     public void toggleHUD(bool visible) {
         hud.SetActive(visible);
+    }
+
+    public void toggleHUDStateLock(bool state) {
+        HUDLock = state;
     }
 
     public void showTooltip(IInteractable obj) {

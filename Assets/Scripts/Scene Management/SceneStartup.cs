@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneStartup : MonoBehaviour {
 
     [SerializeField] private bool LoadHUD = true;
+    [SerializeField] private bool LockHUD = false;
     public event Action OnSceneLoad;
 
     private void Awake() {
@@ -15,6 +16,7 @@ public class SceneStartup : MonoBehaviour {
             SceneDataLoader.Initialize();
         } else {
             UIManager.instance.toggleHUD(LoadHUD);
+            UIManager.instance.toggleHUDStateLock(LockHUD);
         }
 
         /*
@@ -29,6 +31,7 @@ public class SceneStartup : MonoBehaviour {
     }
     void OnSceneLoadCompleted(AsyncOperation op) {
         UIManager.instance.toggleHUD(LoadHUD);
+        UIManager.instance.toggleHUDStateLock(LockHUD);
         OnSceneLoad?.Invoke();
     }
 
