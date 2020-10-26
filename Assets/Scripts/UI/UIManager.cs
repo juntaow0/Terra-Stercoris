@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Tooltip toolTip;
     [SerializeField] private Powerbar powerBar;
     [SerializeField] private Healthbar healthBar;
+    [SerializeField] private SpellUI spellUI;
     [SerializeField] private Notification notification;
     [SerializeField] private Image fadeImage;
     private Canvas[] UICanvases;
@@ -38,11 +39,16 @@ public class UIManager : MonoBehaviour
 
     public void Bind() {
         CharacterController playerInfo = PlayerController.instance?.characterController;
+        SpellController playerSpell = PlayerController.instance?.GetComponent<SpellController>();
         if (powerBar != null) {
             powerBar.bindPowerBar(playerInfo?.energy);
         }
         if (healthBar != null) {
             healthBar.bindHealthBar(playerInfo?.health);
+        }
+
+        if (spellUI != null  && playerSpell!=null) {
+            spellUI.bindSpellSlot(playerSpell);
         }
     }
 

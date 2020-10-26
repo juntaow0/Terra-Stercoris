@@ -7,6 +7,7 @@ public class SpellController : MonoBehaviour
 {
     [SerializeField] private GameObject[] spellPrefabs;
     public event Action OnSpellCast;
+    public event Action<SpellBehavior> OnSelection;
     private List<SpellBehavior> spellRack;
     private Dictionary<int,SpellBehavior> usedSpells;
     private Dictionary<int, bool> spellStatus;
@@ -34,6 +35,7 @@ public class SpellController : MonoBehaviour
             }
             hasSpell = true;
             selected = spellRack[0];
+            OnSelection?.Invoke(selected);
         }
     }
 
@@ -67,6 +69,7 @@ public class SpellController : MonoBehaviour
         if (!hasSpell) {
             hasSpell = true;
             selected = spellRack[0];
+            OnSelection?.Invoke(selected);
         }
     }
 
@@ -89,18 +92,29 @@ public class SpellController : MonoBehaviour
             if (spellStatus.ContainsKey(id)&& spellStatus[id]) {
                 spellRack.Remove(usedSpells[id]);
                 spellStatus[id] = false;
+                if (selected.spellStats.spellID == id) {
+                    selected = null;
+                }
             }
             if (spellRack.Count < 1) {
                 hasSpell = false;
+                selected = null;
             }
+            OnSelection?.Invoke(selected);
         }
     }
 
     public void SelectSpell(int index) {
         if (spellRack.Count > 0) {
+            Debug.Log("scrolled");
             int realIndex = index % spellRack.Count;
             selected = spellRack[realIndex];
+            OnSelection?.Invoke(selected);
         }
+    }
+
+    public SpellBehavior GetCurrentSpell() {
+        return selected;
     }
 
     private void OnEnable() {

@@ -1,18 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpellUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Image spellIcon;
+    private SpellController playerSC;
+    [SerializeField] private Sprite defaultIcon;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void bindSpellSlot(SpellController playerSpellController) {
+        if (playerSC != null) {
+            playerSC.OnSelection -= updateSpellIcon;
+        }
+        playerSC = playerSpellController;
+        Debug.Log("Before Spell UI bind");
+        if (playerSC != null) {
+            Debug.Log("Spell UI bind");
+            playerSC.OnSelection += updateSpellIcon;
+            SpellBehavior selected = playerSC.GetCurrentSpell();
+            updateSpellIcon(selected);
+            // get cooldown progress here
+        } else {
+            spellIcon.sprite = defaultIcon;
+        }
+    }
+    void updateSpellIcon(SpellBehavior sb) {
+        if (sb != null) {
+            Debug.Log("Change Icon");
+            spellIcon.sprite = sb.spellStats.icon;
+        } else {
+            spellIcon.sprite = defaultIcon;
+        }
+    }
+    private void OnDestroy() {
+        if (playerSC != null) {
+            playerSC.OnSelection -= updateSpellIcon;
+        }
     }
 }
