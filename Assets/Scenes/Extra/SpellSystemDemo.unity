@@ -190,6 +190,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba5466972693e449bf1517b06144d78, type: 3}
+--- !u!1 &144134496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1658308746293421169, guid: 4816099c67334534c99f08dd45498ce4,
+    type: 3}
+  m_PrefabInstance: {fileID: 395099882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &224954319
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,7 +758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &533975966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +878,7 @@ GameObject:
   - component: {fileID: 1017774273}
   - component: {fileID: 1017774272}
   - component: {fileID: 1017774271}
+  - component: {fileID: 1017774268}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -918,7 +925,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017774262}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -936,7 +943,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017774262}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 502dec86cd18843418884a3e788990cf, type: 3}
   m_Name: 
@@ -944,7 +951,7 @@ MonoBehaviour:
   _characterController: {fileID: 1017774267}
   _weaponController: {fileID: 0}
   _spriteRenderer: {fileID: 1017774269}
-  _target: {fileID: 0}
+  _target: {fileID: 144134496}
 --- !u!114 &1017774266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,7 +966,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weaponHolder: {fileID: 0}
   weaponPrefabs: []
-  weaponHolderAnimator: {fileID: 0}
 --- !u!114 &1017774267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,6 +981,27 @@ MonoBehaviour:
   _movementSpeed: 6
   _spriteRotation: 0
   _spriteRenderer: {fileID: 0}
+--- !u!50 &1017774268
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017774262}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!212 &1017774269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31904,6 +31931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadHUD: 1
+  LockHUD: 0
 --- !u!4 &1189914484
 Transform:
   m_ObjectHideFlags: 0
@@ -71092,7 +71120,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 395099882}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 144134496}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b91463412aa6bd43b6a5113efa0b571, type: 3}
@@ -73573,20 +73601,20 @@ GameObject:
   m_Component:
   - component: {fileID: 2037898754}
   - component: {fileID: 2037898756}
-  - component: {fileID: 2037898762}
-  - component: {fileID: 2037898760}
-  - component: {fileID: 2037898763}
+  - component: {fileID: 2037898755}
+  - component: {fileID: 2037898757}
   - component: {fileID: 2037898759}
   - component: {fileID: 2037898758}
-  - component: {fileID: 2037898757}
-  - component: {fileID: 2037898755}
+  - component: {fileID: 2037898760}
+  - component: {fileID: 2037898763}
+  - component: {fileID: 2037898762}
   m_Layer: 0
   m_Name: Test Enemy
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2037898754
 Transform:
   m_ObjectHideFlags: 0
@@ -73595,7 +73623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037898753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.11, y: -9.34, z: 0}
+  m_LocalPosition: {x: 3.68, y: -9.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1299865699}
@@ -73757,7 +73785,6 @@ MonoBehaviour:
   _weaponHolder: {fileID: 0}
   weaponPrefabs:
   - {fileID: 8031377277161434690, guid: 043dcbcdac587b74283d54e50d9d58ae, type: 3}
-  weaponHolderAnimator: {fileID: 0}
 --- !u!1 &2072564314
 GameObject:
   m_ObjectHideFlags: 0

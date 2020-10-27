@@ -68,6 +68,7 @@ GameObject:
   - component: {fileID: 1658308746293421176}
   - component: {fileID: 1658308746293421173}
   - component: {fileID: 17138102}
+  - component: {fileID: 2151023082039157714}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -176,7 +177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weaponHolder: {fileID: 1782155324}
   weaponPrefabs: []
-  weaponHolderAnimator: {fileID: 3464594395691759046}
 --- !u!114 &1658308746293421171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +265,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellPrefabs: []
   isPlayer: 1
+--- !u!114 &2151023082039157714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658308746293421169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c8e44a04da49040b83bb4242b7a58b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponHolderAnimator: {fileID: 3464594395691759046}
 --- !u!1 &8616333820478279256
 GameObject:
   m_ObjectHideFlags: 0

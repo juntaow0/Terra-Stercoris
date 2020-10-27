@@ -6,8 +6,8 @@ using Pathfinding;
 public class TestEnemyAI : MonoBehaviour
 {
     private CharacterController cc;
-    private Animator animator;
     private WeaponController wc;
+    private Animator animator;
     private Transform targetPosition;
     private AIPath aiPath;
     private AIDestinationSetter AIDest;
@@ -45,11 +45,9 @@ public class TestEnemyAI : MonoBehaviour
         }
         animator.SetFloat("speed", dir.magnitude);
         if (Vector2.Distance(transform.position, AIDest.target.position) <= wc.selected.weaponStats.range) {
-            animator.SetTrigger("attack");
             if (seesTarget) {
-                Debug.Log("can see");
                 wc.Attack();
-                
+                animator.SetTrigger("attack");
             }
         }
     }
@@ -79,7 +77,7 @@ public class TestEnemyAI : MonoBehaviour
                 yield return null;
             } else {
                 RaycastHit2D hit = Physics2D.Linecast(transform.position, AIDest.target.position);
-                seesTarget = hit.collider != null && hit.collider.gameObject == AIDest.target;
+                seesTarget = hit.collider != null && hit.transform == AIDest.target;
                 yield return new WaitForSeconds(1.0f);
             }
         }

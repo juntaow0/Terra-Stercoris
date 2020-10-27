@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -12,11 +13,11 @@ public class WeaponController : MonoBehaviour {
     private CharacterController _characterController;
     [SerializeField] private GameObject _weaponHolder = null;
     [SerializeField] private GameObject[] weaponPrefabs;
-    [SerializeField] private Animator weaponHolderAnimator;
 
     public GameObject weaponHolder {get {return _weaponHolder;}}
 
     private IEnumerator attackLoop;
+    public event Action OnAttack;
 
     //Sound effects
     /*
@@ -88,11 +89,8 @@ public class WeaponController : MonoBehaviour {
 
     public void Attack() {
         if (selected != null) {
-            Quaternion newRot = Quaternion.Euler(0,0, Mathf.Atan2(_characterController.rotation.y, _characterController.rotation.x) * Mathf.Rad2Deg);
-            weaponHolder.transform.rotation = newRot;
-            weaponHolderAnimator.SetTrigger("attack");
             selected.Attack(_characterController);
-            
+            OnAttack?.Invoke();
         }
     }
 
