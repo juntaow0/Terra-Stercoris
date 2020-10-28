@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -15650,7 +15650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619597314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: -0.1819997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1446790215}
@@ -15759,12 +15759,12 @@ PrefabInstance:
     - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.28
+      value: -16.397
       objectReference: {fileID: 0}
     - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.34
+      value: -26.217
       objectReference: {fileID: 0}
     - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
         type: 3}
@@ -15810,6 +15810,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8272783
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988660761826633255, guid: dba5466972693e449bf1517b06144d78,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8272786
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba5466972693e449bf1517b06144d78, type: 3}
@@ -16594,7 +16604,7 @@ PrefabInstance:
     - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.182
       objectReference: {fileID: 0}
     - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
         type: 3}
@@ -16640,6 +16650,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.76663405
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8080872
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
@@ -25569,7 +25589,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378320470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: -0.1819997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

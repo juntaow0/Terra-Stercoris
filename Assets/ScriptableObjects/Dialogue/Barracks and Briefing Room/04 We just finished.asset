@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: 04 We just finished
   m_EditorClassIdentifier: 
   speakers:
-  - Sergeant
+  - Sarge
   sentences:
   - speakerIndex: 0
-    sentence: 'We just finished the calculations and it looks like it''s gonna take
-      12 light cycles to get to Earth from Earth Prime. '
+    sentence: 'We just finished the calculations, and it looks like it''s going take
+      12 light cycles to get to Earth from Aniara. '
   - speakerIndex: 0
     sentence: So, make sure you go to cryosleep after you conduct your investigation
       of Earth and turn on your communicator.
   - speakerIndex: 0
-    sentence: As an exploration officer you all understand the risks of the job;.If
-      you don't successfully turn on your communicator, we will assume you died and
-      the planet is not habitable.
+    sentence: As an exploration officer you all understand the risks of the job;
+      If you don't successfully turn on your communicator, we will assume you dead
+      and plan further recon accordingly.
   - speakerIndex: 0
     sentence: It is unlikely that this will be the case, but stay alert nonetheless.
-      If successful turning on your communicator, enter cryo sleep and we will wake
-      you when we arrive.
+      After you turn on your communicator, enter cryo sleep and we will wake you
+      when we arrive.
   - speakerIndex: 0
     sentence: Make sure you have everything you need before you go. That is all.
       Good luck, officers.
