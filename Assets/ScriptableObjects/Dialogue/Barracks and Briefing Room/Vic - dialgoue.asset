@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Vic - dialgoue
   m_EditorClassIdentifier: 
   speakers:
-  - Vic
+  - Victor
   sentences:
   - speakerIndex: 0
     sentence: Can you believe it? We're going to be the first humans to see Earth
