@@ -105,16 +105,16 @@ public class CharacterController : MonoBehaviour, IDamagable {
     public void Die() {
         _spriteRenderer.color = deathTint;
         IsAlive = false;
-        _body.drag = 1000;
+        Lock();
         OnDeath?.Invoke();
     }
 
     public void Lock() {
-        _body.drag = 1000;
+        if(_body != null) _body.drag = 1000;
     }
 
     public void Unlock() {
-        _body.drag = 0;
+        if(_body != null) _body.drag = 0;
     }
 
     public void SetHealth(int newHealth) {

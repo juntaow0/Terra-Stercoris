@@ -36,12 +36,12 @@ public class SiphonOne : SpellBehavior {
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, dir, spellStats.range);
             if (hit.collider != null) {
                 CharacterController target = hit.transform.GetComponent<CharacterController>();
-                if (target != null && target.health.quantity > 0) {
+                if (target != null && target.health.quantity > 0 && user.energy.quantity >= energyCostPerTick) {
                     particles.particleSource = hit.transform;
                     active = true;
                     originSprite.enabled = true;
                     particles.Play();
-                    while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.health.quantity>0) {
+                    while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.health.quantity>0 && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
                         target.Damage(healthPerTick);
                         user.AddHealth((int)(healthPerTick * stealPercentage));
                         user.AddEnergy(-energyCostPerTick);

@@ -40,7 +40,7 @@ public class SpellController : MonoBehaviour
     }
 
     public void Cast() {
-        if (hasSpell) {
+        if (hasSpell && cc.IsAlive) {
             selected.Cast(cc);
             OnSpellCast?.Invoke();
         }
