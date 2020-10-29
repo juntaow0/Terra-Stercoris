@@ -58,7 +58,7 @@ public class WeaponBehavior : MonoBehaviour, IInteractable {
     }
 
     public void Attack(CharacterController user) {
-        if (!inCooldown && !InteractEnabled) {
+        if (!inCooldown) { //!InteractEnabled does not work with AI
             StartCoroutine(Cooldown());
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, user.rotation, _weaponStats.range);
             if(hit.collider != null) {

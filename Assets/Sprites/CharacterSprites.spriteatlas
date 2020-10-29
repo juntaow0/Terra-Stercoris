@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 2352297
+    totalSpriteSurfaceArea: 2356449
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -159,6 +159,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bc24e5054ba169741837a7df680890f8, type: 3}
   - {fileID: 21300000, guid: 7ee229154ffef7249ace5051a1608fab, type: 3}
   - {fileID: 21300000, guid: aa150025c32737d4488f58ad9b32d0a6, type: 3}
+  - {fileID: -680122488105427430, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: 5456003238354064528, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: 8030448897278139110, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: 5577714329405248715, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: 3759838792901328793, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: -6113219901193614683, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: 2487550609120050793, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: -2628487092938760046, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: -4556897304000620731, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: -25353649573507220, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: -8831465006159427954, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
+  - {fileID: -1923497010049590430, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
   - {fileID: 21300000, guid: 1e2fb045d7af58f4195396b1b66b6fc0, type: 3}
   - {fileID: 21300000, guid: 54f1956586e8a874bb8e445ee034d010, type: 3}
   - {fileID: 21300000, guid: 1ffc2865478604f4fb31ed223d7a8fde, type: 3}
@@ -474,6 +486,18 @@ SpriteAtlas:
   - AttackD03
   - 1
   - fly07
+  - shBase_whiteMale_1
+  - shBase_whiteMale_0
+  - shBase_whiteMale_3
+  - shBase_whiteMale_2
+  - shBase_whiteMale_5
+  - shBase_whiteMale_4
+  - shBase_whiteMale_7
+  - shBase_whiteMale_6
+  - shBase_whiteMale_9
+  - shBase_whiteMale_8
+  - shBase_whiteMale_10
+  - shBase_whiteMale_11
   - idle02
   - idle06
   - hit01

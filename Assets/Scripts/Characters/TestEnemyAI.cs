@@ -8,10 +8,8 @@ public class TestEnemyAI : MonoBehaviour
     private CharacterController cc;
     private WeaponController wc;
     private Animator animator;
-    private Transform targetPosition;
     private AIPath aiPath;
     private AIDestinationSetter AIDest;
-    private Transform model;
     private bool seesTarget = false;
 
     private void Awake() {
@@ -20,7 +18,6 @@ public class TestEnemyAI : MonoBehaviour
         cc = GetComponent<CharacterController>();
         wc = GetComponent<WeaponController>();
         animator = GetComponent<Animator>();
-        model = transform.GetChild(0);
     }
 
     private void Start() {
@@ -29,21 +26,15 @@ public class TestEnemyAI : MonoBehaviour
 
     public void SetTarget(Transform target) {
         AIDest.target = target;
-        targetPosition = target;
     }
 
     private void Update() {
         if (AIDest.target == null) {
             return;
         }
-        Vector2 dir = Vector3.Normalize(aiPath.desiredVelocity);
-        cc.rotation = dir;
-        if (dir.x >= 0) {
-            model.localScale = new Vector3(5,5,0);
-        } else {
-            model.localScale = new Vector3(-5, 5,0);
-        }
-        animator.SetFloat("speed", dir.magnitude);
+        CalculateHeading();
+        float speed = aiPath.desiredVelocity.magnitude;
+        animator.SetFloat("speed", speed);
         if (Vector2.Distance(transform.position, AIDest.target.position) <= wc.selected.weaponStats.range) {
             if (seesTarget) {
                 wc.Attack();
@@ -52,9 +43,13 @@ public class TestEnemyAI : MonoBehaviour
         }
     }
 
+    void CalculateHeading() {
+        Vector2 dir = AIDest.target.position - transform.position;
+        cc.rotation = dir;
+    }
+
     void Die() {
         AIDest.target = null;
-        targetPosition = null;
         StopCoroutine(FindTarget());
     }
 
