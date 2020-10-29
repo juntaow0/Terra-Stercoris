@@ -1,15 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
 public class TestEnemyAI : MonoBehaviour
 {
+    public int maxHealth;
     private CharacterController cc;
     private WeaponController wc;
     private Animator animator;
     private AIPath aiPath;
     private AIDestinationSetter AIDest;
+    private BoxCollider2D boxCollider;
+    private SpriteRenderer spriteRenderer;
     private bool seesTarget = false;
 
     private void Awake() {
@@ -18,9 +22,13 @@ public class TestEnemyAI : MonoBehaviour
         cc = GetComponent<CharacterController>();
         wc = GetComponent<WeaponController>();
         animator = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start() {
+        cc.health.max = maxHealth;
+        cc.health.quantity = maxHealth;
         StartCoroutine(FindTarget());
     }
 
@@ -51,6 +59,9 @@ public class TestEnemyAI : MonoBehaviour
     void Die() {
         AIDest.target = null;
         StopCoroutine(FindTarget());
+        animator.SetTrigger("die");
+        boxCollider.enabled = false;
+        StartCoroutine(FadeOut(null));
     }
 
 
@@ -76,5 +87,18 @@ public class TestEnemyAI : MonoBehaviour
                 yield return new WaitForSeconds(1.0f);
             }
         }
+    }
+
+    IEnumerator FadeOut(Action Callback) {
+        float fadeTime = 1.5f;
+        float spriteAlpha = spriteRenderer.color.a;
+        float fadeDelta = spriteAlpha * Time.deltaTime / fadeTime;
+        Color tempColor = spriteRenderer.color;
+        while (tempColor.a > 0) {
+            tempColor.a -= fadeDelta;
+            spriteRenderer.color = tempColor;
+            yield return null;
+        }
+        Callback?.Invoke();
     }
 }

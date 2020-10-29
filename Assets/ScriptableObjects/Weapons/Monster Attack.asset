@@ -15,7 +15,8 @@ MonoBehaviour:
   weaponName: Monster Attack
   weaponID: 1
   icon: {fileID: 0}
-  damage: 10
+  damage: 5
   energyCost: 0
-  range: 3
-  cooldownTime: 0.5
+  range: 1.8
+  cooldownTime: 1
+  attackSound: {fileID: 0}

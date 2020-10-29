@@ -8,7 +8,7 @@ public class SiphonOne : SpellBehavior {
     private ParticleTrack particles;
     private SpriteRenderer originSprite;
     private Camera mainCamera;
-    private int healthPerTick = 1;
+    private int healthPerTick = 5;
     private float stealPercentage = 1.0f;
     private float tickRate = 0.2f;
     private int energyCostPerTick = 1;
