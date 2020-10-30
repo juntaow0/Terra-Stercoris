@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TempMainMenu.unity
+    guid: 483cdc00c9635c04da9701583191ad85
+  - enabled: 1
     path: Assets/Scenes/Barracks and Briefing Room.unity
     guid: ab5a3bb706b10d04c8f249f143d8b336
   - enabled: 1

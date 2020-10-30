@@ -258,7 +258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &211180286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -966,6 +966,7 @@ MonoBehaviour:
     type: 3}
   buttonPrefab: {fileID: 8286455462358090267, guid: e957b0cd7126ac942be8b84506bcc7fc,
     type: 3}
+  fontAsset: {fileID: 0}
 --- !u!114 &1720301667
 MonoBehaviour:
   m_ObjectHideFlags: 0

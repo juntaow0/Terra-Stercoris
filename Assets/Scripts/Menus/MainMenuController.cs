@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour {
 
-    [SerializeField] private string START_SCENE = "main";
-    [SerializeField] private string menuScene = "MainMenu";
+    [SerializeField] private string START_SCENE = "Barracks and Briefing Room";
+    [SerializeField] private string menuScene = "TempMainMenu";
     [SerializeField] private Canvas canvas = null;
     [SerializeField] private GameObject creditsMenu = null;
     [SerializeField] private GameObject mainMenu = null;
@@ -46,7 +46,7 @@ public class MainMenuController : MonoBehaviour {
             if(scene.enabled) optionDataList.Add(new TMP_Dropdown.OptionData(scene.path));
         }
         #else
-        string[] scenes = {"MainMenu", "MovementDemo", "DialogueDemo", "HUD"};
+        string[] scenes = {"Barracks and Briefing Room", "Intro", "UndergroundLevel", "AbovegroundLevel01"};
         foreach(string scene in scenes) {
             optionDataList.Add(new TMP_Dropdown.OptionData(scene));
         }

@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Canvas credit;
     [SerializeField] private Canvas buttons;
+    [SerializeField] private string startScene = "Barracks and Briefing Room";
     private TransitionController tc;
 
     private void Awake() {
@@ -27,6 +28,6 @@ public class MainMenu : MonoBehaviour
     }
 
     public void StartGame() {
-        tc.LoadSceneByName("Intro");
+        tc.LoadSceneByName(startScene);
     }
 }
