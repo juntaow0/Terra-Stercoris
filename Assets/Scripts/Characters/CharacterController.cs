@@ -34,8 +34,10 @@ public class CharacterController : MonoBehaviour, IDamagable {
         get {return _rotation;}
         set {
             _rotation = value.normalized;
-            animator?.SetFloat("MouseX",_rotation.x);
-            animator?.SetFloat("MouseY",_rotation.y);
+            if (!(DialogueManager.InConversation || TimelineController.InCutscene)) {
+                animator?.SetFloat("MouseX", _rotation.x);
+                animator?.SetFloat("MouseY", _rotation.y);
+            }
             // SetSpriteRotation(_rotation);
         }
     }
