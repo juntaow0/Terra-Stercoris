@@ -12,32 +12,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: ug1
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers:
   - You
   - Computer
-  - Tablet
+  - 
   sentences:
   - speakerIndex: 0
-    sentence: Where am I?
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Wha-What happened...? What's this orange light?
   - speakerIndex: 0
-    sentence: Computer, report time and position
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Computer, report time and coordinates.
   - speakerIndex: 1
-    sentence: (No response. No power.)
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: The ship's computer appears to be dead.
   - speakerIndex: 0
-    sentence: Nice.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Oh no...
   - speakerIndex: 0
-    sentence: 'My tablet seems to be working. Let me see what time is it. '
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: It looks like my watch is still working though. Let's take a look.
   - speakerIndex: 2
-    sentence: '(Date: 4120/6/15 )'
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You take a second to adjust your eyes to the small digital print on
+      your watch... 3/15/4120, 10:20 AM.
   - speakerIndex: 0
-    sentence: Ok, seems like I have slept for 100 years.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: There's no way that can be right. That would mean I would have to have
+      been asleep for 100 years!
   - speakerIndex: 0
-    sentence: Wait, what?
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: The watch is still ticking just fine though. Sarge said these thorium
+      batteries can last for centuries.
   - speakerIndex: 0
-    sentence: Anyway, before figuring out why I'm still alive, I need to get out
-      of this cave first.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I need to find out what's going on, and fast. First though, I need
+      to escape this cave.
   - speakerIndex: 0
-    sentence: That wrench on the ground could be useful, because the developers said
-      so.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I don't think I have anything salvagable left in the ship, but that
+      wrench looks unscathed.
   endAction: 0
   choices: []
+  choiceKey: 
