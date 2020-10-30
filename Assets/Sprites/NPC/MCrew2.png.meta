@@ -1,7 +1,151 @@
 fileFormatVersion: 2
 guid: 20540bc7af1439e41a910156c0959985
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2513698200100950848
+    second: MCrew2_0
+  - first:
+      213: -7611037752285827597
+    second: MCrew2_1
+  - first:
+      213: 1251938517471902224
+    second: MCrew2_2
+  - first:
+      213: -5735214028921467558
+    second: MCrew2_3
+  - first:
+      213: 3808399066587006028
+    second: MCrew2_4
+  - first:
+      213: 3965221914237704451
+    second: MCrew2_5
+  - first:
+      213: 4739103225641812660
+    second: MCrew2_6
+  - first:
+      213: 1941970658538437009
+    second: MCrew2_7
+  - first:
+      213: -8915947734847804263
+    second: MCrew2_8
+  - first:
+      213: 8509062516256509187
+    second: MCrew2_9
+  - first:
+      213: 8028968713947498337
+    second: MCrew2_10
+  - first:
+      213: -7647415248968920645
+    second: MCrew2_11
+  - first:
+      213: -7344559700701237727
+    second: MCrew2_12
+  - first:
+      213: -5657360511397503461
+    second: MCrew2_13
+  - first:
+      213: 6552644361642579707
+    second: MCrew2_14
+  - first:
+      213: -8353696724710657041
+    second: MCrew2_15
+  - first:
+      213: 5053147222049612541
+    second: MCrew2_16
+  - first:
+      213: 8702537651556217621
+    second: MCrew2_17
+  - first:
+      213: 164731153187462179
+    second: MCrew2_18
+  - first:
+      213: -4427567860925754039
+    second: MCrew2_19
+  - first:
+      213: 3464533795405258404
+    second: MCrew2_20
+  - first:
+      213: 849887390811979663
+    second: MCrew2_21
+  - first:
+      213: -5490950431346272856
+    second: MCrew2_22
+  - first:
+      213: -6494527764843926005
+    second: MCrew2_23
+  - first:
+      213: -6024897401449822252
+    second: MCrew2_24
+  - first:
+      213: 4292520336143142557
+    second: MCrew2_25
+  - first:
+      213: -439607596537276267
+    second: MCrew2_26
+  - first:
+      213: 4159665615153423233
+    second: MCrew2_27
+  - first:
+      213: -2452551054261398700
+    second: MCrew2_28
+  - first:
+      213: -2819851503711448348
+    second: MCrew2_29
+  - first:
+      213: -487541296798842075
+    second: MCrew2_30
+  - first:
+      213: -734250861531168295
+    second: MCrew2_31
+  - first:
+      213: -6467933130122117446
+    second: MCrew2_32
+  - first:
+      213: 3909099968063676060
+    second: MCrew2_33
+  - first:
+      213: -268140472208502161
+    second: MCrew2_34
+  - first:
+      213: -2980947840993220336
+    second: MCrew2_35
+  - first:
+      213: 5058573594543289689
+    second: MCrew2_36
+  - first:
+      213: 3695258067634883638
+    second: MCrew2_37
+  - first:
+      213: 5430794720470396951
+    second: MCrew2_38
+  - first:
+      213: 7713570162130728621
+    second: MCrew2_39
+  - first:
+      213: -4565462696711427562
+    second: MCrew2_40
+  - first:
+      213: 4423470525569807545
+    second: MCrew2_41
+  - first:
+      213: 4452616059403557518
+    second: MCrew2_42
+  - first:
+      213: 9118154512032263695
+    second: MCrew2_43
+  - first:
+      213: -498092824102373559
+    second: MCrew2_44
+  - first:
+      213: -8956635430175017542
+    second: MCrew2_45
+  - first:
+      213: 7063683967268279721
+    second: MCrew2_46
+  - first:
+      213: -6161585316084734552
+    second: MCrew2_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,11 +277,200 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MCrew2_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 93
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0435e81e13372e220800000000000000
+      internalID: 2513698200100950848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 94
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd6ae24d79206690800000000000000
+      internalID: -7611037752285827597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 93
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aba86d277cf5110800000000000000
+      internalID: 1251938517471902224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 53
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d8c472a3d6860b0800000000000000
+      internalID: -5735214028921467558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 53
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4409d6f5c62ad430800000000000000
+      internalID: 3808399066587006028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 53
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3099bb5825c470730800000000000000
+      internalID: 3965221914237704451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 14
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2c94e564da4c140800000000000000
+      internalID: 4739103225641812660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 15
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1993a62660443fa10800000000000000
+      internalID: 1941970658538437009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCrew2_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 14
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ca27c16c0344480800000000000000
+      internalID: -8915947734847804263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 012e4ec7694addc47a30cc1a0c7bba3e
     internalID: 0
     vertices: []
     indices: 
