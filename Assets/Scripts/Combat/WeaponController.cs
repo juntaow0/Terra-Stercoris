@@ -51,7 +51,7 @@ public class WeaponController : MonoBehaviour {
         if(_availableWeapons.ContainsKey(weapon.weaponStats.weaponID)) {
             _availableWeapons[weapon.weaponStats.weaponID].SetHolder(null);
         }
-        weapon.SetHolder(weaponHolder);
+        weapon.SetHolder((weaponHolder != null) ? weaponHolder : gameObject);
         _availableWeapons[weapon.weaponStats.weaponID] = weapon;
         selected = weapon;
     }
