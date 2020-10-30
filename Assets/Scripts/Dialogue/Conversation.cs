@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +8,7 @@ using UnityEngine.Events;
 public class Conversation : ScriptableObject
 {
     [Header("Content")]
+    public TMP_FontAsset fontOverride;
     public string[] speakers;
     public Sentence[] sentences;
 

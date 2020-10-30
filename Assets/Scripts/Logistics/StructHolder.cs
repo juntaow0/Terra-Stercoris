@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,6 +15,8 @@ public struct Choice {
 [System.Serializable]
 public struct Sentence {
     public int speakerIndex;
+    public FontStyles fontStyle;
+    public TMP_FontAsset fontOverride;
     [TextArea(2, 5)]
     public string sentence;
 }

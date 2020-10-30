@@ -15,14 +15,21 @@ MonoBehaviour:
   speakers: []
   sentences:
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: Earth was doomed more than 2000 years ago. 99% of the population was
       wiped out. The few remaining humans evacuated to another planet.
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: But guess what, you are sent on a mission with a team to rediscover
       mother Earth.
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: And you are about to land on Earth with your shuttle alone.
   endAction: 3
   choices:
   - text: 
     nextConversation: {fileID: 0}
+  choiceKey: 

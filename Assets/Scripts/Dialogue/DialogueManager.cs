@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(DialogueUI))]
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
-    public static event Action<string, string, Action> OnTrigger; // UI binding trigger
+    public static event Action<Sentence, string, Action> OnTrigger; // UI binding trigger
     public static event Action<Choice[], string, int> OnBindChoice; // Choice binding trigger
     public static event Action<int> OnChoice;
     public static event Action<int> OnEndEvent; // Event Trigger
@@ -18,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     public float buttonSpacing;
     public GameObject UIPrefab;
     public GameObject buttonPrefab;
+    public TMP_FontAsset fontAsset;
 
     private int currentTrigger;
     private DialogueUI dialogueUI;
@@ -39,7 +41,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void InitializeUI() {
-        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, characterPerSecond,buttonSpacing);
+        dialogueUI.InitializeUI(UIPrefab, buttonPrefab, fontAsset, characterPerSecond,buttonSpacing);
     }
 
     public void LoadConversation(Conversation conversation, int triggerID) {
@@ -51,6 +53,9 @@ public class DialogueManager : MonoBehaviour
         }
         if (conversation.endAction==EndAction.CHOICE) {
             OnBindChoice?.Invoke(conversation.choices, conversation.choiceKey, triggerID);
+        }
+        if (conversation.fontOverride != null) {
+            dialogueUI.SetFont(conversation.fontOverride);
         }
         dialogueUI.toggleDialogueBox(true);
         OnDialogueStatus?.Invoke(false);
@@ -88,7 +93,7 @@ public class DialogueManager : MonoBehaviour
                         name = currentConversation.speakers[s.speakerIndex];
                     }
                     state = DialogueState.Busy;
-                    OnTrigger?.Invoke(s.sentence, name, () => {
+                    OnTrigger?.Invoke(s, name, () => {
                         if (sentences.Count < 1) {
                             state = DialogueState.EndReached;
                         } else {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +10,14 @@ public class DialogueUI: MonoBehaviour
 {
     private Canvas DialogueBox;
     private Canvas ChoiceBox;
-    private Text DialogueText;
-    private Text Speaker;
+    private TextMeshProUGUI DialogueText;
+    private TextMeshProUGUI Speaker;
     private ChoiceController choiceController;
     private WaitForSecondsRealtime characterSpeed;
+    private TMP_FontAsset defaultFont;
     private bool skip;
 
-    public void InitializeUI(GameObject UIPrefab, GameObject UIButton, float characterPerSecond, float buttonSpacing) {
+    public void InitializeUI(GameObject UIPrefab, GameObject UIButton, TMP_FontAsset fontAsset, float characterPerSecond, float buttonSpacing) {
         choiceController = GetComponent<ChoiceController>();
         GameObject ui = Instantiate(UIPrefab);
         DialogueBox = ui.transform.GetChild(0).GetChild(0).GetComponent<Canvas>();
@@ -23,10 +25,14 @@ public class DialogueUI: MonoBehaviour
         DialogueBox.enabled = false;
         ChoiceBox.enabled = false;
         choiceController.InitializeChoice(ChoiceBox,UIButton,buttonSpacing);
-
-        DialogueText = DialogueBox.transform.GetChild(0).GetChild(0).GetComponent<Text>();
-        Speaker = DialogueBox.transform.GetChild(0).GetChild(1).GetComponent<Text>();
+        
+        DialogueText = DialogueBox.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
+        Speaker = DialogueBox.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
         characterSpeed = new WaitForSecondsRealtime(1/characterPerSecond);
+        defaultFont = DialogueText.font;
+        if (fontAsset != null) {
+            defaultFont = fontAsset;
+        }
         skip = false;
     }
     public void toggleDialogueBox(bool state) {
@@ -36,9 +42,21 @@ public class DialogueUI: MonoBehaviour
     public void toggleChoices(bool state) {
         ChoiceBox.enabled = state;
     }
+    public void SetFont(TMP_FontAsset font) {
+        defaultFont = font;
+    }
 
-    IEnumerator TypeCharacters(string sentence, Action onComplete) {
+    IEnumerator TypeCharacters(Sentence sentencePack, Action onComplete) {
         DialogueText.text = "";
+        if (DialogueText.font != defaultFont) {
+            if (sentencePack.fontOverride != null) {
+                DialogueText.font = sentencePack.fontOverride;
+            } else {
+                DialogueText.font = defaultFont;
+            }
+        }
+        DialogueText.fontStyle = sentencePack.fontStyle;
+        string sentence = sentencePack.sentence;
         foreach (char c in sentence) {
             if (skip) {
                 DialogueText.text = sentence;
@@ -51,7 +69,7 @@ public class DialogueUI: MonoBehaviour
         onComplete?.Invoke();
     }
 
-    private void ShowSentence(string sentence, string name, Action onComplete) {
+    private void ShowSentence(Sentence sentence, string name, Action onComplete) {
         Speaker.text = "";
         if (name != "") {
             Speaker.text = name + ":";

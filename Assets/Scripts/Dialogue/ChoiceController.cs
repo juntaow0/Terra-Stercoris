@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class ChoiceController : MonoBehaviour
 {
     private float buttonSpacing;
     private int existingButton;
     private List<Button> buttons;
     private List<RectTransform> buttonTransforms;
-    private List<Text> buttonText;
+    private List<TextMeshProUGUI> buttonText;
     private GameObject buttonPrefab;
     private Canvas ChoiceBox;
 
@@ -17,7 +17,7 @@ public class ChoiceController : MonoBehaviour
         buttonPrefab = UIButton;
         buttons = new List<Button>();
         buttonTransforms = new List<RectTransform>();
-        buttonText = new List<Text>();
+        buttonText = new List<TextMeshProUGUI>();
         ChoiceBox = ChoiceCanvas;
         this.buttonSpacing = buttonSpacing;
         existingButton = 0;
@@ -66,7 +66,7 @@ public class ChoiceController : MonoBehaviour
             button.SetActive(false);
             buttons.Add(button.GetComponent<Button>());
             buttonTransforms.Add(button.GetComponent<RectTransform>());
-            buttonText.Add(button.transform.GetComponentInChildren<Text>());
+            buttonText.Add(button.transform.GetComponentInChildren<TextMeshProUGUI>());
         }
         existingButton += count;
     }
