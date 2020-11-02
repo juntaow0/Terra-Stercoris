@@ -16,6 +16,7 @@ public class DialogueUI: MonoBehaviour
     private WaitForSecondsRealtime characterSpeed;
     private TMP_FontAsset defaultFont;
     private bool skip;
+    private int soundMod = 0;
 
     public void InitializeUI(GameObject UIPrefab, GameObject UIButton, TMP_FontAsset fontAsset, float characterPerSecond, float buttonSpacing) {
         choiceController = GetComponent<ChoiceController>();
@@ -64,6 +65,11 @@ public class DialogueUI: MonoBehaviour
                 break;
             }
             DialogueText.text += c;
+            if (soundMod % 4 == 0) {
+                AudioManager.instance.Play("Talk");
+                soundMod = 0;
+            }
+            soundMod++;
             yield return characterSpeed;
         }
         onComplete?.Invoke();

@@ -8,15 +8,18 @@ public class DamagableObject : MonoBehaviour,IDamagable
     public int maxHealth;
     public NumericalResource health;
     public Color hitTint;
+    
     public bool IsAlive { get; private set; }
     private bool _inAnimation;
     
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D collider;
+    private AudioController ac;
 
     private void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         collider = GetComponent<BoxCollider2D>();
+        ac = GetComponent<AudioController>();
         health = new NumericalResource(ResourceType.Health,0, maxHealth);
         IsAlive = true;
         _inAnimation = false;
@@ -26,6 +29,7 @@ public class DamagableObject : MonoBehaviour,IDamagable
             health.quantity -= amount;
             // Potentially add damage animation or event.
             StartCoroutine(DamageAnimation());
+            ac.Play("Rock");
         }
     }
 

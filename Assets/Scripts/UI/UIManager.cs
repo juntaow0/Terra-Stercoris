@@ -63,7 +63,6 @@ public class UIManager : MonoBehaviour
         if (!hud.activeInHierarchy) {
             toggleHUD(state);
         }
-        Debug.Log("UI State: "+state+ " Lock State: "+HUDLock);
         if (HUDLock) {
             Debug.Log("wtf");
             toggleHUD(!state);
