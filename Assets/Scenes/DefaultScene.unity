@@ -723,9 +723,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1482e985958b5d64bbb7b5e4a49067d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicVolume: 1
+  musicFadeTime: 2
+  _combatSong: {fileID: 0}
   _audioCues:
   - name: Test
     cue: {fileID: 11400000, guid: c07471d8b576b26438e4c45a39012fd8, type: 2}
+  _songs: []
 --- !u!82 &1535423180
 AudioSource:
   m_ObjectHideFlags: 0
@@ -737,10 +741,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

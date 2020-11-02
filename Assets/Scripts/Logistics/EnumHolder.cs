@@ -36,3 +36,9 @@ public enum SpellStates {
     Finished,
     Cooldown
 }
+
+// For Context based music
+public enum MusicState {
+    Normal,
+    Combat
+}

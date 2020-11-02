@@ -11,12 +11,30 @@ public class AudioManager : MonoBehaviour {
     public int NumCues {get {return _audioCues.Count;}}
     private AudioSource source;
     System.Random random = new System.Random();
+    public float MusicVolume = 1.0f;
 
+    private AudioClip lastPlaying;
+    private MusicState _musicState;
+    public MusicState musicState {get {return _musicState;} set {
+        if(value == MusicState.Combat && _combatSong != null) {
+            lastPlaying = source.clip;
+            PlaySong(_combatSong);
+        } else if(value == MusicState.Normal && _musicState != MusicState.Normal) {
+            PlaySong(lastPlaying);
+        }
+
+        _musicState = value;
+    }}
+    
+    [SerializeField] float musicFadeTime = 2.0f;
+    [SerializeField] AudioClip _combatSong;
     [SerializeField] List<NamedAudioCue> _audioCues = new List<NamedAudioCue>();
+    [SerializeField] List<Song> _songs = new List<Song>();
 
     void Awake() {
         instance = this;
         _audioCues.Sort();
+        _songs.Sort();
         source = GetComponent<AudioSource>();
     }
 
@@ -34,6 +52,52 @@ public class AudioManager : MonoBehaviour {
             AudioClip clip = cue.clips[random.Next(cue.clips.Length)];
             source.PlayOneShot(clip);
             Debug.Log("Now playing: " + clip);
+        }
+    }
+
+    public void PlaySong(string song, bool start = true) {
+        int index = _songs.BinarySearch(new Song(song));
+        if(index >= 0) {
+            PlaySong(_songs[index].clip, start);
+        } else {
+            Debug.LogWarning("Song " + song + " not found");
+        }
+    }
+
+    public void PlaySong(AudioClip song = null, bool start = true) {
+        StartCoroutine(ChangeSong(song, start));
+    }
+
+    public void StopSong(string song) {
+        PlaySong(song, false);
+    }
+
+    public void StopSong(AudioClip nextSong = null) {
+        StartCoroutine(ChangeSong(nextSong, false));
+    }
+
+    IEnumerator ChangeSong(AudioClip song, bool start = true) {
+        float transitionTime = 0;
+        if(source.isPlaying) {
+            while(transitionTime < musicFadeTime) {
+                transitionTime += Time.deltaTime;
+                source.volume = Mathf.Lerp(MusicVolume, 0, transitionTime / musicFadeTime);
+                yield return null;
+            }
+        } else {
+            source.volume = 0;
+        }
+        if(song != null) {
+            source.clip = song;
+        }
+        if(start && source.clip != null) {
+            source.Play();
+            transitionTime = 0;
+            while(transitionTime < musicFadeTime) {
+                transitionTime += Time.deltaTime;
+                source.volume = Mathf.Lerp(0, MusicVolume, transitionTime / musicFadeTime);
+                yield return null;
+            }
         }
     }
 
@@ -68,6 +132,40 @@ public class AudioManager : MonoBehaviour {
 
         public static implicit operator string(NamedAudioCue cue) {
             return cue.name;
+        }
+    }
+
+    [System.Serializable]
+    struct Song : IComparable {
+        public string name;
+        public AudioClip clip;
+
+        public int CompareTo(object obj) {
+            return this.name.CompareTo(((Song) obj).name);
+        }
+
+        public override bool Equals(System.Object obj) {
+            if (obj == null) {
+                return false;
+            }
+            if (obj.GetType().Equals(typeof(string))) {
+                return this.name.Equals(obj);
+            }
+            return base.Equals(obj);
+        }
+
+        public Song(string name, AudioClip clip) {
+            this.name = name;
+            this.clip = clip;
+        }
+
+        public Song(string name) {
+            this.name = name;
+            clip = null;
+        }
+
+        public static implicit operator string(Song song) {
+            return song.name;
         }
     }
 }
