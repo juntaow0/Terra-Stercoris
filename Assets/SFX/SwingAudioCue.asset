@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e26899791c2fca4aa1d4a38d69c8e39, type: 3}
+  m_Name: SwingAudioCue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: ce6e3a71e5c5711458630d5273f6f0a1, type: 3}
+  - {fileID: 8300000, guid: a2b0bc9c7fd2b054d865da7489e9dd40, type: 3}
+  - {fileID: 8300000, guid: 918805c7854f94544823f7c0150aa6e0, type: 3}
+  - {fileID: 8300000, guid: 07f8ded9ebfdcae40b90ebaae4fc8080, type: 3}

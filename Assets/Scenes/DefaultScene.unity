@@ -726,6 +726,12 @@ MonoBehaviour:
   _audioCues:
   - name: Test
     cue: {fileID: 11400000, guid: c07471d8b576b26438e4c45a39012fd8, type: 2}
+  - name: Rock
+    cue: {fileID: 11400000, guid: 62c377a462e104d4385c6e4b7f1b7331, type: 2}
+  - name: Swing
+    cue: {fileID: 11400000, guid: 5ccd4a37f9812384daed37f6b37fcb47, type: 2}
+  - name: Talk
+    cue: {fileID: 11400000, guid: 982ee57085198304ead8bb583624915f, type: 2}
 --- !u!82 &1535423180
 AudioSource:
   m_ObjectHideFlags: 0

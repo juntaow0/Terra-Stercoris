@@ -19,4 +19,4 @@ MonoBehaviour:
   energyCost: 0
   range: 1.5
   cooldownTime: 0.2
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 11400000, guid: 5ccd4a37f9812384daed37f6b37fcb47, type: 2}
