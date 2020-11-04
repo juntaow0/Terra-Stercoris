@@ -26,8 +26,4 @@ public class SiphonIntroduction : MonoBehaviour {
             this.enabled = false;
         }
     }
-
-    public void RemoveSiphon() {
-        // Placeholder (This will be removed anyway)
-    }
 }

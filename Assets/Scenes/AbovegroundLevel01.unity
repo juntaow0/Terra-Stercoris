@@ -35049,7 +35049,6 @@ GameObject:
   - component: {fileID: 696550637}
   - component: {fileID: 696550636}
   - component: {fileID: 696550632}
-  - component: {fileID: 696550638}
   - component: {fileID: 696550635}
   - component: {fileID: 696550634}
   - component: {fileID: 696550633}
@@ -35057,6 +35056,7 @@ GameObject:
   - component: {fileID: 696550640}
   - component: {fileID: 696550642}
   - component: {fileID: 696550643}
+  - component: {fileID: 696550638}
   m_Layer: 0
   m_Name: Terran/Kindled
   m_TagString: Untagged
@@ -35097,7 +35097,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weaponHolder: {fileID: 0}
   weaponPrefabs: []
-  weaponHolderAnimator: {fileID: 0}
 --- !u!114 &696550634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35194,13 +35193,13 @@ Transform:
   m_GameObject: {fileID: 696550631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.72, y: -8.34, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_Children: []
   m_Father: {fileID: 1401812299}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &696550638
-PolygonCollider2D:
+--- !u!61 &696550638
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -35222,17 +35221,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.13, y: 0.089999996}
-      - {x: -0.21, y: -0.01}
-      - {x: -0.22999999, y: -0.06}
-      - {x: -0.22999999, y: -0.22999999}
-      - {x: -0.21, y: -0.31}
-      - {x: -0.02, y: -0.31}
-      - {x: 0.03, y: -0.14999999}
-      - {x: 0.03, y: 0.02}
-      - {x: -0.03, y: 0.089999996}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.9375}
+  m_EdgeRadius: 0
 --- !u!114 &696550640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35424,7 +35415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899693538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000071525574, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35974,12 +35965,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1658308746293421175, guid: 4816099c67334534c99f08dd45498ce4,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -2792318509021241205, guid: 17f1f5164b73a42409261c49a44965df,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
 --- !u!1 &1296037470
@@ -37578,6 +37563,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadHUD: 1
+  LockHUD: 0
+  startupEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1355411474
 Transform:
   m_ObjectHideFlags: 0
@@ -75915,6 +75904,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1759704161}
+          m_MethodName: SetSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - events:
     - m_PersistentCalls:
         m_Calls:
@@ -75930,7 +75930,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 696550640}
-          m_MethodName: set_IsEnabled
+          m_MethodName: set_InteractEnabled
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -75943,6 +75943,17 @@ MonoBehaviour:
         - m_Target: {fileID: 1463484863}
           m_MethodName: Show
           m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1759704161}
+          m_MethodName: RemoveSpell
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -76066,17 +76077,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1463484862}
-        m_MethodName: RemoveSiphon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -76228,6 +76228,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1269411622}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1759704161 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 17138102, guid: 4816099c67334534c99f08dd45498ce4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1269411622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759704159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b91463412aa6bd43b6a5113efa0b571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1797715717
 GameObject:
   m_ObjectHideFlags: 0
@@ -76453,7 +76465,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6, y: 6}
+  m_Size: {x: 40, y: 40}
   m_EdgeRadius: 0
 --- !u!4 &1846927041 stripped
 Transform:
@@ -76518,7 +76530,6 @@ MonoBehaviour:
   _weaponHolder: {fileID: 1534086036}
   weaponPrefabs:
   - {fileID: 8031377277161434690, guid: 043dcbcdac587b74283d54e50d9d58ae, type: 3}
-  weaponHolderAnimator: {fileID: 1534086038}
 --- !u!114 &1948794068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76615,7 +76626,7 @@ Transform:
   m_GameObject: {fileID: 1948794065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.71, y: 8.04, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 10}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 10}
   m_Children:
   - {fileID: 1816560966}
   - {fileID: 1534086037}
@@ -76639,14 +76650,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.26}
+    oldSize: {x: 1.0625, y: 1.625}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.26}
+  m_Size: {x: 1.0625, y: 1.625}
   m_EdgeRadius: 0
 --- !u!114 &1948794073
 MonoBehaviour:
@@ -78034,7 +78045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092757315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000071525574, y: 0.00000029802322, z: -10}
+  m_LocalPosition: {x: -0.00000047683716, y: 0.00000029802322, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1012487535}

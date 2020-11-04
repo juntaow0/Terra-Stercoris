@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 2359665
+    totalSpriteSurfaceArea: 2361198
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -131,6 +131,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c0dfc104b49a51144a64c6f107851507, type: 3}
   - {fileID: 21300000, guid: 67d247047e5b2cc4db0955fd3c1b7745, type: 3}
   - {fileID: 21300000, guid: ad4329244bd07274eb7d3dd54cb83ef4, type: 3}
+  - {fileID: 21300000, guid: 012117447afe70344a8bb26672a08bec, type: 3}
   - {fileID: 21300000, guid: 1252a454f306b164c842bed65435fd66, type: 3}
   - {fileID: 21300000, guid: 3aee3954596dbb447b083cfcc35c58de, type: 3}
   - {fileID: 21300000, guid: 590afa54c1c0dfe42afbda6a0dd9304b, type: 3}
@@ -176,6 +177,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1ffc2865478604f4fb31ed223d7a8fde, type: 3}
   - {fileID: 21300000, guid: afe84675c9feda24f9b84c2adbab3963, type: 3}
   - {fileID: 21300000, guid: 91197985dc6760d42a0d11a3a710b07f, type: 3}
+  - {fileID: 21300000, guid: 8d21f9a5d0724a64186709b05dcda59f, type: 3}
   - {fileID: 21300000, guid: c26863b5ed1c0b440af06a046dcf7ecc, type: 3}
   - {fileID: 21300000, guid: fddc55b5b7fee7745897dc92cf1f8ffd, type: 3}
   - {fileID: 21300000, guid: 0c9f95b5b0b9bbe479cb9f4489a0c48b, type: 3}
@@ -229,15 +231,6 @@ SpriteAtlas:
   - {fileID: 2713771494818458080, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: 7309459901317331303, guid: df8aa897f85de2c4ab774fc5cda7d9a4, type: 3}
   - {fileID: 21300000, guid: ac99ada7961ae544585528774e049fa1, type: 3}
-  - {fileID: -4245738604243887485, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: -4529042392078601758, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: -4709456396536258026, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: 5938012242645255967, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: -7446026091647042388, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: 7364682651488144517, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: -2311659948842064771, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: -1182821291677670348, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
-  - {fileID: -6287787046888575383, guid: 5c885eb7084bb7c45b4004b93e734c41, type: 3}
   - {fileID: 21300000, guid: 0f0108c71021c0c40ac90069349cb30f, type: 3}
   - {fileID: -8915947734847804263, guid: 20540bc7af1439e41a910156c0959985, type: 3}
   - {fileID: 1251938517471902224, guid: 20540bc7af1439e41a910156c0959985, type: 3}
@@ -363,6 +356,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f6651f5e2f376634db1bcd9a18a3b46b, type: 3}
   - {fileID: 21300000, guid: 7557ca7e6759de24f966e4bbc7190e36, type: 3}
   - {fileID: 21300000, guid: d26681ae8c52e59408377a66b2ca6245, type: 3}
+  - {fileID: 21300000, guid: cce479ae597093f44829db366ff0cdf4, type: 3}
   - {fileID: 21300000, guid: 4f224ace333d025459886ef80c531eb6, type: 3}
   - {fileID: 21300000, guid: 676a77ee065984345872368e9643ba4d, type: 3}
   - {fileID: 21300000, guid: 310679ee1fb65154cb684ce71ae4e7c3, type: 3}
@@ -467,6 +461,7 @@ SpriteAtlas:
   - walk04
   - hit01
   - AttackD06
+  - WoodBow
   - idle08
   - walk02
   - attack04
@@ -512,6 +507,7 @@ SpriteAtlas:
   - hit01
   - idle01
   - attack_right01
+  - StoneSword
   - run07
   - throw_dagger_hit03
   - AttackB05
@@ -565,15 +561,6 @@ SpriteAtlas:
   - Player-BeforeMagic_6
   - Player-BeforeMagic_7
   - attack05
-  - Player_8
-  - Player_5
-  - Player_4
-  - Player_7
-  - Player_6
-  - Player_1
-  - Player_0
-  - Player_3
-  - Player_2
   - attack02
   - MCrew2_8
   - MCrew2_2
@@ -699,6 +686,7 @@ SpriteAtlas:
   - attack_right07
   - attack02
   - AttackC06
+  - WoodSword
   - idle02
   - walk05
   - idle06
