@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 4951129276273054676}
   - component: {fileID: 4951129276273054679}
   - component: {fileID: 3534830549243155354}
+  - component: {fileID: 3118436608146606619}
   m_Layer: 5
   m_Name: HUD Canvas
   m_TagString: HUDCanvas
@@ -499,6 +500,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellIcon: {fileID: 4974216503674070734}
+  defaultIcon: {fileID: 21300000, guid: 0c73a62240715bf4db846be62492530f, type: 3}
+--- !u!114 &3118436608146606619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4951129276273054678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd20172a92a6e444fbf67baf2b9e10fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponIcon: {fileID: 6281123745088778944}
   defaultIcon: {fileID: 21300000, guid: 0c73a62240715bf4db846be62492530f, type: 3}
 --- !u!1 &4951129276635686036
 GameObject:

@@ -616,6 +616,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4951129277298620438}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1193372609 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3118436608146606619, guid: 326a0a2e41b912e4ab982bc97fb02bcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4951129277298620438}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193372608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd20172a92a6e444fbf67baf2b9e10fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1217966932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2230964031605116940, guid: 844ec336ff1bd7d4fb5483943c9f3454,
@@ -677,6 +689,7 @@ MonoBehaviour:
   powerBar: {fileID: 1008822364}
   healthBar: {fileID: 691755467}
   spellUI: {fileID: 4951129277298620440}
+  weaponUI: {fileID: 1193372609}
   notification: {fileID: 1217966932}
   fadeImage: {fileID: 79121207}
 --- !u!1 &1535423177

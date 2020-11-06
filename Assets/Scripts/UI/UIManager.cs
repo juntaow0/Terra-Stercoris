@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Powerbar powerBar;
     [SerializeField] private Healthbar healthBar;
     [SerializeField] private SpellUI spellUI;
+    [SerializeField] private WeaponUI weaponUI;
     [SerializeField] private Notification notification;
     [SerializeField] private Image fadeImage;
     private bool HUDLock = false;
@@ -44,6 +45,7 @@ public class UIManager : MonoBehaviour
         }
         CharacterController playerInfo = PlayerController.instance?.characterController;
         SpellController playerSpell = PlayerController.instance?.GetComponent<SpellController>();
+        WeaponController playerWeapon = PlayerController.instance?.GetComponent<WeaponController>();
         if (powerBar != null) {
             powerBar.bindPowerBar(playerInfo?.energy);
         }
@@ -53,6 +55,10 @@ public class UIManager : MonoBehaviour
 
         if (spellUI != null  && playerSpell!=null) {
             spellUI.bindSpellSlot(playerSpell);
+        }
+
+        if (weaponUI != null && playerWeapon!=null) {
+            weaponUI.bindWeaponSlot(playerWeapon);
         }
     }
 

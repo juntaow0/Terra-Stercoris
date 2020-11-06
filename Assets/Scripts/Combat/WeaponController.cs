@@ -7,12 +7,20 @@ using UnityEngine;
 public class WeaponController : MonoBehaviour {
 
     private Rigidbody2D _body;
-    public WeaponBehavior selected {get; private set;} = null;
+    private WeaponBehavior _selected = null;
     private Dictionary<int,WeaponBehavior> _availableWeapons;
     private SpriteRenderer _weaponSprite;
     private CharacterController _characterController;
     [SerializeField] private GameObject _weaponHolder = null;
     [SerializeField] private GameObject[] weaponPrefabs;
+    public event Action<WeaponBehavior> OnSelection;
+
+    public WeaponBehavior selected {get {return _selected;}
+        private set {
+            _selected = value;
+            OnSelection?.Invoke(value);
+        }
+    }
 
     public GameObject weaponHolder {get {return _weaponHolder;}}
 
