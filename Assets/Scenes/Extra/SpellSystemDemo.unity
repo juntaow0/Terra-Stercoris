@@ -32406,6 +32406,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadHUD: 1
   LockHUD: 0
+  startupEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1189914484
 Transform:
   m_ObjectHideFlags: 0
