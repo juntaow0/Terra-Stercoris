@@ -13,8 +13,50 @@ MonoBehaviour:
   m_Name: 04 Hello there. Can I help you
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
-  speakers: []
-  sentences: []
+  speakers:
+  - You
+  - En
+  - smith
+  sentences:
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Can I help you?
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Actually yeah. I don\u2019t know if you can help but have this device
+      that\u2019s broken. "
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I don\u2019t know anything about technology so do you think you could
+      help me fix it?"
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Hmm\u2026this is very different to the tech we use. I think I can
+      tell what the problem is though."
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "It looks like two parts are broken, the transmitter and the receiver.
+      Without those you won\u2019t have any signal or be able to send messages."
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I don\u2019t think we have anything here that could help, but north
+      of the village there is a lake that a ship crashed into long ago...it might
+      have been one of yours?"
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: In any case, if you can find the ship, you might be able to find the
+      part to fix this.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I can take you there, follow me.
   endAction: 0
   choices: []
   choiceKey: 
