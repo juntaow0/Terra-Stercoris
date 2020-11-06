@@ -67,6 +67,10 @@ public class CharacterController : MonoBehaviour, IDamagable {
         animator.SetFloat("Speed", velocity.magnitude);
     }
 
+    public void TeleportToObject(GameObject obj) {
+        transform.position = obj.transform.position;
+    }
+
     public float GetSpeed() {
         return _movementSpeed;
     }
