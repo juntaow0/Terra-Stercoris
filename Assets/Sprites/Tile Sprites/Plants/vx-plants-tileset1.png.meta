@@ -1,0 +1,4872 @@
+fileFormatVersion: 2
+guid: 825de3d8103d237499ad97c65591cda0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1244046209590991581
+    second: vx-plants-tileset1_0
+  - first:
+      213: -2023265144859038553
+    second: vx-plants-tileset1_1
+  - first:
+      213: -5835454126850502224
+    second: vx-plants-tileset1_2
+  - first:
+      213: -3154128555328199907
+    second: vx-plants-tileset1_3
+  - first:
+      213: 4953278686295687410
+    second: vx-plants-tileset1_4
+  - first:
+      213: -1654731492156370049
+    second: vx-plants-tileset1_5
+  - first:
+      213: 6875274698979557806
+    second: vx-plants-tileset1_6
+  - first:
+      213: -8444382856182999991
+    second: vx-plants-tileset1_7
+  - first:
+      213: 1553894443200541599
+    second: vx-plants-tileset1_8
+  - first:
+      213: 8539558652095561629
+    second: vx-plants-tileset1_9
+  - first:
+      213: 8206101995678627385
+    second: vx-plants-tileset1_10
+  - first:
+      213: 3163196575007046886
+    second: vx-plants-tileset1_11
+  - first:
+      213: 23943201156126597
+    second: vx-plants-tileset1_12
+  - first:
+      213: -2789866157442148989
+    second: vx-plants-tileset1_13
+  - first:
+      213: -1790839578968885042
+    second: vx-plants-tileset1_14
+  - first:
+      213: -1638431260631055801
+    second: vx-plants-tileset1_15
+  - first:
+      213: 5047104819094774214
+    second: vx-plants-tileset1_16
+  - first:
+      213: 6123970576820770041
+    second: vx-plants-tileset1_17
+  - first:
+      213: 4653641447207986030
+    second: vx-plants-tileset1_18
+  - first:
+      213: -4943341408184267858
+    second: vx-plants-tileset1_19
+  - first:
+      213: 8446447947364510958
+    second: vx-plants-tileset1_20
+  - first:
+      213: -4630683359847265475
+    second: vx-plants-tileset1_21
+  - first:
+      213: 5117712448444048187
+    second: vx-plants-tileset1_22
+  - first:
+      213: 2911915203694083065
+    second: vx-plants-tileset1_23
+  - first:
+      213: 6213325426121196871
+    second: vx-plants-tileset1_24
+  - first:
+      213: -7379369886477365198
+    second: vx-plants-tileset1_25
+  - first:
+      213: 6615911102558535173
+    second: vx-plants-tileset1_26
+  - first:
+      213: 4303300654567711958
+    second: vx-plants-tileset1_27
+  - first:
+      213: 7497546593498615099
+    second: vx-plants-tileset1_28
+  - first:
+      213: -100984164615523421
+    second: vx-plants-tileset1_29
+  - first:
+      213: -291550583277313244
+    second: vx-plants-tileset1_30
+  - first:
+      213: 7895734481114557137
+    second: vx-plants-tileset1_31
+  - first:
+      213: -3885029835068965009
+    second: vx-plants-tileset1_32
+  - first:
+      213: 4799525394118609035
+    second: vx-plants-tileset1_33
+  - first:
+      213: -1999746669998325024
+    second: vx-plants-tileset1_34
+  - first:
+      213: -7444232687135356842
+    second: vx-plants-tileset1_35
+  - first:
+      213: -6293526364634592597
+    second: vx-plants-tileset1_36
+  - first:
+      213: 7893676486016311133
+    second: vx-plants-tileset1_37
+  - first:
+      213: 2636085602958578847
+    second: vx-plants-tileset1_38
+  - first:
+      213: 2676288551611661405
+    second: vx-plants-tileset1_39
+  - first:
+      213: 2051286795738294303
+    second: vx-plants-tileset1_40
+  - first:
+      213: 5111591769673018080
+    second: vx-plants-tileset1_41
+  - first:
+      213: 949241217626127271
+    second: vx-plants-tileset1_42
+  - first:
+      213: -309968315468491731
+    second: vx-plants-tileset1_43
+  - first:
+      213: -762153119942675459
+    second: vx-plants-tileset1_44
+  - first:
+      213: 3751900800777446205
+    second: vx-plants-tileset1_45
+  - first:
+      213: -1748214368598991511
+    second: vx-plants-tileset1_46
+  - first:
+      213: -6450660812545753781
+    second: vx-plants-tileset1_47
+  - first:
+      213: -4987520781731324877
+    second: vx-plants-tileset1_48
+  - first:
+      213: -6749512459421709520
+    second: vx-plants-tileset1_49
+  - first:
+      213: -6961012175892015830
+    second: vx-plants-tileset1_50
+  - first:
+      213: -4658356587441933825
+    second: vx-plants-tileset1_51
+  - first:
+      213: -4368077566218367839
+    second: vx-plants-tileset1_52
+  - first:
+      213: 3106010826217015108
+    second: vx-plants-tileset1_53
+  - first:
+      213: 2486710315595483568
+    second: vx-plants-tileset1_54
+  - first:
+      213: 8034322847340502101
+    second: vx-plants-tileset1_55
+  - first:
+      213: 6565133191318651709
+    second: vx-plants-tileset1_56
+  - first:
+      213: -5218677630581491675
+    second: vx-plants-tileset1_57
+  - first:
+      213: 5686160384720107772
+    second: vx-plants-tileset1_58
+  - first:
+      213: 7320833170304851328
+    second: vx-plants-tileset1_59
+  - first:
+      213: 1752341514258257975
+    second: vx-plants-tileset1_60
+  - first:
+      213: 7905384838860449788
+    second: vx-plants-tileset1_61
+  - first:
+      213: 3579871549485567694
+    second: vx-plants-tileset1_62
+  - first:
+      213: 8860860064801221772
+    second: vx-plants-tileset1_63
+  - first:
+      213: -307020326855682720
+    second: vx-plants-tileset1_64
+  - first:
+      213: 7581839879650812008
+    second: vx-plants-tileset1_65
+  - first:
+      213: 5068069048392092354
+    second: vx-plants-tileset1_66
+  - first:
+      213: -1259285507255734572
+    second: vx-plants-tileset1_67
+  - first:
+      213: -8478930786031153645
+    second: vx-plants-tileset1_68
+  - first:
+      213: -293033682490346082
+    second: vx-plants-tileset1_69
+  - first:
+      213: -543542788718535519
+    second: vx-plants-tileset1_70
+  - first:
+      213: -8226447665044916008
+    second: vx-plants-tileset1_71
+  - first:
+      213: -569964342954957350
+    second: vx-plants-tileset1_72
+  - first:
+      213: -4871425862672994888
+    second: vx-plants-tileset1_73
+  - first:
+      213: 7056896811462589255
+    second: vx-plants-tileset1_74
+  - first:
+      213: -6095490983583077288
+    second: vx-plants-tileset1_75
+  - first:
+      213: 7157478088686346136
+    second: vx-plants-tileset1_76
+  - first:
+      213: -4825090211366741986
+    second: vx-plants-tileset1_77
+  - first:
+      213: -1414834638667118778
+    second: vx-plants-tileset1_78
+  - first:
+      213: -2764698300462805146
+    second: vx-plants-tileset1_79
+  - first:
+      213: 339862895484838394
+    second: vx-plants-tileset1_80
+  - first:
+      213: -3717876445802338088
+    second: vx-plants-tileset1_81
+  - first:
+      213: -5832059273441848819
+    second: vx-plants-tileset1_82
+  - first:
+      213: 1205527444522006320
+    second: vx-plants-tileset1_83
+  - first:
+      213: 1183463690533421338
+    second: vx-plants-tileset1_84
+  - first:
+      213: 7175407505332901983
+    second: vx-plants-tileset1_85
+  - first:
+      213: 1960002638842256676
+    second: vx-plants-tileset1_86
+  - first:
+      213: -6527752799496893349
+    second: vx-plants-tileset1_87
+  - first:
+      213: -7255084521850656133
+    second: vx-plants-tileset1_88
+  - first:
+      213: 76242523446172492
+    second: vx-plants-tileset1_89
+  - first:
+      213: -4490193756895426595
+    second: vx-plants-tileset1_90
+  - first:
+      213: 6800982926553640028
+    second: vx-plants-tileset1_91
+  - first:
+      213: 7054487661155432194
+    second: vx-plants-tileset1_92
+  - first:
+      213: 6167934247215369485
+    second: vx-plants-tileset1_93
+  - first:
+      213: -2000173291618603085
+    second: vx-plants-tileset1_94
+  - first:
+      213: 3171349744411116969
+    second: vx-plants-tileset1_95
+  - first:
+      213: 6910214688227022669
+    second: vx-plants-tileset1_96
+  - first:
+      213: -6873136200181806407
+    second: vx-plants-tileset1_97
+  - first:
+      213: 2083603056640662602
+    second: vx-plants-tileset1_98
+  - first:
+      213: 7132972734770632414
+    second: vx-plants-tileset1_99
+  - first:
+      213: -2015249221409172574
+    second: vx-plants-tileset1_100
+  - first:
+      213: -3233986502259264391
+    second: vx-plants-tileset1_101
+  - first:
+      213: -9039736045435611234
+    second: vx-plants-tileset1_102
+  - first:
+      213: -6959856826536743904
+    second: vx-plants-tileset1_103
+  - first:
+      213: -7089253628014356887
+    second: vx-plants-tileset1_104
+  - first:
+      213: 269518704640966826
+    second: vx-plants-tileset1_105
+  - first:
+      213: -2099568718199332532
+    second: vx-plants-tileset1_106
+  - first:
+      213: -8871480731473208647
+    second: vx-plants-tileset1_107
+  - first:
+      213: -6364745357809922083
+    second: vx-plants-tileset1_108
+  - first:
+      213: 8928013625154901144
+    second: vx-plants-tileset1_109
+  - first:
+      213: -4456353044253650761
+    second: vx-plants-tileset1_110
+  - first:
+      213: -230274595256801959
+    second: vx-plants-tileset1_111
+  - first:
+      213: 5460493749935070800
+    second: vx-plants-tileset1_112
+  - first:
+      213: 6257080470185858912
+    second: vx-plants-tileset1_113
+  - first:
+      213: 3358776199800539674
+    second: vx-plants-tileset1_114
+  - first:
+      213: -5682428438196426559
+    second: vx-plants-tileset1_115
+  - first:
+      213: 3764604700933003240
+    second: vx-plants-tileset1_116
+  - first:
+      213: -3740643124668615963
+    second: vx-plants-tileset1_117
+  - first:
+      213: 5439225817976483111
+    second: vx-plants-tileset1_118
+  - first:
+      213: -4576754628829059679
+    second: vx-plants-tileset1_119
+  - first:
+      213: -9847171126325827
+    second: vx-plants-tileset1_120
+  - first:
+      213: -2585304927985136135
+    second: vx-plants-tileset1_121
+  - first:
+      213: -2971379801159647511
+    second: vx-plants-tileset1_122
+  - first:
+      213: -7189518588194096499
+    second: vx-plants-tileset1_123
+  - first:
+      213: -7985631296894175481
+    second: vx-plants-tileset1_124
+  - first:
+      213: 8221211457916798361
+    second: vx-plants-tileset1_125
+  - first:
+      213: -752691597593675728
+    second: vx-plants-tileset1_126
+  - first:
+      213: -8470830720003731935
+    second: vx-plants-tileset1_127
+  - first:
+      213: -2258696149774072064
+    second: vx-plants-tileset1_128
+  - first:
+      213: 1029808295578656905
+    second: vx-plants-tileset1_129
+  - first:
+      213: -7798612851063188821
+    second: vx-plants-tileset1_130
+  - first:
+      213: -4686005859218810395
+    second: vx-plants-tileset1_131
+  - first:
+      213: 3743245862088970325
+    second: vx-plants-tileset1_132
+  - first:
+      213: 1150142728141925265
+    second: vx-plants-tileset1_133
+  - first:
+      213: 1935060013522538577
+    second: vx-plants-tileset1_134
+  - first:
+      213: -5971309122970786838
+    second: vx-plants-tileset1_135
+  - first:
+      213: 6669327577704685449
+    second: vx-plants-tileset1_136
+  - first:
+      213: 4166006872132966211
+    second: vx-plants-tileset1_137
+  - first:
+      213: -7716810454053537985
+    second: vx-plants-tileset1_138
+  - first:
+      213: -4470916922157317305
+    second: vx-plants-tileset1_139
+  - first:
+      213: -7185770530847515765
+    second: vx-plants-tileset1_140
+  - first:
+      213: 5187478569411182928
+    second: vx-plants-tileset1_141
+  - first:
+      213: -3116958682455670284
+    second: vx-plants-tileset1_142
+  - first:
+      213: 3982783684157115031
+    second: vx-plants-tileset1_143
+  - first:
+      213: 9022320951584055740
+    second: vx-plants-tileset1_144
+  - first:
+      213: 7700420942099830629
+    second: vx-plants-tileset1_145
+  - first:
+      213: -2288658586970604101
+    second: vx-plants-tileset1_146
+  - first:
+      213: -2243036154717845166
+    second: vx-plants-tileset1_147
+  - first:
+      213: -996534856755383409
+    second: vx-plants-tileset1_148
+  - first:
+      213: 7006422466398958738
+    second: vx-plants-tileset1_149
+  - first:
+      213: -1164715417447233771
+    second: vx-plants-tileset1_150
+  - first:
+      213: 5720469613016927608
+    second: vx-plants-tileset1_151
+  - first:
+      213: 2173045787998901805
+    second: vx-plants-tileset1_152
+  - first:
+      213: 6461730333919174893
+    second: vx-plants-tileset1_153
+  - first:
+      213: 2729965433504528111
+    second: vx-plants-tileset1_154
+  - first:
+      213: -1560004467678073377
+    second: vx-plants-tileset1_155
+  - first:
+      213: 3203918878498665708
+    second: vx-plants-tileset1_156
+  - first:
+      213: 2086759993504599065
+    second: vx-plants-tileset1_157
+  - first:
+      213: 5702317480773800269
+    second: vx-plants-tileset1_158
+  - first:
+      213: -8128152816606757828
+    second: vx-plants-tileset1_159
+  - first:
+      213: 3863444462935053954
+    second: vx-plants-tileset1_160
+  - first:
+      213: 7760223050602720877
+    second: vx-plants-tileset1_161
+  - first:
+      213: -3644411156122524654
+    second: vx-plants-tileset1_162
+  - first:
+      213: 8124223835419676511
+    second: vx-plants-tileset1_163
+  - first:
+      213: -2653158270126205777
+    second: vx-plants-tileset1_164
+  - first:
+      213: 50009913236030187
+    second: vx-plants-tileset1_165
+  - first:
+      213: -2178400406812689606
+    second: vx-plants-tileset1_166
+  - first:
+      213: 4994214022758730575
+    second: vx-plants-tileset1_167
+  - first:
+      213: 7431210045107418558
+    second: vx-plants-tileset1_168
+  - first:
+      213: 7301492707767233956
+    second: vx-plants-tileset1_169
+  - first:
+      213: 3016403656783935731
+    second: vx-plants-tileset1_170
+  - first:
+      213: -5910457140759106968
+    second: vx-plants-tileset1_171
+  - first:
+      213: 7381925793168303511
+    second: vx-plants-tileset1_172
+  - first:
+      213: -7540807190061734218
+    second: vx-plants-tileset1_173
+  - first:
+      213: -1457399705019133098
+    second: vx-plants-tileset1_174
+  - first:
+      213: 3191922177091185082
+    second: vx-plants-tileset1_175
+  - first:
+      213: -5387303463739628989
+    second: vx-plants-tileset1_176
+  - first:
+      213: 2365410895851110408
+    second: vx-plants-tileset1_177
+  - first:
+      213: -8895886339023426011
+    second: vx-plants-tileset1_178
+  - first:
+      213: -72011665867988744
+    second: vx-plants-tileset1_179
+  - first:
+      213: 927029774085444818
+    second: vx-plants-tileset1_180
+  - first:
+      213: -7993345345564348913
+    second: vx-plants-tileset1_181
+  - first:
+      213: 3466058599918907094
+    second: vx-plants-tileset1_182
+  - first:
+      213: -1621776800797343707
+    second: vx-plants-tileset1_183
+  - first:
+      213: 7725611624276728658
+    second: vx-plants-tileset1_184
+  - first:
+      213: 6888870914253283332
+    second: vx-plants-tileset1_185
+  - first:
+      213: -7686068902558241880
+    second: vx-plants-tileset1_186
+  - first:
+      213: -2688046802286378307
+    second: vx-plants-tileset1_187
+  - first:
+      213: 4158351408787744348
+    second: vx-plants-tileset1_188
+  - first:
+      213: -3727135642672589701
+    second: vx-plants-tileset1_189
+  - first:
+      213: -6126385161684280270
+    second: vx-plants-tileset1_190
+  - first:
+      213: 7266270997544090116
+    second: vx-plants-tileset1_191
+  - first:
+      213: -4649201849459030053
+    second: vx-plants-tileset1_192
+  - first:
+      213: -828987000189784887
+    second: vx-plants-tileset1_193
+  - first:
+      213: -2061826247020791036
+    second: vx-plants-tileset1_194
+  - first:
+      213: -5601169051174061372
+    second: vx-plants-tileset1_195
+  - first:
+      213: 4509476882687227281
+    second: vx-plants-tileset1_196
+  - first:
+      213: 5291073387055799561
+    second: vx-plants-tileset1_197
+  - first:
+      213: -5241083333582209801
+    second: vx-plants-tileset1_198
+  - first:
+      213: 7276954057688753609
+    second: vx-plants-tileset1_199
+  - first:
+      213: 2947057028107638811
+    second: vx-plants-tileset1_200
+  - first:
+      213: 5061085113310411195
+    second: vx-plants-tileset1_201
+  - first:
+      213: 8510496226365251977
+    second: vx-plants-tileset1_202
+  - first:
+      213: 1423300862654436981
+    second: vx-plants-tileset1_203
+  - first:
+      213: 6923808569080157756
+    second: vx-plants-tileset1_204
+  - first:
+      213: -7578925001684032533
+    second: vx-plants-tileset1_205
+  - first:
+      213: -3915446392350172690
+    second: vx-plants-tileset1_206
+  - first:
+      213: 3566996618426037078
+    second: vx-plants-tileset1_207
+  - first:
+      213: -880861865790361857
+    second: vx-plants-tileset1_208
+  - first:
+      213: -5026871179971444035
+    second: vx-plants-tileset1_209
+  - first:
+      213: 5519006894406934219
+    second: vx-plants-tileset1_210
+  - first:
+      213: 6260098315587195932
+    second: vx-plants-tileset1_211
+  - first:
+      213: 2781080231406828577
+    second: vx-plants-tileset1_212
+  - first:
+      213: -8503567613703595007
+    second: vx-plants-tileset1_213
+  - first:
+      213: -770854623666498670
+    second: vx-plants-tileset1_214
+  - first:
+      213: 6255794172627481117
+    second: vx-plants-tileset1_215
+  - first:
+      213: -2124942938439525727
+    second: vx-plants-tileset1_216
+  - first:
+      213: 826096291239041998
+    second: vx-plants-tileset1_217
+  - first:
+      213: 3631633658962809903
+    second: vx-plants-tileset1_218
+  - first:
+      213: -4874822405944609584
+    second: vx-plants-tileset1_219
+  - first:
+      213: 7664421168997637514
+    second: vx-plants-tileset1_220
+  - first:
+      213: 8931861515168676565
+    second: vx-plants-tileset1_221
+  - first:
+      213: -8285195408911936026
+    second: vx-plants-tileset1_222
+  - first:
+      213: 3849835760826922175
+    second: vx-plants-tileset1_223
+  - first:
+      213: 3260733854728707061
+    second: vx-plants-tileset1_224
+  - first:
+      213: 6399520104653080947
+    second: vx-plants-tileset1_225
+  - first:
+      213: 5714307400627256756
+    second: vx-plants-tileset1_226
+  - first:
+      213: 4596408776625557508
+    second: vx-plants-tileset1_227
+  - first:
+      213: 7749057414409201242
+    second: vx-plants-tileset1_228
+  - first:
+      213: -197115114193126945
+    second: vx-plants-tileset1_229
+  - first:
+      213: -321434842052183278
+    second: vx-plants-tileset1_230
+  - first:
+      213: -2807045674741942178
+    second: vx-plants-tileset1_231
+  - first:
+      213: -3452286143435546984
+    second: vx-plants-tileset1_232
+  - first:
+      213: -3212188290349694105
+    second: vx-plants-tileset1_233
+  - first:
+      213: 3790618436446935748
+    second: vx-plants-tileset1_234
+  - first:
+      213: -2888097699458773964
+    second: vx-plants-tileset1_235
+  - first:
+      213: -3192489710355380059
+    second: vx-plants-tileset1_236
+  - first:
+      213: 8554798141737489224
+    second: vx-plants-tileset1_237
+  - first:
+      213: -6502077466441624718
+    second: vx-plants-tileset1_238
+  - first:
+      213: 4982968109782400096
+    second: vx-plants-tileset1_239
+  - first:
+      213: -1246219696008593570
+    second: vx-plants-tileset1_240
+  - first:
+      213: -8869789808288022249
+    second: vx-plants-tileset1_241
+  - first:
+      213: 2237009443597126123
+    second: vx-plants-tileset1_242
+  - first:
+      213: 8643894836205128805
+    second: vx-plants-tileset1_243
+  - first:
+      213: -1205277262342790476
+    second: vx-plants-tileset1_244
+  - first:
+      213: -870890461684100698
+    second: vx-plants-tileset1_245
+  - first:
+      213: -6240887229661267579
+    second: vx-plants-tileset1_246
+  - first:
+      213: 4544190659713994163
+    second: vx-plants-tileset1_247
+  - first:
+      213: -8276139892488297210
+    second: vx-plants-tileset1_248
+  - first:
+      213: -7807195724445539891
+    second: vx-plants-tileset1_249
+  - first:
+      213: -7551415494717724420
+    second: vx-plants-tileset1_250
+  - first:
+      213: -5073793684961341826
+    second: vx-plants-tileset1_251
+  - first:
+      213: 4276596961199192947
+    second: vx-plants-tileset1_252
+  - first:
+      213: 2342030664366712296
+    second: vx-plants-tileset1_253
+  - first:
+      213: -6900462786795665518
+    second: vx-plants-tileset1_254
+  - first:
+      213: 916869757496016431
+    second: vx-plants-tileset1_255
+  - first:
+      213: -5543901522417359972
+    second: vx-plants-tileset1_256
+  - first:
+      213: -4731933576390334199
+    second: vx-plants-tileset1_257
+  - first:
+      213: 92734880142632238
+    second: vx-plants-tileset1_258
+  - first:
+      213: -7876892747945588149
+    second: vx-plants-tileset1_259
+  - first:
+      213: 5967576445350358438
+    second: vx-plants-tileset1_260
+  - first:
+      213: -6350509577806796704
+    second: vx-plants-tileset1_261
+  - first:
+      213: 484396526610962039
+    second: vx-plants-tileset1_262
+  - first:
+      213: -550178150565518233
+    second: vx-plants-tileset1_263
+  - first:
+      213: 7228898035948889811
+    second: vx-plants-tileset1_264
+  - first:
+      213: -5674913377359808677
+    second: vx-plants-tileset1_265
+  - first:
+      213: 4117473882273089416
+    second: vx-plants-tileset1_266
+  - first:
+      213: -617383447400014805
+    second: vx-plants-tileset1_267
+  - first:
+      213: 6868625524021870434
+    second: vx-plants-tileset1_268
+  - first:
+      213: -42325063133859578
+    second: vx-plants-tileset1_269
+  - first:
+      213: 4268343264403615980
+    second: vx-plants-tileset1_270
+  - first:
+      213: -2392770004108808547
+    second: vx-plants-tileset1_271
+  - first:
+      213: -2436790180382287929
+    second: vx-plants-tileset1_272
+  - first:
+      213: 3481096218508340658
+    second: vx-plants-tileset1_273
+  - first:
+      213: -2992182773556483395
+    second: vx-plants-tileset1_274
+  - first:
+      213: -1302132354414476708
+    second: vx-plants-tileset1_275
+  - first:
+      213: -4739697035223333442
+    second: vx-plants-tileset1_276
+  - first:
+      213: 7941609407735273353
+    second: vx-plants-tileset1_277
+  - first:
+      213: 7701877747355615949
+    second: vx-plants-tileset1_278
+  - first:
+      213: 8115289672126598672
+    second: vx-plants-tileset1_279
+  - first:
+      213: -3400841526986088184
+    second: vx-plants-tileset1_280
+  - first:
+      213: -3923640808558763608
+    second: vx-plants-tileset1_281
+  - first:
+      213: 2465808064178156095
+    second: vx-plants-tileset1_282
+  - first:
+      213: 6553206230286344282
+    second: vx-plants-tileset1_283
+  - first:
+      213: 4284384362565492374
+    second: vx-plants-tileset1_284
+  - first:
+      213: 8536856706865391174
+    second: vx-plants-tileset1_285
+  - first:
+      213: 5966246535229190710
+    second: vx-plants-tileset1_286
+  - first:
+      213: 5192231875936929562
+    second: vx-plants-tileset1_287
+  - first:
+      213: -4596140885995850749
+    second: vx-plants-tileset1_288
+  - first:
+      213: 6584380741373521169
+    second: vx-plants-tileset1_289
+  - first:
+      213: 6956324221693016276
+    second: vx-plants-tileset1_290
+  - first:
+      213: 5510825700704385034
+    second: vx-plants-tileset1_291
+  - first:
+      213: -1499536444341122986
+    second: vx-plants-tileset1_292
+  - first:
+      213: 2806209492717671148
+    second: vx-plants-tileset1_293
+  - first:
+      213: -3377915537952198772
+    second: vx-plants-tileset1_294
+  - first:
+      213: 5750053522075124870
+    second: vx-plants-tileset1_295
+  - first:
+      213: 4405741447510241703
+    second: vx-plants-tileset1_296
+  - first:
+      213: 8391730327104630777
+    second: vx-plants-tileset1_297
+  - first:
+      213: -3796397379567778039
+    second: vx-plants-tileset1_298
+  - first:
+      213: -8830488792372134879
+    second: vx-plants-tileset1_299
+  - first:
+      213: 4493956604743497595
+    second: vx-plants-tileset1_300
+  - first:
+      213: -9221375964808117437
+    second: vx-plants-tileset1_301
+  - first:
+      213: 8225389832023541651
+    second: vx-plants-tileset1_302
+  - first:
+      213: 6906149362257791415
+    second: vx-plants-tileset1_303
+  - first:
+      213: -4534192092914922949
+    second: vx-plants-tileset1_304
+  - first:
+      213: -7866101953321189202
+    second: vx-plants-tileset1_305
+  - first:
+      213: 870233380238168366
+    second: vx-plants-tileset1_306
+  - first:
+      213: 7879898066967464650
+    second: vx-plants-tileset1_307
+  - first:
+      213: 7963591727497231399
+    second: vx-plants-tileset1_308
+  - first:
+      213: 7747753644807693224
+    second: vx-plants-tileset1_309
+  - first:
+      213: -3472436614224329216
+    second: vx-plants-tileset1_310
+  - first:
+      213: -914792428240559353
+    second: vx-plants-tileset1_311
+  - first:
+      213: 810032317440946466
+    second: vx-plants-tileset1_312
+  - first:
+      213: 6579912530236470453
+    second: vx-plants-tileset1_313
+  - first:
+      213: 7321177947667815460
+    second: vx-plants-tileset1_314
+  - first:
+      213: 2127778973013599830
+    second: vx-plants-tileset1_315
+  - first:
+      213: -6426256526099704207
+    second: vx-plants-tileset1_316
+  - first:
+      213: -4446720279495140290
+    second: vx-plants-tileset1_317
+  - first:
+      213: 1285730605109961469
+    second: vx-plants-tileset1_318
+  - first:
+      213: -3244265267439681046
+    second: vx-plants-tileset1_319
+  - first:
+      213: -5775011236162666381
+    second: vx-plants-tileset1_320
+  - first:
+      213: 6253606788221231643
+    second: vx-plants-tileset1_321
+  - first:
+      213: 7262634542766827797
+    second: vx-plants-tileset1_322
+  - first:
+      213: -7356735678551319168
+    second: vx-plants-tileset1_323
+  - first:
+      213: 5440003786848169607
+    second: vx-plants-tileset1_324
+  - first:
+      213: 5127870768399097587
+    second: vx-plants-tileset1_325
+  - first:
+      213: 1706931182736114692
+    second: vx-plants-tileset1_326
+  - first:
+      213: 818478958245825642
+    second: vx-plants-tileset1_327
+  - first:
+      213: 7481937798478868769
+    second: vx-plants-tileset1_328
+  - first:
+      213: -5416978417816297521
+    second: vx-plants-tileset1_329
+  - first:
+      213: 4527108200260325781
+    second: vx-plants-tileset1_330
+  - first:
+      213: 6769645882766081833
+    second: vx-plants-tileset1_331
+  - first:
+      213: 711411521003303613
+    second: vx-plants-tileset1_332
+  - first:
+      213: -2641456421878861715
+    second: vx-plants-tileset1_333
+  - first:
+      213: -2647602245696312379
+    second: vx-plants-tileset1_334
+  - first:
+      213: 7288106878149383086
+    second: vx-plants-tileset1_335
+  - first:
+      213: -9056382285043941963
+    second: vx-plants-tileset1_336
+  - first:
+      213: 7451962159307121067
+    second: vx-plants-tileset1_337
+  - first:
+      213: -1307045176517718240
+    second: vx-plants-tileset1_338
+  - first:
+      213: -8550211053975951745
+    second: vx-plants-tileset1_339
+  - first:
+      213: 8985339315590460797
+    second: vx-plants-tileset1_340
+  - first:
+      213: -1928738300823218317
+    second: vx-plants-tileset1_341
+  - first:
+      213: -4837126961865421932
+    second: vx-plants-tileset1_342
+  - first:
+      213: 5571302250811808969
+    second: vx-plants-tileset1_343
+  - first:
+      213: 1385494454867355180
+    second: vx-plants-tileset1_344
+  - first:
+      213: 3603404432211568036
+    second: vx-plants-tileset1_345
+  - first:
+      213: 6131624496289027734
+    second: vx-plants-tileset1_346
+  - first:
+      213: -7283099072659557502
+    second: vx-plants-tileset1_347
+  - first:
+      213: -4275957869634309999
+    second: vx-plants-tileset1_348
+  - first:
+      213: 7980584575871207754
+    second: vx-plants-tileset1_349
+  - first:
+      213: 394091910066078771
+    second: vx-plants-tileset1_350
+  - first:
+      213: -1299798818880050084
+    second: vx-plants-tileset1_351
+  - first:
+      213: 4939870962330258642
+    second: vx-plants-tileset1_352
+  - first:
+      213: 5492415785565637153
+    second: vx-plants-tileset1_353
+  - first:
+      213: 105124395664519257
+    second: vx-plants-tileset1_354
+  - first:
+      213: 1047983817843436296
+    second: vx-plants-tileset1_355
+  - first:
+      213: 7052064608830363222
+    second: vx-plants-tileset1_356
+  - first:
+      213: 3043874374003724175
+    second: vx-plants-tileset1_357
+  - first:
+      213: -3846981334567613371
+    second: vx-plants-tileset1_358
+  - first:
+      213: -3513154003729924396
+    second: vx-plants-tileset1_359
+  - first:
+      213: 7315574932568360747
+    second: vx-plants-tileset1_360
+  - first:
+      213: -592023718623891742
+    second: vx-plants-tileset1_361
+  - first:
+      213: -5476295887570971053
+    second: vx-plants-tileset1_362
+  - first:
+      213: -9034756633200033405
+    second: vx-plants-tileset1_363
+  - first:
+      213: -2596068538145165277
+    second: vx-plants-tileset1_364
+  - first:
+      213: -5520040193666202649
+    second: vx-plants-tileset1_365
+  - first:
+      213: -8936719455144119159
+    second: vx-plants-tileset1_366
+  - first:
+      213: 3590499125936963057
+    second: vx-plants-tileset1_367
+  - first:
+      213: 6756243279093899098
+    second: vx-plants-tileset1_368
+  - first:
+      213: -38922751351738043
+    second: vx-plants-tileset1_369
+  - first:
+      213: -3886462877054519248
+    second: vx-plants-tileset1_370
+  - first:
+      213: 6827638339165239727
+    second: vx-plants-tileset1_371
+  - first:
+      213: 2299968406485274802
+    second: vx-plants-tileset1_372
+  - first:
+      213: 8938944564522730324
+    second: vx-plants-tileset1_373
+  - first:
+      213: 7175820367496537546
+    second: vx-plants-tileset1_374
+  - first:
+      213: 4718398610932031752
+    second: vx-plants-tileset1_375
+  - first:
+      213: 1800050323789176832
+    second: vx-plants-tileset1_376
+  - first:
+      213: -1931983597048401801
+    second: vx-plants-tileset1_377
+  - first:
+      213: -5466456618192869763
+    second: vx-plants-tileset1_378
+  - first:
+      213: 5326302497915051592
+    second: vx-plants-tileset1_379
+  - first:
+      213: -6074815097904475454
+    second: vx-plants-tileset1_380
+  - first:
+      213: 2172176794099842229
+    second: vx-plants-tileset1_381
+  - first:
+      213: -5629999167658232557
+    second: vx-plants-tileset1_382
+  - first:
+      213: 7696638191120442412
+    second: vx-plants-tileset1_383
+  - first:
+      213: -2990519328064633768
+    second: vx-plants-tileset1_384
+  - first:
+      213: -1755106756303186149
+    second: vx-plants-tileset1_385
+  - first:
+      213: -3730477290283085429
+    second: vx-plants-tileset1_386
+  - first:
+      213: -304264389730148616
+    second: vx-plants-tileset1_387
+  - first:
+      213: 3094856369453914197
+    second: vx-plants-tileset1_388
+  - first:
+      213: 8816418925333390281
+    second: vx-plants-tileset1_389
+  - first:
+      213: -6375811152287102690
+    second: vx-plants-tileset1_390
+  - first:
+      213: -9078134841717150730
+    second: vx-plants-tileset1_391
+  - first:
+      213: 2305383884460760863
+    second: vx-plants-tileset1_392
+  - first:
+      213: 8804130141793849892
+    second: vx-plants-tileset1_393
+  - first:
+      213: 4139240462886990254
+    second: vx-plants-tileset1_394
+  - first:
+      213: 8795920387735535517
+    second: vx-plants-tileset1_395
+  - first:
+      213: -2539954369764056102
+    second: vx-plants-tileset1_396
+  - first:
+      213: -8305768845862847754
+    second: vx-plants-tileset1_397
+  - first:
+      213: -586310013455956184
+    second: vx-plants-tileset1_398
+  - first:
+      213: -4992310563588961400
+    second: vx-plants-tileset1_399
+  - first:
+      213: -4906201642947531945
+    second: vx-plants-tileset1_400
+  - first:
+      213: 1920833470404139613
+    second: vx-plants-tileset1_401
+  - first:
+      213: 8608245856651698771
+    second: vx-plants-tileset1_402
+  - first:
+      213: 1685093395472414436
+    second: vx-plants-tileset1_403
+  - first:
+      213: 9174757692058507414
+    second: vx-plants-tileset1_404
+  - first:
+      213: 8962648381300212596
+    second: vx-plants-tileset1_405
+  - first:
+      213: -6199172643589972247
+    second: vx-plants-tileset1_406
+  - first:
+      213: 6082763226158078721
+    second: vx-plants-tileset1_407
+  - first:
+      213: 3115077340961651400
+    second: vx-plants-tileset1_408
+  - first:
+      213: -2682612840986624124
+    second: vx-plants-tileset1_409
+  - first:
+      213: -4901133359720245335
+    second: vx-plants-tileset1_410
+  - first:
+      213: -871586504332367983
+    second: vx-plants-tileset1_411
+  - first:
+      213: 3948715491939917797
+    second: vx-plants-tileset1_412
+  - first:
+      213: -1725649660709663971
+    second: vx-plants-tileset1_413
+  - first:
+      213: 7446945167125140081
+    second: vx-plants-tileset1_414
+  - first:
+      213: -7740982399420079616
+    second: vx-plants-tileset1_415
+  - first:
+      213: 2592680550001605495
+    second: vx-plants-tileset1_416
+  - first:
+      213: 3524989607601730604
+    second: vx-plants-tileset1_417
+  - first:
+      213: -4369671451755919369
+    second: vx-plants-tileset1_418
+  - first:
+      213: 755003807923293725
+    second: vx-plants-tileset1_419
+  - first:
+      213: -5499945681378217822
+    second: vx-plants-tileset1_420
+  - first:
+      213: 5050709579251414536
+    second: vx-plants-tileset1_421
+  - first:
+      213: -7141612948910872175
+    second: vx-plants-tileset1_422
+  - first:
+      213: -2084321045997810461
+    second: vx-plants-tileset1_423
+  - first:
+      213: -2563387240809682302
+    second: vx-plants-tileset1_424
+  - first:
+      213: 918366936620940305
+    second: vx-plants-tileset1_425
+  - first:
+      213: -6012228082425749984
+    second: vx-plants-tileset1_426
+  - first:
+      213: -853575127521631301
+    second: vx-plants-tileset1_427
+  - first:
+      213: -7728921508311360863
+    second: vx-plants-tileset1_428
+  - first:
+      213: 295110845241901519
+    second: vx-plants-tileset1_429
+  - first:
+      213: 7786659140246263470
+    second: vx-plants-tileset1_430
+  - first:
+      213: -5625504681859607927
+    second: vx-plants-tileset1_431
+  - first:
+      213: 7420337216314655553
+    second: vx-plants-tileset1_432
+  - first:
+      213: -1206759917772646367
+    second: vx-plants-tileset1_433
+  - first:
+      213: -2819567916005822078
+    second: vx-plants-tileset1_434
+  - first:
+      213: 5848981090609152746
+    second: vx-plants-tileset1_435
+  - first:
+      213: 8034825587559452738
+    second: vx-plants-tileset1_436
+  - first:
+      213: 5192049219047067898
+    second: vx-plants-tileset1_437
+  - first:
+      213: -4877811677148233572
+    second: vx-plants-tileset1_438
+  - first:
+      213: -2142862220863094793
+    second: vx-plants-tileset1_439
+  - first:
+      213: 970420224151705994
+    second: vx-plants-tileset1_440
+  - first:
+      213: -5982224645233809094
+    second: vx-plants-tileset1_441
+  - first:
+      213: -5835341034739790177
+    second: vx-plants-tileset1_442
+  - first:
+      213: -7660267910147888183
+    second: vx-plants-tileset1_443
+  - first:
+      213: -4456603710464170186
+    second: vx-plants-tileset1_444
+  - first:
+      213: 8058645255416791376
+    second: vx-plants-tileset1_445
+  - first:
+      213: -7684640786097805314
+    second: vx-plants-tileset1_446
+  - first:
+      213: -8971070904210875345
+    second: vx-plants-tileset1_447
+  - first:
+      213: -4410039420911046594
+    second: vx-plants-tileset1_448
+  - first:
+      213: -5417264564999462322
+    second: vx-plants-tileset1_449
+  - first:
+      213: 5509711075415345930
+    second: vx-plants-tileset1_450
+  - first:
+      213: 7782946094197268566
+    second: vx-plants-tileset1_451
+  - first:
+      213: -2462758747005647947
+    second: vx-plants-tileset1_452
+  - first:
+      213: -8832709126424599570
+    second: vx-plants-tileset1_453
+  - first:
+      213: 144845476612773500
+    second: vx-plants-tileset1_454
+  - first:
+      213: 7905914099277229778
+    second: vx-plants-tileset1_455
+  - first:
+      213: 8593327242512171159
+    second: vx-plants-tileset1_456
+  - first:
+      213: -4271967268591380042
+    second: vx-plants-tileset1_457
+  - first:
+      213: -1223639739168935335
+    second: vx-plants-tileset1_458
+  - first:
+      213: 2974608891211351447
+    second: vx-plants-tileset1_459
+  - first:
+      213: -2171783011743831462
+    second: vx-plants-tileset1_460
+  - first:
+      213: -783994780081178087
+    second: vx-plants-tileset1_461
+  - first:
+      213: -3398402553758494630
+    second: vx-plants-tileset1_462
+  - first:
+      213: 3047531657957871695
+    second: vx-plants-tileset1_463
+  - first:
+      213: 3647500671855458392
+    second: vx-plants-tileset1_464
+  - first:
+      213: -7605963853941125673
+    second: vx-plants-tileset1_465
+  - first:
+      213: 7192013436551221682
+    second: vx-plants-tileset1_466
+  - first:
+      213: -4273106867325822377
+    second: vx-plants-tileset1_467
+  - first:
+      213: 3846999016419013799
+    second: vx-plants-tileset1_468
+  - first:
+      213: 7654749340394116204
+    second: vx-plants-tileset1_469
+  - first:
+      213: 7918433391466063024
+    second: vx-plants-tileset1_470
+  - first:
+      213: -4153487523280181458
+    second: vx-plants-tileset1_471
+  - first:
+      213: -221535282314322674
+    second: vx-plants-tileset1_472
+  - first:
+      213: 85426861941029372
+    second: vx-plants-tileset1_473
+  - first:
+      213: 1292295342254608516
+    second: vx-plants-tileset1_474
+  - first:
+      213: -867867871519380165
+    second: vx-plants-tileset1_475
+  - first:
+      213: -5977241436728310184
+    second: vx-plants-tileset1_476
+  - first:
+      213: -4806551302408644769
+    second: vx-plants-tileset1_477
+  - first:
+      213: 3032988871281512619
+    second: vx-plants-tileset1_478
+  - first:
+      213: -477076588569809687
+    second: vx-plants-tileset1_479
+  - first:
+      213: -7554221435664126301
+    second: vx-plants-tileset1_480
+  - first:
+      213: -434864354413510393
+    second: vx-plants-tileset1_481
+  - first:
+      213: -4115192112348016264
+    second: vx-plants-tileset1_482
+  - first:
+      213: 5045162032739764203
+    second: vx-plants-tileset1_483
+  - first:
+      213: 5942268282472942831
+    second: vx-plants-tileset1_484
+  - first:
+      213: -4625201639746979287
+    second: vx-plants-tileset1_485
+  - first:
+      213: 6407349994294333588
+    second: vx-plants-tileset1_486
+  - first:
+      213: 3176252275171433166
+    second: vx-plants-tileset1_487
+  - first:
+      213: -8612303691468284718
+    second: vx-plants-tileset1_488
+  - first:
+      213: 7048883494052260754
+    second: vx-plants-tileset1_489
+  - first:
+      213: -3360047215936356839
+    second: vx-plants-tileset1_490
+  - first:
+      213: -4202962363213471611
+    second: vx-plants-tileset1_491
+  - first:
+      213: -7964058299658544222
+    second: vx-plants-tileset1_492
+  - first:
+      213: 1110188701473252160
+    second: vx-plants-tileset1_493
+  - first:
+      213: 676159450283751291
+    second: vx-plants-tileset1_494
+  - first:
+      213: 5673765676427966769
+    second: vx-plants-tileset1_495
+  - first:
+      213: 7776037463101196623
+    second: vx-plants-tileset1_496
+  - first:
+      213: 2026002642568779634
+    second: vx-plants-tileset1_497
+  - first:
+      213: 8596888487215197976
+    second: vx-plants-tileset1_498
+  - first:
+      213: -2683119669726401198
+    second: vx-plants-tileset1_499
+  - first:
+      213: 2008602977892837873
+    second: vx-plants-tileset1_500
+  - first:
+      213: -7123858796154241237
+    second: vx-plants-tileset1_501
+  - first:
+      213: 9154748909826866849
+    second: vx-plants-tileset1_502
+  - first:
+      213: -3325582295280021098
+    second: vx-plants-tileset1_503
+  - first:
+      213: -8694348625277931222
+    second: vx-plants-tileset1_504
+  - first:
+      213: 2308581707622465584
+    second: vx-plants-tileset1_505
+  - first:
+      213: -5124443806582599494
+    second: vx-plants-tileset1_506
+  - first:
+      213: 589638428211088843
+    second: vx-plants-tileset1_507
+  - first:
+      213: 265077164563156390
+    second: vx-plants-tileset1_508
+  - first:
+      213: 919192916132426692
+    second: vx-plants-tileset1_509
+  - first:
+      213: -5433440219293044155
+    second: vx-plants-tileset1_510
+  - first:
+      213: -3302210046876612731
+    second: vx-plants-tileset1_511
+  - first:
+      213: -2598239109271393370
+    second: vx-plants-tileset1_512
+  - first:
+      213: -4092845358502018063
+    second: vx-plants-tileset1_513
+  - first:
+      213: 7880863909441413930
+    second: vx-plants-tileset1_514
+  - first:
+      213: -1096288868168845527
+    second: vx-plants-tileset1_515
+  - first:
+      213: 4126236333713931640
+    second: vx-plants-tileset1_516
+  - first:
+      213: -2774262199480135755
+    second: vx-plants-tileset1_517
+  - first:
+      213: -6693522747203420884
+    second: vx-plants-tileset1_518
+  - first:
+      213: -6381486203982992734
+    second: vx-plants-tileset1_519
+  - first:
+      213: 2906087055206576913
+    second: vx-plants-tileset1_520
+  - first:
+      213: -5508267452331618830
+    second: vx-plants-tileset1_521
+  - first:
+      213: 6342174208157721302
+    second: vx-plants-tileset1_522
+  - first:
+      213: -6861364284215816005
+    second: vx-plants-tileset1_523
+  - first:
+      213: 266847693668539867
+    second: vx-plants-tileset1_524
+  - first:
+      213: 4575402853791239004
+    second: vx-plants-tileset1_525
+  - first:
+      213: -4911374915487367789
+    second: vx-plants-tileset1_526
+  - first:
+      213: 8996645038881475454
+    second: vx-plants-tileset1_527
+  - first:
+      213: 7032614830545799207
+    second: vx-plants-tileset1_528
+  - first:
+      213: -4974607631069972984
+    second: vx-plants-tileset1_529
+  - first:
+      213: 3742309202009760086
+    second: vx-plants-tileset1_530
+  - first:
+      213: 3592517104404923774
+    second: vx-plants-tileset1_531
+  - first:
+      213: 4887130436083831372
+    second: vx-plants-tileset1_532
+  - first:
+      213: -2339694900082437783
+    second: vx-plants-tileset1_533
+  - first:
+      213: 6677925296669762183
+    second: vx-plants-tileset1_534
+  - first:
+      213: -9161305023924422647
+    second: vx-plants-tileset1_535
+  - first:
+      213: -5154255659745110560
+    second: vx-plants-tileset1_536
+  - first:
+      213: 9158620604716513624
+    second: vx-plants-tileset1_537
+  - first:
+      213: -351795774995135225
+    second: vx-plants-tileset1_538
+  - first:
+      213: -7454519821195532517
+    second: vx-plants-tileset1_539
+  - first:
+      213: 5412916694355399884
+    second: vx-plants-tileset1_540
+  - first:
+      213: 633271886356988609
+    second: vx-plants-tileset1_541
+  - first:
+      213: 65830119665171121
+    second: vx-plants-tileset1_542
+  - first:
+      213: 3281205655422452997
+    second: vx-plants-tileset1_543
+  - first:
+      213: 268064152508362997
+    second: vx-plants-tileset1_544
+  - first:
+      213: -4577248648620011190
+    second: vx-plants-tileset1_545
+  - first:
+      213: 7190066336760058250
+    second: vx-plants-tileset1_546
+  - first:
+      213: 5015450947545057568
+    second: vx-plants-tileset1_547
+  - first:
+      213: 4717022854061738978
+    second: vx-plants-tileset1_548
+  - first:
+      213: -6580370128438790995
+    second: vx-plants-tileset1_549
+  - first:
+      213: 5519528999784685350
+    second: vx-plants-tileset1_550
+  - first:
+      213: 4390492178199662030
+    second: vx-plants-tileset1_551
+  - first:
+      213: -5914539044813245961
+    second: vx-plants-tileset1_552
+  - first:
+      213: 5218228546345068113
+    second: vx-plants-tileset1_553
+  - first:
+      213: -467829557930896137
+    second: vx-plants-tileset1_554
+  - first:
+      213: 5810487346306379492
+    second: vx-plants-tileset1_555
+  - first:
+      213: 7271846849343085277
+    second: vx-plants-tileset1_556
+  - first:
+      213: 2493748117617687313
+    second: vx-plants-tileset1_557
+  - first:
+      213: 5748053210311612401
+    second: vx-plants-tileset1_558
+  - first:
+      213: 5971730072064740776
+    second: vx-plants-tileset1_559
+  - first:
+      213: -5593028761088143136
+    second: vx-plants-tileset1_560
+  - first:
+      213: 5989512439314388693
+    second: vx-plants-tileset1_561
+  - first:
+      213: 4452366100700277626
+    second: vx-plants-tileset1_562
+  - first:
+      213: 6413652585113684841
+    second: vx-plants-tileset1_563
+  - first:
+      213: 3592290632374938995
+    second: vx-plants-tileset1_564
+  - first:
+      213: 231967952353717887
+    second: vx-plants-tileset1_565
+  - first:
+      213: 3596259782988390634
+    second: vx-plants-tileset1_566
+  - first:
+      213: -1094986790064351552
+    second: vx-plants-tileset1_567
+  - first:
+      213: 3312821008658512763
+    second: vx-plants-tileset1_568
+  - first:
+      213: 3495644277081803081
+    second: vx-plants-tileset1_569
+  - first:
+      213: -7516283514034166923
+    second: vx-plants-tileset1_570
+  - first:
+      213: 3604732014625538194
+    second: vx-plants-tileset1_571
+  - first:
+      213: 405547400656625983
+    second: vx-plants-tileset1_572
+  - first:
+      213: -9210044450125417733
+    second: vx-plants-tileset1_573
+  - first:
+      213: -8215964293822793079
+    second: vx-plants-tileset1_574
+  - first:
+      213: 494652249358713839
+    second: vx-plants-tileset1_575
+  - first:
+      213: -6269274668698304961
+    second: vx-plants-tileset1_576
+  - first:
+      213: 8631714062048707920
+    second: vx-plants-tileset1_577
+  - first:
+      213: 3883551288969376164
+    second: vx-plants-tileset1_578
+  - first:
+      213: 6384032391609744001
+    second: vx-plants-tileset1_579
+  - first:
+      213: 4913884501745132625
+    second: vx-plants-tileset1_580
+  - first:
+      213: -5075587311578006157
+    second: vx-plants-tileset1_581
+  - first:
+      213: 4987086578989083512
+    second: vx-plants-tileset1_582
+  - first:
+      213: -5132720232912358253
+    second: vx-plants-tileset1_583
+  - first:
+      213: -6269544356359582306
+    second: vx-plants-tileset1_584
+  - first:
+      213: 6826128479403235138
+    second: vx-plants-tileset1_585
+  - first:
+      213: 7460507432503757440
+    second: vx-plants-tileset1_586
+  - first:
+      213: 8945254861220858185
+    second: vx-plants-tileset1_587
+  - first:
+      213: 7628811105926154075
+    second: vx-plants-tileset1_588
+  - first:
+      213: -8142382652869005773
+    second: vx-plants-tileset1_589
+  - first:
+      213: -214450272137575169
+    second: vx-plants-tileset1_590
+  - first:
+      213: 4964253265551706851
+    second: vx-plants-tileset1_591
+  - first:
+      213: -2736692270511218912
+    second: vx-plants-tileset1_592
+  - first:
+      213: -8339119680496490739
+    second: vx-plants-tileset1_593
+  - first:
+      213: 2686184434959273389
+    second: vx-plants-tileset1_594
+  - first:
+      213: 1612910350671977462
+    second: vx-plants-tileset1_595
+  - first:
+      213: -383311359842946726
+    second: vx-plants-tileset1_596
+  - first:
+      213: -8915418077756065822
+    second: vx-plants-tileset1_597
+  - first:
+      213: 6002314780237320558
+    second: vx-plants-tileset1_598
+  - first:
+      213: -4238828734814844329
+    second: vx-plants-tileset1_599
+  - first:
+      213: -2234842156671251276
+    second: vx-plants-tileset1_600
+  - first:
+      213: -5425605993281407271
+    second: vx-plants-tileset1_601
+  - first:
+      213: -8501527654173287577
+    second: vx-plants-tileset1_602
+  - first:
+      213: -8714170686072123082
+    second: vx-plants-tileset1_603
+  - first:
+      213: 7422247977956935432
+    second: vx-plants-tileset1_604
+  - first:
+      213: 6561721156425391085
+    second: vx-plants-tileset1_605
+  - first:
+      213: -2169960460931878830
+    second: vx-plants-tileset1_606
+  - first:
+      213: -5076088647382366172
+    second: vx-plants-tileset1_607
+  - first:
+      213: 2181746262779973210
+    second: vx-plants-tileset1_608
+  - first:
+      213: 5913082622008532018
+    second: vx-plants-tileset1_609
+  - first:
+      213: -5183547107501678673
+    second: vx-plants-tileset1_610
+  - first:
+      213: -5162435668983243192
+    second: vx-plants-tileset1_611
+  - first:
+      213: 5093334373979140544
+    second: vx-plants-tileset1_612
+  - first:
+      213: 3400389716325721432
+    second: vx-plants-tileset1_613
+  - first:
+      213: 6526946102091301365
+    second: vx-plants-tileset1_614
+  - first:
+      213: 8831063115949341870
+    second: vx-plants-tileset1_615
+  - first:
+      213: -2510465149817492077
+    second: vx-plants-tileset1_616
+  - first:
+      213: -1858652776674578617
+    second: vx-plants-tileset1_617
+  - first:
+      213: -3025484921033443602
+    second: vx-plants-tileset1_618
+  - first:
+      213: -6950595149508237944
+    second: vx-plants-tileset1_619
+  - first:
+      213: 3781135836272383541
+    second: vx-plants-tileset1_620
+  - first:
+      213: -6371215590044501503
+    second: vx-plants-tileset1_621
+  - first:
+      213: -2289697382402500765
+    second: vx-plants-tileset1_622
+  - first:
+      213: -6803235504256320913
+    second: vx-plants-tileset1_623
+  - first:
+      213: -8005221960510365809
+    second: vx-plants-tileset1_624
+  - first:
+      213: -3164627747011191781
+    second: vx-plants-tileset1_625
+  - first:
+      213: -1177877889914403657
+    second: vx-plants-tileset1_626
+  - first:
+      213: 8903800274621945243
+    second: vx-plants-tileset1_627
+  - first:
+      213: 6810572598591464575
+    second: vx-plants-tileset1_628
+  - first:
+      213: 5186935833009809774
+    second: vx-plants-tileset1_629
+  - first:
+      213: 522420700009701494
+    second: vx-plants-tileset1_630
+  - first:
+      213: -1151693799046661814
+    second: vx-plants-tileset1_631
+  - first:
+      213: 3284123109508175519
+    second: vx-plants-tileset1_632
+  - first:
+      213: 346927842575141431
+    second: vx-plants-tileset1_633
+  - first:
+      213: 7889356851837019897
+    second: vx-plants-tileset1_634
+  - first:
+      213: -3954444095480836003
+    second: vx-plants-tileset1_635
+  - first:
+      213: 2718288328377311186
+    second: vx-plants-tileset1_636
+  - first:
+      213: 8166550302493097024
+    second: vx-plants-tileset1_637
+  - first:
+      213: -6136699740166608538
+    second: vx-plants-tileset1_638
+  - first:
+      213: 4956147022981799663
+    second: vx-plants-tileset1_639
+  - first:
+      213: -216648457697416354
+    second: vx-plants-tileset1_640
+  - first:
+      213: 7288227629965330563
+    second: vx-plants-tileset1_641
+  - first:
+      213: 2670805815827276678
+    second: vx-plants-tileset1_642
+  - first:
+      213: 3782731383823584311
+    second: vx-plants-tileset1_643
+  - first:
+      213: 1321496624871942157
+    second: vx-plants-tileset1_644
+  - first:
+      213: -9198515419809275610
+    second: vx-plants-tileset1_645
+  - first:
+      213: -2352564209325452646
+    second: vx-plants-tileset1_646
+  - first:
+      213: 8156895940296588042
+    second: vx-plants-tileset1_647
+  - first:
+      213: -2544772266306219509
+    second: vx-plants-tileset1_648
+  - first:
+      213: -9103184165892626881
+    second: vx-plants-tileset1_649
+  - first:
+      213: -4443858105690373150
+    second: vx-plants-tileset1_650
+  - first:
+      213: -8414106360557419463
+    second: vx-plants-tileset1_651
+  - first:
+      213: 5862756755066737175
+    second: vx-plants-tileset1_652
+  - first:
+      213: 4272491408579515761
+    second: vx-plants-tileset1_653
+  - first:
+      213: -4410211168107961722
+    second: vx-plants-tileset1_654
+  - first:
+      213: 5956129677014757714
+    second: vx-plants-tileset1_655
+  - first:
+      213: -5034708092951674627
+    second: vx-plants-tileset1_656
+  - first:
+      213: -2137227252722757353
+    second: vx-plants-tileset1_657
+  - first:
+      213: 6086361727699746967
+    second: vx-plants-tileset1_658
+  - first:
+      213: 515267855902424308
+    second: vx-plants-tileset1_659
+  - first:
+      213: 2064438132172205280
+    second: vx-plants-tileset1_660
+  - first:
+      213: -6410506602965765067
+    second: vx-plants-tileset1_661
+  - first:
+      213: -2225206309325562870
+    second: vx-plants-tileset1_662
+  - first:
+      213: 7128299011091606926
+    second: vx-plants-tileset1_663
+  - first:
+      213: 3061300798823173673
+    second: vx-plants-tileset1_664
+  - first:
+      213: -5316336669032026561
+    second: vx-plants-tileset1_665
+  - first:
+      213: -8760516208625603616
+    second: vx-plants-tileset1_666
+  - first:
+      213: -1040557892261978899
+    second: vx-plants-tileset1_667
+  - first:
+      213: 5732319261723769334
+    second: vx-plants-tileset1_668
+  - first:
+      213: 364251626308261288
+    second: vx-plants-tileset1_669
+  - first:
+      213: 197340186464331251
+    second: vx-plants-tileset1_670
+  - first:
+      213: 8848866256124873454
+    second: vx-plants-tileset1_671
+  - first:
+      213: -3876537202486998062
+    second: vx-plants-tileset1_672
+  - first:
+      213: -6210071427596395920
+    second: vx-plants-tileset1_673
+  - first:
+      213: -5895761251315198267
+    second: vx-plants-tileset1_674
+  - first:
+      213: 6498093059616653148
+    second: vx-plants-tileset1_675
+  - first:
+      213: 1132735406034021252
+    second: vx-plants-tileset1_676
+  - first:
+      213: -9090898860763215030
+    second: vx-plants-tileset1_677
+  - first:
+      213: -7192582443271445834
+    second: vx-plants-tileset1_678
+  - first:
+      213: -1943260463488366849
+    second: vx-plants-tileset1_679
+  - first:
+      213: 2947796455688960904
+    second: vx-plants-tileset1_680
+  - first:
+      213: 4165087407914227696
+    second: vx-plants-tileset1_681
+  - first:
+      213: 3621575985731861518
+    second: vx-plants-tileset1_682
+  - first:
+      213: 3428515576500665468
+    second: vx-plants-tileset1_683
+  - first:
+      213: -4962223414813527810
+    second: vx-plants-tileset1_684
+  - first:
+      213: 7272950428698979044
+    second: vx-plants-tileset1_685
+  - first:
+      213: -7584584085825336894
+    second: vx-plants-tileset1_686
+  - first:
+      213: -5580146501566896143
+    second: vx-plants-tileset1_687
+  - first:
+      213: 3650344096286123923
+    second: vx-plants-tileset1_688
+  - first:
+      213: -5814351777197579862
+    second: vx-plants-tileset1_689
+  - first:
+      213: -3561941632753259090
+    second: vx-plants-tileset1_690
+  - first:
+      213: 7500462246706762465
+    second: vx-plants-tileset1_691
+  - first:
+      213: 2733130760886764615
+    second: vx-plants-tileset1_692
+  - first:
+      213: 1806703151451759508
+    second: vx-plants-tileset1_693
+  - first:
+      213: 3905214009310980741
+    second: vx-plants-tileset1_694
+  - first:
+      213: -2573136023312026250
+    second: vx-plants-tileset1_695
+  - first:
+      213: 555497631022839681
+    second: vx-plants-tileset1_696
+  - first:
+      213: -4268621318425684132
+    second: vx-plants-tileset1_697
+  - first:
+      213: 6704797125015144646
+    second: vx-plants-tileset1_698
+  - first:
+      213: 6760642756591799136
+    second: vx-plants-tileset1_699
+  - first:
+      213: 1792410627446548036
+    second: vx-plants-tileset1_700
+  - first:
+      213: 3792517441421572677
+    second: vx-plants-tileset1_701
+  - first:
+      213: 3934982467164867735
+    second: vx-plants-tileset1_702
+  - first:
+      213: -3080277829127911519
+    second: vx-plants-tileset1_703
+  - first:
+      213: 3250249388064758147
+    second: vx-plants-tileset1_704
+  - first:
+      213: -7115014525613749482
+    second: vx-plants-tileset1_705
+  - first:
+      213: 7957984486744624822
+    second: vx-plants-tileset1_706
+  - first:
+      213: 531531700706835615
+    second: vx-plants-tileset1_707
+  - first:
+      213: -8309575080374745707
+    second: vx-plants-tileset1_708
+  - first:
+      213: -8265665387273686944
+    second: vx-plants-tileset1_709
+  - first:
+      213: -9020837131694180948
+    second: vx-plants-tileset1_710
+  - first:
+      213: 5713266626437128252
+    second: vx-plants-tileset1_711
+  - first:
+      213: -5205853639623676232
+    second: vx-plants-tileset1_712
+  - first:
+      213: 8206244433871873581
+    second: vx-plants-tileset1_713
+  - first:
+      213: -4661767024195292784
+    second: vx-plants-tileset1_714
+  - first:
+      213: 5256368535749661665
+    second: vx-plants-tileset1_715
+  - first:
+      213: -3879968667266291751
+    second: vx-plants-tileset1_716
+  - first:
+      213: -687716108166066568
+    second: vx-plants-tileset1_717
+  - first:
+      213: 3842179822368624431
+    second: vx-plants-tileset1_718
+  - first:
+      213: 7219865638373428537
+    second: vx-plants-tileset1_719
+  - first:
+      213: 4291794448699709270
+    second: vx-plants-tileset1_720
+  - first:
+      213: 8684919641849845712
+    second: vx-plants-tileset1_721
+  - first:
+      213: -3810792382320072440
+    second: vx-plants-tileset1_722
+  - first:
+      213: -2234445167746283723
+    second: vx-plants-tileset1_723
+  - first:
+      213: -5863184132202400635
+    second: vx-plants-tileset1_724
+  - first:
+      213: -7954181456579855208
+    second: vx-plants-tileset1_725
+  - first:
+      213: -4120350662112157962
+    second: vx-plants-tileset1_726
+  - first:
+      213: 8376288937632256289
+    second: vx-plants-tileset1_727
+  - first:
+      213: -4338726609687953828
+    second: vx-plants-tileset1_728
+  - first:
+      213: 4584802574229998507
+    second: vx-plants-tileset1_729
+  - first:
+      213: -5163593665620900250
+    second: vx-plants-tileset1_730
+  - first:
+      213: 5690773113784090873
+    second: vx-plants-tileset1_731
+  - first:
+      213: -123964837204216975
+    second: vx-plants-tileset1_732
+  - first:
+      213: 2107813607373111923
+    second: vx-plants-tileset1_733
+  - first:
+      213: -4352237158814658846
+    second: vx-plants-tileset1_734
+  - first:
+      213: 4324130684452067678
+    second: vx-plants-tileset1_735
+  - first:
+      213: -5200336471551403918
+    second: vx-plants-tileset1_736
+  - first:
+      213: 7530102654516455538
+    second: vx-plants-tileset1_737
+  - first:
+      213: -354506295520502962
+    second: vx-plants-tileset1_738
+  - first:
+      213: 2468280684139769370
+    second: vx-plants-tileset1_739
+  - first:
+      213: 1601621535176851640
+    second: vx-plants-tileset1_740
+  - first:
+      213: 2225038136581569960
+    second: vx-plants-tileset1_741
+  - first:
+      213: 2108667980620306706
+    second: vx-plants-tileset1_742
+  - first:
+      213: -3683125066681868441
+    second: vx-plants-tileset1_743
+  - first:
+      213: -2031099200363401582
+    second: vx-plants-tileset1_744
+  - first:
+      213: -7108331412415911340
+    second: vx-plants-tileset1_745
+  - first:
+      213: 1913135339397983658
+    second: vx-plants-tileset1_746
+  - first:
+      213: -3401806145472566480
+    second: vx-plants-tileset1_747
+  - first:
+      213: 8989102463550946244
+    second: vx-plants-tileset1_748
+  - first:
+      213: -2699645566895427056
+    second: vx-plants-tileset1_749
+  - first:
+      213: 657195013054481194
+    second: vx-plants-tileset1_750
+  - first:
+      213: -9046874911262664659
+    second: vx-plants-tileset1_751
+  - first:
+      213: -1839686036585842653
+    second: vx-plants-tileset1_752
+  - first:
+      213: -4754526627335684267
+    second: vx-plants-tileset1_753
+  - first:
+      213: 545839991247533704
+    second: vx-plants-tileset1_754
+  - first:
+      213: 1801183113008085941
+    second: vx-plants-tileset1_755
+  - first:
+      213: 5596543112511004687
+    second: vx-plants-tileset1_756
+  - first:
+      213: 8862937499411906157
+    second: vx-plants-tileset1_757
+  - first:
+      213: 1664469014103735183
+    second: vx-plants-tileset1_758
+  - first:
+      213: 6609409496823622362
+    second: vx-plants-tileset1_759
+  - first:
+      213: 8004980901286123306
+    second: vx-plants-tileset1_760
+  - first:
+      213: -4909175811331184985
+    second: vx-plants-tileset1_761
+  - first:
+      213: 3878131301025996787
+    second: vx-plants-tileset1_762
+  - first:
+      213: -2148368219549180564
+    second: vx-plants-tileset1_763
+  - first:
+      213: -4836848125499378083
+    second: vx-plants-tileset1_764
+  - first:
+      213: 874948633498404944
+    second: vx-plants-tileset1_765
+  - first:
+      213: -6775595056292063244
+    second: vx-plants-tileset1_766
+  - first:
+      213: 5319197389527260119
+    second: vx-plants-tileset1_767
+  - first:
+      213: 7975674907346001567
+    second: vx-plants-tileset1_768
+  - first:
+      213: 7960845206863524328
+    second: vx-plants-tileset1_769
+  - first:
+      213: 5991938441556566670
+    second: vx-plants-tileset1_770
+  - first:
+      213: -4715872162175003738
+    second: vx-plants-tileset1_771
+  - first:
+      213: -7959646438121991221
+    second: vx-plants-tileset1_772
+  - first:
+      213: -5230348019109955512
+    second: vx-plants-tileset1_773
+  - first:
+      213: 604564794800268331
+    second: vx-plants-tileset1_774
+  - first:
+      213: -4643202940259682803
+    second: vx-plants-tileset1_775
+  - first:
+      213: -2359341918884918339
+    second: vx-plants-tileset1_776
+  - first:
+      213: -7416814639498494977
+    second: vx-plants-tileset1_777
+  - first:
+      213: -6301153553390498233
+    second: vx-plants-tileset1_778
+  - first:
+      213: -1896684120198579210
+    second: vx-plants-tileset1_779
+  - first:
+      213: -3277629095891887475
+    second: vx-plants-tileset1_780
+  - first:
+      213: 4129243146021008948
+    second: vx-plants-tileset1_781
+  - first:
+      213: -5708773746040110823
+    second: vx-plants-tileset1_782
+  - first:
+      213: -2113455680740962040
+    second: vx-plants-tileset1_783
+  - first:
+      213: 4704355326894863349
+    second: vx-plants-tileset1_784
+  - first:
+      213: 7081027989182744040
+    second: vx-plants-tileset1_785
+  - first:
+      213: 8725323508946640029
+    second: vx-plants-tileset1_786
+  - first:
+      213: 6104240490597626718
+    second: vx-plants-tileset1_787
+  - first:
+      213: 606940915352552612
+    second: vx-plants-tileset1_788
+  - first:
+      213: 5841467026640787319
+    second: vx-plants-tileset1_789
+  - first:
+      213: -1032934058730243861
+    second: vx-plants-tileset1_790
+  - first:
+      213: 7872407033699772964
+    second: vx-plants-tileset1_791
+  - first:
+      213: -3376392762981427588
+    second: vx-plants-tileset1_792
+  - first:
+      213: -9194238911912495675
+    second: vx-plants-tileset1_793
+  - first:
+      213: -2247216019625214351
+    second: vx-plants-tileset1_794
+  - first:
+      213: -1958287433406059976
+    second: vx-plants-tileset1_795
+  - first:
+      213: 3124007049084311322
+    second: vx-plants-tileset1_796
+  - first:
+      213: -2654605935267433974
+    second: vx-plants-tileset1_797
+  - first:
+      213: 2488752554121620680
+    second: vx-plants-tileset1_798
+  - first:
+      213: 2167263997862907766
+    second: vx-plants-tileset1_799
+  - first:
+      213: -8418484482550254439
+    second: vx-plants-tileset1_800
+  - first:
+      213: -9048494573378571672
+    second: vx-plants-tileset1_801
+  - first:
+      213: 4483667239014787239
+    second: vx-plants-tileset1_802
+  - first:
+      213: -6786157340395872011
+    second: vx-plants-tileset1_803
+  - first:
+      213: -3625566899504684680
+    second: vx-plants-tileset1_804
+  - first:
+      213: -8437094211411412522
+    second: vx-plants-tileset1_805
+  - first:
+      213: -2044729156664067041
+    second: vx-plants-tileset1_806
+  - first:
+      213: 2171855438811051186
+    second: vx-plants-tileset1_807
+  - first:
+      213: -5633713184691067850
+    second: vx-plants-tileset1_808
+  - first:
+      213: 9022016331604309887
+    second: vx-plants-tileset1_809
+  - first:
+      213: -3072155559595862325
+    second: vx-plants-tileset1_810
+  - first:
+      213: -3154298464208004213
+    second: vx-plants-tileset1_811
+  - first:
+      213: 511315058806991660
+    second: vx-plants-tileset1_0
+  - first:
+      213: 711015453331603190
+    second: vx-plants-tileset1_1
+  - first:
+      213: -2725731471179050695
+    second: vx-plants-tileset1_2
+  - first:
+      213: 115911942053158621
+    second: vx-plants-tileset1_3
+  - first:
+      213: -2695573203645711182
+    second: vx-plants-tileset1_4
+  - first:
+      213: 3592809115011192298
+    second: vx-plants-tileset1_5
+  - first:
+      213: -4579097745190751567
+    second: vx-plants-tileset1_6
+  - first:
+      213: -6661458943784723405
+    second: vx-plants-tileset1_7
+  - first:
+      213: -5336640342041071968
+    second: vx-plants-tileset1_8
+  - first:
+      213: -3440472521948677885
+    second: vx-plants-tileset1_9
+  - first:
+      213: 5149979153539921286
+    second: vx-plants-tileset1_10
+  - first:
+      213: 5476846662234776018
+    second: vx-plants-tileset1_11
+  - first:
+      213: 8868656753444509507
+    second: vx-plants-tileset1_12
+  - first:
+      213: -7321663337002317459
+    second: vx-plants-tileset1_13
+  - first:
+      213: 3808144764875903993
+    second: vx-plants-tileset1_14
+  - first:
+      213: -7455284099082215819
+    second: vx-plants-tileset1_15
+  - first:
+      213: -4362545875694448918
+    second: vx-plants-tileset1_16
+  - first:
+      213: -8153690324532526521
+    second: vx-plants-tileset1_17
+  - first:
+      213: 6015652441918878647
+    second: vx-plants-tileset1_18
+  - first:
+      213: 6620808834979526197
+    second: vx-plants-tileset1_19
+  - first:
+      213: 7674150429854731803
+    second: vx-plants-tileset1_20
+  - first:
+      213: 596147991967475740
+    second: vx-plants-tileset1_21
+  - first:
+      213: -8100907482732878809
+    second: vx-plants-tileset1_22
+  - first:
+      213: -1685875989142297683
+    second: vx-plants-tileset1_23
+  - first:
+      213: 6936994611765518924
+    second: vx-plants-tileset1_24
+  - first:
+      213: 6276602802977966708
+    second: vx-plants-tileset1_25
+  - first:
+      213: 3957293019065807040
+    second: vx-plants-tileset1_26
+  - first:
+      213: -6001016084962045275
+    second: vx-plants-tileset1_27
+  - first:
+      213: 3114094136955008298
+    second: vx-plants-tileset1_28
+  - first:
+      213: 7119251046208474376
+    second: vx-plants-tileset1_29
+  - first:
+      213: 2828210456239632181
+    second: vx-plants-tileset1_30
+  - first:
+      213: -2387944507252902018
+    second: vx-plants-tileset1_31
+  - first:
+      213: -4127703629723509234
+    second: vx-plants-tileset1_32
+  - first:
+      213: -8606658762492928695
+    second: vx-plants-tileset1_33
+  - first:
+      213: 1924134781057951633
+    second: vx-plants-tileset1_34
+  - first:
+      213: -2756129201636214094
+    second: vx-plants-tileset1_35
+  - first:
+      213: -1299461350018771340
+    second: vx-plants-tileset1_36
+  - first:
+      213: 7240216857404220545
+    second: vx-plants-tileset1_37
+  - first:
+      213: 8187494439754293793
+    second: vx-plants-tileset1_38
+  - first:
+      213: 6035557384186908164
+    second: vx-plants-tileset1_39
+  - first:
+      213: 4405774403970282690
+    second: vx-plants-tileset1_40
+  - first:
+      213: 648377673785184069
+    second: vx-plants-tileset1_41
+  - first:
+      213: 1092995862472775915
+    second: vx-plants-tileset1_42
+  - first:
+      213: -4514395562298581624
+    second: vx-plants-tileset1_43
+  - first:
+      213: -9210840661587890214
+    second: vx-plants-tileset1_44
+  - first:
+      213: -4638892124690446193
+    second: vx-plants-tileset1_45
+  - first:
+      213: -6357307002573688593
+    second: vx-plants-tileset1_46
+  - first:
+      213: -7805083456554981214
+    second: vx-plants-tileset1_47
+  - first:
+      213: -7581774759120456376
+    second: vx-plants-tileset1_48
+  - first:
+      213: -6535944358585480683
+    second: vx-plants-tileset1_49
+  - first:
+      213: 7052062537316442162
+    second: vx-plants-tileset1_50
+  - first:
+      213: -3081817096265875636
+    second: vx-plants-tileset1_51
+  - first:
+      213: -5559923667176297661
+    second: vx-plants-tileset1_52
+  - first:
+      213: 1044961250053254803
+    second: vx-plants-tileset1_53
+  - first:
+      213: 3163828491108065238
+    second: vx-plants-tileset1_54
+  - first:
+      213: 2374856687466943417
+    second: vx-plants-tileset1_55
+  - first:
+      213: 4038219842740405154
+    second: vx-plants-tileset1_56
+  - first:
+      213: 2742889836010498749
+    second: vx-plants-tileset1_57
+  - first:
+      213: -4159620740162763780
+    second: vx-plants-tileset1_58
+  - first:
+      213: 3971830849571246008
+    second: vx-plants-tileset1_59
+  - first:
+      213: 5114223382413693499
+    second: vx-plants-tileset1_60
+  - first:
+      213: 338281749806604057
+    second: vx-plants-tileset1_61
+  - first:
+      213: 3353051893572326564
+    second: vx-plants-tileset1_62
+  - first:
+      213: -5101380317104710448
+    second: vx-plants-tileset1_63
+  - first:
+      213: 8929432812904910776
+    second: vx-plants-tileset1_64
+  - first:
+      213: -2545474923426497241
+    second: vx-plants-tileset1_65
+  - first:
+      213: 7294314243095323082
+    second: vx-plants-tileset1_66
+  - first:
+      213: -3193258774281592603
+    second: vx-plants-tileset1_67
+  - first:
+      213: 6380130254809828538
+    second: vx-plants-tileset1_68
+  - first:
+      213: -6579017434304943035
+    second: vx-plants-tileset1_69
+  - first:
+      213: -5814301406224547032
+    second: vx-plants-tileset1_70
+  - first:
+      213: 5986017918652495487
+    second: vx-plants-tileset1_71
+  - first:
+      213: -895733010149802863
+    second: vx-plants-tileset1_72
+  - first:
+      213: -3282604621000809703
+    second: vx-plants-tileset1_73
+  - first:
+      213: -6768018946292022876
+    second: vx-plants-tileset1_74
+  - first:
+      213: -8195606990549972973
+    second: vx-plants-tileset1_75
+  - first:
+      213: 4733055079444358708
+    second: vx-plants-tileset1_76
+  - first:
+      213: 2895834917392736600
+    second: vx-plants-tileset1_77
+  - first:
+      213: -4279706700200906341
+    second: vx-plants-tileset1_78
+  - first:
+      213: -4672052635576081782
+    second: vx-plants-tileset1_79
+  - first:
+      213: 5425867918113022225
+    second: vx-plants-tileset1_80
+  - first:
+      213: 4804107834141703782
+    second: vx-plants-tileset1_81
+  - first:
+      213: -3472707458493716461
+    second: vx-plants-tileset1_82
+  - first:
+      213: 4968008857768449062
+    second: vx-plants-tileset1_83
+  - first:
+      213: -3580805366988205597
+    second: vx-plants-tileset1_84
+  - first:
+      213: 1218654476744176737
+    second: vx-plants-tileset1_85
+  - first:
+      213: -1100359113668227888
+    second: vx-plants-tileset1_86
+  - first:
+      213: 7446696680830185589
+    second: vx-plants-tileset1_87
+  - first:
+      213: 5023493715668858066
+    second: vx-plants-tileset1_88
+  - first:
+      213: 794664588921622504
+    second: vx-plants-tileset1_89
+  - first:
+      213: -4745266900774162639
+    second: vx-plants-tileset1_90
+  - first:
+      213: 1282378302518370399
+    second: vx-plants-tileset1_91
+  - first:
+      213: -5421218248666275729
+    second: vx-plants-tileset1_92
+  - first:
+      213: -5430574412044135735
+    second: vx-plants-tileset1_93
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vx-plants-tileset1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2baf70465e881700800000000000000
+      internalID: 511315058806991660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 481
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6feb4a5a9c80ed900800000000000000
+      internalID: 711015453331603190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 488
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93115432ba14c2ad0800000000000000
+      internalID: -2725731471179050695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 468
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddedd431c4dcb9100800000000000000
+      internalID: 115911942053158621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 487
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcb2aaf376679ad0800000000000000
+      internalID: -2695573203645711182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 486
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae51706cad83cd130800000000000000
+      internalID: 3592809115011192298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 256
+        width: 289
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2fc12acd6c370c0800000000000000
+      internalID: -4579097745190751567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 453
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cdcd1726ebd83a0800000000000000
+      internalID: -6661458943784723405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 385
+        width: 32
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae6f9632e170f5b0800000000000000
+      internalID: -5336640342041071968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 401
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309b1cd387cf040d0800000000000000
+      internalID: -3440472521948677885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685f96f11c6687740800000000000000
+      internalID: 5149979153539921286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 464
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1a9cf850ba10c40800000000000000
+      internalID: 5476846662234776018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347ddef345cc31b70800000000000000
+      internalID: 8868656753444509507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 416
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69c9f0acf9346a90800000000000000
+      internalID: -7321663337002317459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 353
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f311bbbc7f39d430800000000000000
+      internalID: 3808144764875903993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_15
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 392
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e16969c92898890800000000000000
+      internalID: -7455284099082215819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_16
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 392
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee03eac3af1573c0800000000000000
+      internalID: -4362545875694448918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74203b599d548de80800000000000000
+      internalID: -8153690324532526521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_18
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 352
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b339cc0604eb7350800000000000000
+      internalID: 6015652441918878647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_19
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 337
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536f8be8e86d1eb50800000000000000
+      internalID: 6620808834979526197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 368
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e0764182f008a60800000000000000
+      internalID: 7674150429854731803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 368
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18a8cea071f54800800000000000000
+      internalID: 596147991967475740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 336
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724276d909bc39f80800000000000000
+      internalID: -8100907482732878809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_23
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 324
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da320d358b09a98e0800000000000000
+      internalID: -1685875989142297683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 290
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42251b78d7254060800000000000000
+      internalID: 6936994611765518924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 337
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a09b39ef8fa1750800000000000000
+      internalID: 6276602802977966708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0fc81c8012be630800000000000000
+      internalID: 3957293019065807040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_27
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 320
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a29e6c5aab18bca0800000000000000
+      internalID: -6001016084962045275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 273
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25745e4e1c773b20800000000000000
+      internalID: 3114094136955008298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_29
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 256
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d851c6b19acc260800000000000000
+      internalID: 7119251046208474376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 273
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f653aec62df3720800000000000000
+      internalID: 2828210456239632181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 294
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7778dd5f115cded0800000000000000
+      internalID: -2387944507252902018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 292
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e5d341b6377b6c0800000000000000
+      internalID: -4127703629723509234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d1b9e94710f8880800000000000000
+      internalID: -8606658762492928695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_34
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 257
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197eeec8366e3ba10800000000000000
+      internalID: 1924134781057951633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_35
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 224
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba746df71340c9d0800000000000000
+      internalID: -2756129201636214094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_36
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 255
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47618c879c267fde0800000000000000
+      internalID: -1299461350018771340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_37
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 208
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184af5a1fda6a7460800000000000000
+      internalID: 7240216857404220545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1226a0250d2df9170800000000000000
+      internalID: 8187494439754293793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e42f1967b92c350800000000000000
+      internalID: 6035557384186908164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 246
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c438254a74742d30800000000000000
+      internalID: 4405774403970282690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_41
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 236
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f824e1f008ff800800000000000000
+      internalID: 648377673785184069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_42
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be859ab22f91b2f00800000000000000
+      internalID: 1092995862472775915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_43
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 228
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dd7958725a951c0800000000000000
+      internalID: -4514395562298581624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf645b28358c2080800000000000000
+      internalID: -9210840661587890214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_45
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 206
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f880874c0385f9fb0800000000000000
+      internalID: -4638892124690446193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_46
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 224
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0fd7fa6fe46c7a0800000000000000
+      internalID: -6357307002573688593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_47
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 224
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a823c903f5cea390800000000000000
+      internalID: -7805083456554981214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_48
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 211
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8453a9bc60028c690800000000000000
+      internalID: -7581774759120456376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_49
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 211
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a4bca1c39ab45a0800000000000000
+      internalID: -6535944358585480683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_50
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 190
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2302696a385fdd160800000000000000
+      internalID: 7052062537316442162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb85addaf2b35d0800000000000000
+      internalID: -3081817096265875636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_52
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 202
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b6ba7e1ee27d2b0800000000000000
+      internalID: -5559923667176297661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_53
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 212
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ee87178b2708e00800000000000000
+      internalID: 1044961250053254803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_54
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 202
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df91ceff3d28eb20800000000000000
+      internalID: 3163828491108065238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_55
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 192
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b39de0239f25f020800000000000000
+      internalID: 2374856687466943417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_56
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 192
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3c9733d83aa0830800000000000000
+      internalID: 4038219842740405154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_57
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 193
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba6f6df5c3b01620800000000000000
+      internalID: 2742889836010498749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_58
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 202
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf34046b9fe0646c0800000000000000
+      internalID: -4159620740162763780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfc1a03d17ce1730800000000000000
+      internalID: 3971830849571246008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_60
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 172
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32d3cae11f59f640800000000000000
+      internalID: 5114223382413693499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 180
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f583b8571d1b400800000000000000
+      internalID: 338281749806604057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_62
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 178
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a454d59eee688e20800000000000000
+      internalID: 3353051893572326564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_63
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 185
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcddce31a14439b0800000000000000
+      internalID: -5101380317104710448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 177
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf0aea45d7bbeb70800000000000000
+      internalID: 8929432812904910776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_65
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 276
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dbf7c2b08acacd0800000000000000
+      internalID: -2545474923426497241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_66
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 161
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1e4cb382c9a3560800000000000000
+      internalID: 7294314243095323082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_67
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 160
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0eb0b30144fa3d0800000000000000
+      internalID: -3193258774281592603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_68
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 171
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc89a2d9a6ca8850800000000000000
+      internalID: 6380130254809828538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_69
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 162
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ce6292082a2b4a0800000000000000
+      internalID: -6579017434304943035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 171
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8238ee03da37f4fa0800000000000000
+      internalID: -5814301406224547032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_71
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 160
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76b76ce49b921350800000000000000
+      internalID: 5986017918652495487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cfd64b297b193f0800000000000000
+      internalID: -895733010149802863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_73
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 133
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913e03b3d78d172d0800000000000000
+      internalID: -3282604621000809703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1862970aa2312a0800000000000000
+      internalID: -6768018946292022876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_75
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 148
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3188f814dda534e80800000000000000
+      internalID: -8195606990549972973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_76
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 145
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436a3a894803fa140800000000000000
+      internalID: 4733055079444358708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_77
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 149
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851ed5bb382103820800000000000000
+      internalID: 2895834917392736600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_78
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b917aa75e6d6b94c0800000000000000
+      internalID: -4279706700200906341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_79
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 130
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a826f8ca1e8892fb0800000000000000
+      internalID: -4672052635576081782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_80
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 138
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111a051cf1e8c4b40800000000000000
+      internalID: 5425867918113022225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 100
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66effa43f9e9ba240800000000000000
+      internalID: 4804107834141703782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318e1a737f67ecfc0800000000000000
+      internalID: -3472707458493716461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 31
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62458480cb9e1f440800000000000000
+      internalID: 4968008857768449062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_84
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e11bda9d7c6e4ec0800000000000000
+      internalID: -3580805366988205597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_85
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 32
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164b6463ac789e010800000000000000
+      internalID: 1218654476744176737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_86
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 33
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 0}
+        - {x: -16.5, y: 61}
+        - {x: 16.5, y: 61}
+        - {x: 16.5, y: 0}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc0170573dbab0f0800000000000000
+      internalID: -1100359113668227888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_87
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 80
+        width: 65
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570b6fa4d2bf75760800000000000000
+      internalID: 7446696680830185589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_88
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d479d53be807b540800000000000000
+      internalID: 5023493715668858066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_89
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef414abb37370b00800000000000000
+      internalID: 794664588921622504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fefee25ec652eb0800000000000000
+      internalID: -4745266900774162639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 42
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50a645954cebc110800000000000000
+      internalID: 1282378302518370399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60a166c9b6f3c4b0800000000000000
+      internalID: -5421218248666275729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vx-plants-tileset1_93
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 6
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c298cb3859b2a4b0800000000000000
+      internalID: -5430574412044135735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 75deac90ed1a8cc409afe1b2d193abed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

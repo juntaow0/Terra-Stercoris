@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 4291c44a8718a1647ba0300458342b0e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4296836213894723779
+    second: Fvillager1_0
+  - first:
+      213: 23432756104804708
+    second: Fvillager1_1
+  - first:
+      213: -7649363030667339413
+    second: Fvillager1_2
+  - first:
+      213: 906092571997979577
+    second: Fvillager1_3
+  - first:
+      213: -8835927871208235717
+    second: Fvillager1_4
+  - first:
+      213: -500014642173325046
+    second: Fvillager1_5
+  - first:
+      213: -2888731029869714839
+    second: Fvillager1_6
+  - first:
+      213: 3958559983477336647
+    second: Fvillager1_7
+  - first:
+      213: -7834975342266774272
+    second: Fvillager1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,11 +160,200 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fvillager1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 91
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3745c4aa329e54c0800000000000000
+      internalID: -4296836213894723779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 91
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4693cbfa7ff335000800000000000000
+      internalID: 23432756104804708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 91
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6951170ad008d590800000000000000
+      internalID: -7649363030667339413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 53
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b34f8fb466139c00800000000000000
+      internalID: 906092571997979577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_4
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 53
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dd8a77a6a706580800000000000000
+      internalID: -8835927871208235717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 53
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01d3c605579f09f0800000000000000
+      internalID: -500014642173325046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 15
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962a7f8fe6a29e7d0800000000000000
+      internalID: -2888731029869714839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 15
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a2e35e451afe630800000000000000
+      internalID: 3958559983477336647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fvillager1_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 15
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d8e3c0073944390800000000000000
+      internalID: -7834975342266774272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3807f117442c89e40a7b019163630c43
     internalID: 0
     vertices: []
     indices: 
