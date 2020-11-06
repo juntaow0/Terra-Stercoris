@@ -10,19 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: ohno
+  m_Name: 01 Welcome to the Village
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers:
-  - You
+  - En
   sentences:
   - speakerIndex: 0
-    sentence: Oh no there is a monster
-  - speakerIndex: 0
-    sentence: I have to run away
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Welcome to the Village. Feel free to take a look around. Meet me at
+      the elders hut when you\u2019ve looked around."
   endAction: 0
-  choices:
-  - text: Run away
-    nextConversation: {fileID: 11400000, guid: 6bcc9ca0c9157174885f76ebe709da61, type: 2}
-  - text: Let it eat me
-    nextConversation: {fileID: 11400000, guid: c33b01cd797226847bee122f378b72b8, type: 2}
-  choiceKey: ???
+  choices: []
+  choiceKey: 

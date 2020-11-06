@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: 02 Hi En, who is this with you
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - Village Elder
+  - En
+  - 
+  sentences:
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Hi En, who is this with you?
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: En places his hand on your shoulder as he responds
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: This is [Players name?]. I found him while I was patrolling near the
+      cave. Got knocked out by a Goblin but thanks to this guy I got away without
+      a scratch.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Really? Well if that\u2019s the case then he\u2019s more than welcome
+      here. Go ahead and take a rest if you need to."
+  endAction: 0
+  choices: []
+  choiceKey: 
