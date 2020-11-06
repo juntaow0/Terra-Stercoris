@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 2361198
+    totalSpriteSurfaceArea: 2366286
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -284,6 +284,18 @@ SpriteAtlas:
   - {fileID: 9181761699080694763, guid: 72faa27aaf177f345873aabfd7cce2a5, type: 3}
   - {fileID: 7684383551132795082, guid: 72faa27aaf177f345873aabfd7cce2a5, type: 3}
   - {fileID: 21300000, guid: 47adcb7afa9c3314491aec549e981d11, type: 3}
+  - {fileID: 7189930035403893997, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: 8020596245990464320, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: -2664225531011558594, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: 2074090775905837634, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: 2501351472734607012, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: 7819460257017684275, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: 7712783287824407710, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: -5008820926680098271, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: -7562509296995428176, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: 6462932291298548568, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: -5522416629569121084, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
+  - {fileID: -8975945465677477252, guid: bde07e7a8a60f484ead89f38d6cc234a, type: 3}
   - {fileID: 21300000, guid: d37a959a24199f644b8fd32098456942, type: 3}
   - {fileID: 21300000, guid: 3d113a9a9f1c13c458dcfa34138efc30, type: 3}
   - {fileID: 21300000, guid: d8276f9a5a938764c90d58e9cdcfb91a, type: 3}
@@ -614,6 +626,18 @@ SpriteAtlas:
   - En_1
   - En_0
   - attack_left07
+  - EnAdjusted_10
+  - EnAdjusted_11
+  - EnAdjusted_9
+  - EnAdjusted_8
+  - EnAdjusted_5
+  - EnAdjusted_4
+  - EnAdjusted_7
+  - EnAdjusted_6
+  - EnAdjusted_1
+  - EnAdjusted_0
+  - EnAdjusted_3
+  - EnAdjusted_2
   - idle05
   - idle07
   - hit03

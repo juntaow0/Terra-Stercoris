@@ -161,6 +161,8 @@ PlayableDirector:
     value: {fileID: 696550632}
   - key: {fileID: -7155156496056258471, guid: 669143b7233cae14d858e0ae4b72aca2, type: 2}
     value: {fileID: 1463484861}
+  - key: {fileID: -520816238386188906, guid: 669143b7233cae14d858e0ae4b72aca2, type: 2}
+    value: {fileID: 696550632}
   m_ExposedReferences:
     m_References:
     - bad7761bed25e624c840b57eaa0feaa4: {fileID: 2092757316}
@@ -35192,7 +35194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696550631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.72, y: -8.34, z: 0}
+  m_LocalPosition: {x: 26.591482, y: -3.4874072, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_Children: []
   m_Father: {fileID: 1401812299}
@@ -35295,7 +35297,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: EndScene
+            m_StringArgument: Village
             m_BoolArgument: 0
           m_CallState: 2
   - events:
@@ -76625,7 +76627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948794065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.71, y: 8.04, z: 0}
+  m_LocalPosition: {x: 27.533844, y: 2.5273252, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 10}
   m_Children:
   - {fileID: 1816560966}
