@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: 2306fda6255ff104aa3bacd2a33e5804
+guid: 840b26b6a6b5e9843b48e3bfd75354aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4056873242209657339
-    second: FCrew1_0
+      213: -4554712527015419279
+    second: tusk_0
   - first:
-      213: 536193110379620623
-    second: FCrew1_1
+      213: -5716853516072985473
+    second: tusk_1
   - first:
-      213: 4049596153090732744
-    second: FCrew1_2
+      213: -4125981277181048542
+    second: tusk_2
   - first:
-      213: -5293705511134809750
-    second: FCrew1_3
+      213: -2795642455995613852
+    second: tusk_3
   - first:
-      213: 2062408666172488040
-    second: FCrew1_4
+      213: -3150954444619566801
+    second: tusk_4
   - first:
-      213: 8521624882395560436
-    second: FCrew1_5
+      213: -1321244714489626509
+    second: tusk_5
   - first:
-      213: 4581148221172849279
-    second: FCrew1_6
+      213: -9036774749836344868
+    second: tusk_6
   - first:
-      213: -1318725518138066525
-    second: FCrew1_7
+      213: 3959088544148317719
+    second: tusk_7
   - first:
-      213: 6021245427703258203
-    second: FCrew1_8
+      213: 8743987682494260976
+    second: tusk_8
+  - first:
+      213: 4753839737671109681
+    second: tusk_9
+  - first:
+      213: -6540176230324435190
+    second: tusk_10
+  - first:
+      213: -2828226368578591852
+    second: tusk_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,10 +121,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,10 +133,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,13 +171,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FCrew1_0
+      name: tusk_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 93
-        width: 16
-        height: 26
+        x: 6
+        y: 97
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e5e4bc74713b7c0800000000000000
-      internalID: -4056873242209657339
+      spriteID: 172693da6196ac0c0800000000000000
+      internalID: -4554712527015419279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_1
+      name: tusk_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 94
-        width: 16
-        height: 25
+        x: 38
+        y: 98
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0960330bc0f07700800000000000000
-      internalID: 536193110379620623
+      spriteID: f7cd68d2408a9a0b0800000000000000
+      internalID: -5716853516072985473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_2
+      name: tusk_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 93
-        width: 16
-        height: 25
+        x: 70
+        y: 97
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2f2ccde3e033830800000000000000
-      internalID: 4049596153090732744
+      spriteID: 22906b783e19db6c0800000000000000
+      internalID: -4125981277181048542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_3
+      name: tusk_3
       rect:
         serializedVersion: 2
         x: 10
-        y: 53
+        y: 66
         width: 12
-        height: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61384782eaf886b0800000000000000
-      internalID: -5293705511134809750
+      spriteID: 46d716b8ff1e339d0800000000000000
+      internalID: -2795642455995613852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_4
+      name: tusk_4
       rect:
         serializedVersion: 2
-        x: 43
-        y: 53
+        x: 42
+        y: 66
         width: 12
-        height: 25
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869f5e831c52f9c10800000000000000
-      internalID: 2062408666172488040
+      spriteID: f21330980af8544d0800000000000000
+      internalID: -3150954444619566801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_5
+      name: tusk_5
       rect:
         serializedVersion: 2
-        x: 76
-        y: 53
+        x: 74
+        y: 66
         width: 12
-        height: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +290,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f931585ea4e24670800000000000000
-      internalID: 8521624882395560436
+      spriteID: 370cb73beeef9ade0800000000000000
+      internalID: -1321244714489626509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_6
+      name: tusk_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 14
-        width: 16
-        height: 23
+        x: 10
+        y: 34
+        width: 12
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +311,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7a9b620902839f30800000000000000
-      internalID: 4581148221172849279
+      spriteID: cd109c07e3de69280800000000000000
+      internalID: -9036774749836344868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_7
+      name: tusk_7
       rect:
         serializedVersion: 2
-        x: 40
-        y: 15
-        width: 16
-        height: 23
+        x: 42
+        y: 34
+        width: 12
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9332fc022f2bde0800000000000000
-      internalID: -1318725518138066525
+      spriteID: 71667440e0281f630800000000000000
+      internalID: 3959088544148317719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_8
+      name: tusk_8
       rect:
         serializedVersion: 2
-        x: 72
-        y: 14
-        width: 16
-        height: 25
+        x: 74
+        y: 34
+        width: 12
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,8 +353,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c92b780d2cf8350800000000000000
-      internalID: 6021245427703258203
+      spriteID: 0f626773872e85970800000000000000
+      internalID: 8743987682494260976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tusk_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cc503fd0809f140800000000000000
+      internalID: 4753839737671109681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tusk_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 3
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a070f0fae50ac35a0800000000000000
+      internalID: -6540176230324435190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tusk_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493ea743a1f10c8d0800000000000000
+      internalID: -2828226368578591852
       vertices: []
       indices: 
       edges: []
@@ -353,7 +425,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7755342e00401bd4e9ffda831684aaff
+    spriteID: 693385ab2d40e3746be7d388b6cadf31
     internalID: 0
     vertices: []
     indices: 

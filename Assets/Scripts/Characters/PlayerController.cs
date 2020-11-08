@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour {
     public CharacterController characterController {get; private set;}
     public WeaponController weaponController {get; private set;}
 
-    [SerializeField] private ActionSlot _actionSlot;
     private Animator animator;
 
     private Collider2D _collider = null;

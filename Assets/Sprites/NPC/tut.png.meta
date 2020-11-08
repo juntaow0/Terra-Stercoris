@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: 2306fda6255ff104aa3bacd2a33e5804
+guid: 4f0909c6c41186346952bc9cbf57450a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4056873242209657339
-    second: FCrew1_0
+      213: 5268187495526859981
+    second: tut_0
   - first:
-      213: 536193110379620623
-    second: FCrew1_1
+      213: 1760660402950515922
+    second: tut_1
   - first:
-      213: 4049596153090732744
-    second: FCrew1_2
+      213: -68090980661940792
+    second: tut_2
   - first:
-      213: -5293705511134809750
-    second: FCrew1_3
+      213: 7404470831791659195
+    second: tut_3
   - first:
-      213: 2062408666172488040
-    second: FCrew1_4
+      213: 8869697126157683375
+    second: tut_4
   - first:
-      213: 8521624882395560436
-    second: FCrew1_5
+      213: 3845985252328670921
+    second: tut_5
   - first:
-      213: 4581148221172849279
-    second: FCrew1_6
+      213: -5951674271509990955
+    second: tut_6
   - first:
-      213: -1318725518138066525
-    second: FCrew1_7
+      213: 5417173719663526468
+    second: tut_7
   - first:
-      213: 6021245427703258203
-    second: FCrew1_8
+      213: 6315440190732362512
+    second: tut_8
+  - first:
+      213: -2873186491859258793
+    second: tut_9
+  - first:
+      213: 4035431707723422893
+    second: tut_10
+  - first:
+      213: -5149097829973889173
+    second: tut_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,10 +121,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,10 +133,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,13 +171,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FCrew1_0
+      name: tut_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 93
-        width: 16
-        height: 26
+        x: 6
+        y: 97
+        width: 20
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e5e4bc74713b7c0800000000000000
-      internalID: -4056873242209657339
+      spriteID: dc488097d9c5c1940800000000000000
+      internalID: 5268187495526859981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_1
+      name: tut_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 94
-        width: 16
-        height: 25
+        x: 38
+        y: 98
+        width: 20
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0960330bc0f07700800000000000000
-      internalID: 536193110379620623
+      spriteID: 2dc26ffde4f1f6810800000000000000
+      internalID: 1760660402950515922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_2
+      name: tut_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 93
-        width: 16
-        height: 25
+        x: 70
+        y: 97
+        width: 20
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,19 +227,145 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2f2ccde3e033830800000000000000
-      internalID: 4049596153090732744
+      spriteID: 8cdac352d971e0ff0800000000000000
+      internalID: -68090980661940792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_3
+      name: tut_3
       rect:
         serializedVersion: 2
         x: 10
-        y: 53
+        y: 66
         width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8deaeadf6f1c660800000000000000
+      internalID: 7404470831791659195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 66
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa8ee5ea8e771b70800000000000000
+      internalID: 8869697126157683375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_5
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 66
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c60178c53faf5530800000000000000
+      internalID: 3845985252328670921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 34
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1b0db88c7676da0800000000000000
+      internalID: -5951674271509990955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 34
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442402febcaad2b40800000000000000
+      internalID: 5417173719663526468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 34
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013e3d09463f4a750800000000000000
+      internalID: 6315440190732362512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 20
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -239,40 +374,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61384782eaf886b0800000000000000
-      internalID: -5293705511134809750
+      spriteID: 7523743cb146028d0800000000000000
+      internalID: -2873186491859258793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_4
+      name: tut_10
       rect:
         serializedVersion: 2
-        x: 43
-        y: 53
-        width: 12
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 869f5e831c52f9c10800000000000000
-      internalID: 2062408666172488040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_5
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 53
-        width: 12
+        x: 38
+        y: 3
+        width: 20
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,20 +395,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f931585ea4e24670800000000000000
-      internalID: 8521624882395560436
+      spriteID: dacd33ee1cbb00830800000000000000
+      internalID: 4035431707723422893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_6
+      name: tut_11
       rect:
         serializedVersion: 2
-        x: 8
-        y: 14
-        width: 16
-        height: 23
+        x: 70
+        y: 2
+        width: 20
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,50 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7a9b620902839f30800000000000000
-      internalID: 4581148221172849279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_7
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 15
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9332fc022f2bde0800000000000000
-      internalID: -1318725518138066525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_8
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 14
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5c92b780d2cf8350800000000000000
-      internalID: 6021245427703258203
+      spriteID: b6feba20ecaba88b0800000000000000
+      internalID: -5149097829973889173
       vertices: []
       indices: 
       edges: []
@@ -353,7 +425,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7755342e00401bd4e9ffda831684aaff
+    spriteID: cdd894cbb06ef524a8c395b8933853e5
     internalID: 0
     vertices: []
     indices: 

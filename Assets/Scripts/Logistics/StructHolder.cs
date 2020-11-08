@@ -21,13 +21,6 @@ public struct Sentence {
     public string sentence;
 }
 
-// For HUD Action Selector
-[System.Serializable]
-public struct ActionBundle {
-    public ActionTemplate slot;
-    public UnityEvent action;
-}
-
 // For Dialogue Trigger
 [System.Serializable]
 public struct DialogueEndEvent {

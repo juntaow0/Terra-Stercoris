@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 2306fda6255ff104aa3bacd2a33e5804
+guid: 17f1f5164b73a42409261c49a44965df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4056873242209657339
-    second: FCrew1_0
+      213: -2792318509021241205
+    second: Player-AfterMagic_0
   - first:
-      213: 536193110379620623
-    second: FCrew1_1
+      213: 659886953391080028
+    second: Player-AfterMagic_1
   - first:
-      213: 4049596153090732744
-    second: FCrew1_2
+      213: 147444755801209143
+    second: Player-AfterMagic_2
   - first:
-      213: -5293705511134809750
-    second: FCrew1_3
+      213: 1881266610246876975
+    second: Player-AfterMagic_3
   - first:
-      213: 2062408666172488040
-    second: FCrew1_4
+      213: 4188422631210166245
+    second: Player-AfterMagic_4
   - first:
-      213: 8521624882395560436
-    second: FCrew1_5
+      213: -2815575505501708759
+    second: Player-AfterMagic_5
   - first:
-      213: 4581148221172849279
-    second: FCrew1_6
+      213: -8057233768355804346
+    second: Player-AfterMagic_6
   - first:
-      213: -1318725518138066525
-    second: FCrew1_7
+      213: 9216190668963206801
+    second: Player-AfterMagic_7
   - first:
-      213: 6021245427703258203
-    second: FCrew1_8
+      213: -5466358753085380550
+    second: Player-AfterMagic_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -162,13 +162,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FCrew1_0
+      name: Player-AfterMagic_0
       rect:
         serializedVersion: 2
         x: 8
         y: 93
         width: 16
-        height: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e5e4bc74713b7c0800000000000000
-      internalID: -4056873242209657339
+      spriteID: b806a024c11bf39d0800000000000000
+      internalID: -2792318509021241205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_1
+      name: Player-AfterMagic_1
       rect:
         serializedVersion: 2
         x: 40
@@ -197,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0960330bc0f07700800000000000000
-      internalID: 536193110379620623
+      spriteID: c524ac810b3682900800000000000000
+      internalID: 659886953391080028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_2
+      name: Player-AfterMagic_2
       rect:
         serializedVersion: 2
         x: 72
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2f2ccde3e033830800000000000000
-      internalID: 4049596153090732744
+      spriteID: 73976856934db0200800000000000000
+      internalID: 147444755801209143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_3
+      name: Player-AfterMagic_3
       rect:
         serializedVersion: 2
         x: 10
-        y: 53
+        y: 52
         width: 12
-        height: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,18 +239,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61384782eaf886b0800000000000000
-      internalID: -5293705511134809750
+      spriteID: f2f719fb30a9b1a10800000000000000
+      internalID: 1881266610246876975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_4
+      name: Player-AfterMagic_4
       rect:
         serializedVersion: 2
         x: 43
-        y: 53
+        y: 52
         width: 12
         height: 25
       alignment: 0
@@ -260,82 +260,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869f5e831c52f9c10800000000000000
-      internalID: 2062408666172488040
+      spriteID: 5e72d7e1134402a30800000000000000
+      internalID: 4188422631210166245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_5
+      name: Player-AfterMagic_5
       rect:
         serializedVersion: 2
         x: 76
-        y: 53
+        y: 52
         width: 12
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f931585ea4e24670800000000000000
-      internalID: 8521624882395560436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_6
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 14
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7a9b620902839f30800000000000000
-      internalID: 4581148221172849279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_7
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 15
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9332fc022f2bde0800000000000000
-      internalID: -1318725518138066525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_8
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 14
-        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -344,8 +281,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c92b780d2cf8350800000000000000
-      internalID: 6021245427703258203
+      spriteID: 92e974ccef01de8d0800000000000000
+      internalID: -2815575505501708759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-AfterMagic_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bced4a394fe2090800000000000000
+      internalID: -8057233768355804346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-AfterMagic_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 12
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19652dd759c76ef70800000000000000
+      internalID: 9216190668963206801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-AfterMagic_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38af731da79324b0800000000000000
+      internalID: -5466358753085380550
       vertices: []
       indices: 
       edges: []
@@ -353,7 +353,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7755342e00401bd4e9ffda831684aaff
+    spriteID: d03760fa4073a04429f7c0850b44910b
     internalID: 0
     vertices: []
     indices: 

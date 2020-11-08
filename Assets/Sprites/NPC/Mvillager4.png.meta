@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 2306fda6255ff104aa3bacd2a33e5804
+guid: 6ab04d3fd5a3c164bbf298f0427d886d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4056873242209657339
-    second: FCrew1_0
+      213: -9058131687232087060
+    second: Mvillager4_0
   - first:
-      213: 536193110379620623
-    second: FCrew1_1
+      213: -5122982857452051437
+    second: Mvillager4_1
   - first:
-      213: 4049596153090732744
-    second: FCrew1_2
+      213: -8366054522386564107
+    second: Mvillager4_2
   - first:
-      213: -5293705511134809750
-    second: FCrew1_3
+      213: -7379422329422887670
+    second: Mvillager4_3
   - first:
-      213: 2062408666172488040
-    second: FCrew1_4
+      213: -561648756540445911
+    second: Mvillager4_4
   - first:
-      213: 8521624882395560436
-    second: FCrew1_5
+      213: -4246016639245359676
+    second: Mvillager4_5
   - first:
-      213: 4581148221172849279
-    second: FCrew1_6
+      213: -4571224326448572691
+    second: Mvillager4_6
   - first:
-      213: -1318725518138066525
-    second: FCrew1_7
+      213: 1476564208825844734
+    second: Mvillager4_7
   - first:
-      213: 6021245427703258203
-    second: FCrew1_8
+      213: -8291751030864073444
+    second: Mvillager4_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,10 +112,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,10 +124,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,13 +162,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FCrew1_0
+      name: Mvillager4_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 93
+        y: 91
         width: 16
-        height: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,18 +176,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e5e4bc74713b7c0800000000000000
-      internalID: -4056873242209657339
+      spriteID: ceb52d5f83d0b4280800000000000000
+      internalID: -9058131687232087060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_1
+      name: Mvillager4_1
       rect:
         serializedVersion: 2
         x: 40
-        y: 94
+        y: 91
         width: 16
         height: 25
       alignment: 0
@@ -197,18 +197,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0960330bc0f07700800000000000000
-      internalID: 536193110379620623
+      spriteID: 314a72fdb3287e8b0800000000000000
+      internalID: -5122982857452051437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_2
+      name: Mvillager4_2
       rect:
         serializedVersion: 2
         x: 72
-        y: 93
+        y: 91
         width: 16
         height: 25
       alignment: 0
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2f2ccde3e033830800000000000000
-      internalID: 4049596153090732744
+      spriteID: 5fb3995bcbdc5eb80800000000000000
+      internalID: -8366054522386564107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_3
+      name: Mvillager4_3
       rect:
         serializedVersion: 2
         x: 10
         y: 53
         width: 12
-        height: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,17 +239,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61384782eaf886b0800000000000000
-      internalID: -5293705511134809750
+      spriteID: a05c92f3d76079990800000000000000
+      internalID: -7379422329422887670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_4
+      name: Mvillager4_4
       rect:
         serializedVersion: 2
-        x: 43
+        x: 41
         y: 53
         width: 12
         height: 25
@@ -260,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869f5e831c52f9c10800000000000000
-      internalID: 2062408666172488040
+      spriteID: 92bedd18e6f9438f0800000000000000
+      internalID: -561648756540445911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_5
+      name: Mvillager4_5
       rect:
         serializedVersion: 2
-        x: 76
+        x: 75
         y: 53
         width: 12
-        height: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,41 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f931585ea4e24670800000000000000
-      internalID: 8521624882395560436
+      spriteID: 4c5e16bec5e1315c0800000000000000
+      internalID: -4246016639245359676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_6
+      name: Mvillager4_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 14
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7a9b620902839f30800000000000000
-      internalID: 4581148221172849279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_7
-      rect:
-        serializedVersion: 2
-        x: 40
+        x: 9
         y: 15
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9332fc022f2bde0800000000000000
-      internalID: -1318725518138066525
+      spriteID: de69869c1bfbf80c0800000000000000
+      internalID: -4571224326448572691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_8
+      name: Mvillager4_7
       rect:
         serializedVersion: 2
-        x: 72
-        y: 14
+        x: 39
+        y: 15
         width: 16
-        height: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,8 +323,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c92b780d2cf8350800000000000000
-      internalID: 6021245427703258203
+      spriteID: ef3ce13235fcd7410800000000000000
+      internalID: 1476564208825844734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mvillager4_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 15
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d2e577e58cdec80800000000000000
+      internalID: -8291751030864073444
       vertices: []
       indices: 
       edges: []
@@ -353,7 +353,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7755342e00401bd4e9ffda831684aaff
+    spriteID: 0922f74daaa57734d8c221d861792ef1
     internalID: 0
     vertices: []
     indices: 

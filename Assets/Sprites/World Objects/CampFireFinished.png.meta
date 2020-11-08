@@ -1,34 +1,76 @@
 fileFormatVersion: 2
-guid: 2306fda6255ff104aa3bacd2a33e5804
+guid: ee9bd198d9a5dc844b013ae6de8c7eb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4056873242209657339
-    second: FCrew1_0
+      213: 2568837401350651815
+    second: CampFireFinished_0
   - first:
-      213: 536193110379620623
-    second: FCrew1_1
+      213: -5784929331180331738
+    second: CampFireFinished_1
   - first:
-      213: 4049596153090732744
-    second: FCrew1_2
+      213: 6703503656626188089
+    second: CampFireFinished_2
   - first:
-      213: -5293705511134809750
-    second: FCrew1_3
+      213: -836580246522959223
+    second: CampFireFinished_3
   - first:
-      213: 2062408666172488040
-    second: FCrew1_4
+      213: -6237535784788995661
+    second: CampFireFinished_4
   - first:
-      213: 8521624882395560436
-    second: FCrew1_5
+      213: 8740249354941347519
+    second: CampFireFinished_5
   - first:
-      213: 4581148221172849279
-    second: FCrew1_6
+      213: 2553746823598205273
+    second: CampFireFinished_6
   - first:
-      213: -1318725518138066525
-    second: FCrew1_7
+      213: 7920154339131280931
+    second: CampFireFinished_7
   - first:
-      213: 6021245427703258203
-    second: FCrew1_8
+      213: -2961174128460336156
+    second: CampFireFinished_8
+  - first:
+      213: 8447836514572629557
+    second: CampFireFinished_9
+  - first:
+      213: 5789404013695292574
+    second: CampFireFinished_10
+  - first:
+      213: 925805934976160653
+    second: CampFireFinished_11
+  - first:
+      213: 730288572525777205
+    second: CampFireFinished_12
+  - first:
+      213: 5281378983055110741
+    second: CampFireFinished_13
+  - first:
+      213: 2726465622376489245
+    second: CampFireFinished_14
+  - first:
+      213: 8885844500899863825
+    second: CampFireFinished_15
+  - first:
+      213: -709205707082391123
+    second: CampFireFinished_16
+  - first:
+      213: -4734934450099583461
+    second: CampFireFinished_17
+  - first:
+      213: 6543498127657159952
+    second: CampFireFinished_18
+  - first:
+      213: 6205329886078459751
+    second: CampFireFinished_19
+  - first:
+      213: -3500117419914139935
+    second: CampFireFinished_20
+  - first:
+      213: 4821429050875532118
+    second: CampFireFinished_21
+  - first:
+      213: -6956462604349466085
+    second: CampFireFinished_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,7 +130,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -100,7 +142,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 128
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -112,7 +154,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -124,7 +166,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 128
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -139,7 +181,31 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -148,7 +214,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 128
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -162,13 +228,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FCrew1_0
+      name: CampFireFinished_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 93
-        width: 16
-        height: 26
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e5e4bc74713b7c0800000000000000
-      internalID: -4056873242209657339
+      spriteID: 7af3e39910856a320800000000000000
+      internalID: 2568837401350651815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_1
+      name: CampFireFinished_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 94
-        width: 16
-        height: 25
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0960330bc0f07700800000000000000
-      internalID: 536193110379620623
+      spriteID: 62d12445c6dc7bfa0800000000000000
+      internalID: -5784929331180331738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_2
+      name: CampFireFinished_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 93
-        width: 16
-        height: 25
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2f2ccde3e033830800000000000000
-      internalID: 4049596153090732744
+      spriteID: 93f6cbb1f01a70d50800000000000000
+      internalID: 6703503656626188089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_3
+      name: CampFireFinished_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 53
-        width: 12
-        height: 26
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61384782eaf886b0800000000000000
-      internalID: -5293705511134809750
+      spriteID: 98ae3ebb2bed364f0800000000000000
+      internalID: -836580246522959223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FCrew1_4
+      name: CampFireFinished_4
       rect:
         serializedVersion: 2
-        x: 43
-        y: 53
-        width: 12
-        height: 25
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,92 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869f5e831c52f9c10800000000000000
-      internalID: 2062408666172488040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_5
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 53
-        width: 12
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f931585ea4e24670800000000000000
-      internalID: 8521624882395560436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_6
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 14
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7a9b620902839f30800000000000000
-      internalID: 4581148221172849279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_7
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 15
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9332fc022f2bde0800000000000000
-      internalID: -1318725518138066525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FCrew1_8
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 14
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5c92b780d2cf8350800000000000000
-      internalID: 6021245427703258203
+      spriteID: 3b15dd96042df69a0800000000000000
+      internalID: -6237535784788995661
       vertices: []
       indices: 
       edges: []
@@ -353,7 +335,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7755342e00401bd4e9ffda831684aaff
+    spriteID: c30e3e7287acda74d8eced38dfd91b2b
     internalID: 0
     vertices: []
     indices: 
