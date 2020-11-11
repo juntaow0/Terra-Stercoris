@@ -46,7 +46,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 1676640
+    totalSpriteSurfaceArea: 1677540
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -104,6 +104,7 @@ SpriteAtlas:
   - {fileID: -1923497010049590430, guid: 1a63a325be5cd5a4aa1cdad4eb1b48d3, type: 3}
   - {fileID: 21300000, guid: 8d21f9a5d0724a64186709b05dcda59f, type: 3}
   - {fileID: 21300000, guid: 824f68f5e6cd0cb4f98cb22efee3fde3, type: 3}
+  - {fileID: -149012280866274408, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
   - {fileID: -5466358753085380550, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
   - {fileID: 9216190668963206801, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
   - {fileID: -8057233768355804346, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
@@ -113,6 +114,8 @@ SpriteAtlas:
   - {fileID: 147444755801209143, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
   - {fileID: 659886953391080028, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
   - {fileID: -2792318509021241205, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
+  - {fileID: -1161137745494616831, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
+  - {fileID: -8413628484434407905, guid: 17f1f5164b73a42409261c49a44965df, type: 3}
   - {fileID: -6982894138727083804, guid: dca992463fdaad448ae395404b391364, type: 3}
   - {fileID: -6975969973505928273, guid: dca992463fdaad448ae395404b391364, type: 3}
   - {fileID: -6320042725013245003, guid: dca992463fdaad448ae395404b391364, type: 3}
@@ -344,6 +347,7 @@ SpriteAtlas:
   - shBase_whiteMale_11
   - StoneSword
   - deadMV2
+  - Player-AfterMagic_9
   - Player-AfterMagic_8
   - Player-AfterMagic_7
   - Player-AfterMagic_6
@@ -353,6 +357,8 @@ SpriteAtlas:
   - Player-AfterMagic_2
   - Player-AfterMagic_1
   - Player-AfterMagic_0
+  - Player-AfterMagic_10
+  - Player-AfterMagic_11
   - goblinsheet_11
   - goblinsheet_10
   - goblinsheet_2
