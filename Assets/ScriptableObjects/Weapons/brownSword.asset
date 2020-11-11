@@ -15,8 +15,8 @@ MonoBehaviour:
   weaponName: Brown Sword
   weaponID: 2
   icon: {fileID: 21300000, guid: cce479ae597093f44829db366ff0cdf4, type: 3}
-  damage: 15
+  damage: 20
   energyCost: 0
   range: 1.8
-  cooldownTime: 1
+  cooldownTime: 1.7
   attackSound: {fileID: 11400000, guid: 5ccd4a37f9812384daed37f6b37fcb47, type: 2}

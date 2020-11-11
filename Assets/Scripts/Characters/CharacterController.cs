@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour, IDamagable {
 
+    public bool immortal = false;
+
     private const int NUM_ROTATIONS = 8;
 
     public NumericalResource health = new NumericalResource(ResourceType.Health);
@@ -79,6 +81,10 @@ public class CharacterController : MonoBehaviour, IDamagable {
         _movementSpeed = newSpeed;
     }
 
+    public void isImmortal(bool state) {
+        immortal = state;
+    }
+
     public int GetSpriteRotation() {
         return _spriteRotation;
     }
@@ -102,7 +108,9 @@ public class CharacterController : MonoBehaviour, IDamagable {
 
     public void Damage(int amount) {
         if(IsAlive) {
-            health.quantity -= amount;
+            if (!immortal) {
+                health.quantity -= amount;
+            }
             // Potentially add damage animation or event.
             StartCoroutine(DamageAnimation());
         }

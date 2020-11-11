@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: 03 I still want the meat
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - You
+  - Tut
+  sentences:
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Huff\u2026 Huff...Alright alright\u2026. \n"
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'I will take you, but I still want the meat.
+
+'
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Sounds like a deal\r."
+  endAction: 0
+  choices: []
+  choiceKey: 

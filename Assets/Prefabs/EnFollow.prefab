@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f41e4a2345b80a499542ce246ea2fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  immortal: 1
   _movementSpeed: 15
   _spriteRotation: 0
   _spriteRenderer: {fileID: 537616693842453244}

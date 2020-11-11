@@ -16,6 +16,7 @@ public class TestEnemyAI : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool seesTarget = false;
     private CharacterController targetCC;
+    private bool hostile = true;
 
     private void Awake() {
         aiPath = GetComponent<AIPath>();
@@ -41,6 +42,19 @@ public class TestEnemyAI : MonoBehaviour
         targetCC = AIDest.target.GetComponent<CharacterController>();
     }
 
+    public void SetHostile(bool state) {
+        hostile = state;
+        if (state) {
+            aiPath.endReachedDistance = 1.4f;
+            aiPath.pickNextWaypointDist = 1.4f;
+            aiPath.slowdownDistance = 0.6f;
+        } else {
+            aiPath.endReachedDistance = 2.2f;
+            aiPath.pickNextWaypointDist = 2.2f;
+            aiPath.slowdownDistance = 2.2f;
+        }
+    }
+
     private void Update() {
         if (AIDest.target == null) {
             return;
@@ -48,12 +62,14 @@ public class TestEnemyAI : MonoBehaviour
         CalculateHeading();
         float speed = aiPath.desiredVelocity.magnitude;
         animator.SetFloat("speed", speed);
-        if (Vector2.Distance(transform.position, AIDest.target.position) <= wc.selected.weaponStats.range) {
-            if (seesTarget) {
-                wc.Attack();
-                if (targetCC.GetHealth() <= 0) {
-                    AIDest.target = null;
-                    targetCC = null;
+        if (hostile) {
+            if (Vector2.Distance(transform.position, AIDest.target.position) <= wc.selected.weaponStats.range) {
+                if (seesTarget) {
+                    wc.Attack();
+                    if (targetCC.GetHealth() <= 0) {
+                        AIDest.target = null;
+                        targetCC = null;
+                    }
                 }
             }
         }
