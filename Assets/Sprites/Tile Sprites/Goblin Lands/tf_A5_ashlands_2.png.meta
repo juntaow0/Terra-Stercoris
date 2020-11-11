@@ -1,0 +1,4070 @@
+fileFormatVersion: 2
+guid: 194a94e18c6e0e84c9e31ac28fde3f69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9057426123829117291
+    second: tf_A5_ashlands_2_0
+  - first:
+      213: 4419983062295132759
+    second: tf_A5_ashlands_2_1
+  - first:
+      213: -2352873864598848333
+    second: tf_A5_ashlands_2_2
+  - first:
+      213: 4917636847125282309
+    second: tf_A5_ashlands_2_3
+  - first:
+      213: -7285518933363716897
+    second: tf_A5_ashlands_2_4
+  - first:
+      213: 2449391884448429100
+    second: tf_A5_ashlands_2_5
+  - first:
+      213: -5693517159612661206
+    second: tf_A5_ashlands_2_6
+  - first:
+      213: 824196421353066540
+    second: tf_A5_ashlands_2_7
+  - first:
+      213: -1474513517497171681
+    second: tf_A5_ashlands_2_8
+  - first:
+      213: -3427584826442825752
+    second: tf_A5_ashlands_2_9
+  - first:
+      213: -8909468167243269225
+    second: tf_A5_ashlands_2_10
+  - first:
+      213: 2869913424069540666
+    second: tf_A5_ashlands_2_11
+  - first:
+      213: -4199497660960801587
+    second: tf_A5_ashlands_2_12
+  - first:
+      213: -2945439258700692899
+    second: tf_A5_ashlands_2_13
+  - first:
+      213: -8152798752651444310
+    second: tf_A5_ashlands_2_14
+  - first:
+      213: 404668952856590989
+    second: tf_A5_ashlands_2_15
+  - first:
+      213: -6167119988358673522
+    second: tf_A5_ashlands_2_16
+  - first:
+      213: -3656919939584137616
+    second: tf_A5_ashlands_2_17
+  - first:
+      213: -1468773941493647132
+    second: tf_A5_ashlands_2_18
+  - first:
+      213: 2763672802792602513
+    second: tf_A5_ashlands_2_19
+  - first:
+      213: 5587812739104473527
+    second: tf_A5_ashlands_2_20
+  - first:
+      213: -936018894112741840
+    second: tf_A5_ashlands_2_21
+  - first:
+      213: -6921315068142869475
+    second: tf_A5_ashlands_2_22
+  - first:
+      213: 6304256007982227400
+    second: tf_A5_ashlands_2_23
+  - first:
+      213: -5207293291505139823
+    second: tf_A5_ashlands_2_24
+  - first:
+      213: -3599639955858193572
+    second: tf_A5_ashlands_2_25
+  - first:
+      213: 2343754770345800816
+    second: tf_A5_ashlands_2_26
+  - first:
+      213: 1367983996287455663
+    second: tf_A5_ashlands_2_27
+  - first:
+      213: 7561673284265746190
+    second: tf_A5_ashlands_2_28
+  - first:
+      213: -1655942031811172364
+    second: tf_A5_ashlands_2_29
+  - first:
+      213: -349990370696336238
+    second: tf_A5_ashlands_2_30
+  - first:
+      213: -547568298081778284
+    second: tf_A5_ashlands_2_31
+  - first:
+      213: -6019549356178062889
+    second: tf_A5_ashlands_2_32
+  - first:
+      213: -4451103782994542018
+    second: tf_A5_ashlands_2_33
+  - first:
+      213: -1292290630797760102
+    second: tf_A5_ashlands_2_34
+  - first:
+      213: 736812240133332169
+    second: tf_A5_ashlands_2_35
+  - first:
+      213: -4138388364518195436
+    second: tf_A5_ashlands_2_36
+  - first:
+      213: 7127209157529347002
+    second: tf_A5_ashlands_2_37
+  - first:
+      213: -6920483288599968063
+    second: tf_A5_ashlands_2_38
+  - first:
+      213: 6499530501796701188
+    second: tf_A5_ashlands_2_39
+  - first:
+      213: 8367546839654319930
+    second: tf_A5_ashlands_2_40
+  - first:
+      213: 2502113077723391126
+    second: tf_A5_ashlands_2_41
+  - first:
+      213: 5816273213183662498
+    second: tf_A5_ashlands_2_42
+  - first:
+      213: 6060172068874710960
+    second: tf_A5_ashlands_2_43
+  - first:
+      213: 8194635414428381723
+    second: tf_A5_ashlands_2_44
+  - first:
+      213: 4855966663520636331
+    second: tf_A5_ashlands_2_45
+  - first:
+      213: 8879925512721942283
+    second: tf_A5_ashlands_2_46
+  - first:
+      213: -5235865589384787241
+    second: tf_A5_ashlands_2_47
+  - first:
+      213: 8970717151128921373
+    second: tf_A5_ashlands_2_48
+  - first:
+      213: 4217794931250472288
+    second: tf_A5_ashlands_2_49
+  - first:
+      213: 6791358970923940706
+    second: tf_A5_ashlands_2_50
+  - first:
+      213: 7447983766196546958
+    second: tf_A5_ashlands_2_51
+  - first:
+      213: -1858509030870351416
+    second: tf_A5_ashlands_2_52
+  - first:
+      213: -7902300076591349808
+    second: tf_A5_ashlands_2_53
+  - first:
+      213: -9107633538777721439
+    second: tf_A5_ashlands_2_54
+  - first:
+      213: 7380560494487865321
+    second: tf_A5_ashlands_2_55
+  - first:
+      213: -675005863426004948
+    second: tf_A5_ashlands_2_56
+  - first:
+      213: 3529170275727313104
+    second: tf_A5_ashlands_2_57
+  - first:
+      213: 2873560831319858685
+    second: tf_A5_ashlands_2_58
+  - first:
+      213: -6056344825628932064
+    second: tf_A5_ashlands_2_59
+  - first:
+      213: -8752967664465241567
+    second: tf_A5_ashlands_2_60
+  - first:
+      213: -3589535757884148541
+    second: tf_A5_ashlands_2_61
+  - first:
+      213: 7411881795892492637
+    second: tf_A5_ashlands_2_62
+  - first:
+      213: -2956841972774940982
+    second: tf_A5_ashlands_2_63
+  - first:
+      213: 4577845615912789270
+    second: tf_A5_ashlands_2_64
+  - first:
+      213: -3614849492083882330
+    second: tf_A5_ashlands_2_65
+  - first:
+      213: 8636696240544100262
+    second: tf_A5_ashlands_2_66
+  - first:
+      213: 6074573175881971864
+    second: tf_A5_ashlands_2_67
+  - first:
+      213: 3640584656157905085
+    second: tf_A5_ashlands_2_68
+  - first:
+      213: -7991386433312647944
+    second: tf_A5_ashlands_2_69
+  - first:
+      213: -8869048135662621880
+    second: tf_A5_ashlands_2_70
+  - first:
+      213: 1796881254868811337
+    second: tf_A5_ashlands_2_71
+  - first:
+      213: 2261101295103307211
+    second: tf_A5_ashlands_2_72
+  - first:
+      213: 556892829819901447
+    second: tf_A5_ashlands_2_73
+  - first:
+      213: -1714346919744506252
+    second: tf_A5_ashlands_2_74
+  - first:
+      213: -3074612381056191225
+    second: tf_A5_ashlands_2_75
+  - first:
+      213: 1288282951624560028
+    second: tf_A5_ashlands_2_76
+  - first:
+      213: -4003789801150780929
+    second: tf_A5_ashlands_2_77
+  - first:
+      213: -1040586110907968954
+    second: tf_A5_ashlands_2_78
+  - first:
+      213: -6087455843269910281
+    second: tf_A5_ashlands_2_79
+  - first:
+      213: -123940561019722322
+    second: tf_A5_ashlands_2_80
+  - first:
+      213: 8304545998899469869
+    second: tf_A5_ashlands_2_81
+  - first:
+      213: 5156268282219546461
+    second: tf_A5_ashlands_2_82
+  - first:
+      213: -4747183771833620703
+    second: tf_A5_ashlands_2_83
+  - first:
+      213: -4534652607709232660
+    second: tf_A5_ashlands_2_84
+  - first:
+      213: 7859654294118284031
+    second: tf_A5_ashlands_2_85
+  - first:
+      213: -8274529717162225571
+    second: tf_A5_ashlands_2_86
+  - first:
+      213: -5841865545057149
+    second: tf_A5_ashlands_2_87
+  - first:
+      213: -8357244801832712192
+    second: tf_A5_ashlands_2_88
+  - first:
+      213: 2721308762854973053
+    second: tf_A5_ashlands_2_89
+  - first:
+      213: 3977134773227927843
+    second: tf_A5_ashlands_2_90
+  - first:
+      213: 4972252551761372923
+    second: tf_A5_ashlands_2_91
+  - first:
+      213: -6823240082199263207
+    second: tf_A5_ashlands_2_92
+  - first:
+      213: 5309215756255526843
+    second: tf_A5_ashlands_2_93
+  - first:
+      213: -2997255061311344262
+    second: tf_A5_ashlands_2_94
+  - first:
+      213: 228983318744240807
+    second: tf_A5_ashlands_2_95
+  - first:
+      213: -2518625849526003037
+    second: tf_A5_ashlands_2_96
+  - first:
+      213: 5106429446335028937
+    second: tf_A5_ashlands_2_97
+  - first:
+      213: 2343002669506578721
+    second: tf_A5_ashlands_2_98
+  - first:
+      213: -1354248077522855171
+    second: tf_A5_ashlands_2_99
+  - first:
+      213: -4942997743850484474
+    second: tf_A5_ashlands_2_100
+  - first:
+      213: 4940386532338832972
+    second: tf_A5_ashlands_2_101
+  - first:
+      213: 2524546415613782042
+    second: tf_A5_ashlands_2_102
+  - first:
+      213: 8433168762095877574
+    second: tf_A5_ashlands_2_103
+  - first:
+      213: 2973640694444129856
+    second: tf_A5_ashlands_2_104
+  - first:
+      213: -7527148482700800680
+    second: tf_A5_ashlands_2_105
+  - first:
+      213: 263502638069009302
+    second: tf_A5_ashlands_2_106
+  - first:
+      213: -8925027771602938866
+    second: tf_A5_ashlands_2_107
+  - first:
+      213: 5158758081389032475
+    second: tf_A5_ashlands_2_108
+  - first:
+      213: -3781240562903832032
+    second: tf_A5_ashlands_2_109
+  - first:
+      213: -6925823818313245773
+    second: tf_A5_ashlands_2_110
+  - first:
+      213: 2237251078138322221
+    second: tf_A5_ashlands_2_111
+  - first:
+      213: 5667096143630115006
+    second: tf_A5_ashlands_2_112
+  - first:
+      213: 780959806114960941
+    second: tf_A5_ashlands_2_113
+  - first:
+      213: -2996167813301162590
+    second: tf_A5_ashlands_2_114
+  - first:
+      213: 5791851506367451120
+    second: tf_A5_ashlands_2_115
+  - first:
+      213: -3858918373322973840
+    second: tf_A5_ashlands_2_116
+  - first:
+      213: -7311651604757474207
+    second: tf_A5_ashlands_2_117
+  - first:
+      213: 2530408027594259933
+    second: tf_A5_ashlands_2_118
+  - first:
+      213: 765072473046187273
+    second: tf_A5_ashlands_2_119
+  - first:
+      213: -382971114892354416
+    second: tf_A5_ashlands_2_120
+  - first:
+      213: -5106126689609746993
+    second: tf_A5_ashlands_2_121
+  - first:
+      213: 794274963391239548
+    second: tf_A5_ashlands_2_122
+  - first:
+      213: 7732385823529230259
+    second: tf_A5_ashlands_2_123
+  - first:
+      213: 1414079145213701774
+    second: tf_A5_ashlands_2_124
+  - first:
+      213: 8115531978405818227
+    second: tf_A5_ashlands_2_125
+  - first:
+      213: -8547014415928691755
+    second: tf_A5_ashlands_2_126
+  - first:
+      213: -396053108144457954
+    second: tf_A5_ashlands_2_127
+  - first:
+      213: 1583803972807413134
+    second: tf_A5_ashlands_2_128
+  - first:
+      213: -3322361865426240637
+    second: tf_A5_ashlands_2_129
+  - first:
+      213: -356849739365164027
+    second: tf_A5_ashlands_2_130
+  - first:
+      213: -9066523931263985247
+    second: tf_A5_ashlands_2_131
+  - first:
+      213: -2452866617449247658
+    second: tf_A5_ashlands_2_132
+  - first:
+      213: 1457704131027713260
+    second: tf_A5_ashlands_2_133
+  - first:
+      213: -6408129942104062155
+    second: tf_A5_ashlands_2_134
+  - first:
+      213: -3989058228056112773
+    second: tf_A5_ashlands_2_135
+  - first:
+      213: 3497721017437061809
+    second: tf_A5_ashlands_2_136
+  - first:
+      213: 6721663094906047727
+    second: tf_A5_ashlands_2_137
+  - first:
+      213: -355079017807144934
+    second: tf_A5_ashlands_2_138
+  - first:
+      213: 7476497188280861079
+    second: tf_A5_ashlands_2_139
+  - first:
+      213: -9037671270768605371
+    second: tf_A5_ashlands_2_140
+  - first:
+      213: 91079011148762741
+    second: tf_A5_ashlands_2_141
+  - first:
+      213: -3452595826034606996
+    second: tf_A5_ashlands_2_142
+  - first:
+      213: -8791136387321687722
+    second: tf_A5_ashlands_2_143
+  - first:
+      213: 1257960750038058807
+    second: tf_A5_ashlands_2_144
+  - first:
+      213: 5149401917297857262
+    second: tf_A5_ashlands_2_145
+  - first:
+      213: -1952409429088124552
+    second: tf_A5_ashlands_2_146
+  - first:
+      213: -8476626309101541492
+    second: tf_A5_ashlands_2_147
+  - first:
+      213: -6513328379082444130
+    second: tf_A5_ashlands_2_148
+  - first:
+      213: 1405031295379696946
+    second: tf_A5_ashlands_2_149
+  - first:
+      213: 5500328153640664479
+    second: tf_A5_ashlands_2_150
+  - first:
+      213: -6468897722352974708
+    second: tf_A5_ashlands_2_151
+  - first:
+      213: 6173833956188470880
+    second: tf_A5_ashlands_2_152
+  - first:
+      213: -4033972627793525621
+    second: tf_A5_ashlands_2_153
+  - first:
+      213: -6370160812324682116
+    second: tf_A5_ashlands_2_154
+  - first:
+      213: 1959252289712940122
+    second: tf_A5_ashlands_2_155
+  - first:
+      213: -525189646675689970
+    second: tf_A5_ashlands_2_156
+  - first:
+      213: 6920597864787762210
+    second: tf_A5_ashlands_2_157
+  - first:
+      213: 8231123251965802412
+    second: tf_A5_ashlands_2_158
+  - first:
+      213: -1574154231875892577
+    second: tf_A5_ashlands_2_159
+  - first:
+      213: -8931476844923136094
+    second: tf_A5_ashlands_2_160
+  - first:
+      213: 7955024053511391964
+    second: tf_A5_ashlands_2_161
+  - first:
+      213: 7217915022829842498
+    second: tf_A5_ashlands_2_162
+  - first:
+      213: -6751166016724653304
+    second: tf_A5_ashlands_2_163
+  - first:
+      213: 7704767561575323461
+    second: tf_A5_ashlands_2_164
+  - first:
+      213: 7481255892688680996
+    second: tf_A5_ashlands_2_165
+  - first:
+      213: -6239350514603781331
+    second: tf_A5_ashlands_2_166
+  - first:
+      213: 5560898798578567707
+    second: tf_A5_ashlands_2_167
+  - first:
+      213: -3149123028479936708
+    second: tf_A5_ashlands_2_168
+  - first:
+      213: -4262207654310645480
+    second: tf_A5_ashlands_2_169
+  - first:
+      213: -5166005679040675479
+    second: tf_A5_ashlands_2_170
+  - first:
+      213: -1382752806472206974
+    second: tf_A5_ashlands_2_171
+  - first:
+      213: -2642491247384350583
+    second: tf_A5_ashlands_2_172
+  - first:
+      213: 4130005633164755505
+    second: tf_A5_ashlands_2_173
+  - first:
+      213: -1133523044887916050
+    second: tf_A5_ashlands_2_174
+  - first:
+      213: 1520305013785034332
+    second: tf_A5_ashlands_2_175
+  - first:
+      213: -2407985230087232272
+    second: tf_A5_ashlands_2_176
+  - first:
+      213: 8454376181359152343
+    second: tf_A5_ashlands_2_177
+  - first:
+      213: -4579928969616592824
+    second: tf_A5_ashlands_2_178
+  - first:
+      213: 7345616939080797160
+    second: tf_A5_ashlands_2_179
+  - first:
+      213: 413281128368961104
+    second: tf_A5_ashlands_2_180
+  - first:
+      213: -8802141512081170674
+    second: tf_A5_ashlands_2_181
+  - first:
+      213: 2981188066825341306
+    second: tf_A5_ashlands_2_182
+  - first:
+      213: -170174680431718008
+    second: tf_A5_ashlands_2_183
+  - first:
+      213: 3001003100477180655
+    second: tf_A5_ashlands_2_184
+  - first:
+      213: -6399425271623749448
+    second: tf_A5_ashlands_2_185
+  - first:
+      213: 1196968736188928648
+    second: tf_A5_ashlands_2_186
+  - first:
+      213: -7654319970513435936
+    second: tf_A5_ashlands_2_187
+  - first:
+      213: 2883906879353403779
+    second: tf_A5_ashlands_2_188
+  - first:
+      213: -612914933710606040
+    second: tf_A5_ashlands_2_189
+  - first:
+      213: -5691715518125714333
+    second: tf_A5_ashlands_2_190
+  - first:
+      213: -2100540112986585249
+    second: tf_A5_ashlands_2_191
+  - first:
+      213: 6423594023072988174
+    second: tf_A5_ashlands_2_192
+  - first:
+      213: -8817958500802636589
+    second: tf_A5_ashlands_2_193
+  - first:
+      213: 5162007267188640491
+    second: tf_A5_ashlands_2_194
+  - first:
+      213: -7352187429465676030
+    second: tf_A5_ashlands_2_195
+  - first:
+      213: 7456112728858382073
+    second: tf_A5_ashlands_2_196
+  - first:
+      213: 4618198245257980651
+    second: tf_A5_ashlands_2_197
+  - first:
+      213: 8107218779180111214
+    second: tf_A5_ashlands_2_198
+  - first:
+      213: 2195069628835511941
+    second: tf_A5_ashlands_2_199
+  - first:
+      213: 8436898141113480482
+    second: tf_A5_ashlands_2_200
+  - first:
+      213: -802321938333681590
+    second: tf_A5_ashlands_2_201
+  - first:
+      213: 8815267516538692914
+    second: tf_A5_ashlands_2_202
+  - first:
+      213: 3597861725682442596
+    second: tf_A5_ashlands_2_203
+  - first:
+      213: -2111286964185613913
+    second: tf_A5_ashlands_2_204
+  - first:
+      213: -8704044818175871613
+    second: tf_A5_ashlands_2_205
+  - first:
+      213: -722555801234757566
+    second: tf_A5_ashlands_2_206
+  - first:
+      213: 1363003776083621534
+    second: tf_A5_ashlands_2_207
+  - first:
+      213: 6359756835214645823
+    second: tf_A5_ashlands_2_208
+  - first:
+      213: 8236415164794726320
+    second: tf_A5_ashlands_2_209
+  - first:
+      213: 7468706806479323403
+    second: tf_A5_ashlands_2_210
+  - first:
+      213: 4420982411666515713
+    second: tf_A5_ashlands_2_211
+  - first:
+      213: 3198034481987728245
+    second: tf_A5_ashlands_2_212
+  - first:
+      213: 8519011593569713122
+    second: tf_A5_ashlands_2_213
+  - first:
+      213: -6527288424235996512
+    second: tf_A5_ashlands_2_214
+  - first:
+      213: 1055109334726927671
+    second: tf_A5_ashlands_2_215
+  - first:
+      213: -5969480396635333229
+    second: tf_A5_ashlands_2_216
+  - first:
+      213: -2435058329964418127
+    second: tf_A5_ashlands_2_217
+  - first:
+      213: 6783451160015493212
+    second: tf_A5_ashlands_2_218
+  - first:
+      213: -7432784233188823541
+    second: tf_A5_ashlands_2_219
+  - first:
+      213: 1528429957593466801
+    second: tf_A5_ashlands_2_220
+  - first:
+      213: 2129681950126687937
+    second: tf_A5_ashlands_2_221
+  - first:
+      213: -1540965090352134833
+    second: tf_A5_ashlands_2_222
+  - first:
+      213: 5970401335710251782
+    second: tf_A5_ashlands_2_223
+  - first:
+      213: -7921653646376145510
+    second: tf_A5_ashlands_2_224
+  - first:
+      213: -6090027100669060192
+    second: tf_A5_ashlands_2_225
+  - first:
+      213: -5519421657987922749
+    second: tf_A5_ashlands_2_226
+  - first:
+      213: -5946920052547487884
+    second: tf_A5_ashlands_2_227
+  - first:
+      213: 486444191744493616
+    second: tf_A5_ashlands_2_228
+  - first:
+      213: -2249212524121595140
+    second: tf_A5_ashlands_2_229
+  - first:
+      213: 8303021567041215418
+    second: tf_A5_ashlands_2_230
+  - first:
+      213: 2700384452931467894
+    second: tf_A5_ashlands_2_231
+  - first:
+      213: -5707658258791006766
+    second: tf_A5_ashlands_2_232
+  - first:
+      213: 3735937836865088976
+    second: tf_A5_ashlands_2_233
+  - first:
+      213: -8926389727910060237
+    second: tf_A5_ashlands_2_234
+  - first:
+      213: -8172164519849028890
+    second: tf_A5_ashlands_2_235
+  - first:
+      213: -6416072534583655382
+    second: tf_A5_ashlands_2_236
+  - first:
+      213: 9153095412246046111
+    second: tf_A5_ashlands_2_237
+  - first:
+      213: 1170338002182332844
+    second: tf_A5_ashlands_2_238
+  - first:
+      213: -1030428153457827453
+    second: tf_A5_ashlands_2_239
+  - first:
+      213: -7429913747057784815
+    second: tf_A5_ashlands_2_240
+  - first:
+      213: 5561773966203344810
+    second: tf_A5_ashlands_2_241
+  - first:
+      213: -7238885232224385409
+    second: tf_A5_ashlands_2_242
+  - first:
+      213: 3404097781717762478
+    second: tf_A5_ashlands_2_243
+  - first:
+      213: -819578357168122052
+    second: tf_A5_ashlands_2_244
+  - first:
+      213: -7139465761736653692
+    second: tf_A5_ashlands_2_245
+  - first:
+      213: 1372992657996696441
+    second: tf_A5_ashlands_2_246
+  - first:
+      213: 7904085187992108761
+    second: tf_A5_ashlands_2_247
+  - first:
+      213: -4837513035160386853
+    second: tf_A5_ashlands_2_248
+  - first:
+      213: 1368775115497641152
+    second: tf_A5_ashlands_2_249
+  - first:
+      213: -526464026942429346
+    second: tf_A5_ashlands_2_250
+  - first:
+      213: -5943583388731669723
+    second: tf_A5_ashlands_2_251
+  - first:
+      213: 8924615371948492989
+    second: tf_A5_ashlands_2_252
+  - first:
+      213: -7022081558489298246
+    second: tf_A5_ashlands_2_253
+  - first:
+      213: 5395853773270747833
+    second: tf_A5_ashlands_2_254
+  - first:
+      213: 7842424091112814350
+    second: tf_A5_ashlands_2_255
+  - first:
+      213: -1861236630113626461
+    second: tf_A5_ashlands_2_256
+  - first:
+      213: -8655386617510958165
+    second: tf_A5_ashlands_2_257
+  - first:
+      213: 5956561778930635148
+    second: tf_A5_ashlands_2_258
+  - first:
+      213: 2785340095005939320
+    second: tf_A5_ashlands_2_259
+  - first:
+      213: 3571128065913348743
+    second: tf_A5_ashlands_2_260
+  - first:
+      213: 1888296849507901594
+    second: tf_A5_ashlands_2_261
+  - first:
+      213: 6307611459077055897
+    second: tf_A5_ashlands_2_262
+  - first:
+      213: -336412613745098101
+    second: tf_A5_ashlands_2_263
+  - first:
+      213: -2271286255375630367
+    second: tf_A5_ashlands_2_264
+  - first:
+      213: -7781940851346264213
+    second: tf_A5_ashlands_2_265
+  - first:
+      213: 6905027456548893291
+    second: tf_A5_ashlands_2_266
+  - first:
+      213: 6002699837894818520
+    second: tf_A5_ashlands_2_267
+  - first:
+      213: -7847613070675780735
+    second: tf_A5_ashlands_2_268
+  - first:
+      213: -2500191562225021260
+    second: tf_A5_ashlands_2_269
+  - first:
+      213: -1521639568025179410
+    second: tf_A5_ashlands_2_270
+  - first:
+      213: -3173061917787711593
+    second: tf_A5_ashlands_2_271
+  - first:
+      213: 3430469085715528567
+    second: tf_A5_ashlands_2_272
+  - first:
+      213: -5490417910442230803
+    second: tf_A5_ashlands_2_273
+  - first:
+      213: 5041645008951759317
+    second: tf_A5_ashlands_2_274
+  - first:
+      213: 7693317804950758130
+    second: tf_A5_ashlands_2_275
+  - first:
+      213: 2383075032027947560
+    second: tf_A5_ashlands_2_276
+  - first:
+      213: -6113866524061775949
+    second: tf_A5_ashlands_2_277
+  - first:
+      213: -4647988249838574737
+    second: tf_A5_ashlands_2_278
+  - first:
+      213: 133144557822173268
+    second: tf_A5_ashlands_2_279
+  - first:
+      213: -4214205493927663832
+    second: tf_A5_ashlands_2_280
+  - first:
+      213: 1069199254200417406
+    second: tf_A5_ashlands_2_281
+  - first:
+      213: 5613817099107085500
+    second: tf_A5_ashlands_2_282
+  - first:
+      213: -3750134723058771531
+    second: tf_A5_ashlands_2_283
+  - first:
+      213: -6313208908025173694
+    second: tf_A5_ashlands_2_284
+  - first:
+      213: -3175638339181635299
+    second: tf_A5_ashlands_2_285
+  - first:
+      213: -6108487581929133943
+    second: tf_A5_ashlands_2_286
+  - first:
+      213: 4095307140415737639
+    second: tf_A5_ashlands_2_287
+  - first:
+      213: -3505477195557558987
+    second: tf_A5_ashlands_2_288
+  - first:
+      213: -6647511622463168192
+    second: tf_A5_ashlands_2_289
+  - first:
+      213: 295332391298985922
+    second: tf_A5_ashlands_2_290
+  - first:
+      213: 4040971175543306178
+    second: tf_A5_ashlands_2_291
+  - first:
+      213: -4289344662153976852
+    second: tf_A5_ashlands_2_292
+  - first:
+      213: 6006047616588297331
+    second: tf_A5_ashlands_2_293
+  - first:
+      213: 150856054941325469
+    second: tf_A5_ashlands_2_294
+  - first:
+      213: -615531011731798317
+    second: tf_A5_ashlands_2_295
+  - first:
+      213: 6267587841210921496
+    second: tf_A5_ashlands_2_296
+  - first:
+      213: -294818452520604522
+    second: tf_A5_ashlands_2_297
+  - first:
+      213: 6642860412132393901
+    second: tf_A5_ashlands_2_298
+  - first:
+      213: 3480186198862072385
+    second: tf_A5_ashlands_2_299
+  - first:
+      213: -2496282804478249152
+    second: tf_A5_ashlands_2_300
+  - first:
+      213: 6981052805411651618
+    second: tf_A5_ashlands_2_301
+  - first:
+      213: 2866881425817458438
+    second: tf_A5_ashlands_2_302
+  - first:
+      213: -6008906049704381126
+    second: tf_A5_ashlands_2_303
+  - first:
+      213: -3007332465250490297
+    second: tf_A5_ashlands_2_304
+  - first:
+      213: -8591185067141251614
+    second: tf_A5_ashlands_2_305
+  - first:
+      213: 5112878638427760679
+    second: tf_A5_ashlands_2_306
+  - first:
+      213: 3252942426169314629
+    second: tf_A5_ashlands_2_307
+  - first:
+      213: 8614332098109354166
+    second: tf_A5_ashlands_2_308
+  - first:
+      213: 7187913466915997486
+    second: tf_A5_ashlands_2_309
+  - first:
+      213: -6912060612993877622
+    second: tf_A5_ashlands_2_310
+  - first:
+      213: -7228262184680772618
+    second: tf_A5_ashlands_2_311
+  - first:
+      213: 7415931656159961785
+    second: tf_A5_ashlands_2_312
+  - first:
+      213: -1291144390358582185
+    second: tf_A5_ashlands_2_313
+  - first:
+      213: 3199956809648522454
+    second: tf_A5_ashlands_2_314
+  - first:
+      213: -6411051565686585074
+    second: tf_A5_ashlands_2_315
+  - first:
+      213: 4793133450604153570
+    second: tf_A5_ashlands_2_316
+  - first:
+      213: -6062359788277177809
+    second: tf_A5_ashlands_2_317
+  - first:
+      213: 6795615933002344703
+    second: tf_A5_ashlands_2_318
+  - first:
+      213: 1207403051366551812
+    second: tf_A5_ashlands_2_319
+  - first:
+      213: 644717514620243116
+    second: tf_A5_ashlands_2_320
+  - first:
+      213: 4166403009650858380
+    second: tf_A5_ashlands_2_321
+  - first:
+      213: -2170720538098902299
+    second: tf_A5_ashlands_2_322
+  - first:
+      213: -7511933104168129683
+    second: tf_A5_ashlands_2_323
+  - first:
+      213: -8274916904613063754
+    second: tf_A5_ashlands_2_324
+  - first:
+      213: 6262175942850048723
+    second: tf_A5_ashlands_2_325
+  - first:
+      213: 1844727115274652789
+    second: tf_A5_ashlands_2_326
+  - first:
+      213: -1032766690307389412
+    second: tf_A5_ashlands_2_327
+  - first:
+      213: 2805308320591777823
+    second: tf_A5_ashlands_2_328
+  - first:
+      213: 110230709764215076
+    second: tf_A5_ashlands_2_329
+  - first:
+      213: 3377312037636471343
+    second: tf_A5_ashlands_2_330
+  - first:
+      213: 3453479367682587147
+    second: tf_A5_ashlands_2_331
+  - first:
+      213: 6486448571006062224
+    second: tf_A5_ashlands_2_332
+  - first:
+      213: -7391323770644040362
+    second: tf_A5_ashlands_2_333
+  - first:
+      213: 5621195661014144730
+    second: tf_A5_ashlands_2_334
+  - first:
+      213: 969895164354157238
+    second: tf_A5_ashlands_2_335
+  - first:
+      213: -1502411297060364849
+    second: tf_A5_ashlands_2_336
+  - first:
+      213: 7302652259474369902
+    second: tf_A5_ashlands_2_337
+  - first:
+      213: 7857920070925100538
+    second: tf_A5_ashlands_2_338
+  - first:
+      213: 1644083662983888143
+    second: tf_A5_ashlands_2_339
+  - first:
+      213: 9114171864636711818
+    second: tf_A5_ashlands_2_340
+  - first:
+      213: 2202782169342788025
+    second: tf_A5_ashlands_2_341
+  - first:
+      213: 3369155878561205056
+    second: tf_A5_ashlands_2_342
+  - first:
+      213: -3454771819482560120
+    second: tf_A5_ashlands_2_343
+  - first:
+      213: -1369440365184015979
+    second: tf_A5_ashlands_2_344
+  - first:
+      213: -6980763927095382476
+    second: tf_A5_ashlands_2_345
+  - first:
+      213: -4550103722375998297
+    second: tf_A5_ashlands_2_346
+  - first:
+      213: 4582217275682613276
+    second: tf_A5_ashlands_2_347
+  - first:
+      213: 569244429288999893
+    second: tf_A5_ashlands_2_348
+  - first:
+      213: -6553384452152552825
+    second: tf_A5_ashlands_2_349
+  - first:
+      213: 2863199152213106615
+    second: tf_A5_ashlands_2_350
+  - first:
+      213: 7216193001828587778
+    second: tf_A5_ashlands_2_351
+  - first:
+      213: -4807332969824094748
+    second: tf_A5_ashlands_2_352
+  - first:
+      213: -4846481448460116970
+    second: tf_A5_ashlands_2_353
+  - first:
+      213: 6278779022928104477
+    second: tf_A5_ashlands_2_354
+  - first:
+      213: -4512874522755518755
+    second: tf_A5_ashlands_2_355
+  - first:
+      213: -5896792342324823598
+    second: tf_A5_ashlands_2_356
+  - first:
+      213: -1577044275159789210
+    second: tf_A5_ashlands_2_357
+  - first:
+      213: -8663704738020116861
+    second: tf_A5_ashlands_2_358
+  - first:
+      213: -2272116918280460321
+    second: tf_A5_ashlands_2_359
+  - first:
+      213: 3224996072766144420
+    second: tf_A5_ashlands_2_360
+  - first:
+      213: -4690944418248944431
+    second: tf_A5_ashlands_2_361
+  - first:
+      213: 6025373438689248880
+    second: tf_A5_ashlands_2_362
+  - first:
+      213: 5829630127943561696
+    second: tf_A5_ashlands_2_363
+  - first:
+      213: 823226563176449604
+    second: tf_A5_ashlands_2_364
+  - first:
+      213: -1401545646200597887
+    second: tf_A5_ashlands_2_365
+  - first:
+      213: -8152580662468627304
+    second: tf_A5_ashlands_2_366
+  - first:
+      213: -126308030932170148
+    second: tf_A5_ashlands_2_367
+  - first:
+      213: -2676407498650981526
+    second: tf_A5_ashlands_2_368
+  - first:
+      213: -6480053804284487656
+    second: tf_A5_ashlands_2_369
+  - first:
+      213: -4729085359135211361
+    second: tf_A5_ashlands_2_370
+  - first:
+      213: -475107104053966606
+    second: tf_A5_ashlands_2_371
+  - first:
+      213: -6937910456019373734
+    second: tf_A5_ashlands_2_372
+  - first:
+      213: -8482404133941487253
+    second: tf_A5_ashlands_2_373
+  - first:
+      213: -2545634525563495618
+    second: tf_A5_ashlands_2_374
+  - first:
+      213: 432680975413067920
+    second: tf_A5_ashlands_2_375
+  - first:
+      213: 2461088229012086272
+    second: tf_A5_ashlands_2_376
+  - first:
+      213: 4252031031988481947
+    second: tf_A5_ashlands_2_377
+  - first:
+      213: -7385012858992738320
+    second: tf_A5_ashlands_2_378
+  - first:
+      213: -4856917591443900104
+    second: tf_A5_ashlands_2_379
+  - first:
+      213: -7537441588112702017
+    second: tf_A5_ashlands_2_380
+  - first:
+      213: -3315575301109056703
+    second: tf_A5_ashlands_2_381
+  - first:
+      213: -3311430054911197924
+    second: tf_A5_ashlands_2_382
+  - first:
+      213: -9223331651379095726
+    second: tf_A5_ashlands_2_383
+  - first:
+      213: -6571387622123283733
+    second: tf_A5_ashlands_2_384
+  - first:
+      213: 363559976987902973
+    second: tf_A5_ashlands_2_385
+  - first:
+      213: 173794413025980892
+    second: tf_A5_ashlands_2_386
+  - first:
+      213: -5322764720297643272
+    second: tf_A5_ashlands_2_387
+  - first:
+      213: -6670383350633291572
+    second: tf_A5_ashlands_2_388
+  - first:
+      213: 3596923984566069961
+    second: tf_A5_ashlands_2_389
+  - first:
+      213: -5782547176447249916
+    second: tf_A5_ashlands_2_390
+  - first:
+      213: -3805148297335644180
+    second: tf_A5_ashlands_2_391
+  - first:
+      213: -2339484143912479548
+    second: tf_A5_ashlands_2_392
+  - first:
+      213: 6792987214103750479
+    second: tf_A5_ashlands_2_393
+  - first:
+      213: 6942207482060606282
+    second: tf_A5_ashlands_2_394
+  - first:
+      213: -6928335693271438296
+    second: tf_A5_ashlands_2_395
+  - first:
+      213: -8277534443286661031
+    second: tf_A5_ashlands_2_396
+  - first:
+      213: 7069946115201820251
+    second: tf_A5_ashlands_2_397
+  - first:
+      213: -121629177542095979
+    second: tf_A5_ashlands_2_398
+  - first:
+      213: -776266769872719392
+    second: tf_A5_ashlands_2_399
+  - first:
+      213: 7259674768118130547
+    second: tf_A5_ashlands_2_400
+  - first:
+      213: 6888111250463936932
+    second: tf_A5_ashlands_2_401
+  - first:
+      213: -7149481869442663630
+    second: tf_A5_ashlands_2_402
+  - first:
+      213: -1633730318849571465
+    second: tf_A5_ashlands_2_403
+  - first:
+      213: -6356437635485372920
+    second: tf_A5_ashlands_2_404
+  - first:
+      213: 1690526627515886602
+    second: tf_A5_ashlands_2_405
+  - first:
+      213: 984120257115168378
+    second: tf_A5_ashlands_2_406
+  - first:
+      213: 7890245437899984516
+    second: tf_A5_ashlands_2_407
+  - first:
+      213: 6339061280022823424
+    second: tf_A5_ashlands_2_408
+  - first:
+      213: 5849062858485611175
+    second: tf_A5_ashlands_2_409
+  - first:
+      213: -663713748789207718
+    second: tf_A5_ashlands_2_410
+  - first:
+      213: -1124504617714136313
+    second: tf_A5_ashlands_2_411
+  - first:
+      213: -6735981940552475036
+    second: tf_A5_ashlands_2_412
+  - first:
+      213: -6823093476408176998
+    second: tf_A5_ashlands_2_413
+  - first:
+      213: 4779211578320755723
+    second: tf_A5_ashlands_2_414
+  - first:
+      213: -1507039057113842424
+    second: tf_A5_ashlands_2_415
+  - first:
+      213: -6945667125518118791
+    second: tf_A5_ashlands_2_416
+  - first:
+      213: 1431152903165780098
+    second: tf_A5_ashlands_2_417
+  - first:
+      213: -6983148802178721972
+    second: tf_A5_ashlands_2_418
+  - first:
+      213: 1353211570470190980
+    second: tf_A5_ashlands_2_419
+  - first:
+      213: 5251633510505615697
+    second: tf_A5_ashlands_2_420
+  - first:
+      213: 7627528209731937899
+    second: tf_A5_ashlands_2_421
+  - first:
+      213: 2383753797381128362
+    second: tf_A5_ashlands_2_422
+  - first:
+      213: -4273538951830118938
+    second: tf_A5_ashlands_2_423
+  - first:
+      213: 6532479230092828337
+    second: tf_A5_ashlands_2_424
+  - first:
+      213: 4353638919539363794
+    second: tf_A5_ashlands_2_425
+  - first:
+      213: 5869102709075274480
+    second: tf_A5_ashlands_2_426
+  - first:
+      213: -6173657471809512072
+    second: tf_A5_ashlands_2_427
+  - first:
+      213: -3581184876474115677
+    second: tf_A5_ashlands_2_428
+  - first:
+      213: 4353895377885750055
+    second: tf_A5_ashlands_2_429
+  - first:
+      213: 5157413870634454311
+    second: tf_A5_ashlands_2_430
+  - first:
+      213: -418796826806196501
+    second: tf_A5_ashlands_2_431
+  - first:
+      213: -2655842036693180678
+    second: tf_A5_ashlands_2_432
+  - first:
+      213: -8698584622004765568
+    second: tf_A5_ashlands_2_433
+  - first:
+      213: 6076075110645902228
+    second: tf_A5_ashlands_2_434
+  - first:
+      213: 482389471560230392
+    second: tf_A5_ashlands_2_435
+  - first:
+      213: -4438338721777613826
+    second: tf_A5_ashlands_2_436
+  - first:
+      213: -1870672957607671568
+    second: tf_A5_ashlands_2_437
+  - first:
+      213: -822711837977665993
+    second: tf_A5_ashlands_2_438
+  - first:
+      213: 8430486587988136757
+    second: tf_A5_ashlands_2_439
+  - first:
+      213: 6369279084835832205
+    second: tf_A5_ashlands_2_440
+  - first:
+      213: 1871528310168050645
+    second: tf_A5_ashlands_2_441
+  - first:
+      213: -4781822669412217925
+    second: tf_A5_ashlands_2_442
+  - first:
+      213: -8435963997521064555
+    second: tf_A5_ashlands_2_443
+  - first:
+      213: 2198428568009424382
+    second: tf_A5_ashlands_2_444
+  - first:
+      213: 1560169639215847732
+    second: tf_A5_ashlands_2_445
+  - first:
+      213: -575008972124686482
+    second: tf_A5_ashlands_2_446
+  - first:
+      213: -3357173728314256800
+    second: tf_A5_ashlands_2_447
+  - first:
+      213: 5337210643726912135
+    second: tf_A5_ashlands_2_448
+  - first:
+      213: -3266593876171413930
+    second: tf_A5_ashlands_2_449
+  - first:
+      213: -7322452225373180441
+    second: tf_A5_ashlands_2_450
+  - first:
+      213: -6813306312597312141
+    second: tf_A5_ashlands_2_451
+  - first:
+      213: -3205246452481554725
+    second: tf_A5_ashlands_2_452
+  - first:
+      213: -1942839276598524164
+    second: tf_A5_ashlands_2_453
+  - first:
+      213: -3731781623096994711
+    second: tf_A5_ashlands_2_454
+  - first:
+      213: -8033154420587124834
+    second: tf_A5_ashlands_2_455
+  - first:
+      213: 8258257633369881840
+    second: tf_A5_ashlands_2_456
+  - first:
+      213: -8449814679244296267
+    second: tf_A5_ashlands_2_457
+  - first:
+      213: 8184701694065806041
+    second: tf_A5_ashlands_2_458
+  - first:
+      213: 449249621151079657
+    second: tf_A5_ashlands_2_459
+  - first:
+      213: 8687577411336949502
+    second: tf_A5_ashlands_2_460
+  - first:
+      213: 2505009575372114089
+    second: tf_A5_ashlands_2_461
+  - first:
+      213: -4852625947179245875
+    second: tf_A5_ashlands_2_462
+  - first:
+      213: 8213925670150977281
+    second: tf_A5_ashlands_2_463
+  - first:
+      213: 680855922119771659
+    second: tf_A5_ashlands_2_464
+  - first:
+      213: -7859942893366536484
+    second: tf_A5_ashlands_2_465
+  - first:
+      213: 5766215428866916713
+    second: tf_A5_ashlands_2_466
+  - first:
+      213: 1382163257882224727
+    second: tf_A5_ashlands_2_467
+  - first:
+      213: 2772997242635171222
+    second: tf_A5_ashlands_2_468
+  - first:
+      213: -1717760462011263301
+    second: tf_A5_ashlands_2_469
+  - first:
+      213: -3834503745665345315
+    second: tf_A5_ashlands_2_470
+  - first:
+      213: 5883617184170250552
+    second: tf_A5_ashlands_2_471
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e72ddbdee8d4280800000000000000
+      internalID: -9057426123829117291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a38555d2fe65d30800000000000000
+      internalID: 4419983062295132759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcf84bafa9e85fd0800000000000000
+      internalID: -2352873864598848333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e364f58a4fe3440800000000000000
+      internalID: 4917636847125282309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc09746123a4ea90800000000000000
+      internalID: -7285518933363716897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24f54401fcfdf120800000000000000
+      internalID: 2449391884448429100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2242b21f409cf0b0800000000000000
+      internalID: -5693517159612661206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d5e74742207b00800000000000000
+      internalID: 824196421353066540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11c115a4c9798be0800000000000000
+      internalID: -1474513517497171681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef3b5ea2c5ce60d0800000000000000
+      internalID: -3427584826442825752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b70d108e53b5480800000000000000
+      internalID: -8909468167243269225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b3ac1cd0bf3d720800000000000000
+      internalID: 2869913424069540666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccf853902368b5c0800000000000000
+      internalID: -4199497660960801587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52c7ad8992bf17d0800000000000000
+      internalID: -2945439258700692899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf76f6dab07bde80800000000000000
+      internalID: -8152798752651444310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a75a2c44cad9500800000000000000
+      internalID: 404668952856590989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b8bae9b0df96aa0800000000000000
+      internalID: -6167119988358673522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0766b0da0b2004dc0800000000000000
+      internalID: -3656919939584137616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8bbe1d1eddd9be0800000000000000
+      internalID: -1468773941493647132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b7cd585c98a5620800000000000000
+      internalID: 2763672802792602513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b189b9a416eb8d40800000000000000
+      internalID: 5587812739104473527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0362b5966c79203f0800000000000000
+      internalID: -936018894112741840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1429c0cd9c82ff90800000000000000
+      internalID: -6921315068142869475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf17e810773d7750800000000000000
+      internalID: 6304256007982227400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fbf8e375afbb7b0800000000000000
+      internalID: -5207293291505139823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5305c728828b0ec0800000000000000
+      internalID: -3599639955858193572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074b61fbb80b68020800000000000000
+      internalID: 2343754770345800816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1122d523e0cf210800000000000000
+      internalID: 1367983996287455663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f9830e9c570f860800000000000000
+      internalID: 7561673284265746190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7a141ee79e409e0800000000000000
+      internalID: -1655942031811172364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c66d7bc95942bf0800000000000000
+      internalID: -349990370696336238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4950296b885a668f0800000000000000
+      internalID: -547568298081778284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d14315e0c3467ca0800000000000000
+      internalID: -6019549356178062889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32863c31b08a32c0800000000000000
+      internalID: -4451103782994542018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99ebb4a48cd01ee0800000000000000
+      internalID: -1292290630797760102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc9e4f14dea93a00800000000000000
+      internalID: 736812240133332169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f784665bd7196c0800000000000000
+      internalID: -4138388364518195436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3a27a97fee8e260800000000000000
+      internalID: 7127209157529347002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6c8f48d1185ff90800000000000000
+      internalID: -6920483288599968063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404a86e2e88f23a50800000000000000
+      internalID: 6499530501796701188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37c90b748f7f1470800000000000000
+      internalID: 8367546839654319930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694ef81669a49b220800000000000000
+      internalID: 2502113077723391126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a99e64ebad87b050800000000000000
+      internalID: 5816273213183662498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf6503736e0a1450800000000000000
+      internalID: 6060172068874710960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12f6dc0e7139b170800000000000000
+      internalID: 8194635414428381723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad4944d3fbd36340800000000000000
+      internalID: 4855966663520636331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0748b9b435db3b70800000000000000
+      internalID: 8879925512721942283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da470dbcf77657b0800000000000000
+      internalID: -5235865589384787241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d152b8558b36e7c70800000000000000
+      internalID: 8970717151128921373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065a0a4a42e988a30800000000000000
+      internalID: 4217794931250472288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b751c7001cf3e50800000000000000
+      internalID: 6791358970923940706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d650536cd8c5760800000000000000
+      internalID: 7447983766196546958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c10e1b12ef3536e0800000000000000
+      internalID: -1858509030870351416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dffa32d2f3655290800000000000000
+      internalID: -7902300076591349808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a558b00d8f2b9180800000000000000
+      internalID: -9107633538777721439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e70b357aa40d6660800000000000000
+      internalID: 7380560494487865321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28ef295eb5e1a6f0800000000000000
+      internalID: -675005863426004948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8089cdaa12af030800000000000000
+      internalID: 3529170275727313104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfddb4fe950f0e720800000000000000
+      internalID: 2873560831319858685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_59
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028cc1f087a83fba0800000000000000
+      internalID: -6056344825628932064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a911dc846378680800000000000000
+      internalID: -8752967664465241567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_61
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4b0c21f386f2ec0800000000000000
+      internalID: -3589535757884148541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d593b59393b4cd660800000000000000
+      internalID: 7411881795892492637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acec8cb44ef27f6d0800000000000000
+      internalID: -2956841972774940982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615af0d4556c78f30800000000000000
+      internalID: 4577845615912789270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6c6db0a8975ddc0800000000000000
+      internalID: -3614849492083882330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af259ab875bbd770800000000000000
+      internalID: 8636696240544100262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898bf867e183d4450800000000000000
+      internalID: 6074573175881971864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db09705c474f58230800000000000000
+      internalID: 3640584656157905085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4168b0164e81190800000000000000
+      internalID: -7991386433312647944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b2df9f5bfcae480800000000000000
+      internalID: -8869048135662621880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e73042bfdcfe810800000000000000
+      internalID: 1796881254868811337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdeec7e5ab016f10800000000000000
+      internalID: 2261101295103307211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7069063041b7ab700800000000000000
+      internalID: 556892829819901447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476f7da3f8a6538e0800000000000000
+      internalID: -1714346919744506252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705b0255458c455d0800000000000000
+      internalID: -3074612381056191225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d06c5d486e0e110800000000000000
+      internalID: 1288282951624560028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9631b836eaf68c0800000000000000
+      internalID: -4003789801150780929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642102502781f81f0800000000000000
+      internalID: -1040586110907968954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_79
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0650cc923058ba0800000000000000
+      internalID: -6087455843269910281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_80
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5282767bca74ef0800000000000000
+      internalID: -123940561019722322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_81
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e5b4d269caf3370800000000000000
+      internalID: 8304545998899469869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d574f400faebe8740800000000000000
+      internalID: 5156268282219546461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127ab5cd28d9e1eb0800000000000000
+      internalID: -4747183771833620703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce141b99a7da111c0800000000000000
+      internalID: -4534652607709232660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_85
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa3b4230f9131d60800000000000000
+      internalID: 7859654294118284031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50d1250017fa2d80800000000000000
+      internalID: -8274529717162225571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_87
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c7c5faade3beff0800000000000000
+      internalID: -5841865545057149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00808cd912a150c80800000000000000
+      internalID: -8357244801832712192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_89
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ed026d6e704c520800000000000000
+      internalID: 2721308762854973053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329ba16210f913730800000000000000
+      internalID: 3977134773227927843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_91
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf624490a5df00540800000000000000
+      internalID: 4972252551761372923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9184e4bdb4bfe41a0800000000000000
+      internalID: -6823240082199263207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_93
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf7483d99f1ea940800000000000000
+      internalID: 5309215756255526843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71bb41e66c9766d0800000000000000
+      internalID: -2997255061311344262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_95
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a29d3d7d138d2300800000000000000
+      internalID: 228983318744240807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_96
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aad2e4522b0c0dd0800000000000000
+      internalID: -2518625849526003037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_97
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ced463c68eadd640800000000000000
+      internalID: 5106429446335028937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1294bbf9384048020800000000000000
+      internalID: 2343002669506578721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa9e717c8eb43de0800000000000000
+      internalID: -1354248077522855171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_100
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d0c38bdb1f66bb0800000000000000
+      internalID: -4942997743850484474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_101
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c461e293067cf8440800000000000000
+      internalID: 4940386532338832972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1825a1e69df80320800000000000000
+      internalID: 2524546415613782042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_103
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd35abee42a80570800000000000000
+      internalID: 8433168762095877574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04efcf1e47e744920800000000000000
+      internalID: 2973640694444129856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_105
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d8ff4e5523a8790800000000000000
+      internalID: -7527148482700800680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b4b73d04628a300800000000000000
+      internalID: 263502638069009302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_107
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e045c1f478ee32480800000000000000
+      internalID: -8925027771602938866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_108
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b147e5b8427979740800000000000000
+      internalID: 5158758081389032475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_109
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02aa1ddedb5568bc0800000000000000
+      internalID: -3781240562903832032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbdf7c8ee782ef90800000000000000
+      internalID: -6925823818313245773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_111
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d5bc980005c0f10800000000000000
+      internalID: 2237251078138322221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb02f05cae195ae40800000000000000
+      internalID: 5667096143630115006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_113
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2617535ec686da00800000000000000
+      internalID: 780959806114960941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_114
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ada9b88f397b66d0800000000000000
+      internalID: -2996167813301162590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_115
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffc7dc224ac06050800000000000000
+      internalID: 5791851506367451120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d1bd45f2e527ac0800000000000000
+      internalID: -3858918373322973840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tf_A5_ashlands_2_117
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1641401ba9bc78a90800000000000000
+      internalID: -7311651604757474207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f1865535e2cbc794d80531265499dff8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
