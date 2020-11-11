@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 537616693842453233}
   - component: {fileID: 537616693842453246}
   m_Layer: 0
-  m_Name: En
+  m_Name: EnFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 2
+  maxSpeed: 4.5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
