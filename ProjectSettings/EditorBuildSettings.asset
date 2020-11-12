@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DefaultScene.unity
     guid: 34279ff3c6f09f842b30819c5f56bdeb
   - enabled: 1
-    path: Assets/Scenes/Mess Hall.unity
+    path: Assets/Scenes/Extra/Mess Hall.unity
     guid: 91e1458a7e9d04343a625591b976e987
   - enabled: 1
     path: Assets/Scenes/Intro.unity
@@ -29,4 +29,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Village.unity
     guid: 7b86289bff45cd4418f6415281316de4
+  - enabled: 1
+    path: Assets/Scenes/ForestPathE.unity
+    guid: 435e4a4a653c2954b92d29be1f0e4a4c
+  - enabled: 1
+    path: Assets/Scenes/ForestPath2.unity
+    guid: 39ef9d309b5f96e478b5cbbe01b90f4b
+  - enabled: 1
+    path: Assets/Scenes/Village2.unity
+    guid: b95035044e071474796c205952afdf23
+  - enabled: 1
+    path: Assets/Scenes/Border.unity
+    guid: dd636fd144ba9644ab0d28479cf3b882
+  - enabled: 1
+    path: Assets/Scenes/GoblinVillage.unity
+    guid: a98699cfce990704eb91a7f5726b13e9
+  - enabled: 1
+    path: Assets/Scenes/Comm2 no map.unity
+    guid: 11f23b4f66076424f9a86e04bc62f9d7
   m_configObjects: {}
