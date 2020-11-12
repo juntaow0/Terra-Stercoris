@@ -63,6 +63,9 @@ public class UIManager : MonoBehaviour
     }
 
     void toggleUI(bool state) {
+        if (TimelineController.InCutscene || DialogueManager.InConversation) {
+            state = false;
+        }
         foreach (Canvas c in UICanvases) {
             c.enabled = state;
         }

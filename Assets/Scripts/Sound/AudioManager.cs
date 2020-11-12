@@ -51,7 +51,6 @@ public class AudioManager : MonoBehaviour {
         if(cue.clips.Length > 0) {
             AudioClip clip = cue.clips[random.Next(cue.clips.Length)];
             source.PlayOneShot(clip);
-            Debug.Log("Now playing: " + clip);
         }
     }
 
