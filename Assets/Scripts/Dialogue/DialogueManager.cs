@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
     public static event Action<Sentence, string, Action> OnTrigger; // UI binding trigger
     public static event Action<Choice[], string, int> OnBindChoice; // Choice binding trigger
-    public static event Action<int> OnChoice;
+    public static event Action<int,int> OnChoice;
     public static event Action<int> OnEndEvent; // Event Trigger
     public static event Action OnSkip;
     public static event Action<bool> OnDialogueStatus;
@@ -65,7 +65,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void SetupChoiceEvent(int choiceNumber){
-        OnChoice?.Invoke(choiceNumber);
+        OnChoice?.Invoke(choiceNumber, currentTrigger);
     }
 
     private void RunEndAction() {

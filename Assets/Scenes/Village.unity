@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -39577,6 +39577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377444940}
   - component: {fileID: 377444939}
+  - component: {fileID: 377444941}
   m_Layer: 0
   m_Name: Startup
   m_TagString: Untagged
@@ -39615,6 +39616,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377444941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377444938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec650f9b9b6b144391de4bff7c91995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &500460683
 GameObject:
   m_ObjectHideFlags: 0
@@ -42489,8 +42502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerID: 0
   Conversations:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 7ccfea1e5aa7814408f9979db00b7135, type: 2}
+  - {fileID: 11400000, guid: 4724633d6aea61a40a9305c83d3c2a07, type: 2}
   EndEvents: []
 --- !u!114 &790538974
 MonoBehaviour:
@@ -113260,7 +113273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerID: 0
   Conversations:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 5ff441225f93a104b9599358f9a69d6e, type: 2}
   EndEvents:
   - events:
     - m_PersistentCalls:
@@ -113433,8 +113446,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerID: 0
   Conversations:
-  - {fileID: 0}
-  EndEvents: []
+  - {fileID: 11400000, guid: e8611d56d96460d4996914dfb1f851d0, type: 2}
+  EndEvents:
+  - events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 377444941}
+          m_MethodName: LoadSceneByName
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ForestPathE
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1813898700
 MonoBehaviour:
   m_ObjectHideFlags: 0

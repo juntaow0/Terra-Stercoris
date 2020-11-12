@@ -14,7 +14,6 @@ public class SpellUI : MonoBehaviour
             playerSC.OnSelection -= updateSpellIcon;
         }
         playerSC = playerSpellController;
-        Debug.Log("Before Spell UI bind");
         if (playerSC != null) {
             Debug.Log("Spell UI bind");
             playerSC.OnSelection += updateSpellIcon;

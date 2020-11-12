@@ -48,7 +48,10 @@ public class DialogueTrigger : MonoBehaviour
         currentEvent?.Invoke();
     }
 
-    void SwapEndEvent(int index) {
+    void SwapEndEvent(int index, int id) {
+        if (id != triggerID) {
+            return;
+        }
         if (currentEvents.Length > 0) {
             currentEvent = currentEvents[index];
         }
