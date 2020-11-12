@@ -8,7 +8,11 @@ public static class ChoiceTracker
     private static Dictionary<string,int> choices = new Dictionary<string, int>();
 
     public static void Track(string key, int choice) {
-        choices.Add(key,choice);
+        if (choices.ContainsKey(key)) {
+            choices[key] = choice;
+        } else {
+            choices.Add(key, choice);
+        }
     }
 
     public static void Reset() {

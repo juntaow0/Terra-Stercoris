@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: 01 Stranger, how dare you
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - Tusk
+  sentences:
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'Stranger, how dare you talk to me like that. '
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Now i will give you one last chance to speak properly before I use
+      your skull for soup.
+  endAction: 1
+  choices:
+  - text: Confront
+    nextConversation: {fileID: 11400000, guid: ad0efe1cc73c57e42bdaa63dfddd13ac, type: 2}
+  - text: Play smart
+    nextConversation: {fileID: 11400000, guid: b659ea1b679fcbb4f987dd4fbe399c06, type: 2}
+  choiceKey: h1

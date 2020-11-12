@@ -34,10 +34,10 @@ public class ChoiceController : MonoBehaviour
             buttonText[i].text = choices[i].text;
             buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(() => {
+                ResetButtons(buttonCount);
                 ChoiceTracker.Track(key,choiceNumber);
                 DialogueManager.instance.SetupChoiceEvent(choiceNumber);
                 DialogueManager.instance.LoadConversation(c, triggerID);
-                ResetButtons(buttonCount);
             });
         }
         ArrangeButtons(buttonCount);
