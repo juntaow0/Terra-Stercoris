@@ -29,6 +29,42 @@ TextureImporter:
   - first:
       213: -5466358753085380550
     second: Player-AfterMagic_8
+  - first:
+      213: -293826246385826239
+    second: Player-AfterMagic_0
+  - first:
+      213: -5347939424693724690
+    second: Player-AfterMagic_1
+  - first:
+      213: -3920718202017884945
+    second: Player-AfterMagic_2
+  - first:
+      213: 2858237412842093844
+    second: Player-AfterMagic_3
+  - first:
+      213: 747038805096696278
+    second: Player-AfterMagic_4
+  - first:
+      213: 2588431606162165447
+    second: Player-AfterMagic_5
+  - first:
+      213: 3383453600709879083
+    second: Player-AfterMagic_6
+  - first:
+      213: 6007797906528075359
+    second: Player-AfterMagic_7
+  - first:
+      213: 3197159400772570735
+    second: Player-AfterMagic_8
+  - first:
+      213: -149012280866274408
+    second: Player-AfterMagic_9
+  - first:
+      213: -1161137745494616831
+    second: Player-AfterMagic_10
+  - first:
+      213: -8413628484434407905
+    second: Player-AfterMagic_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,7 +202,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 93
+        y: 98
         width: 16
         height: 25
       alignment: 0
@@ -176,8 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b806a024c11bf39d0800000000000000
-      internalID: -2792318509021241205
+      spriteID: 1468c7ee59e1cebf0800000000000000
+      internalID: -293826246385826239
       vertices: []
       indices: 
       edges: []
@@ -187,7 +223,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 94
+        y: 99
         width: 16
         height: 25
       alignment: 0
@@ -197,8 +233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c524ac810b3682900800000000000000
-      internalID: 659886953391080028
+      spriteID: ee9d2d68d6d48c5b0800000000000000
+      internalID: -5347939424693724690
       vertices: []
       indices: 
       edges: []
@@ -208,7 +244,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 72
-        y: 93
+        y: 98
         width: 16
         height: 25
       alignment: 0
@@ -218,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73976856934db0200800000000000000
-      internalID: 147444755801209143
+      spriteID: fe4d050719fc699c0800000000000000
+      internalID: -3920718202017884945
       vertices: []
       indices: 
       edges: []
@@ -229,7 +265,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 52
+        y: 66
         width: 12
         height: 25
       alignment: 0
@@ -239,8 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f719fb30a9b1a10800000000000000
-      internalID: 1881266610246876975
+      spriteID: 41d3f2c88cf7aa720800000000000000
+      internalID: 2858237412842093844
       vertices: []
       indices: 
       edges: []
@@ -250,7 +286,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 52
+        y: 66
         width: 12
         height: 25
       alignment: 0
@@ -260,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e72d7e1134402a30800000000000000
-      internalID: 4188422631210166245
+      spriteID: 6d98833d5d30e5a00800000000000000
+      internalID: 747038805096696278
       vertices: []
       indices: 
       edges: []
@@ -271,7 +307,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 76
-        y: 52
+        y: 66
         width: 12
         height: 25
       alignment: 0
@@ -281,8 +317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92e974ccef01de8d0800000000000000
-      internalID: -2815575505501708759
+      spriteID: 7ce80bae4d4fbe320800000000000000
+      internalID: 2588431606162165447
       vertices: []
       indices: 
       edges: []
@@ -291,10 +327,10 @@ TextureImporter:
       name: Player-AfterMagic_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 11
-        width: 16
-        height: 24
+        x: 10
+        y: 35
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,8 +338,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bced4a394fe2090800000000000000
-      internalID: -8057233768355804346
+      spriteID: b252450af1174fe20800000000000000
+      internalID: 3383453600709879083
       vertices: []
       indices: 
       edges: []
@@ -312,10 +348,10 @@ TextureImporter:
       name: Player-AfterMagic_7
       rect:
         serializedVersion: 2
-        x: 40
-        y: 12
-        width: 16
-        height: 24
+        x: 43
+        y: 35
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,8 +359,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19652dd759c76ef70800000000000000
-      internalID: 9216190668963206801
+      spriteID: f5ef0f48d5cff5350800000000000000
+      internalID: 6007797906528075359
       vertices: []
       indices: 
       edges: []
@@ -333,8 +369,29 @@ TextureImporter:
       name: Player-AfterMagic_8
       rect:
         serializedVersion: 2
-        x: 72
-        y: 11
+        x: 76
+        y: 35
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e895529879e5c20800000000000000
+      internalID: 3197159400772570735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-AfterMagic_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3
         width: 16
         height: 24
       alignment: 0
@@ -344,8 +401,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a38af731da79324b0800000000000000
-      internalID: -5466358753085380550
+      spriteID: 8938bcbbe1a9eedf0800000000000000
+      internalID: -149012280866274408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-AfterMagic_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105de785f5fc2efe0800000000000000
+      internalID: -1161137745494616831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player-AfterMagic_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ecd218879cc3b80800000000000000
+      internalID: -8413628484434407905
       vertices: []
       indices: 
       edges: []
