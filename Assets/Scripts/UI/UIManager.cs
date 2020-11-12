@@ -73,7 +73,6 @@ public class UIManager : MonoBehaviour
             toggleHUD(state);
         }
         if (HUDLock) {
-            Debug.Log("wtf");
             toggleHUD(!state);
         }
     }
