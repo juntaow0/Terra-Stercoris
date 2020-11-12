@@ -17,6 +17,6 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 30ac7b6d8138b784db782528c8d0ad98, type: 3}
   damage: 10
   energyCost: 0
-  range: 1.5
+  range: 2
   cooldownTime: 0.3
   attackSound: {fileID: 11400000, guid: 5ccd4a37f9812384daed37f6b37fcb47, type: 2}
