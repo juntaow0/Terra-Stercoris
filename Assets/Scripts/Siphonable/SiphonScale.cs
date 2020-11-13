@@ -53,7 +53,6 @@ public class SiphonScale : MonoBehaviour, ISiphonable {
     public bool IsShareable {get {return scale < maxScale;} set{}}
 
     public void Siphon(int amount) {
-        Debug.Log(amount);
         scale -= amount * scalePerHealth;
     }
 }
