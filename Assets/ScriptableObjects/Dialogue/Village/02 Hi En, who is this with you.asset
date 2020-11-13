@@ -29,9 +29,8 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: This is [Players name?]. I found him while I was patrolling near the
-      cave. Got knocked out by a Goblin but thanks to this guy I got away without
-      a scratch.
+    sentence: This is James. I found him while I was patrolling near the cave. Got
+      knocked out by a Goblin but thanks to this guy I got away without a scratch.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}

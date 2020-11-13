@@ -12,17 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: Intro2
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers: []
   sentences:
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: Due to your goofy driving skill, you entered the atmosphere too quick
       and broke the auto landing system somehow.
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: So yea you hit the ground hard, and luckily there is an underground
       cave here for some damping.
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: Due to the impact, you passed out.
-  endAction: 3
-  choices:
-  - text: 
-    nextConversation: {fileID: 0}
+  endAction: 0
+  choices: []
+  choiceKey: 

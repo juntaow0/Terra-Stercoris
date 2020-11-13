@@ -38,11 +38,11 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: '[???], call me [???]. '
+    sentence: 'James Tea Dunkirk, call me James. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'Ah, [???]. You look different. Where are you from? '
+    sentence: 'Ah, James. You look different. Where are you from? '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
