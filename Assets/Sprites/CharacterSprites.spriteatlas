@@ -46,7 +46,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 1677540
+    totalSpriteSurfaceArea: 1680792
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -235,6 +235,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2749a1abbda37114bb75c7f33ae948c3, type: 3}
   - {fileID: 21300000, guid: 0f6106ebb75c5ca4aba7eb74e323f755, type: 3}
   - {fileID: 21300000, guid: 4f0b1adce24a3624a8c1922b98ff0d41, type: 3}
+  - {fileID: -2705465176887376559, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: -7123529365577447762, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: -2260823320829027807, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: -1762719844917485708, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: 3468470363840274738, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: -2347877678123352160, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: 268164124097714829, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: 5407793362244893163, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
+  - {fileID: -2493468560705938510, guid: 8e90cb1d0c6abf544832a8192381d7af, type: 3}
   - {fileID: 21300000, guid: 30ac7b6d8138b784db782528c8d0ad98, type: 3}
   - {fileID: -850011370281290063, guid: 9e445ddddedcfc64fb0c3ccc7af8f536, type: 3}
   - {fileID: -5330660686684011637, guid: 9e445ddddedcfc64fb0c3ccc7af8f536, type: 3}
@@ -478,6 +487,15 @@ SpriteAtlas:
   - magicdot
   - 5
   - 3
+  - Elder_8
+  - Elder_0
+  - Elder_1
+  - Elder_2
+  - Elder_3
+  - Elder_4
+  - Elder_5
+  - Elder_6
+  - Elder_7
   - Wrench
   - Mvillager5_8
   - Mvillager5_2
