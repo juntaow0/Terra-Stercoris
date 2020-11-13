@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SiphonOne : SpellBehavior {
+public class ShareSpell : SpellBehavior {
     [SerializeField] private GameObject particlesPrefab;
     [SerializeField] private GameObject userEffectPrefab;
     private ParticleTrack particles;
     private SpriteRenderer originSprite;
     private Camera mainCamera;
     private int healthPerTick = 5;
-    private float stealPercentage = 1.0f;
+    private float healPercentage = 1.0f;
     private float tickRate = 0.2f;
     private int energyCostPerTick = 1;
     private bool active;
@@ -42,8 +42,8 @@ public class SiphonOne : SpellBehavior {
                     originSprite.enabled = true;
                     particles.Play();
                     while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsSiphonable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
-                        target.Siphon(healthPerTick);
-                        user.AddHealth((int)(healthPerTick * stealPercentage));
+                        target.Siphon(-healthPerTick);
+                        user.Damage((int)(healthPerTick * healPercentage));
                         user.AddEnergy(-energyCostPerTick);
                         yield return new WaitForSeconds(tickRate);
                     }

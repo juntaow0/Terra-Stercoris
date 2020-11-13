@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour, IDamagable {
+public class CharacterController : MonoBehaviour, IDamagable, ISiphonable {
 
     public bool immortal = false;
 
@@ -29,6 +29,8 @@ public class CharacterController : MonoBehaviour, IDamagable {
 
     // Add property for velocity
     public Vector2 velocity {get {return _body.velocity;} private set {_body.velocity = value;}}
+
+    public bool IsSiphonable {get {return IsAlive && !immortal;} set {}}
 
     // Have updates for characterRotation update the animator
     private Vector2 _rotation;
@@ -60,6 +62,14 @@ public class CharacterController : MonoBehaviour, IDamagable {
 
     void OnDestroy() {
         OnDisable();
+    }
+
+    public void Siphon(int amount) {
+        if (amount > 0) {
+            Damage(amount);
+        } else {
+            AddHealth(-amount);
+        }
     }
 
     public void Move(Vector2 newVelocity) {
