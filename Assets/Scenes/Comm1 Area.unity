@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 2388477}
   - component: {fileID: 2388476}
   m_Layer: 0
-  m_Name: vines-unconnected to tree
+  m_Name: Vines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,9 +198,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.777, y: 34.332, z: 0}
   m_LocalScale: {x: 0.75, y: 0.7, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1260729524}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &82525792
 GameObject:
@@ -21183,6 +21184,7 @@ MonoBehaviour:
   maxScale: 3.5
   minScale: 0.75
   scalePerHealth: 0.2
+  scaleSpeed: 3
   onMaxScale:
     m_PersistentCalls:
       m_Calls:
@@ -50129,7 +50131,7 @@ Transform:
   - {fileID: 1217629513}
   - {fileID: 146845930}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217629512
 GameObject:
@@ -50229,6 +50231,100 @@ EdgeCollider2D:
   m_Points:
   - {x: 0.5, y: 0}
   - {x: 3.25, y: 0}
+--- !u!1 &1260729521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1260729524}
+  - component: {fileID: 1260729523}
+  - component: {fileID: 1260729522}
+  m_Layer: 0
+  m_Name: Vine Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1260729522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260729521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _message: Examine vine
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1260729523}
+        m_MethodName: StartDefaultConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
+  SelfDestruct: 0
+  _isEnabled: 1
+--- !u!114 &1260729523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260729521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df37e7568c9ff4747b50a2e31a09d82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerID: 0
+  Conversations:
+  - {fileID: 11400000, guid: 2ecca280c55c6de4681d79d22063a747, type: 2}
+  EndEvents:
+  - events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!4 &1260729524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260729521}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.61733246, y: 4.182853, z: 0}
+  m_LocalScale: {x: 1.3333334, y: 1.4285713, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2388477}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1322322555
 GameObject:
   m_ObjectHideFlags: 0
@@ -50327,6 +50423,7 @@ MonoBehaviour:
   maxScale: 3.5
   minScale: 0.75
   scalePerHealth: 0.2
+  scaleSpeed: 3
   onMaxScale:
     m_PersistentCalls:
       m_Calls:
@@ -50556,6 +50653,7 @@ MonoBehaviour:
   maxScale: 3.5
   minScale: 0.75
   scalePerHealth: 0.2
+  scaleSpeed: 3
   onMaxScale:
     m_PersistentCalls:
       m_Calls:
@@ -50736,6 +50834,7 @@ MonoBehaviour:
   maxScale: 3.5
   minScale: 0.75
   scalePerHealth: 0.2
+  scaleSpeed: 3
   onMaxScale:
     m_PersistentCalls:
       m_Calls:
@@ -57044,6 +57143,130 @@ PolygonCollider2D:
       - {x: -18, y: 18}
       - {x: -16.5, y: 18}
       - {x: -16.5, y: 22}
+--- !u!1 &1763055311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1763055315}
+  - component: {fileID: 1763055314}
+  - component: {fileID: 1763055313}
+  - component: {fileID: 1763055312}
+  m_Layer: 0
+  m_Name: Vine Puzzle Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1763055312
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763055311}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1763055313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763055311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df37e7568c9ff4747b50a2e31a09d82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerID: 3
+  Conversations:
+  - {fileID: 11400000, guid: 27936185372c86b4f8f4aceffacbe5af, type: 2}
+  EndEvents:
+  - events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2388476}
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: 0342dcd36d280574db9ccf0756330c46,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1763055314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763055311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _message: Use vines with tree
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1763055313}
+        m_MethodName: StartDefaultConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  stopInteractAction:
+    m_PersistentCalls:
+      m_Calls: []
+  SelfDestruct: 0
+  _isEnabled: 1
+--- !u!4 &1763055315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763055311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.4, y: 39.91, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794200686
 GameObject:
   m_ObjectHideFlags: 0
@@ -57142,6 +57365,7 @@ MonoBehaviour:
   maxScale: 3.5
   minScale: 0.75
   scalePerHealth: 0.2
+  scaleSpeed: 3
   onMaxScale:
     m_PersistentCalls:
       m_Calls:
@@ -57481,7 +57705,7 @@ Transform:
   m_Children:
   - {fileID: 243475388}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1872889068
 GameObject:
@@ -57529,7 +57753,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905236361
 GameObject:
