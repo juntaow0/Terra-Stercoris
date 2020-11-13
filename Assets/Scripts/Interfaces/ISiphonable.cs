@@ -9,4 +9,5 @@ public interface ISiphonable {
     Transform transform {get;}
 
     bool IsSiphonable {get; set;}
+    bool IsShareable {get; set;}
 }

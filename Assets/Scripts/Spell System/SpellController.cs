@@ -107,9 +107,16 @@ public class SpellController : MonoBehaviour
     public void SelectSpell(int index) {
         if (spellRack.Count > 0) {
             Debug.Log("scrolled");
-            int realIndex = index % spellRack.Count;
+            int realIndex = (index + spellRack.Count) % spellRack.Count;
             selected = spellRack[realIndex];
             OnSelection?.Invoke(selected);
+        }
+    }
+
+    public void OffsetSlot(int offset) {
+        if (spellRack.Count > 0) {
+            int index = spellRack.IndexOf(selected) + offset;
+            SelectSpell(index);
         }
     }
 
@@ -119,19 +126,19 @@ public class SpellController : MonoBehaviour
 
     private void OnEnable() {
         InputManager.OnMouseClickRight += Cast;
-        InputManager.OnScroll += SelectSpell;
+        InputManager.OnScroll += OffsetSlot;
         InputManager.OnMouseUpRight += StopCast;
     }
 
     private void OnDisable() {
         InputManager.OnMouseClickRight -= Cast;
-        InputManager.OnScroll -= SelectSpell;
+        InputManager.OnScroll -= OffsetSlot;
         InputManager.OnMouseUpRight -= StopCast;
     }
 
     private void OnDestroy() {
         InputManager.OnMouseClickRight -= Cast;
-        InputManager.OnScroll -= SelectSpell;
+        InputManager.OnScroll -= OffsetSlot;
         InputManager.OnMouseUpRight -= StopCast;
     }
 }

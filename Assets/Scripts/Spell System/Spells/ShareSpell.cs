@@ -8,7 +8,7 @@ public class ShareSpell : SpellBehavior {
     private ParticleTrack particles;
     private SpriteRenderer originSprite;
     private Camera mainCamera;
-    private int healthPerTick = 5;
+    private int healthPerTick = 1;
     private float healPercentage = 1.0f;
     private float tickRate = 0.2f;
     private int energyCostPerTick = 1;
@@ -31,17 +31,18 @@ public class ShareSpell : SpellBehavior {
     }
 
     IEnumerator siphon(CharacterController user) {
+        Debug.Log("Foobar");
         if (!DialogueManager.InConversation && !TimelineController.InCutscene) {
             Vector3 dir = Vector3.Normalize(mainCamera.ScreenToWorldPoint(Input.mousePosition) - user.transform.position);
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, dir, spellStats.range);
             if (hit.collider != null) {
                 ISiphonable target = hit.transform.GetComponent<ISiphonable>();
-                if (target != null && target.IsSiphonable && user.energy.quantity >= energyCostPerTick) {
+                if (target != null && target.IsShareable && user.energy.quantity >= energyCostPerTick) {
                     particles.particleSource = hit.transform;
                     active = true;
                     originSprite.enabled = true;
                     particles.Play();
-                    while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsSiphonable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
+                    while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsShareable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
                         target.Siphon(-healthPerTick);
                         user.Damage((int)(healthPerTick * healPercentage));
                         user.AddEnergy(-energyCostPerTick);

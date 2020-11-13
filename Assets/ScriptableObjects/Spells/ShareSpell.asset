@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bae20015c9b53141878749843f749e2, type: 3}
+  m_Name: ShareSpell
+  m_EditorClassIdentifier: 
+  spellName: Share
+  spellID: 1
+  icon: {fileID: 432412397548763483, guid: 72faa27aaf177f345873aabfd7cce2a5, type: 3}
+  damage: 0
+  manaCost: 10
+  healthCost: 0
+  speed: 100
+  range: 5
+  cooldownTime: 1

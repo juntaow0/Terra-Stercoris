@@ -31,6 +31,7 @@ public class CharacterController : MonoBehaviour, IDamagable, ISiphonable {
     public Vector2 velocity {get {return _body.velocity;} private set {_body.velocity = value;}}
 
     public bool IsSiphonable {get {return IsAlive && !immortal;} set {}}
+    public bool IsShareable {get {return IsAlive && !immortal;} set {}}
 
     // Have updates for characterRotation update the animator
     private Vector2 _rotation;
