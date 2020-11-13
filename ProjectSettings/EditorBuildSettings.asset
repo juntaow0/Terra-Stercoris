@@ -45,6 +45,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GoblinVillage.unity
     guid: a98699cfce990704eb91a7f5726b13e9
   - enabled: 1
-    path: Assets/Scenes/Comm2 no map.unity
+    path: Assets/Scenes/Comm2.unity
     guid: 11f23b4f66076424f9a86e04bc62f9d7
   m_configObjects: {}
