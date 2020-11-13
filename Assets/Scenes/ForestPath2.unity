@@ -1938,6 +1938,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
+--- !u!114 &669102568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1658308746293421168, guid: 4816099c67334534c99f08dd45498ce4,
+    type: 3}
+  m_PrefabInstance: {fileID: 669102567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f41e4a2345b80a499542ce246ea2fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &688860364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +2009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -2011,6 +2024,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &688860367
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13406,6 +13422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -13431,6 +13448,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1725739474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33902,9 +33922,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 669102568}
+        m_MethodName: SetHealth
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 100
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 779738499}
         m_MethodName: LoadSceneByName
         m_Mode: 5
@@ -33916,6 +33948,9 @@ MonoBehaviour:
           m_StringArgument: Village2
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1890750440
 BoxCollider2D:
   m_ObjectHideFlags: 0
