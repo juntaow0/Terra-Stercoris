@@ -19,7 +19,7 @@ public class SiphonInteraction : MonoBehaviour, ISiphonable {
         } else if(value <= 0) {
             value = 0;
             onMinHealth?.Invoke();
-        } else {
+        } else if(health == 0 || health == maxHealth) {
             onMiddleHealth?.Invoke();
         }
         _health = value;
