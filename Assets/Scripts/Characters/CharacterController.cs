@@ -7,6 +7,9 @@ public class CharacterController : MonoBehaviour, IDamagable, ISiphonable {
 
     public bool immortal = false;
 
+    private float nextRechargeTime = 0;
+    private float rechargeRate = 0.3f; // points per second
+
     private const int NUM_ROTATIONS = 8;
 
     public NumericalResource health = new NumericalResource(ResourceType.Health);
@@ -125,6 +128,17 @@ public class CharacterController : MonoBehaviour, IDamagable, ISiphonable {
             // Potentially add damage animation or event.
             StartCoroutine(DamageAnimation());
         }
+    }
+
+    private void Update() {
+        if (energy.quantity >= 100) {
+            return;
+        }
+        if (Time.time < nextRechargeTime) {
+            return;
+        }
+        energy.quantity += 1;
+        nextRechargeTime = Time.time + 1/rechargeRate;
     }
 
     public void Die() {

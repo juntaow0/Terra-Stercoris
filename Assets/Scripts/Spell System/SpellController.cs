@@ -11,10 +11,17 @@ public class SpellController : MonoBehaviour
     private List<SpellBehavior> spellRack;
     private Dictionary<int,SpellBehavior> usedSpells;
     private Dictionary<int, bool> spellStatus;
-    private SpellBehavior selected;
+    private SpellBehavior _selected;
     private bool hasSpell = false;
     private CharacterController cc;
     [SerializeField] private bool isPlayer;
+    public SpellBehavior selected {
+        get { return _selected; }
+        set {
+            StopCast();
+            _selected = value;   
+        }
+    }
 
     private void Awake() {
         spellRack = new List<SpellBehavior>();
