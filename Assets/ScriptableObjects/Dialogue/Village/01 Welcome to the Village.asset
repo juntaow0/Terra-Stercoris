@@ -19,8 +19,12 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "Welcome to the Village. Feel free to take a look around. Meet me at
-      the elders hut when you\u2019ve looked around."
+    sentence: Welcome to the Village. Feel free to take a look around. Maybe you
+      should talk to the village elder first.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Meet me at the blacksmith's shop when you\u2019ve looked around."
   endAction: 0
   choices: []
   choiceKey: 
