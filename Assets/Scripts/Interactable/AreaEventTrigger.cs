@@ -11,12 +11,16 @@ public class AreaEventTrigger : MonoBehaviour
     public UnityEvent Events;
     public UnityEvent OnLeaveEvents;
     private BoxCollider2D boxCollider;
+    public LayerMask exclusionmask;
     private void Awake() {
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.isTrigger = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.layer == exclusionmask) {
+            return;
+        }
         if(!requirePlayer || (PlayerController.instance != null && collision.gameObject == PlayerController.instance.gameObject)) {
             Events?.Invoke();
             if (selfDestruct) {
@@ -26,6 +30,9 @@ public class AreaEventTrigger : MonoBehaviour
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
+        if (collision.gameObject.layer == exclusionmask) {
+            return;
+        }
         if (!requirePlayer || (PlayerController.instance != null && collision.gameObject == PlayerController.instance.gameObject)) {
             OnLeaveEvents?.Invoke();
             if (selfDestruct) {
