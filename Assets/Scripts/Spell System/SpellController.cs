@@ -21,7 +21,9 @@ public class SpellController : MonoBehaviour
     public SpellBehavior selected {
         get { return _selected; }
         set {
-            StopCast();
+            if (_selected != null) {
+                StopCast();
+            }
             _selected = value;   
         }
     }
