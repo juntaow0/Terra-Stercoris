@@ -17,7 +17,7 @@ public class TransitionManager : MonoBehaviour {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    public void LoadScene(string scene, bool elementsActive = true) {
+    public void LoadScene(string scene) {
         UIManager.instance.FadeIn(FadeTime, ()=> {
             SceneManager.UnloadSceneAsync(ActiveSceneName);
             ActiveSceneName = scene;

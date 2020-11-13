@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private WeaponUI weaponUI;
     [SerializeField] private Notification notification;
     [SerializeField] private Image fadeImage;
+    [SerializeField] private Canvas DeathScreen;
     private bool HUDLock = false;
     private Canvas[] UICanvases;
 
@@ -23,6 +24,7 @@ public class UIManager : MonoBehaviour
     private void Awake() {
         instance = this;
         UICanvases = UIRoot.GetComponentsInChildren<Canvas>();
+        DeathScreen.enabled = false;
     }
 
     private void OnEnable() {
@@ -101,17 +103,26 @@ public class UIManager : MonoBehaviour
         StartCoroutine(FadeFromBlack(FadeTime, Callback));
     }
 
+    public void ShowDeathScreen() {
+        toggleUI(false);
+        FadeIn(1f, () => {
+            DeathScreen.enabled = true;
+        });
+    }
+
     private IEnumerator FadeToBlack(float FadeTime, Action Callback) {
-        float fadeAmount = 0f;
+        if (fadeImage.color.a <= 0) {
+            float fadeAmount = 0f;
 
-        fadeImage.gameObject.SetActive(true);
+            fadeImage.gameObject.SetActive(true);
 
-        float startTime = Time.realtimeSinceStartup;
+            float startTime = Time.realtimeSinceStartup;
 
-        while (fadeAmount < FadeTime) {
-            fadeAmount = Time.realtimeSinceStartup - startTime;
-            fadeImage.color = Color.Lerp(Color.clear, Color.black, fadeAmount / FadeTime);
-            yield return null;
+            while (fadeAmount < FadeTime) {
+                fadeAmount = Time.realtimeSinceStartup - startTime;
+                fadeImage.color = Color.Lerp(Color.clear, Color.black, fadeAmount / FadeTime);
+                yield return null;
+            }  
         }
         Callback?.Invoke();
     }

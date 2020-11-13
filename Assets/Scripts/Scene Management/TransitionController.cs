@@ -6,7 +6,7 @@ public class TransitionController : MonoBehaviour {
 
     public void LoadSceneByName(string scene) {
         SceneDataLoader.SaveStates();
-        TransitionManager.instance.LoadScene(scene, true);
+        TransitionManager.instance.LoadScene(scene);
     }
 
     /*
