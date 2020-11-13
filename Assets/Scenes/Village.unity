@@ -113220,7 +113220,7 @@ GameObject:
   - component: {fileID: 1348794740}
   - component: {fileID: 1348794742}
   m_Layer: 0
-  m_Name: Male Villager 2 - elder
+  m_Name: Elder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113265,7 +113265,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -8405552429354236203, guid: bcbe6c9813c02694c873f594dd4a8878,
+  m_Sprite: {fileID: -2260823320829027807, guid: 8e90cb1d0c6abf544832a8192381d7af,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
