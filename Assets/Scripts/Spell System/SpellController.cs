@@ -15,6 +15,9 @@ public class SpellController : MonoBehaviour
     private bool hasSpell = false;
     private CharacterController cc;
     [SerializeField] private bool isPlayer;
+    public bool canRechargeEnergy = true;
+    private float nextRechargeTime = 0;
+    private float rechargeRate = 0.3f; // points per second
     public SpellBehavior selected {
         get { return _selected; }
         set {
@@ -29,6 +32,18 @@ public class SpellController : MonoBehaviour
         usedSpells = new Dictionary<int, SpellBehavior>();
         spellStatus = new Dictionary<int, bool>();
         Initialize();
+    }
+    private void Update() {
+        if (cc.energy.quantity >= 100) {
+            return;
+        }
+        if (Time.time < nextRechargeTime) {
+            return;
+        }
+        if (canRechargeEnergy) {
+            cc.energy.quantity += 1;
+            nextRechargeTime = Time.time + 1 / rechargeRate;
+        }
     }
 
     private void Initialize() {
@@ -48,6 +63,7 @@ public class SpellController : MonoBehaviour
 
     public void Cast() {
         if (hasSpell && cc.IsAlive) {
+            canRechargeEnergy = false;
             selected.Cast(cc);
             OnSpellCast?.Invoke();
         }
@@ -55,6 +71,7 @@ public class SpellController : MonoBehaviour
 
     public void StopCast() {
         if (hasSpell) {
+            canRechargeEnergy = true;
             selected.StopCast();
         }
     }
