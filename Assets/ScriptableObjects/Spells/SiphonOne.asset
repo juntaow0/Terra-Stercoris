@@ -20,4 +20,4 @@ MonoBehaviour:
   healthCost: 0
   speed: 100
   range: 5
-  cooldownTime: 1
+  cooldownTime: 0

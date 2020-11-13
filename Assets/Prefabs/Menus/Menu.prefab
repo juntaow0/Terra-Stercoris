@@ -2731,8 +2731,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219f35c96b24628468302737d5fd38f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START_SCENE: MovementDemo
-  menuScene: MainMenu
+  START_SCENE: Barracks and Briefing Room
+  menuScene: TempMainMenu
   canvas: {fileID: 8098621255700291832}
   creditsMenu: {fileID: 5495199662003282474}
   mainMenu: {fileID: 5636460374881885057}

@@ -40,17 +40,10 @@ public class MainMenuController : MonoBehaviour {
 
         List<TMP_Dropdown.OptionData> optionDataList = new List<TMP_Dropdown.OptionData>();
 
-        #if UNITY_EDITOR
-        // Get all scenes and add to dropdown. May get removed later.
-        foreach(EditorBuildSettingsScene scene in EditorBuildSettings.scenes) {
-            if(scene.enabled) optionDataList.Add(new TMP_Dropdown.OptionData(scene.path));
+        for(int i = 0; i < SceneManager.sceneCountInBuildSettings; ++i) {
+            string name = System.IO.Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(i));
+            optionDataList.Add(new TMP_Dropdown.OptionData(name));
         }
-        #else
-        string[] scenes = {"Barracks and Briefing Room", "Intro", "UndergroundLevel", "AbovegroundLevel01"};
-        foreach(string scene in scenes) {
-            optionDataList.Add(new TMP_Dropdown.OptionData(scene));
-        }
-        #endif
 
         loadDropdown.ClearOptions();
         loadDropdown.AddOptions(optionDataList);

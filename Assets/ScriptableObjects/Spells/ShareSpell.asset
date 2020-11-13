@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: Share
   spellID: 1
-  icon: {fileID: 432412397548763483, guid: 72faa27aaf177f345873aabfd7cce2a5, type: 3}
+  icon: {fileID: 21300000, guid: f7cd3d5d618b90b418135de0cacb3bdf, type: 3}
   damage: 0
   manaCost: 10
   healthCost: 0
   speed: 100
   range: 5
-  cooldownTime: 1
+  cooldownTime: 0
