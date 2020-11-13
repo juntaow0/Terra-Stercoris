@@ -17,7 +17,8 @@ public class SpellController : MonoBehaviour
     [SerializeField] private bool isPlayer;
     public bool canRechargeEnergy = true;
     private float nextRechargeTime = 0;
-    private float rechargeRate = 0.3f; // points per second
+    private float rechargeRateMax = 3f; // points per second
+    private float rechargeRateMin = 0.2f;
     public SpellBehavior selected {
         get { return _selected; }
         set {
@@ -36,7 +37,7 @@ public class SpellController : MonoBehaviour
         Initialize();
     }
     private void Update() {
-        if (cc.energy.quantity >= 100) {
+        if (cc.energy.quantity >= cc.energy.max) {
             return;
         }
         if (Time.time < nextRechargeTime) {
@@ -44,7 +45,7 @@ public class SpellController : MonoBehaviour
         }
         if (canRechargeEnergy) {
             cc.energy.quantity += 1;
-            nextRechargeTime = Time.time + 1 / rechargeRate;
+            nextRechargeTime = Time.time + 1/Mathf.SmoothStep(rechargeRateMax, rechargeRateMin, cc.energy.quantity / (float) cc.energy.max);
         }
     }
 
