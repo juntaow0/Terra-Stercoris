@@ -83,6 +83,10 @@ public class CharacterController : MonoBehaviour, IDamagable, ISiphonable {
         transform.position = obj.transform.position;
     }
 
+    public void TransitionTeleport(GameObject obj) {
+        UIManager.instance.FadeIn(0.5f, () => {TeleportToObject(obj); UIManager.instance.FadeOut(0.5f, null);});
+    }
+
     public float GetSpeed() {
         return _movementSpeed;
     }

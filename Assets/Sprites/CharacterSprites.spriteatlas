@@ -26,7 +26,7 @@ SpriteAtlas:
       m_MaxTextureSize: 4096
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
-      m_TextureCompression: 1
+      m_TextureCompression: 0
       m_CompressionQuality: 50
       m_CrunchedCompression: 0
       m_AllowsAlphaSplitting: 0
@@ -46,7 +46,7 @@ SpriteAtlas:
     - {fileID: 102900000, guid: bd07847b4e135b942adbe3be8deb6452, type: 3}
     - {fileID: 102900000, guid: 28a65ca7f52ed874f930261547f5206f, type: 3}
     - {fileID: 102900000, guid: 3526e9c9daaf98a49b33289522c484e5, type: 3}
-    totalSpriteSurfaceArea: 1680792
+    totalSpriteSurfaceArea: 1684505
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -77,6 +77,15 @@ SpriteAtlas:
   - {fileID: 7562109516735168807, guid: 2f5bb9c28a4148c4db7f72bbb6b1c26d, type: 3}
   - {fileID: -3050226495704958140, guid: 2f5bb9c28a4148c4db7f72bbb6b1c26d, type: 3}
   - {fileID: -2399765138836590435, guid: 2f5bb9c28a4148c4db7f72bbb6b1c26d, type: 3}
+  - {fileID: -9028353023014820569, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: 3067284155347707876, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: -2095015045743331084, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: -87675610721233817, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: 1736396618362572359, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: -9201324616607358295, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: 8562214463196014038, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: -7514921478885099015, guid: cbe548e233dd3744faed54821448e629, type: 3}
+  - {fileID: -3918125090855297246, guid: cbe548e233dd3744faed54821448e629, type: 3}
   - {fileID: 21300000, guid: 72c855c3fe4c2fe4e8df6f82e8b34629, type: 3}
   - {fileID: 6385895308153636895, guid: 1105dfd350e485a47922d7f44a96d56a, type: 3}
   - {fileID: 21300000, guid: 8b30cbf34910dcb4eab6e7ee4c81f49d, type: 3}
@@ -329,6 +338,15 @@ SpriteAtlas:
   - Fvillager2_5
   - Fvillager2_6
   - Fvillager2_7
+  - Fvillager3_1
+  - Fvillager3_0
+  - Fvillager3_3
+  - Fvillager3_2
+  - Fvillager3_5
+  - Fvillager3_4
+  - Fvillager3_7
+  - Fvillager3_6
+  - Fvillager3_8
   - 2
   - goblins_0
   - deadMV1
