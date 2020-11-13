@@ -1479,6 +1479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellPrefabs:
   - {fileID: 4368225068616939508, guid: 2fbc33a0c864acc4e992e51cf1620dda, type: 3}
+  - {fileID: 2978026507168069351, guid: f0d00313c1f0dd145a124643549eef40, type: 3}
 --- !u!1 &2000997908
 GameObject:
   m_ObjectHideFlags: 0

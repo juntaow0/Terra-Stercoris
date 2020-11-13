@@ -12,6 +12,7 @@ public class SpellManager : MonoBehaviour
     }
 
     public GameObject createSpell(Transform parent, int spellId) {
+        Debug.Log("spell id: " +spellId);
         return Instantiate(spellPrefabs[spellId], parent);
     }
 }

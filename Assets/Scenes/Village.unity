@@ -109134,6 +109134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -109159,6 +109160,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1151915908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113402,6 +113406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -113427,6 +113432,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1255029177
 BoxCollider2D:
   m_ObjectHideFlags: 0

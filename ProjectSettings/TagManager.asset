@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FollowCamera
   - HUDCanvas
+  - Boulder
   layers:
   - Default
   - TransparentFX
