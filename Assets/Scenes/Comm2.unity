@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -12010,6 +12010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -12024,6 +12025,9 @@ MonoBehaviour:
           m_StringArgument: GoblinVillage2
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &746990049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12221,6 +12225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -12235,6 +12240,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &857910634
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13401,7 +13409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5716853516072985473, guid: 840b26b6a6b5e9843b48e3bfd75354aa,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
