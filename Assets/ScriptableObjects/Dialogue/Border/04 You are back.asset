@@ -10,25 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: Intro1
+  m_Name: 04 You are back
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
-  speakers: []
+  speakers:
+  - You
+  - En
   sentences:
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: You are back. It took so long.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Earth was doomed more than 2000 years ago. 99% of the population was
-      wiped out. The few remaining humans evacuated to another planet.
+    sentence: 'Well, the Goblins are indeed troublesome. '
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Were you hurt? What happened there?
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: But guess what, you are sent on a mission with a team to rediscover
-      mother Earth.
-  - speakerIndex: 0
+    sentence: They tried to hurt me but as you can see I'm perfectly fine right now.
+      Let's talk more once we get back to the village.
+  - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: And you are about to land on Earth with your shuttle alone.
+    sentence: Sure. Let's leave. It's not safe here.
   endAction: 0
   choices: []
   choiceKey: 

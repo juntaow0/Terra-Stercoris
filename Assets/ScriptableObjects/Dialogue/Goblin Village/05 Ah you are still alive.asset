@@ -10,25 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: Intro1
+  m_Name: 05 Ah you are still alive
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
-  speakers: []
+  speakers:
+  - You
+  - Tut
   sentences:
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I can't believe you made it out alive. So have you got the stuff you
+      need?
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Earth was doomed more than 2000 years ago. 99% of the population was
-      wiped out. The few remaining humans evacuated to another planet.
+    sentence: Yes. I'm lucky this time. Thanks for your guide.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Oh you are welcome. Perhaps we can do more trading in the future.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: But guess what, you are sent on a mission with a team to rediscover
-      mother Earth.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: And you are about to land on Earth with your shuttle alone.
+    sentence: Abusolutely. Imma head out, see you.
   endAction: 0
   choices: []
   choiceKey: 

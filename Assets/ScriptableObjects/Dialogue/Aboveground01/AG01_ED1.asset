@@ -43,7 +43,8 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: '[???], call me [???]. I come from the other side of the ocean.'
+    sentence: Jame Tea Dunkirk, call me James. I come from the other side of the
+      ocean.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
