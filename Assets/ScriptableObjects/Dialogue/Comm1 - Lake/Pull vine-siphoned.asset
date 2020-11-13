@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: Pull vine-shared-norock
+  m_Name: Pull vine-siphoned
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
-  speakers: []
+  speakers:
+  - 
   sentences:
   - speakerIndex: 0
     fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: You tug at the thick and flowering vines with all your might. The vines
-      are definitely durable enough for the task, but the ship proves too heavy for
-      you to budge. You need to generate a great force in order to pull it free...
+    sentence: The vines are brittle and drained of their strength. You surmise that
+      they will easily snap under any more tension.
   endAction: 0
   choices: []
   choiceKey: 
