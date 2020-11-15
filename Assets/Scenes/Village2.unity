@@ -1037,7 +1037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266344807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.731, y: 0.2340003, z: -10}
+  m_LocalPosition: {x: 25.731, y: 0.234, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -68141,7 +68141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689941013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.731, y: 0.2340003, z: -10}
+  m_LocalPosition: {x: 25.731, y: 0.234, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1254412772}
@@ -69937,6 +69937,17 @@ MonoBehaviour:
   - events:
     - m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 790538974}
+          m_MethodName: set_InteractEnabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 377444941}
           m_MethodName: LoadSceneByName
           m_Mode: 5
@@ -70707,8 +70718,8 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.15
-  m_DeadZoneHeight: 0.15
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.15
@@ -125247,6 +125258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -125261,6 +125273,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2055649593
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -402,12 +402,12 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.2
-  m_DeadZoneHeight: 0.2
+  m_DeadZoneWidth: 0.15
+  m_DeadZoneHeight: 0.15
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.15
+  m_SoftZoneHeight: 0.15
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -66516,6 +66516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -66530,6 +66531,9 @@ MonoBehaviour:
           m_StringArgument: Border2
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &778100142
 BoxCollider2D:
   m_ObjectHideFlags: 0

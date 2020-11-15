@@ -3426,22 +3426,22 @@ PrefabInstance:
     - target: {fileID: 537616693842453243, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
       propertyPath: endReachedDistance
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 537616693842453243, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
       propertyPath: pickNextWaypointDist
-      value: 2.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 537616693842453243, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
       propertyPath: slowdownDistance
-      value: 2.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 537616693842453243, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
       propertyPath: maxSpeed
-      value: 4.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 537616693842453246, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
@@ -45117,12 +45117,12 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.2
-  m_DeadZoneHeight: 0.2
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.15
+  m_SoftZoneHeight: 0.15
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -63584,6 +63584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -63882,6 +63883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -64141,6 +64143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 0
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:

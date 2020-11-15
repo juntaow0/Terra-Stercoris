@@ -38,11 +38,8 @@ public class CharacterController : MonoBehaviour, IDamagable, ISiphonable {
         get {return _rotation;}
         set {
             _rotation = value.normalized;
-            if (!(DialogueManager.InConversation || TimelineController.InCutscene)) {
-                animator?.SetFloat("MouseX", _rotation.x);
-                animator?.SetFloat("MouseY", _rotation.y);
-            }
-            // SetSpriteRotation(_rotation);
+            animator?.SetFloat("MouseX", _rotation.x);
+            animator?.SetFloat("MouseY", _rotation.y);
         }
     }
 

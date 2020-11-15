@@ -65,7 +65,19 @@ public class PlayerController : MonoBehaviour {
 
         // Update character rotation (angle of mouse relative to player)
         if (_mainCamera != null) {
-            characterController.rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            if (!(DialogueManager.InConversation || TimelineController.InCutscene)) {
+                characterController.rotation = _mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            } else {
+                if (DialogueManager.InConversation) {
+                    if (closestObject != null) {
+                        characterController.rotation = closestObject.transform.position - transform.position;
+                    } else {
+                        characterController.rotation = new Vector2(0, -1);
+                    }
+                }else if (TimelineController.InCutscene) {
+                    characterController.rotation = new Vector2(0, -1);
+                }
+            }
         }
     }
 
