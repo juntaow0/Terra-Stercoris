@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -1560,7 +1560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -1720,7 +1720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -1800,7 +1800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -2111,7 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -2597,7 +2597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -2929,7 +2929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -3009,7 +3009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -3270,7 +3270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -13049,7 +13049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -13113,7 +13113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -13209,7 +13209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -13289,7 +13289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -34179,7 +34179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Interact
+  _message: Inspect
   interactAction:
     m_PersistentCalls:
       m_Calls:

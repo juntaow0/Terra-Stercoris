@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShareSpell : SpellBehavior {
     [SerializeField] private GameObject particlesPrefab;
     [SerializeField] private GameObject userEffectPrefab;
-    private ParticleTrack particles;
+    private ParticleTrackR particles;
     private SpriteRenderer originSprite;
     private Camera mainCamera;
     private int healthPerTick = 1;
@@ -17,7 +17,7 @@ public class ShareSpell : SpellBehavior {
     private void Start() {
         active = false;
         mainCamera = Camera.main;
-        particles = Instantiate(particlesPrefab, transform.parent).GetComponent<ParticleTrack>();
+        particles = Instantiate(particlesPrefab, transform.parent).GetComponent<ParticleTrackR>();
         originSprite = Instantiate(userEffectPrefab, transform.parent).GetComponentInChildren<SpriteRenderer>();
         originSprite.enabled = false;
     }
@@ -38,7 +38,7 @@ public class ShareSpell : SpellBehavior {
             if (hit.collider != null) {
                 ISiphonable target = hit.transform.GetComponent<ISiphonable>();
                 if (target != null && target.IsShareable && user.energy.quantity >= energyCostPerTick) {
-                    particles.particleSource = hit.transform;
+                    particles.particleTarget = hit.transform;
                     active = true;
                     originSprite.enabled = true;
                     particles.Play();

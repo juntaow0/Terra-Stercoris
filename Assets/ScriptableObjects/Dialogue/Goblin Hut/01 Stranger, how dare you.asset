@@ -23,12 +23,12 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Now i will give you one last chance to speak properly before I use
+    sentence: Now I will give you one last chance to speak properly before I use
       your skull for soup.
   endAction: 1
   choices:
   - text: Confront
     nextConversation: {fileID: 11400000, guid: ad0efe1cc73c57e42bdaa63dfddd13ac, type: 2}
-  - text: Play smart
+  - text: Comply
     nextConversation: {fileID: 11400000, guid: b659ea1b679fcbb4f987dd4fbe399c06, type: 2}
   choiceKey: h1

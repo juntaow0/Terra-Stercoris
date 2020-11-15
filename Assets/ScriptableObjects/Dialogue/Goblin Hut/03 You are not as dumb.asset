@@ -31,7 +31,7 @@ MonoBehaviour:
     sentence: Who are you, and where are you from?
   endAction: 1
   choices:
-  - text: Lie
+  - text: Trick
     nextConversation: {fileID: 11400000, guid: bd36b3e914c1ddc4fa6761f900fd33c4, type: 2}
   - text: Tell the truth
     nextConversation: {fileID: 11400000, guid: 1315e41f43ebf14438e6a7361143c3fb, type: 2}

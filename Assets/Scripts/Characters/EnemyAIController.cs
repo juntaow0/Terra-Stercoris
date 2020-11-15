@@ -61,6 +61,7 @@ public class EnemyAIController : MonoBehaviour {
             Vector2 enemyDir = _targetPosition - (Vector2) transform.position;
 
             if(Vector2.Distance(transform.position, _targetPosition) >= _weaponController.selected.weaponStats.range) {
+                Debug.Log(enemyDir);
                 _characterController.rotation = enemyDir;
                 _characterController.Move(enemyDir);
             } else {

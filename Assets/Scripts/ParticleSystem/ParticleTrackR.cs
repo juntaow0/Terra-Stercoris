@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleTrack : MonoBehaviour {
+public class ParticleTrackR : MonoBehaviour {
 
-    public Transform particleSource = null;
+    public Transform particleTarget = null;
+    private Transform particleSource;
     private ParticleSystem particleSystem;
     private ParticleSystem.MainModule mainModule;
     private ParticleSystem.Particle[] particles;
+    
 
     private void Awake() {
         particleSystem = GetComponent<ParticleSystem>();
@@ -17,6 +19,8 @@ public class ParticleTrack : MonoBehaviour {
         } else {
             enabled = false;
         }
+        particleSource = transform.parent.transform;
+        transform.position = particleSource.position + new Vector3(0,0,-1);
     }
 
     public void Play() {
@@ -28,10 +32,9 @@ public class ParticleTrack : MonoBehaviour {
     }
 
     void Update() {
-        if(particleSource != null) {
-            transform.position = particleSource.position+new Vector3(0,0,-1);
+        if(particleTarget != null) {
 
-            particleSystem.startLifetime = Vector2.Distance(transform.position, transform.parent.position) / Mathf.Abs(mainModule.startSpeed.constant);
+            particleSystem.startLifetime = Vector2.Distance(particleSource.position, particleTarget.position) / Mathf.Abs(mainModule.startSpeed.constant);
 
             int numParticlesAlive = particleSystem.GetParticles(particles);
 
@@ -41,8 +44,8 @@ public class ParticleTrack : MonoBehaviour {
             // Change only the particles that are alive
             for (int i = 0; i < numParticlesAlive; ++i) {
                 velocity = particles[i].velocity.magnitude;
-                particles[i].velocity = velocity * (transform.parent.position - particles[i].position).normalized;
-                distance = Vector2.Distance(transform.parent.position, particles[i].position);
+                particles[i].velocity = velocity * (particleTarget.position - particles[i].position).normalized;
+                distance = Vector2.Distance(particleTarget.position, particles[i].position);
                 if(distance > 0.01f) {
                     particles[i].remainingLifetime = distance / velocity;
                 } else {

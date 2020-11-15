@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellStats: {fileID: 11400000, guid: c376ea74a4b0d4f4496b2032491dc95b, type: 2}
-  particlesPrefab: {fileID: 1678701693330500688, guid: f20d680575d74804a9e049d2f56efe07,
+  particlesPrefab: {fileID: 1678701693330500688, guid: 909bc5d062d740b47b94625b19d8e52a,
     type: 3}
   userEffectPrefab: {fileID: 3586971662793299298, guid: 72875e8b09843dd4c92acc660e732fb1,
     type: 3}
