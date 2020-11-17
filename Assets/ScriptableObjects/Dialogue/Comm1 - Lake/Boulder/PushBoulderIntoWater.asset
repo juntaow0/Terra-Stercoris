@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: PushBoulderIntoWater
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - 
+  sentences:
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Pushing the boulder into the lake might generate enough force to pull
+      the ship up from bottom of the lake.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Do you want to push the boulder?
+  endAction: 1
+  choices:
+  - text: Yes
+    nextConversation: {fileID: 11400000, guid: fd4a9163486c65d489e2547c2e9704e3, type: 2}
+  - text: No
+    nextConversation: {fileID: 11400000, guid: 287d4a5dd6c3a9049a5411f655d9ea45, type: 2}
+  choiceKey: pushintowater
