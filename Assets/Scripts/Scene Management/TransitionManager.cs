@@ -35,6 +35,7 @@ public class TransitionManager : MonoBehaviour {
         UIManager.instance.Bind();
         UIManager.instance.FadeOut(FadeTime, null);
         DialogueManager.instance.InitializeUI();
+        AudioManager.instance.KillSong();
 
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }

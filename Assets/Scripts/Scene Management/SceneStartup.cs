@@ -19,6 +19,7 @@ public class SceneStartup : MonoBehaviour {
         } else {
             UIManager.instance.toggleHUD(LoadHUD);
             UIManager.instance.toggleHUDStateLock(LockHUD);
+            startupEvents?.Invoke();
         }
 
         /*

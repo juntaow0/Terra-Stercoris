@@ -1149,9 +1149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1482e985958b5d64bbb7b5e4a49067d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicVolume: 1
-  musicFadeTime: 2
-  _combatSong: {fileID: 0}
+  MusicVolume: 0.5
+  musicFadeTime: 0.5
+  _combatSong: {fileID: 8300000, guid: 599871afb759b45448f44c14ecc1c2d3, type: 3}
   _audioCues:
   - name: Test
     cue: {fileID: 11400000, guid: c07471d8b576b26438e4c45a39012fd8, type: 2}
@@ -1161,7 +1161,19 @@ MonoBehaviour:
     cue: {fileID: 11400000, guid: 5ccd4a37f9812384daed37f6b37fcb47, type: 2}
   - name: Talk
     cue: {fileID: 11400000, guid: 982ee57085198304ead8bb583624915f, type: 2}
-  _songs: []
+  - name: Talk
+    cue: {fileID: 11400000, guid: 982ee57085198304ead8bb583624915f, type: 2}
+  _songs:
+  - name: Blue Thunder
+    clip: {fileID: 8300000, guid: ecfa87ff95416cb41be16534ce1c1677, type: 3}
+  - name: Fight
+    clip: {fileID: 8300000, guid: 599871afb759b45448f44c14ecc1c2d3, type: 3}
+  - name: Light and Shadow
+    clip: {fileID: 8300000, guid: 2eef28eb0138ece409a2398b1cb04a3e, type: 3}
+  - name: Jaunty Gumption
+    clip: {fileID: 8300000, guid: 6e9007e0fa38f3a4fa95c84dd19231e2, type: 3}
+  - name: Sci-Fi Background
+    clip: {fileID: 8300000, guid: 030ef673a42168440ad99d61c66937e0, type: 3}
 --- !u!82 &1535423180
 AudioSource:
   m_ObjectHideFlags: 0

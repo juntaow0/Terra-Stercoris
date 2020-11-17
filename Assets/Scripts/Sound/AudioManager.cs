@@ -58,8 +58,9 @@ public class AudioManager : MonoBehaviour {
         int index = _songs.BinarySearch(new Song(song));
         if(index >= 0) {
             PlaySong(_songs[index].clip, start);
+            Debug.Log("Playing song \"" + song + "\"");
         } else {
-            Debug.LogWarning("Song " + song + " not found");
+            Debug.LogWarning("Song \"" + song + "\" not found");
         }
     }
 
@@ -75,11 +76,16 @@ public class AudioManager : MonoBehaviour {
         StartCoroutine(ChangeSong(nextSong, false));
     }
 
+    public void KillSong() {
+        source.Stop();
+    }
+
     IEnumerator ChangeSong(AudioClip song, bool start = true) {
         float transitionTime = 0;
+        float startTime = Time.realtimeSinceStartup;
         if(source.isPlaying) {
             while(transitionTime < musicFadeTime) {
-                transitionTime += Time.deltaTime;
+                transitionTime = Time.realtimeSinceStartup - startTime;
                 source.volume = Mathf.Lerp(MusicVolume, 0, transitionTime / musicFadeTime);
                 yield return null;
             }
@@ -92,8 +98,9 @@ public class AudioManager : MonoBehaviour {
         if(start && source.clip != null) {
             source.Play();
             transitionTime = 0;
+            startTime = Time.realtimeSinceStartup;
             while(transitionTime < musicFadeTime) {
-                transitionTime += Time.deltaTime;
+                transitionTime = Time.realtimeSinceStartup - startTime;
                 source.volume = Mathf.Lerp(0, MusicVolume, transitionTime / musicFadeTime);
                 yield return null;
             }

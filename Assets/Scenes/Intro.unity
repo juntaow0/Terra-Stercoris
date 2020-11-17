@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -530,6 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266642428}
   - component: {fileID: 1266642427}
+  - component: {fileID: 1266642429}
   m_Layer: 0
   m_Name: Startup
   m_TagString: Untagged
@@ -551,6 +552,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadHUD: 0
   LockHUD: 1
+  startupEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1266642429}
+        m_MethodName: PlaySong
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jaunty Gumption
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1266642428
 Transform:
   m_ObjectHideFlags: 0
@@ -565,6 +580,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1266642429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266642426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14d23b46e0347246ac6b1751716ad4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1943392375
 GameObject:
   m_ObjectHideFlags: 0

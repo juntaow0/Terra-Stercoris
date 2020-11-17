@@ -5244,6 +5244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -5258,6 +5259,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &488983206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15044,7 +15048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619597314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000071525574, y: -0.1819997, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: -0.1819997, z: -10}
   m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_Children:
   - {fileID: 1446790215}
@@ -15356,6 +15360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -15370,6 +15375,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &703259669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26667,7 +26675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378320470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000071525574, y: -0.1819997, z: -10}
+  m_LocalPosition: {x: -0.00000059604645, y: -0.1819997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -27013,6 +27021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selfDestruct: 1
   requirePlayer: 0
+  exclusiveTag: 
   Events:
     m_PersistentCalls:
       m_Calls:
@@ -27038,6 +27047,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnLeaveEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1658551733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27112,6 +27124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1728168579}
   - component: {fileID: 1728168578}
+  - component: {fileID: 1728168580}
   m_Layer: 0
   m_Name: Scene Startup
   m_TagString: Untagged
@@ -27135,7 +27148,18 @@ MonoBehaviour:
   LockHUD: 0
   startupEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1728168580}
+        m_MethodName: PlaySong
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Blue Thunder
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1728168579
 Transform:
   m_ObjectHideFlags: 0
@@ -27150,6 +27174,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1728168580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728168577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14d23b46e0347246ac6b1751716ad4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1898318263
 PrefabInstance:
   m_ObjectHideFlags: 0
