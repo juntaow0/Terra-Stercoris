@@ -32,6 +32,8 @@ public class ChoiceController : MonoBehaviour
             int choiceNumber = i;
             Conversation c = choices[i].nextConversation;
             buttonText[i].text = choices[i].text;
+            buttonTransforms[i].offsetMax = buttonText[i].GetPreferredValues(choices[i].text) * new Vector2(0.7f, 1) + new Vector2(10, 0);
+            buttonTransforms[i].offsetMin = -buttonText[i].GetPreferredValues(choices[i].text) * new Vector2(0.7f, 1) - new Vector2(10, 0);
             buttons[i].onClick.RemoveAllListeners();
             buttons[i].onClick.AddListener(() => {
                 ResetButtons(buttonCount);
