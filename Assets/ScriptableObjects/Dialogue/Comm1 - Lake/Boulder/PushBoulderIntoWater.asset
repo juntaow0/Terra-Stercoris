@@ -19,12 +19,12 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Pushing the boulder into the lake might generate enough force to pull
-      the ship up from bottom of the lake.
+    sentence: It seems that I've set up quite a contraption here. Hopefully, pushing
+      the boulder into the water will pull the ship out!
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Do you want to push the boulder?
+    sentence: Should I push the boulder?
   endAction: 1
   choices:
   - text: Yes

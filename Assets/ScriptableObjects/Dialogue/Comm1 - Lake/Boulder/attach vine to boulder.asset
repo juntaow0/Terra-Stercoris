@@ -19,8 +19,9 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: If the boulder is tied to the vine, then pushing it into the lake make
-      just generate the right amount of force to pull the ship out of the water!
+    sentence: If the boulder is tied to the vine, you might be able to push the boulder
+      into the lake to generate enough force to pull the ship up from the lake. Should
+      I tie the vine to the boulder?
   endAction: 1
   choices:
   - text: Yes
