@@ -53109,7 +53109,7 @@ GameObject:
   - component: {fileID: 1178142270}
   - component: {fileID: 1178142272}
   - component: {fileID: 1178142273}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PullVine-neutral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53347,7 +53347,7 @@ GameObject:
   - component: {fileID: 1260729523}
   - component: {fileID: 1260729522}
   - component: {fileID: 1260729525}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Vine Interact
   m_TagString: Untagged
   m_Icon: {fileID: 0}

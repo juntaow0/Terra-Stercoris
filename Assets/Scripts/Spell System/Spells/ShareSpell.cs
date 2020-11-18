@@ -31,7 +31,6 @@ public class ShareSpell : SpellBehavior {
     }
 
     IEnumerator siphon(CharacterController user) {
-        Debug.Log("Foobar");
         if (!DialogueManager.InConversation && !TimelineController.InCutscene) {
             Vector3 dir = Vector3.Normalize(mainCamera.ScreenToWorldPoint(Input.mousePosition) - user.transform.position);
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, dir, spellStats.range);
@@ -42,7 +41,8 @@ public class ShareSpell : SpellBehavior {
                     active = true;
                     originSprite.enabled = true;
                     particles.Play();
-                    while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsShareable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
+                    Vector3 hitOffset = target.transform.position - (Vector3) hit.point;
+                    while (active&&(hitOffset + user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsShareable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
                         target.Siphon(-healthPerTick);
                         user.Damage((int)(healthPerTick * healPercentage));
                         user.AddEnergy(-energyCostPerTick);

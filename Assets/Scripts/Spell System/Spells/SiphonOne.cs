@@ -41,7 +41,8 @@ public class SiphonOne : SpellBehavior {
                     active = true;
                     originSprite.enabled = true;
                     particles.Play();
-                    while (active&&(user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsSiphonable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
+                    Vector3 hitOffset = target.transform.position - (Vector3) hit.point;
+                    while (active&&(hitOffset + user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsSiphonable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
                         target.Siphon(healthPerTick);
                         user.AddHealth((int)(healthPerTick * stealPercentage));
                         user.AddEnergy(-energyCostPerTick);
