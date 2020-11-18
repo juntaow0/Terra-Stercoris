@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: 09 You turn on the communicator
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - John
+  - 
+  - You
+  sentences:
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: 'You turn on the communicator and it hums to life with a slight orange
+      glow. '
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You have dozens of messages from John
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Huh that\u2019s weird. Why did he send me so many messages. I just
+      woke up."
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You take a closer look and see the dates of the messages. They span
+      years.
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: No, this can't be. Let me sync device time and check again.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'You initialize the reconnection sequence to the ship. The screen flashes
+      as the connection is made and an update is started. '
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: 'You look down and see the date has changed. You were scheduled to
+      land in the solar year 3160. '
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: Your hands shake as you read the display.
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: "\u201CSolar Year 3660\u201D"
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I\u2019ve been asleep for 500 years\u2026 John..he isn\u2019t alive
+      anymore"
+  endAction: 0
+  choices: []
+  choiceKey: 
