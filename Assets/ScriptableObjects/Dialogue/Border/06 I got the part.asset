@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: 06 I got the part
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - You
+  - En
+  sentences:
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I got the part and I think Im ready to put it together.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: According to the craftsmen I need a strong source of Terra and fine
+      control over it.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I was able to convince a goblin to help me out.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Hmm\u2026. Well I guess there was no other choice"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "But\u2026. I told him that the Terrans would teach him how to control
+      Terra better in exchange for his help."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: En, can I ask you to teach him please. He doesnt seem like a bad person.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I dont know\u2026"
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Goblins are known to be backstabbers. What if hes just trying to lower
+      our guard\u2026"
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "But without him you wont have the power necessary to fix your device
+      and find your way home. Doesnt seem like you have any other choice\u2026"
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Okay. I can help you. You saved my life, so I should return the favor
+      and help you get home.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Great. Come with me.
+  endAction: 0
+  choices: []
+  choiceKey: 
