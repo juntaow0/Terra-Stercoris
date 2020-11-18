@@ -45,13 +45,16 @@ public class DialogueTrigger : MonoBehaviour
             return;
         }
         InputManager.OnNextDialogue -= NextSentence;
+        Debug.Log(id);
         currentEvent?.Invoke();
     }
 
-    void SwapEndEvent(int index, int id) {
+    void SwapEndEvent(int index, int id)
+    {
         if (id != triggerID) {
             return;
         }
+        Debug.Log(id);
         if (currentEvents.Length > 0) {
             currentEvent = currentEvents[index];
         }
