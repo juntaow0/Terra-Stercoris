@@ -70027,7 +70027,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 17138102, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
       propertyPath: spellPrefabs.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 17138102, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
       propertyPath: spellPrefabs.Array.data[0]
