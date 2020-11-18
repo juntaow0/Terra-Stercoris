@@ -12,44 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: 02 Magic is real
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers:
   - John
   - 
   sentences:
-  - speakerIndex: 0
-    sentence: "Magic is real, can you believe it? When I heard the sergeant tell
-      us I thought he was joking\u2026."
-  - speakerIndex: 0
-    sentence: I didn't believe him, I mean who would right? I waited for a punchline
-      or something but it never came.. He just kept talking about Earth and gave
-      me a history lesson.
-  - speakerIndex: 0
-    sentence: I knew he was serious when I saw the way his eyes widened as he spoke
-      of the old civilizations and their supernatural powers in vivid detail.
-  - speakerIndex: 0
-    sentence: Chi, chakra, mana and what was that other one?
-  - speakerIndex: 0
-    sentence: Oh it was the soul! Some people called it the spirit too right. Man
-      I'm so jealous! I wanna see Earth so bad. I really need to ask for a department
-      transfer. Exploration has it made.
-  - speakerIndex: 0
-    sentence: "I\u2019ll set my cryopod to wake me when you land, so make sure you
-      send a message every few cycles. Take care of yourself. We don't know what's
-      really down there..."
-  - speakerIndex: 0
-    sentence: "...I mean I can only imagine the type of apex predators that had to
-      evolve to survive after the bombs. Please don\u2019t get cocky. For me. I\u2019ll
-      be worried about you."
-  - speakerIndex: 0
-    sentence: Keep your pod prepped for resuscitation, keep a hand on your atomizer,
-      and never explore without your tools.
-  - speakerIndex: 0
-    sentence: "Don\u2019t worry you\u2019ll be fine! But just in case\u2026. DRINK
-      LIKE THERE\u2019S NO TOMORROW!"
   - speakerIndex: 1
-    sentence: "You clink glasses together with John and drink, although with a bit
-      more uneasiness in your mind. That\u2019s all you remember, it\u2019s all a
-      drunken haze after that"
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: John raised his glass and then took a big swig. His face falls and
+      he mutters
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "You know, she\u2019d be proud. Mom\u2026.She\u2019d be proud. "
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: John looks up to you and smiles
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I'm proud of you too. It was just us two for a long time after Mom
+      died\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I know I wasnt always the best brother\u2026 but I always tried to
+      look out for you."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "When I heard that you had been accepted to the Exploration Division,
+      I remember thinking \u201CMaybe I didn't do such a bad job after all\u201D."
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: He gives you a strong hug.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Be safe.
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: He takes a deep breath and lets go.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: ' Don''t forget to send me a message when you arrive. Now come on,
+      lets take another drink. No point being sad when we can be drunk instead.'
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: "That\u2019s all you remember, it\u2019s all a drunken haze after that."
   endAction: 0
   choices: []
   choiceKey: 

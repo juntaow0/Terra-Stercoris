@@ -16,22 +16,23 @@ MonoBehaviour:
   speakers:
   - You
   - En
-  - smith
+  - Craftsman
+  - 
   sentences:
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Can I help you?
-  - speakerIndex: 0
+    sentence: Hello there young traveler. I've heard much about you from the villagers.
+      Can I help you?
+  - speakerIndex: 3
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You show him your broken communicator
+  - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "Actually yeah. I don\u2019t know if you can help but have this device
-      that\u2019s broken. "
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "I don\u2019t know anything about technology so do you think you could
-      help me fix it?"
+    sentence: "What is this!? The craftsmanship is incredible. Those sides are so
+      smooth. It's clearly damaged right now\u2026.Shame."
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
@@ -40,23 +41,39 @@ MonoBehaviour:
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "It looks like two parts are broken, the transmitter and the receiver.
-      Without those you won\u2019t have any signal or be able to send messages."
+    sentence: "It's sad to see something of this quality in pieces\u2026. But that
+      makes it all the more fun to put back together! "
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "I don\u2019t think we have anything here that could help, but north
-      of the village there is a lake that a ship crashed into long ago...it might
-      have been one of yours?"
+    sentence: 'My mind''s racing with all sorts of ideas right now haha I feel like
+      a young man again! We are going to need to replace the parts you are missing. '
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: In any case, if you can find the ship, you might be able to find the
-      part to fix this.
+    sentence: Where did you find this beautiful thing?
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I found it in the cave where I first met En.
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Hm\u2026.Legend has it that 3 balls of fire crashed into the surface. "
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "One ground into the dirt and made that cave you're talking about.
+      One crashed into the lake but it was never seen again\u2026. It's possible
+      that the two are connected, it might be a good place to start"
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I can take you there, follow me.
+    sentence: 'I can show him the way '
+  - speakerIndex: 2
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Good luck then.
   endAction: 0
   choices: []
   choiceKey: 

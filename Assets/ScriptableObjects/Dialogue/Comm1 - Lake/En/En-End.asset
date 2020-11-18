@@ -20,40 +20,12 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Did you find anything?
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Yeah, but I was only able to get one part of what I need.
+    sentence: "That was amazing Ive never seen anyone with abilities like yours.
+      You can take Terra from creatures and give your own away\u2026"
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "So you still need some more parts huh? Hmmm\u2026. "
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I didn't want to mention this unless it was absolutely necessary. There
-      are tales of another crash like this one that happened closer to the goblin
-      village.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "But you should know the goblins' way of things is different than our
-      own\u2026."
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "Their village knows only violence and greed. You must be prepared
-      to fight for what you desire. The fights are concluded when one party is no
-      longer living\u2026."
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: If you would like to go despite this I will accompany you to the border.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Death huh?.... Its not like I have much of a choice anyways. Lets go.
+    sentence: Well lets get back to the village so you can talk to the village craftsman.
   endAction: 0
   choices: []
   choiceKey: 

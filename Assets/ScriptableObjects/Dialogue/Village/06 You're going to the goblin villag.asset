@@ -15,78 +15,54 @@ MonoBehaviour:
   fontOverride: {fileID: 0}
   speakers:
   - You
-  - Village Elder
+  - Elder
   sentences:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Are you going to the goblin village? Be wary of their greed and ferocity.
+    sentence: Are you going to the Tuhrook village? Be wary of their greed and ferocity.
       They are fueled by their greed and will do anything to satisfy their desires.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Greed? What do you mean?
+    sentence: Tell me more about the Tuhrook.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "They attack the village once a month and steal food and our animals.
-      The Terra has blessed them with terrifying strength that they abuse to steal
-      what they want. \n"
+    sentence: 'They attack the village once a month and steal food and our animals.
+      They have terrifying strength that they abuse to steal what they want. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "However, strength without control and focus is a curse not a blessing.
-      It is their hunger for raw power that limits them\r."
+    sentence: 'However strength without control and focus is a curse not a blessing.
+      It is their hunger for power that limits them from controlling that power.
+      Through control of the Terra we have developed defenses around the village.
+
+'
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: If they are so strong why haven't they wiped the village out?
+    sentence: Tell me more about the Terra.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'With focus comes strength. While we may not have the power of the
-      goblins, we are united as one. We stand strong against their attacks because
-      of this. '
+    sentence: 'Of course. The Terra can be used for more than war and aggression.
+      We use it for preserving meat and food. Our village craftsman weaves the Terra
+      into the fibers of his creations making them stronger. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Through control of the Terra we have developed defenses around the
-      village.
+    sentence: "The Tuhrooks cannot use techniques like those of the village because
+      they do not control their Terra\r"
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "So you use traps and work as a team to repel their attacks\u2026.
-      \r\n"
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "I didnt know the Terra could be used like that\u2026."
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: 'Of course the Terra can be used for more than war. We also use it
-      for preserving meat and food. '
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Our village craftsman weaves the Terra into the fibers of his creations
-      making them stronger.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "The goblins cannot use techniques like those of the village because
-      they do not control their Terra\r.\n"
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I think I have a better idea of what the goblins are like now. Thank
+    sentence: I think I have a better idea of what the Tuhrooks are like now. Thank
       you.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'I pray to the Terra for your safe return. Good travels stranger.
-
-'
+    sentence: I pray to the Terra for your safe return. Good travels young one.
   endAction: 0
   choices: []
   choiceKey: 

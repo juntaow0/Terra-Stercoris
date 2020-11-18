@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: extra
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - Ancient Human Voice
+  - 
+  sentences:
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: The device in your pocket starts to vibrate and you hear a voice speaking
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I hope this finds someone one day. If you're seeing this then that
+      means you know the truth about The Great War.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "But not the whole truth\u2026. We suspect that there might be others
+      scattered around the world, protected by this\u2026.energy."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: We don't have the means to travel around the globe looking for them.
+      But something has been worrying me lately.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "What if the other groups had different philosophies. What if they
+      aren't as good intentioned as we would hope. If you're watching this. Be careful\u2026."
+  endAction: 0
+  choices: []
+  choiceKey: 

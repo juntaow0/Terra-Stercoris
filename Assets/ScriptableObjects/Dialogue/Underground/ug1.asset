@@ -18,51 +18,21 @@ MonoBehaviour:
   - Computer
   - 
   sentences:
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Wha-What happened...? What's this orange light?
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Computer, report time and coordinates.
-  - speakerIndex: 1
-    fontStyle: 2
-    fontOverride: {fileID: 0}
-    sentence: The ship's computer appears to be dead.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Oh no...
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: It looks like my watch is still working though. Let's take a look.
   - speakerIndex: 2
     fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: You take a second to adjust your eyes to the small digital print on
-      your watch... 3/15/4120, 10:20 AM.
+    sentence: 'You look around in the cave as your eyes adjust to the light....You
+      don''t see your crewmates or their pods. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: There's no way that can be right. That would mean I would have to have
-      been asleep for 100 years!
+    sentence: 'Our landing should have been on a solid flat surface, not in some
+      cave. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: The watch is still ticking just fine though. Sarge said these thorium
-      batteries can last for centuries.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I need to find out what's going on, and fast. First though, I need
-      to escape this cave.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I don't think I have anything salvagable left in the ship, but that
-      wrench looks unscathed.
+    sentence: I wonder if it had anything to do with the stuff that was blocking
+      our sensors.
   endAction: 0
   choices: []
   choiceKey: 

@@ -16,67 +16,28 @@ MonoBehaviour:
   speakers:
   - You
   - En
-  - ???
   sentences:
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Hello there, stranger. Sorry for getting you involved. Are you hurt?
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: No, I'm fine. I see you are hurt a lot.
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: What a shame. I underestimated the beast's power.  But you must be
-      skilled to defeat that monster.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Anyway, my name is En. How about you?
+    sentence: 'Hello, my name is En. Sorry for getting you involved. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'James Tea Dunkirk, call me James. '
+    sentence: 'You are good. My name is Jame Tea Dunkirk. Just call me James. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'Ah, James. You look different. Where are you from? '
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: (How should I answer this)
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I come from the other side of the ocean.
+    sentence: We can't stay here though, he won't be out long and he will be even
+      madder when he wakes up.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Oh really? I have never seen people from that side of the world before. 
-      Tell me more about that.
+    sentence: My village is nearby, lets go recover from our battle.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: (Well, I can't get away with this very soon)
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Sure, but we need a better place for that. I don't feel safe here.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Of course. Come to my village. Let's have a drink there and talk about
-      your journey, your homeland, and perhaps the magic power you used.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: (Oh no)
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I guess I don't get a choice. Lead the way En.
+    sentence: Sure, En. Lead the way
   endAction: 0
   choices: []
   choiceKey: 

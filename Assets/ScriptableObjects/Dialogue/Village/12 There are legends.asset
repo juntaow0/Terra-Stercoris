@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: 12 There are legends
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - You
+  - Elder
+  - 
+  sentences:
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: What happened here?
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "The Tuhrooks raided us. There is too much blood being shed needlessly.
+      We need to form a truce with the Tuhrook\u2026. "
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: There might be some who want to stop this pointless violence...
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'There are legends of someone who would unite us against a common enemy..grand
+      tales prosperity and diplomacy. '
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Only that person can decipher a message left by our ancestors...
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: What message?
+  - speakerIndex: 2
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: The elder looks at you seriously
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Behind me is a temple that have kept the message for thousands of years.
+      It is in a chest at the end of the temple.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I think you are that person\u2026. To decipher the message you would
+      need to pass the message\u2019s test."
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Luckily, the tests had become malfunctional even before I was born.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Although we had chances to reavel the message, no one here could understand
+      it.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: That being said, I see potential in your ability to finally decipher
+      that message.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I will bring back the deciphered message.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Good luck.
+  endAction: 0
+  choices: []
+  choiceKey: 

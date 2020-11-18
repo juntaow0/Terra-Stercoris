@@ -16,48 +16,24 @@ MonoBehaviour:
   speakers:
   - You
   - En
-  - ???
   sentences:
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Hello there, stranger.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Ah, you are finally awake.
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: 'Thanks for saving my life. I was hunting that beast, but somehow got
-      you involved. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: By the way, I'm En. You are not from here right? What's your name?
-      Where are you from?
+    sentence: My name is En and you saved my life friend.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: (How should I answer)
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Jame Tea Dunkirk, call me James. I come from the other side of the
-      ocean.
+    sentence: 'Jame Tea Dunkirk, call me James. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'Oh really? That''s why you look different. '
+    sentence: We can't stay here though, he won't be out long and he will be even
+      madder when he wakes up.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Why don't you come with me to my village. Let's have a drink and talk
-      about your journey, and the magic you just used.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: (Well, this is unexpected, but I might find useful information there)
+    sentence: My village is nearby, lets go recover from our battle.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}

@@ -44,16 +44,15 @@ MonoBehaviour:
     fontStyle: 2
     fontOverride: {fileID: 0}
     sentence: 'It sounds aggresive. '
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Hey En, for your friend's sake, the horn means my villagers are about
-      to raid your village.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: What? James, I know you are not feeling well, but we need to get back
-      to the village as soon as possible.
+    sentence: It's the Tuhrook. They are starting a raid!
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: James, I know you are not feeling well, but we need to get back to
+      the village as soon as possible.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
@@ -61,7 +60,8 @@ MonoBehaviour:
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I will not side with anyone. See you next time if you wanna trade.
+    sentence: Our deal is over now. I'm going to go my own way. I won't join the
+      raid if you're worried about that. Later.
   endAction: 0
   choices: []
   choiceKey: 

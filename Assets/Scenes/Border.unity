@@ -3499,6 +3499,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b8a325ccfcc2a6d43a82b6fafb193b96,
         type: 2}
+    - target: {fileID: 537616693842453246, guid: c237b4070a1c20842aa5c1a6602377fb,
+        type: 3}
+      propertyPath: triggerID
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 537616693842453247, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -63983,12 +63988,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df37e7568c9ff4747b50a2e31a09d82d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerID: 0
+  triggerID: 1
   Conversations:
   - {fileID: 11400000, guid: fd5c873cd23ace747a2df31249b19391, type: 2}
   - {fileID: 11400000, guid: 54f928e282853324eae3c09e72ab517f, type: 2}
   EndEvents:
   - events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1802288428}
+          m_MethodName: SetTarget
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 220914061}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1802288428}
+          m_MethodName: SetHostile
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1917053101}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1802288428}

@@ -24,7 +24,7 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "Meet me at the blacksmith's shop when you\u2019ve looked around."
+    sentence: "Meet me at the craftsman's shop when you\u2019ve looked around."
   endAction: 0
   choices: []
   choiceKey: 

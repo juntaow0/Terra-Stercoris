@@ -41288,7 +41288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAABAIezhamJDZwIAAAsFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK54UyYAze265DyB7yqJCtXHwR1hirkCWXHgGS4t9XkmXssFyQu2dGPT1jfyHKVQOFFnIjKXkUBNDPEXJn9GPUkw9wwnvBt/QTuph3SnTlgrCPecWaCotPXZoSNWhJi198z1xwZEHDaSlkvSZ7yITSysIlZgosJYV22dxCXyN0sn/j1KWc7Wm2dKdPe0qj0cUeC+AaZB+aTlL3S0L8fBL755CUTGaLVZzE63G09OmGFwzXDRDXS19lFYf8ZOHDuO0yRLiOCsEYVUEi0ufGW5DhRhnboA0gFNuWvS4XXwHdV9rJHyY/l6UCHfyQ+HxHpXWurYp+i9bOGqtDq+sDM+PumS0Sr6kt+vgfP556upSifujunUbuDl3R4vCKzwVWeuD3EL77LtzwI2YHvGPwXgF/EhspDCeW1NK4VKNgdtc/XlvLKigOPd5KvQFN0/vdjbcbruvh4rs/ZYzWO0dN4hbYMuH99jsB0k7mjxXsN0aFEhZ1Kv4qeMP74WoF4p5KpS0VuuRO3k4Y6ULR2nvmujE6E5KDh4PoBjhm+vxiy+jbEd5wg2tvmHvsXqJweeC6d+MmxcN9fBTdUC/ieB2WqsTxEVT1bDSjHHrRjniyPmWC83bDhp50aVsjS1wM0vaGku+rhXbRao7TEpJ0mczJfDFeRumOLFY4jhYxRPEU+d2j3PaJ2UsrNNhjp8b74tzuWfdtGW0kbvy2E4mPG/pZi4HllJdiW0gA/txWuAoHaS+xbyVZE2oN2oLWlPt5o68cMVEcgOTXQrnvdH3SEud9lRw19ENoh+Qo8x+THF3Q5R9QSwMEFAAACAgAAEAh7H2gR5htAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tFKSgYVxomVaqpmluZlxirGprrmBZVKKqUWiiYGpSaqBiaFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAEAh7OFqYkNnAgAACwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAEAh7H2gR5htAAAAeAAAAAkAJAAAAAAAAAAAAAAAtAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABsAwAAAAA=
+    dataString: UEsDBBQAAAgIAABAIezfYg0TZwIAAAwFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMly4jAQ/RVK54EyYAye24xDyByyVMhULr4Iq41VyJJLS4Ck+PeRZBk7jC+W+/XyXnfLX4hy1UChhdxISh4FAfRzhNwZ/Rj14AOc8F7wLf2EzuedEl05J+x9XrGmwtqnLkyJGrSkxS++Z845skbDaSlkvSZ7yITSyppLzBRYSArtork1fY3Qyb7GqQs529Ns6U6f9pRGo4s9FsA1yN41naTuSYL/fBL77xCUTGaLVZzE63G09OGGFwzXDRCnpc+yikN8svBu3KoMHk5RIRijKlBE+tz4FmS4UcYKtA6EYivZ83L+FdB9pR39YfBzWSrQoR8Sn++otJ1rs6Lfom1njdWh5fWBmXF1ZovEc2qTPv6Hj6ceLqWoH7q608jV0BUtDq/4XGClB/0emu++Ezf8iNkB7xi8V8CfxEYKw4kFtTQu1CiY3fWfV2lZBcWht7dUb4ym6fvdjbcbrtNw8epPGaP1zkGTuDVsmfD99jsB0k7mjyXsN0aFFNbqWPxV8Ib3w9UKwD2VSlsoqOSO3k4Y6VzR2vfMqTE6E5KDNwfSDXDM9PnFptG3I7zBBmVvkHvsLlEoHrDubtyEeHPvH0U30Is4XoelKnF8BFU9G80oh560A55snzLBebthw550YVsjS1wMwvaGku+rhXbRao7TEpJ0mczJfDFeRumOLFY4jhYxRPEU+d2j3OrE7KUlGtpjp8b75NzuWfdvGW0kbvy2E4mPG/pZiyFBykuxLSQAf25TXJmDtFXstSRrQm2HtqA15X7g6CtHTBQHIPm1Zu6lrk9a4rzPkqOGfgjtLDnK/N8kRxd0+QdQSwMEFAAACAgAAEAh7H2gR5htAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tFKSgYVxomVaqpmluZlxirGprrmBZVKKqUWiiYGpSaqBiaFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAEAh7N9iDRNnAgAADAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAEAh7H2gR5htAAAAeAAAAAkAJAAAAAAAAAAAAAAAtAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABsAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -113624,6 +113624,7 @@ MonoBehaviour:
   triggerID: 0
   Conversations:
   - {fileID: 11400000, guid: 5ff441225f93a104b9599358f9a69d6e, type: 2}
+  - {fileID: 11400000, guid: 67f73998ecb715746bb0d3c33778ec52, type: 2}
   EndEvents:
   - events:
     - m_PersistentCalls:
@@ -113672,6 +113673,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1348794741}
+          m_MethodName: SetDefaultIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - events:
+    - m_PersistentCalls:
+        m_Calls: []
 --- !u!61 &1348794742
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113850,7 +113865,7 @@ PrefabInstance:
     - target: {fileID: 537616693842453246, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
       propertyPath: EndEvents.Array.data[1].events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Talk to the Smith
+      value: Talk to the craftsman
       objectReference: {fileID: 0}
     - target: {fileID: 537616693842453246, guid: c237b4070a1c20842aa5c1a6602377fb,
         type: 3}
@@ -114193,7 +114208,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7562109516735168807, guid: 2f5bb9c28a4148c4db7f72bbb6b1c26d,
+  m_Sprite: {fileID: -5122982857452051437, guid: 6ab04d3fd5a3c164bbf298f0427d886d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -114236,7 +114251,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8125, y: 1.5625}
+    oldSize: {x: 1, y: 1.5625}
     newSize: {x: 0.8125, y: 1.5625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -114287,7 +114302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Talk to Terran Smith
+  _message: Talk to craftsman
   interactAction:
     m_PersistentCalls:
       m_Calls:

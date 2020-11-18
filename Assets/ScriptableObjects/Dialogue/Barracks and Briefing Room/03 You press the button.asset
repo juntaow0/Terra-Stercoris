@@ -14,21 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
   speakers:
-  - You
-  - John
+  - Sarge
   - 
   sentences:
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: 'You press the button on your desk and it cleans you up. A message
-      left by John pops up. It reads:'
   - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: 'You get out of bed and get dressed. A notification from Sarge pops
+      up:'
+  - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I didn't know you could drink like that. I wont lose next time. Let's
-      have a drink when you get back. Freshen up and get to the scout ship already.
-      Ill see ya later! Be safe down there!
+    sentence: Final Departure Checks in the Exploration Division room in 5 minutes.
+      Do not be late.
   endAction: 0
   choices: []
   choiceKey: 

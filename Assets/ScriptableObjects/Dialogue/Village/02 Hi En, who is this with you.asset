@@ -23,14 +23,14 @@ MonoBehaviour:
     fontOverride: {fileID: 0}
     sentence: Hi En, who is this with you?
   - speakerIndex: 2
-    fontStyle: 0
+    fontStyle: 2
     fontOverride: {fileID: 0}
     sentence: En places his hand on your shoulder as he responds
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: This is James. I found him while I was patrolling near the cave. Got
-      knocked out by a Goblin but thanks to this guy I got away without a scratch.
+    sentence: This is James. I found him while I was patrolling near the cave. He
+      helped me fight against one of the Tuhrook that was sneaking around.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}

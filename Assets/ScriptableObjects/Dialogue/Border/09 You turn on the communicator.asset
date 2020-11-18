@@ -64,6 +64,73 @@ MonoBehaviour:
     fontOverride: {fileID: 0}
     sentence: "I\u2019ve been asleep for 500 years\u2026 John..he isn\u2019t alive
       anymore"
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You proceed to read the most recent message from John
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'My last goodbye:'
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "It's been a while since I've written one of these\u2026. My bones
+      aren't what they used to be anymore. I've gotten old now haha\u2026.I can feel
+      my time coming soon\u2026. "
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Jean passed away last year and the house feels so empty without her
+      smile. For a while it was manageable. Our kids came by a lot back then\u2026.but
+      they stopped visiting after a while\u2026."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "God I miss them\u2026 I miss you...I should have said goodbye the
+      day you left..."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: I tried to wait for you. I had this fantasy that the exploration arrivals
+      door would open and I would turn to see you walking through the gate. Every
+      day..Every day I prayed for my fantasy to come true....
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Now my hair has greyed. I have married an amazing woman, had beautiful
+      children, and met my grandkids. But every day I waited for you. I don't think
+      I can wait any longer.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I've fought for every breath, buried the love of my life, and buried
+      the last of my friends these past few years. I dont have the strength to keep
+      waiting\u2026. "
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "I don't know if you're still out there\u2026.somewhere, but if you
+      are, know that I'm incredibly proud of you.  I know Mom would be too\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Looks like I'll be visiting her soon. I'm going to die soon. It might
+      be in a week, a few days, maybe even today.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "The truth is\u2026.I'm scared\u2026.I can't live in the void of my
+      loneliness anymore\u2026.I'm getting tired of trying to breathe\u2026."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: This is my last goodbye, the one I should have given you all those
+      years ago. I love you.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Your Brother John
   endAction: 0
   choices: []
   choiceKey: 

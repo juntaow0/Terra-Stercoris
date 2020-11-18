@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
   speakers:
-  - Village Smith
+  - Village Craftsman
   sentences:
   - speakerIndex: 0
     fontStyle: 0
@@ -40,7 +40,8 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: The issue at hand is finding a source of Terra powerful enough.
+    sentence: The issue at hand is finding a source of Terra powerful enough. Maybe
+      En will have some ideas.
   endAction: 0
   choices: []
   choiceKey: 

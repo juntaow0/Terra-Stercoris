@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -622,7 +622,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Meet En at West entrance
+            m_StringArgument: Talk to the craftsman
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 180407407}
@@ -69948,6 +69948,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 180407407}
+          m_MethodName: Hide
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 377444941}
           m_MethodName: LoadSceneByName
           m_Mode: 5
@@ -69990,7 +70001,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   SelfDestruct: 0
-  _isEnabled: 1
+  _isEnabled: 0
 --- !u!212 &790538975
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -71418,7 +71429,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -8405552429354236203, guid: bcbe6c9813c02694c873f594dd4a8878,
+  m_Sprite: {fileID: -2260823320829027807, guid: 8e90cb1d0c6abf544832a8192381d7af,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -122947,7 +122958,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7562109516735168807, guid: 2f5bb9c28a4148c4db7f72bbb6b1c26d,
+  m_Sprite: {fileID: -5122982857452051437, guid: 6ab04d3fd5a3c164bbf298f0427d886d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -122990,7 +123001,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8125, y: 1.5625}
+    oldSize: {x: 1, y: 1.5625}
     newSize: {x: 0.8125, y: 1.5625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -123014,7 +123025,43 @@ MonoBehaviour:
   triggerID: 0
   Conversations:
   - {fileID: 11400000, guid: 0c1030ba34b3c4146892e2b02e8984a7, type: 2}
-  EndEvents: []
+  EndEvents:
+  - events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 790538974}
+          m_MethodName: set_InteractEnabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 180407407}
+          m_MethodName: SetText
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Meet En at West entrance
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 180407407}
+          m_MethodName: Show
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!114 &1813898700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123027,7 +123074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: Talk to Terran Smith
+  _message: Talk to craftsman
   interactAction:
     m_PersistentCalls:
       m_Calls:

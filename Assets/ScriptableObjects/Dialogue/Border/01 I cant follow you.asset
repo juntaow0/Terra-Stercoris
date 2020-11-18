@@ -19,12 +19,12 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I cant follow you beyond the border. Remember everything is solved
-      through violence in the goblin village.
+    sentence: 'I cant follow you beyond the border. Remember everything is solved
+      through violence in the Tuhrook village. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Go across the creek when you're ready.
+    sentence: Go beyond the creek when you're ready
   endAction: 0
   choices: []
   choiceKey: 

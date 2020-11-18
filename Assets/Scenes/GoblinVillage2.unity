@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -66408,7 +66408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df37e7568c9ff4747b50a2e31a09d82d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerID: 0
+  triggerID: 4
   Conversations:
   - {fileID: 11400000, guid: 9824bce07cdcc47488a69c5dbcc8ecaf, type: 2}
   EndEvents: []
@@ -71938,11 +71938,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df37e7568c9ff4747b50a2e31a09d82d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerID: 0
+  triggerID: 3
   Conversations:
   - {fileID: 11400000, guid: f8325bdcec803ed47929b00b55823e6c, type: 2}
   EndEvents:
   - events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8613878815264887729}
+          m_MethodName: SetTarget
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 329159614}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8613878815264887737}
+          m_MethodName: set_InteractEnabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8613878815264887729}

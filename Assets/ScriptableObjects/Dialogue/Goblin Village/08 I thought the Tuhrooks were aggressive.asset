@@ -10,17 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: Crashed Ship- no wrench
+  m_Name: 08 I thought the Tuhrooks were aggressive
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
-  speakers: []
+  speakers:
+  - Tut
+  - 
   sentences:
   - speakerIndex: 0
-    fontStyle: 2
+    fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "I don\u2019t think it will be easy to fix this\u2026 It\u2019s also
-      full of this sparkling orange light. I hope it\u2019s not radiation, as I\u2019ve
-      been drenched in it for a long time!"
+    sentence: 'I thought the Tuhrooks were aggressive but you are even worse. '
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Fine Ill help you. Its not like I have much of a choice. At least those
+      weaklings will teach me their techniques.
   endAction: 0
   choices: []
   choiceKey: 

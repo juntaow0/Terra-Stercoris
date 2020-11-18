@@ -26,40 +26,10 @@ MonoBehaviour:
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: Who are you and why are you in our territory?
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Chill. I'm just looking for a way to get back home.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I heard tales of a crash that happened around the goblin village. I'm
-      searching for something that might be at the crash site.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Why would I help you? Do you take me for a fool?
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Leave this place at once while you still can.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: How does a trade sound? You take me to the crash site and I have some
-      meat that I can trade you.
-  - speakerIndex: 2
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "The goblin pauses and narrows his eyes\u2026"
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: How about I just take it from you instead!
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: My wrench disagrees.
-  endAction: 0
-  choices: []
-  choiceKey: 
+  endAction: 1
+  choices:
+  - text: Explain
+    nextConversation: {fileID: 11400000, guid: 7b8e73f9112aeb64cbcf4d191836599a, type: 2}
+  - text: Bribe
+    nextConversation: {fileID: 11400000, guid: b2f53da2990d256489a80249925ce0f9, type: 2}
+  choiceKey: tutfight

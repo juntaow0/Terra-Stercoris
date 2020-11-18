@@ -37,25 +37,16 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Help me put my device back together and I can convince the Terrans
-      to show you how to control the Terra to preserve food.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Ah nice. What exactly would I have to do?
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
     sentence: I need a source of Terra strong enough to bind my device together.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "So I just have to provide enough Terra for you to fix your toy. Hm\u2026"
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: ' I doubt you would be able to find a Terran willing to teach one of
-      my kind. But I will follow you just in case.'
-  endAction: 0
-  choices: []
-  choiceKey: 
+    sentence: You need a strong source of Terra to fix your device? Whats that got
+      to do with me?
+  endAction: 1
+  choices:
+  - text: Explain
+    nextConversation: {fileID: 11400000, guid: 3f8ee16627ec58e4b80c46cff86db3e0, type: 2}
+  - text: Force
+    nextConversation: {fileID: 11400000, guid: 6ea65a9c63d8cce40863ed05e924b960, type: 2}
+  choiceKey: tuthelp

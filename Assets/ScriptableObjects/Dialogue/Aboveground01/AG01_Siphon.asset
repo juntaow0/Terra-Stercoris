@@ -12,10 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: AG01_Siphon
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers:
   - You
+  - 
   sentences:
   - speakerIndex: 0
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You cough blood and look back at the green thing coming towards you.
+      You feel your heart beat faster and your skin begins to spark orange.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: I don't want to die...
   endAction: 0
   choices: []
+  choiceKey: 

@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
+  m_Name: message
+  m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
+  speakers:
+  - Ancient Human Voice
+  - 
+  sentences:
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: You opened the chest, and a sound starts playing immediately.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: If you found this it means you wanted to know the truth. We figured
+      we might as well leave a note for someone in the future.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'It was 2040. Humans had ignored climate change and damaged the world
+      irreversibly. They had continued to pollute the Earth endlessly. '
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "As the Earth was ravaged, humans began to see the consequences of
+      their actions\u2026. Food insecurity, reduced crop yields, increased migration
+      and dramatic damage to coastal communities was only the beginning\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'Clean drinkable water became more and more scarce. Those years of
+      polluting the Earth came back to haunt them. As the water rose it only became
+      more polluted as it swallowed entire states on each continent. '
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "The increased global temperatures killed the sea and all the animals
+      that called it their home. Humanity's punishment was unfolding on all fronts\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "However, it wasn't lack of drinking water, the death of the sea, or
+      increasing temperature that led to war\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Rather the nations and leaders of the world began blaming one another,
+      arguments became less about how to solve the issue and more about who held
+      the most blame.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Of course there were still people working to fix the climate but the
+      world was primed for war.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Icebergs were one of the few sources of fresh water still left\u2026.
+      Naturally tensions had been increasing over the remaining icebergs and which
+      nations would harvest them\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "The world powers used their military dominance to take as much as
+      they could for themselves. It wasn't long until people crushed under the weight
+      of starvation and burned by the heat of thirst broke\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Humans have been known to do amazing things and be amazing people\u2026.but
+      they have also been known to wear a face of hate, greed, and hubris that disgusted
+      even the devil."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Wars, genocides, and facism are common for humanity\u2026. So it was
+      no surprise when nations started launching nuclear warheads\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "With 14 thousand nuclear weapons in humanity\u2019s arsenal, no one
+      was safe. Every major figure in the world was killed. Every major city decimated.
+      Entire nations were leveled\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "The nuclear fallout was so saturated that even those that survived
+      the blasts couldnt step outside\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Over the next few years the survivors found each other through chance.
+      Only 8 humans had survived\u2026. Each was able to walk outside with no negative
+      reactions. It seemed almost as if they were being protected\u2026"
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Over the years they were able to slowly build a small society with
+      children. As the children were growing the initial survivors met.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "They chose to rewrite history and instill lessons of humility and
+      compassion for others and nature\u2026. To prevent society from walking the
+      same path that led to their demise\u2026"
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: End of message
+  endAction: 0
+  choices: []
+  choiceKey: 

@@ -16,59 +16,54 @@ MonoBehaviour:
   speakers:
   - You
   - En
+  - 
   sentences:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Who are you all exactly?
+    sentence: Who are you people?
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: We are descendants of Homo Sapiens, but we call ourselves Terran.
+    sentence: Who we are? We are children of the Terra. We live peaceful lives finding
+      balance with the Terra.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Unlike us, Homo Sapiens were greedy and cared only for power. They
-      constantly fought each other, until eventually there was the Great War that
-      ended life as they knew it.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Their weapons destroyed and cracked the earth so deeply that the Terra
-      escaped. It soaked and coated the surface of this world until nothing looked
-      the same.
+    sentence: 'Our village is small but our bonds are powerful and unite us together
+      through the Terra. The village elder would be able to tell you more about our
+      history than me. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: What is Terra?
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Terra is the life force of every living thing on the planet no matter
+      how big or small all creatures have Terra\u2026"
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: 'But some creatures are more gifted at using the Terra than others.
+      My people have developed great control over our Terra through generations of
+      practice. '
+  - speakerIndex: 2
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: "En\u2019s flashes a proud smile"
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: And I happen to the strongest in the village!
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "It\u2019s a substance the originated in the center of the Earth. It
-      has the power to mutate anything it touches. It can read a person\u2019s soul
-      and alter the mutation to reflect your attributes."
-  - speakerIndex: 0
-    fontStyle: 0
+    sentence: Didn't you get knocked out by that green creature?
+  - speakerIndex: 2
+    fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: "Us Terrans are peaceful creatures and our mutations reflect that.
-      We don\u2019t have a lot of power, but we have incredible control over the
-      power we possess."
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: "Those Goblins though are the opposite. They\u2019re closely related
-      to those humans. Selfish and obsessed with power. They have little to no control
-      over their mutations but boy are they strong."
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: And of course, they use that power to torment and steal from us. Lucky
-      for us we designed traps to protect our food.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: No matter how many traps we set though, those good for nothing goblins
-      still manage to break through and steal some of our livestock.
+    sentence: En looks down in embarrassment
   endAction: 0
   choices: []
   choiceKey: 

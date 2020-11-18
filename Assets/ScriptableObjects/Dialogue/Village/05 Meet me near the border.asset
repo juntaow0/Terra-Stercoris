@@ -20,7 +20,7 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Meet me near the border when you're ready to go.
+    sentence: Meet me near the border after you have taked to the craftsman.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}

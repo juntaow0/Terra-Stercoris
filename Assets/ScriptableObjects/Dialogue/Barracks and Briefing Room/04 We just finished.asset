@@ -12,24 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: 04 We just finished
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers:
   - Sarge
+  - 
   sentences:
   - speakerIndex: 0
-    sentence: 'We just finished the calculations, and it looks like it''s going take
-      12 light cycles to get to Earth from Aniara. '
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Before you depart lets go over your mission one last time.
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: He looks at each of you seriously.
   - speakerIndex: 0
-    sentence: So, make sure you go to cryosleep after you conduct your investigation
-      of Earth and turn on your communicator.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Your objective is to scan and log as much of the terrestrial environment
+      and life as you can.
   - speakerIndex: 0
-    sentence: As an exploration officer you all understand the risks of the job;
-      If you don't successfully turn on your communicator, we will assume you dead
-      and plan further recon accordingly.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: It is unlikely that you will encounter any intelligent organisms but
+      in the case that you do make sure to gather as much information as possible.
   - speakerIndex: 0
-    sentence: It is unlikely that this will be the case, but stay alert nonetheless.
-      After you turn on your communicator, enter cryo sleep and we will wake you
-      when we arrive.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Something on the planet is interfering with the electromagnetic field
+      around the planet and making it impossible for our sensors to detect anything.
   - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: That means you're going in blind...
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: Sarge takes a solemn tone.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Upon arrival use your communicator to send us a signal if the planet
+      is habitable. If we don't receive a signal, then we will assume that you have
+      died\u2026. and we will classify the planet as inhospitable."
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
     sentence: Make sure you have everything you need before you go. That is all.
       Good luck, officers.
   endAction: 0
