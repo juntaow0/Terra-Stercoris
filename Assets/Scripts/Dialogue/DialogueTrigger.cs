@@ -45,7 +45,6 @@ public class DialogueTrigger : MonoBehaviour
             return;
         }
         InputManager.OnNextDialogue -= NextSentence;
-        Debug.Log(id);
         currentEvent?.Invoke();
     }
 
@@ -54,7 +53,6 @@ public class DialogueTrigger : MonoBehaviour
         if (id != triggerID) {
             return;
         }
-        Debug.Log(id);
         if (currentEvents.Length > 0) {
             currentEvent = currentEvents[index];
         }
