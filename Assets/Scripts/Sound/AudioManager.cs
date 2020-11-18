@@ -39,11 +39,13 @@ public class AudioManager : MonoBehaviour {
     }
 
     public void Play(string cue) {
-        int index = _audioCues.BinarySearch(new NamedAudioCue(cue));
-        if(index >= 0) {
-            PlayCue(_audioCues[index].cue);
-        } else {
-            Debug.LogWarning("AudioCue " + cue + " not found");
+        if(cue != "") {
+            int index = _audioCues.BinarySearch(new NamedAudioCue(cue));
+            if(index >= 0) {
+                PlayCue(_audioCues[index].cue);
+            } else {
+                Debug.LogWarning("AudioCue " + cue + " not found");
+            }
         }
     }
 

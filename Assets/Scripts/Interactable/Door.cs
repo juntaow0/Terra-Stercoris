@@ -9,6 +9,7 @@ public class Door : MonoBehaviour, IInteractable {
     [SerializeField] private Sprite closedSprite;
     [SerializeField] private Sprite openSprite;
     [SerializeField] private bool startOpen = false;
+    [SerializeField] private string doorSound;
     private Collider2D collider;
     private SpriteRenderer renderer;
     private bool isOpen;
@@ -27,6 +28,7 @@ public class Door : MonoBehaviour, IInteractable {
     }
 
     public void Interact() {
+        AudioManager.instance.Play(doorSound);
         if(isOpen) {
             Close();
         } else {
