@@ -19,7 +19,7 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: If the boulder is tied to the vine, you might be able to push the boulder
+    sentence: If the boulder is tied to the vine, I might be able to push the boulder
       into the lake to generate enough force to pull the ship up from the lake. Should
       I tie the vine to the boulder?
   endAction: 1
@@ -28,4 +28,4 @@ MonoBehaviour:
     nextConversation: {fileID: 11400000, guid: 9dfcfe22f521d664ea1f17baebc9f153, type: 2}
   - text: No
     nextConversation: {fileID: 11400000, guid: f899ff28ad8ecd147ba16783a02254cf, type: 2}
-  choiceKey: atttackVineToBoulder
+  choiceKey: attachVineToBoulder
