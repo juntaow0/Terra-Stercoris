@@ -12,6 +12,7 @@ Tamara Dzolic
 
 Some other music by:
 Kevin Macleod
+CO.AG Music
 
 Assets:
  - Font: https://www.1001fonts.com/joystix-font.html
@@ -27,8 +28,10 @@ Assets:
 	- Cobblestone paths and town objects by Zabin
 	- 16x16 town remix by Sharm
  - Sprites:
-	-Tent by Senmou
-	-Campfire by Zabin
+	- Tent by Senmou
+	- Campfire by Zabin
+	- RPG Icons by 7Soul
+	- Palisade Bases
  - Sound Effects:
 	- Metal Impact Sound Effects by Bluezone Corporation
 	- Eerie Cave Ambience by Sound Effects Factory
