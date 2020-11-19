@@ -1165,6 +1165,8 @@ MonoBehaviour:
     cue: {fileID: 11400000, guid: cbf02b1cc154b35428a744f1017082db, type: 2}
   - name: Siphon
     cue: {fileID: 11400000, guid: 9ea39b0caabdc7a46b0a1641dad49b66, type: 2}
+  - name: Surprise
+    cue: {fileID: 11400000, guid: b8fe62c69966df34393cf25d60b73f7a, type: 2}
   _songs:
   - name: Blue Thunder
     clip: {fileID: 8300000, guid: ecfa87ff95416cb41be16534ce1c1677, type: 3}
