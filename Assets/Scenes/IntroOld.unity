@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -147,8 +147,8 @@ PlayableDirector:
   m_GameObject: {fileID: 250320391}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 8658832e2ecb0dc48b15495973a0c267, type: 2}
-  m_InitialState: 0
+  m_PlayableAsset: {fileID: 11400000, guid: a02d8feff6a546046b065435bfff5946, type: 2}
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -158,6 +158,12 @@ PlayableDirector:
   - key: {fileID: 1627238048445293129, guid: 8658832e2ecb0dc48b15495973a0c267, type: 2}
     value: {fileID: 1993596685}
   - key: {fileID: -5922771976932640885, guid: 8658832e2ecb0dc48b15495973a0c267, type: 2}
+    value: {fileID: 599351568}
+  - key: {fileID: -2838261664540865197, guid: a02d8feff6a546046b065435bfff5946, type: 2}
+    value: {fileID: 1943392377}
+  - key: {fileID: 1627238048445293129, guid: a02d8feff6a546046b065435bfff5946, type: 2}
+    value: {fileID: 1993596685}
+  - key: {fileID: -5922771976932640885, guid: a02d8feff6a546046b065435bfff5946, type: 2}
     value: {fileID: 599351568}
   m_ExposedReferences:
     m_References: []
@@ -642,13 +648,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 6225ac9ca35653947a253620a772f88e, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
