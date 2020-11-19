@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e26899791c2fca4aa1d4a38d69c8e39, type: 3}
+  m_Name: SiphonCue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 8965284a51926034ab6fb4bf6da9c32a, type: 3}
+  - {fileID: 8300000, guid: 259d4cac935957445b418b066a679d99, type: 3}
+  - {fileID: 8300000, guid: c58ef20d98fa60a40a0d6bf235bf02ea, type: 3}
+  - {fileID: 8300000, guid: 7084439a7fbd1a640a15b25fe6404770, type: 3}
+  - {fileID: 8300000, guid: cc50925b08a5d024db4b1297a08bd906, type: 3}
+  - {fileID: 8300000, guid: 30aac6ce6f9f02044af75ada271be5b1, type: 3}
+  - {fileID: 8300000, guid: 38b9a09f15395a84b9dbbccae8111722, type: 3}
+  - {fileID: 8300000, guid: 4166bbefd7ed70e46a507bb322bed9c7, type: 3}
+  - {fileID: 8300000, guid: 4bb7f317c360ada4fabf0877f00c6fa2, type: 3}

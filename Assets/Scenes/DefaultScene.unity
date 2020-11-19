@@ -1162,7 +1162,7 @@ MonoBehaviour:
   - name: Talk
     cue: {fileID: 11400000, guid: 982ee57085198304ead8bb583624915f, type: 2}
   - name: Share
-    cue: {fileID: 11400000, guid: a4d9a87a3fd40594bb5dedfefd2d0fd5, type: 2}
+    cue: {fileID: 11400000, guid: cbf02b1cc154b35428a744f1017082db, type: 2}
   - name: Siphon
     cue: {fileID: 11400000, guid: 9ea39b0caabdc7a46b0a1641dad49b66, type: 2}
   _songs:

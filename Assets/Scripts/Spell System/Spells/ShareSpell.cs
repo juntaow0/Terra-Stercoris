@@ -36,7 +36,6 @@ public class ShareSpell : SpellBehavior {
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, dir, spellStats.range);
             if (hit.collider != null) {
                 ISiphonable target = hit.transform.GetComponent<ISiphonable>();
-                AudioManager.instance.Play("Share");
                 if (target != null && target.IsShareable && user.energy.quantity >= energyCostPerTick) {
                     particles.particleTarget = hit.transform;
                     active = true;
@@ -44,6 +43,7 @@ public class ShareSpell : SpellBehavior {
                     particles.Play();
                     Vector3 hitOffset = target.transform.position - (Vector3) hit.point;
                     while (active&&(hitOffset + user.transform.position-target.transform.position).magnitude<=spellStats.range && target.IsShareable && user.energy.quantity >= energyCostPerTick && user.IsAlive) {
+                        AudioManager.instance.Play("Share");
                         target.Siphon(-healthPerTick);
                         user.Damage((int)(healthPerTick * healPercentage));
                         user.AddEnergy(-energyCostPerTick);
