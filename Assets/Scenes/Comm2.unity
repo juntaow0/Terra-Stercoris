@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -396,7 +396,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  TuskCC: {fileID: 0}
+      - m_Target: {fileID: 711445973}
+        m_MethodName: LeaveCombat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &416277831
 GameObject:
   m_ObjectHideFlags: 0
@@ -11554,10 +11564,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 17138102, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
+      propertyPath: spellPrefabs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 17138102, guid: 4816099c67334534c99f08dd45498ce4, type: 3}
+      propertyPath: spellPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 4368225068616939508, guid: 2fbc33a0c864acc4e992e51cf1620dda,
+        type: 3}
     - target: {fileID: 1658308746293421169, guid: 4816099c67334534c99f08dd45498ce4,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421170, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: weaponPrefabs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658308746293421170, guid: 4816099c67334534c99f08dd45498ce4,
+        type: 3}
+      propertyPath: weaponPrefabs.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1658308746293421174, guid: 4816099c67334534c99f08dd45498ce4,
         type: 3}
@@ -11998,7 +12027,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Light and Shadow
+          m_StringArgument: Blue Thunder
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &711445972
@@ -13232,7 +13261,6 @@ GameObject:
   - component: {fileID: 1278673354}
   - component: {fileID: 1278673353}
   - component: {fileID: 1278673352}
-  - component: {fileID: 1278673356}
   - component: {fileID: 1278673357}
   m_Layer: 0
   m_Name: Tusk
@@ -13315,6 +13343,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 711445973}
+          m_MethodName: EnterCombat
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
         - m_Target: {fileID: 1278673351}
           m_MethodName: SetActive
           m_Mode: 6
@@ -13349,17 +13388,6 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1278673356}
-          m_MethodName: set_InteractEnabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 2005848906}
           m_MethodName: Resume
@@ -13485,38 +13513,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1278673356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278673351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fb4a71b3369817438c6bbd2fbb78353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _message: Tusk test
-  interactAction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1278673352}
-        m_MethodName: StartDefaultConversation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  stopInteractAction:
-    m_PersistentCalls:
-      m_Calls: []
-  SelfDestruct: 0
-  _isEnabled: 1
 --- !u!114 &1278673357
 MonoBehaviour:
   m_ObjectHideFlags: 0
