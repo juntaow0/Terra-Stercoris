@@ -36,6 +36,7 @@ public class SiphonOne : SpellBehavior {
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, dir, spellStats.range);
             if (hit.collider != null) {
                 ISiphonable target = hit.transform.GetComponent<ISiphonable>();
+                AudioManager.instance.Play("Siphon");
                 if (target != null && target.IsSiphonable && user.energy.quantity >= energyCostPerTick) {
                     particles.particleSource = hit.transform;
                     active = true;

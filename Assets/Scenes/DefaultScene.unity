@@ -1161,8 +1161,10 @@ MonoBehaviour:
     cue: {fileID: 11400000, guid: 5ccd4a37f9812384daed37f6b37fcb47, type: 2}
   - name: Talk
     cue: {fileID: 11400000, guid: 982ee57085198304ead8bb583624915f, type: 2}
-  - name: Talk
-    cue: {fileID: 11400000, guid: 982ee57085198304ead8bb583624915f, type: 2}
+  - name: Share
+    cue: {fileID: 11400000, guid: a4d9a87a3fd40594bb5dedfefd2d0fd5, type: 2}
+  - name: Siphon
+    cue: {fileID: 11400000, guid: 9ea39b0caabdc7a46b0a1641dad49b66, type: 2}
   _songs:
   - name: Blue Thunder
     clip: {fileID: 8300000, guid: ecfa87ff95416cb41be16534ce1c1677, type: 3}

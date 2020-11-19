@@ -36,6 +36,7 @@ public class ShareSpell : SpellBehavior {
             RaycastHit2D hit = Physics2D.Raycast(user.transform.position, dir, spellStats.range);
             if (hit.collider != null) {
                 ISiphonable target = hit.transform.GetComponent<ISiphonable>();
+                AudioManager.instance.Play("Share");
                 if (target != null && target.IsShareable && user.energy.quantity >= energyCostPerTick) {
                     particles.particleTarget = hit.transform;
                     active = true;
