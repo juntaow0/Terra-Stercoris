@@ -17,6 +17,7 @@ public struct Sentence {
     public int speakerIndex;
     public FontStyles fontStyle;
     public TMP_FontAsset fontOverride;
+    public AudioClip recording;
     [TextArea(2, 5)]
     public string sentence;
 }

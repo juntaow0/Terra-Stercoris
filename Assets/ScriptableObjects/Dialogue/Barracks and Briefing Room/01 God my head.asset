@@ -20,10 +20,12 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
+    recording: {fileID: 0}
     sentence: God my head...what happened last night?
   - speakerIndex: 1
     fontStyle: 2
     fontOverride: {fileID: 0}
+    recording: {fileID: 0}
     sentence: You shake your head as you remember...
   endAction: 0
   choices: []

@@ -8,6 +8,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(ChoiceController))]
 public class DialogueUI: MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+
     private Canvas DialogueBox;
     private Canvas ChoiceBox;
     private TextMeshProUGUI DialogueText;
@@ -17,6 +19,10 @@ public class DialogueUI: MonoBehaviour
     private TMP_FontAsset defaultFont;
     private bool skip;
     private int soundMod = 0;
+
+    void Awake() {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void InitializeUI(GameObject UIPrefab, GameObject UIButton, TMP_FontAsset fontAsset, float characterPerSecond, float buttonSpacing) {
         choiceController = GetComponent<ChoiceController>();
@@ -38,6 +44,11 @@ public class DialogueUI: MonoBehaviour
     }
     public void toggleDialogueBox(bool state) {
         DialogueBox.enabled = state;
+        if(state == false) {
+            if(audioSource.isPlaying) {
+                audioSource.Stop();
+            }
+        }
     }
 
     public void toggleChoices(bool state) {
@@ -76,9 +87,16 @@ public class DialogueUI: MonoBehaviour
     }
 
     private void ShowSentence(Sentence sentence, string name, Action onComplete) {
+        if(audioSource.isPlaying) {
+            audioSource.Stop();
+        }
         Speaker.text = "";
         if (name != "") {
             Speaker.text = name + ":";
+        }
+        if(sentence.recording != null) {
+            audioSource.clip = sentence.recording;
+            audioSource.Play();
         }
         StartCoroutine(TypeCharacters(sentence, onComplete));
     }
