@@ -10,22 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: En-End
+  m_Name: 3 FV3 Survived
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
   speakers:
-  - You
-  - En
+  - ???
   sentences:
-  - speakerIndex: 1
+  - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: That was incredible! I can't believe that was stuck underwater.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: If you got what you came for though, we best be heading back to the
-      smith.
+    recording: {fileID: 0}
+    sentence: There was a horrible fight outside! I was lucky to be able to hide
+      inside of my nice house here.
   endAction: 0
   choices: []
   choiceKey: 
