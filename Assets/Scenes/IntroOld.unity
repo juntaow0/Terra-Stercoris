@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -760,8 +760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerID: 1
   Conversations:
-  - {fileID: 11400000, guid: eb10937f5a7c9c747b780258b962fb32, type: 2}
-  - {fileID: 11400000, guid: 5d987c12e4d8c2b4485edcdfc25f16b3, type: 2}
+  - {fileID: 11400000, guid: bf87f97f1b21111468d6cbea0ac27c52, type: 2}
+  - {fileID: 11400000, guid: 787fbc7bc69485148a846383bd6e0961, type: 2}
   EndEvents:
   - events:
     - m_PersistentCalls:

@@ -127,7 +127,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -265,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14d4754f6c23504383cbd114f5b5b81, type: 3}
   m_Name: SlideShowClip
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 6225ac9ca35653947a253620a772f88e, type: 3}
+  image: {fileID: 2800000, guid: c4437d4e3e43bef4189ed70a3833d440, type: 3}
 --- !u!114 &3573387431985922409
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14d4754f6c23504383cbd114f5b5b81, type: 3}
   m_Name: SlideShowClip
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: afd84b33c5f92ae45971ba6fccc925b5, type: 3}
+  image: {fileID: 2800000, guid: 1d53d85112f3986488947e8b7119f823, type: 3}
 --- !u!114 &8319213324480239641
 MonoBehaviour:
   m_ObjectHideFlags: 1
