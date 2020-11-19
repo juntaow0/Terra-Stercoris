@@ -19,11 +19,11 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Ah here is the ship
+    sentence: This is it! The ship! It looks stuck to the bottom of the lake though...
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I need to find a way to pull it out from the lake
+    sentence: I need to find a way to pull it out.
   endAction: 0
   choices: []
   choiceKey: 
