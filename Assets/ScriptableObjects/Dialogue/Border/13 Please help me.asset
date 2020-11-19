@@ -20,10 +20,6 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Please help me I beg you.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
     sentence: "Okay okay just get off the floor. Have you no shame\u2026.what a pathetic
       display."
   endAction: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   fontOverride: {fileID: 0}
   speakers:
   - En
-  - Player
+  - You
   sentences:
   - speakerIndex: 0
     fontStyle: 0
@@ -31,16 +31,16 @@ MonoBehaviour:
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: "But you should know the Tuhrook way of things is different than our
-      own\u2026Their village knows only violence and greed. "
+      own\u2026.Their village knows only violence and greed."
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "You must be prepared to fight for what you desire. The fights are
-      concluded when one party is no longer living\u2026."
+    sentence: "You must be prepared to fight for what you want. The fights arent
+      over till one person is dead\u2026"
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "If you would like to go despite this I will accompany you to the border.\r"
+    sentence: If you still wanna go, I can take you to the border.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}

@@ -19,14 +19,14 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "Looks like you found a piece! Hmm\u2026. looks like its missing 1
-      more component."
+    sentence: "Village craftsman: Looks like you found a piece! Hmm\u2026. looks
+      like its missing one more component."
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I suspect the Terra might be able to restore the communicator once
+    sentence: 'I suspect the Terra might be able to restore the communicator once
       you have all the physical pieces you need. Though it will take a great deal
-      of Terra.
+      of Terra. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
@@ -40,8 +40,8 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: The issue at hand is finding a source of Terra powerful enough. Maybe
-      En will have some ideas.
+    sentence: The problem is finding a source of Terra powerful enough. Maybe En
+      will have some ideas.
   endAction: 0
   choices: []
   choiceKey: 

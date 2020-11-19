@@ -20,16 +20,12 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I got the part and I think Im ready to put it together.
+    sentence: I got the part. According to the craftsman I need a strong source of
+      Terra and fine control over it.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: According to the craftsmen I need a strong source of Terra and fine
-      control over it.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I was able to convince a goblin to help me out.
+    sentence: "I was able to convince a Tuhrook to help me out.\r"
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
@@ -37,12 +33,7 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "But\u2026. I told him that the Terrans would teach him how to control
-      Terra better in exchange for his help."
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: En, can I ask you to teach him please. He doesnt seem like a bad person.
+    sentence: You can teach him how to control Terra better in exchange for his help.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
@@ -56,12 +47,12 @@ MonoBehaviour:
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: "But without him you wont have the power necessary to fix your device
-      and find your way home. Doesnt seem like you have any other choice\u2026"
+      and find your way home. Doesn't seem like you have any other choice\u2026."
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Okay. I can help you. You saved my life, so I should return the favor
-      and help you get home.
+    sentence: 'Okay. I can help you. You saved my life, it''s time for me to return
+      the favor and help you get home. '
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}

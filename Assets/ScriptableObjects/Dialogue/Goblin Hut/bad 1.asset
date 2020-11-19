@@ -28,7 +28,7 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: (This is gonna be hard)
+    sentence: Yes, your death.
   endAction: 0
   choices: []
   choiceKey: 

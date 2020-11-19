@@ -25,18 +25,18 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: You grip something cool and hard to the touch and pull out what looks
-      like random pieces of the pod.
+    sentence: 'You grip something cool and hard to the touch and pull out what looks
+      like random pieces of the pod. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: After looking at each piece you are able to salvage the transmitter
-      and place it in your suit pocket.
+    sentence: After looking at each piece you are able to salvage a piece and place
+      it in your suit pocket.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: Nothing else here looks useful. I got what I came for, I shouldn't
-      stick around too long.
+      stick around too long
   endAction: 0
   choices: []
   choiceKey: 

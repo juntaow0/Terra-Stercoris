@@ -16,20 +16,21 @@ MonoBehaviour:
   speakers:
   - You
   - Tusk
+  - 
   sentences:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Please forgive my poor manner. How should I call you?
+    sentence: Please forgive my poor manner. I come with a real that you might find
+      profitable.
+  - speakerIndex: 2
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: 'Tusk looks at you and his eyes narrow. '
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Seems like you are new to this area.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Fine, I will make an exception this time. However, you have to answer
-      my questions.
+    sentence: If that's true, you will have to answer my questions first.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}

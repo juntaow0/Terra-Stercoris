@@ -29,13 +29,13 @@ MonoBehaviour:
     fontOverride: {fileID: 0}
     sentence: It's a piece of the crash that happened around here.
   - speakerIndex: 2
-    fontStyle: 0
+    fontStyle: 2
     fontOverride: {fileID: 0}
     sentence: Tusk looks at you and his eyes narrow.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Come in.
+    sentence: Come in and I will teach you how to talk.
   - speakerIndex: 3
     fontStyle: 0
     fontOverride: {fileID: 0}

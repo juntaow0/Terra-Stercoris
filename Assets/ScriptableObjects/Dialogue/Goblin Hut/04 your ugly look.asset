@@ -65,16 +65,18 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: I assume that's the reason you are here. Fine, I'm interested.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I did have a weird looking device in my chest. You may take it, but
-      don't you dare touch anything else.
+    sentence: I assume that's the reason you are here. Fine, I'm interested. Tell
+      me about the deal.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: That's really nice of you.
+    sentence: I will share with you the powerful technologies we have on the ship,
+      but I do need something from you to fix my communicator.
+  - speakerIndex: 1
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Sound like a deal. I did have a weird looking device in my chest. You
+      may take it, but don't you dare touch anything else.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}

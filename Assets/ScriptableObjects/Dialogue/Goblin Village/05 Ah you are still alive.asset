@@ -25,19 +25,7 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Yes. I'm lucky this time. Thanks for your guide.
-  - speakerIndex: 1
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: Oh you are welcome. Perhaps we can do more trading in the future.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: 'Actually, I got another trade for you. '
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I need a source of Terra strong enough to bind my device together.
+    sentence: Yes, but I need a source of Terra strong enough to bind my device together.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}

@@ -77,24 +77,20 @@ MonoBehaviour:
     fontOverride: {fileID: 0}
     sentence: "It's been a while since I've written one of these\u2026. My bones
       aren't what they used to be anymore. I've gotten old now haha\u2026.I can feel
-      my time coming soon\u2026. "
+      my time coming soon\u2026."
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: "Jean passed away last year and the house feels so empty without her
       smile. For a while it was manageable. Our kids came by a lot back then\u2026.but
-      they stopped visiting after a while\u2026."
+      they stopped visiting after a while\u2026.God I miss them\u2026 I miss you..."
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "God I miss them\u2026 I miss you...I should have said goodbye the
-      day you left..."
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: I tried to wait for you. I had this fantasy that the exploration arrivals
-      door would open and I would turn to see you walking through the gate. Every
-      day..Every day I prayed for my fantasy to come true....
+    sentence: "I should have said goodbye the day you left...I tried to wait for
+      you\u2026. I had this fantasy that the exploration arrivals door would open
+      and I would turn to see you walking through the gate. Every day..Every day
+      I prayed for my fantasy to come true...."
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}

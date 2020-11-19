@@ -25,10 +25,6 @@ MonoBehaviour:
     fontStyle: 0
     fontOverride: {fileID: 0}
     sentence: Maybe I should send you back to God. No one shall fool me like that.
-  - speakerIndex: 0
-    fontStyle: 0
-    fontOverride: {fileID: 0}
-    sentence: (This is gonna be hard)
   endAction: 0
   choices: []
   choiceKey: 

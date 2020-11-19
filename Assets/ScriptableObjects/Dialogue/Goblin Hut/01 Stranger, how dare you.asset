@@ -15,16 +15,25 @@ MonoBehaviour:
   fontOverride: {fileID: 0}
   speakers:
   - Tusk
+  - 
   sentences:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'Stranger, how dare you talk to me like that. '
+    sentence: Intruder, no one shall talk to me like that.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Now I will give you one last chance to speak properly before I use
-      your skull for soup.
+    sentence: Now I will give you one last chance to speak properly before I devour
+      your flesh.
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: Tusk looks at you with a sickening grin on his face
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: "Then again I always llove playing with my food\u2026"
   endAction: 1
   choices:
   - text: Confront
