@@ -8,11 +8,6 @@ public class Redirection : MonoBehaviour
         tc = GetComponent<TransitionController>();
     }
     public void TrailerButton() {
-        float value = Random.value;
-        if (value > 0.5f) {
-            tc.LoadSceneByName("IntroOld");
-        } else {
-            Application.OpenURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-        }
+        Application.OpenURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
 }
