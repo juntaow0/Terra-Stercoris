@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Tuskcombat : MonoBehaviour
 {
     [SerializeField] private UnityEvent OnDeath;
-    [SerializeField] private CharacterController TuskCC;
+    private CharacterController TuskCC;
     // Start is called before the first frame update
     void Start() {
         TuskCC = GetComponent<CharacterController>();
