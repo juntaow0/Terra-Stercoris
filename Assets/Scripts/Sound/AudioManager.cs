@@ -79,7 +79,9 @@ public class AudioManager : MonoBehaviour {
     }
 
     public void KillSong() {
-        source.Stop();
+        if(source.isPlaying) {
+            source.Stop();
+        }
     }
 
     IEnumerator ChangeSong(AudioClip song, bool start = true) {

@@ -19,6 +19,7 @@ public class TransitionManager : MonoBehaviour {
 
     public void LoadScene(string scene) {
         UIManager.instance.FadeIn(FadeTime, ()=> {
+            AudioManager.instance.KillSong();
             SceneManager.UnloadSceneAsync(ActiveSceneName);
             ActiveSceneName = scene;
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -35,7 +36,6 @@ public class TransitionManager : MonoBehaviour {
         UIManager.instance.Bind();
         UIManager.instance.FadeOut(FadeTime, null);
         DialogueManager.instance.InitializeUI();
-        AudioManager.instance.KillSong();
 
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
