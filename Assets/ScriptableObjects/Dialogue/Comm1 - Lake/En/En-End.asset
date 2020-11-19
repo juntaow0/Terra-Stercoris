@@ -20,12 +20,12 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "That was amazing Ive never seen anyone with abilities like yours.
-      You can take Terra from creatures and give your own away\u2026"
+    sentence: That was incredible! I can't believe that was stuck underwater.
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Well lets get back to the village so you can talk to the village craftsman.
+    sentence: If you got what you came for though, we best be heading back to the
+      smith.
   endAction: 0
   choices: []
   choiceKey: 
