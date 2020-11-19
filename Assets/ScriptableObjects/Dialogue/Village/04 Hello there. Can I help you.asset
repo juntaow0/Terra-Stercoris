@@ -69,7 +69,7 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: 'I can show him the way '
+    sentence: 'I can show him da way '
   - speakerIndex: 2
     fontStyle: 0
     fontOverride: {fileID: 0}

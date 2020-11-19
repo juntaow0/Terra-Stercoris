@@ -65,7 +65,7 @@ public class DialogueUI: MonoBehaviour
                 break;
             }
             DialogueText.text += c;
-            if (soundMod % 4 == 0) {
+            if (soundMod % 5 == 0) {
                 AudioManager.instance.Play("Talk");
                 soundMod = 0;
             }

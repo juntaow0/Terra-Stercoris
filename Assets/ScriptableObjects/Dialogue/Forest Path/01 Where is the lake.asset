@@ -55,7 +55,7 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Keeping the village safe from the goblins.
+    sentence: Keeping the village safe from the Tuhrooks.
   endAction: 0
   choices: []
   choiceKey: 

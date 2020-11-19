@@ -19,11 +19,11 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: (I need to find a way to go across the lake)
+    sentence: I need to find a way to go across the lake
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: (Maybe these lilypads can help if they become large)
+    sentence: Maybe these lilypads can help if they become large
   endAction: 0
   choices: []
   choiceKey: 

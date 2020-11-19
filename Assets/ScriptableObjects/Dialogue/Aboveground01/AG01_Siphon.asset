@@ -17,15 +17,14 @@ MonoBehaviour:
   - You
   - 
   sentences:
-  - speakerIndex: 0
+  - speakerIndex: 1
     fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: You cough blood and look back at the green thing coming towards you.
-      You feel your heart beat faster and your skin begins to spark orange.
+    sentence: 'You cough blood and look back at the green thing coming towards you. '
   - speakerIndex: 1
-    fontStyle: 0
+    fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: I don't want to die...
+    sentence: You feel your heart beat faster and your skin begins to spark orange.
   endAction: 0
   choices: []
   choiceKey: 

@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
   m_Name: Vic - dialgoue
   m_EditorClassIdentifier: 
+  fontOverride: {fileID: 0}
   speakers:
   - Victor
   sentences:
   - speakerIndex: 0
-    sentence: Can you believe it? We're going to be the first humans to see Earth
-      since the pilgrimage.
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: My grandpa told me that there used to be giant octopuses living on
+      Earth. They can enter your dream and make you insane.
   endAction: 0
   choices: []
   choiceKey: 

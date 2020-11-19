@@ -34,8 +34,13 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: "Really? Well if that\u2019s the case then he\u2019s more than welcome
-      here. Go ahead and take a rest if you need to."
+    sentence: 'As a token of thanks for saving one of our own, we open our arms and
+      village to you traveler. Feel free to rest and recover inside or explore the
+      village. '
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Once you have rested go with En and speak to our village craftsman.
   endAction: 0
   choices: []
   choiceKey: 
