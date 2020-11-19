@@ -20,20 +20,24 @@ MonoBehaviour:
   - speakerIndex: 0
     fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: 'The pod looks beyond repair.  You open the door and see what looks
-      like a pile of bones. You can''t be sure because they have deteriorated so
-      much.
+    sentence: 'The ship''s exterior is rusted and swollen with plant life. With some
+      difficulty, you force the cockpit open...
 
 '
   - speakerIndex: 0
     fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: "You spot the communicator and are able to salvage the receiver and
-      place it in your suit pocket. \r"
-  - speakerIndex: 1
-    fontStyle: 0
+    sentence: Slouching over in the cockpit are the drowned remains of one of your
+      fellow exploration officers, desperately clutching their own communicator.
+  - speakerIndex: 0
+    fontStyle: 2
     fontOverride: {fileID: 0}
-    sentence: Looks like that's all I could get from this pod. Better hurry back.
+    sentence: It appears that the water has damaged this communicator, but you find
+      the receiver intact.
+  - speakerIndex: 1
+    fontStyle: 2
+    fontOverride: {fileID: 0}
+    sentence: I got what I needed form here. I better meet back up with En now.
   endAction: 0
   choices: []
   choiceKey: 

@@ -20,11 +20,12 @@ MonoBehaviour:
   - speakerIndex: 1
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Good luck with finding the parts.
+    sentence: Here's verdant lake. One of those strange creatures of steel that you're
+      looking for should be at the bottom.
   - speakerIndex: 0
     fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: Thank you. I will be back soon.
+    sentence: Great. I'll see if there's a way I can get into the lake.
   endAction: 0
   choices: []
   choiceKey: 

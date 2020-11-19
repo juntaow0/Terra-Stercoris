@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3167e612a84c4640beca9d08e9ad943, type: 3}
-  m_Name: Pull vines-normal
+  m_Name: Lake Sign
   m_EditorClassIdentifier: 
   fontOverride: {fileID: 0}
   speakers:
   - 
   sentences:
   - speakerIndex: 0
-    fontStyle: 2
+    fontStyle: 0
     fontOverride: {fileID: 0}
-    sentence: As you begin to pull on the vines, it's clear that they'll begin to
-      break and give way if you tug hard enough. Maybe this would work if they were
-      bigger.
+    sentence: 'Vernal Lake - Ahead
+
+      Village - South
+
+'
   endAction: 0
   choices: []
   choiceKey: 

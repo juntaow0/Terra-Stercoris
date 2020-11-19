@@ -20,7 +20,12 @@ MonoBehaviour:
     fontOverride: {fileID: 0}
     sentence: You tug at the thick and flowering vines with all your might. The vines
       are definitely durable enough for the task, but the ship proves too heavy for
-      you to budge. You need to generate a great force in order to pull it free...
+      you to budge.
+  - speakerIndex: 0
+    fontStyle: 0
+    fontOverride: {fileID: 0}
+    sentence: Maybe I could tie something big and heavy to this vine and push it
+      into the lake?
   endAction: 0
   choices: []
   choiceKey: 
